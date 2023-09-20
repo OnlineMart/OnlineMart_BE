@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\ProductSku;
+use App\Models\ProductVariation;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,14 +14,15 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('failed_jobs', function (Blueprint $table) {
+        Schema::create('product_variation_values', function (Blueprint $table) {
             $table->id();
-            $table->string('uuid')->unique();
-            $table->text('connection');
-            $table->text('queue');
-            $table->longText('payload');
-            $table->longText('exception');
-            $table->timestamp('failed_at')->useCurrent();
+
+            $table->foreignIdFor(ProductVariation::class);
+            $table->foreignIdFor(ProductSku::class);
+
+            $table->string("variation_value_name", 20);
+
+            $table->timestamps();
         });
     }
 
@@ -30,6 +33,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('failed_jobs');
+        Schema::dropIfExists('product_variation_values');
     }
 };
