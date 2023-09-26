@@ -4,11 +4,15 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -18,7 +22,14 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'full_name',
+        'birthday',
+        'gender',
+        'phone',
+        'address',
+        'avatar',
+        'verification_code',
+        'payment_method',
         'email',
         'password',
     ];
@@ -42,32 +53,57 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function coupon(){
+    /**
+     *  Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier(): mixed
+    {
+        return $this->getKey();
+    }
+
+    /**
+     *  Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims(): array
+    {
+        return [];
+    }
+
+    public function coupon(): BelongsToMany
+    {
 
         return $this->belongsToMany(Coupon::class, 'user_has_coupons');
     }
 
-    public function order(){
+    public function order(): HasMany
+    {
 
         return $this->hasMany(Order::class);
     }
 
-    public function shop(){
+    public function shop(): HasMany
+    {
 
         return $this->hasMany(Shop::class);
     }
 
-    public function review(){
+    public function review(): HasMany
+    {
 
         return $this->hasMany(Review::class);
     }
 
-    public function notification()
+    public function notification(): HasMany
     {
         return $this->hasMany(Notification::class);
     }
 
-    public function cart(){
+    public function cart(): HasOne
+    {
 
         return $this->hasOne(Cart::class);
     }
