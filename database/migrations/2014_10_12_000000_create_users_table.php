@@ -14,16 +14,17 @@ return new class extends Migration {
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name',);
-            $table->string('email');
+            $table->string('user_name', 50)->nullable();
+            $table->string('full_name');
+            $table->string('email')->unique();
             $table->date('birthday')->nullable();
-            $table->enum('gender', ['0', '1'])->comment('0: male, 1: female')->nullable();
-            $table->integer('phone')->nullable();
+            $table->enum('gender', ['0', '1'])->nullable()->comment('0: male, 1: female');
+            $table->string('phone')->nullable();
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('verification_code', 6)->nullable();
-            $table->enum('payment_method', ['0', '1', '2', '3'])->comment('0: type_id, 1: provider, 2: expiry_date, 3: is_default')->nullable();
+            $table->string('token', 6)->nullable();
+            $table->enum('payment_method', ['0', '1', '2', '3'])->nullable()->comment('0: type_id, 1: provider, 2: expiry_date, 3: is_default');
             $table->timestamps();
         });
     }

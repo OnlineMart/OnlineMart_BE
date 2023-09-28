@@ -87,5 +87,6 @@ class Kernel extends HttpKernel
         'throttle'         => ThrottleRequests::class,
         'verified'         => EnsureEmailIsVerified::class,
         'jwt.verify'       => JWTMiddleware::class,
+        'cors'             => \App\Http\Middleware\Cors::class,
     ];
 }

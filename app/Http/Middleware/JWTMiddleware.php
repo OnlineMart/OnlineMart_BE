@@ -20,22 +20,23 @@ class JWTMiddleware
      * @param Request                                       $request
      * @param Closure(Request): (Response|RedirectResponse) $next
      *
-     * @return JsonResponse
+     * @return mixed
      */
-    public function handle(Request $request, Closure $next): JsonResponse
+    public function handle(Request $request, Closure $next): mixed
     {
         try {
-            $user = JWTAuth::parseToken()->authenticate();
+            JWTAuth::parseToken()->authenticate();
 
-            if (!$user) {
-                return jsonResponse(null, 404, 'User not found');
-            }
-        } catch (TokenInvalidException $e) {
-            return response()->json(['status' => 'Token is Invalid']);
-        } catch (TokenExpiredException $e) {
-            return response()->json(['status' => 'Token is Expired']);
         } catch (Exception $e) {
-            return response()->json(['status' => 'Authorization Token not found']);
+            if($e instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException) {
+                return response()->json(['status' => 'Token is Invalid'], 403);
+            } else if($e instanceof \Tymon\JWTAuth\Exceptions\TokenExpiredException) {
+                return response()->json(['status' => 'Token is Expired'], 401);
+            } else if($e instanceof \Tymon\JWTAuth\Exceptions\TokenBlacklistedException) {
+                return response()->json(['status' => 'Token is Blacklisted'], 400);
+            } else {
+                return response()->json(['status' => 'Authorization Token not found'], 404);
+            }
         }
 
         return $next($request);
