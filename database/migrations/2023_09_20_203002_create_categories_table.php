@@ -15,12 +15,13 @@ return new class extends Migration {
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->string('slug');
-            $table->string('image')->nullable();
-            $table->bigInteger('category_id')->unsigned()->nullable();
+            $table->string('thumbnail_url')->nullable();
+            $table->bigInteger('parent_id')->unsigned()->nullable();
             $table->enum('status', ['0', '1'])->comment('0: disabled, 1: enabled');
 
-            $table->foreignIdFor(Shop::class);
+            $table->foreignIdFor(Shop::class)->nullable();
 
             $table->string('meta_title', 50)->nullable();
             $table->text('meta_description')->nullable();

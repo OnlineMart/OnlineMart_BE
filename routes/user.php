@@ -36,3 +36,8 @@ Route::apiResource('/user', UserController::class)->except(['show']);
 Route::patch("user/avatar/{id}", [UserController::class, 'uploadAvatar']);
 Route::put("user/password/{id}", [UserController::class, 'changePassword']);
 Route::post("user/delete-avatar/{id}", [UserController::class, 'deleteAvatar']);
+
+Route::apiResource('categories', CategoryController::class)->except(['show']);
+Route::get('categories/list', [CategoryController::class, 'getListCategories']);
+Route::get('categories/root', [CategoryController::class, 'getRootCategories']);
+Route::get('categories/shop/{shopId}', [CategoryController::class, 'getShopCategories']);
