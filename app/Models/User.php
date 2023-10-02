@@ -29,7 +29,6 @@ class User extends Authenticatable implements JWTSubject
         'birthday',
         'gender',
         'phone',
-        'address',
         'avatar',
         'token',
         'payment_method',
@@ -107,5 +106,11 @@ class User extends Authenticatable implements JWTSubject
     {
 
         return $this->hasOne(Cart::class);
+    }
+
+    public function user_addresses(): HasMany
+    {
+
+        return $this->hasMany(UserAddress::class);
     }
 }

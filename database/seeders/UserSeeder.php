@@ -25,7 +25,6 @@ class UserSeeder extends Seeder
                 'avatar'    => 'https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg',
                 'phone'     => '0774060610',
                 'password'  => bcrypt('123456'),
-                'address'   => 'Cần Thơ'
             ]
         ];
 

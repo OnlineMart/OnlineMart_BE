@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductSku extends Model
+class ShopSupplier extends Model
 {
     use HasFactory;
 
-    protected $table = 'product_skus';
+    protected $table = 'shop_suppliers';
 
     protected $fillable = [
-        "sku",
-        "price"
+        'shop_id',
+        'supplier_id',
     ];
 }

@@ -1,10 +1,13 @@
 <?php
 
+use App\Models\Shop;
+use App\Models\Supplier;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -12,10 +15,10 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('product_skus', function (Blueprint $table) {
+        Schema::create('shop_suppliers', function (Blueprint $table) {
             $table->id();
-            $table->string("sku");
-            $table->integer("price");
+            $table->foreignIdFor(Shop::class);
+            $table->foreignIdFor(Supplier::class);
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('product_skus');
+        Schema::dropIfExists('shop_suppliers');
     }
 };

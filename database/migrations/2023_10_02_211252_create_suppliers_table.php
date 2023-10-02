@@ -1,12 +1,11 @@
 <?php
 
-use App\Models\ProductSku;
-use App\Models\ProductVariation;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -14,12 +13,13 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('product_variation_values', function (Blueprint $table) {
+        Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
-
-            $table->foreignIdFor(ProductVariation::class);
-            $table->string("variation_value_name", 20);
-
+            $table->string('name');
+            $table->string('email');
+            $table->integer('phone');
+            $table->string('address');
+            $table->string('website');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('product_variation_values');
+        Schema::dropIfExists('suppliers');
     }
 };

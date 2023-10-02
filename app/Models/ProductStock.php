@@ -13,8 +13,12 @@ class ProductStock extends Model
     protected $table = 'product_stocks';
 
     protected $fillable = [
+        'sku',
+        'import_price',
+        'retail_price',
+        'wholesale_price',
+        'qty_inventory',
         'product_variation_value_id',
-        'total_stock',
     ];
 
     /**

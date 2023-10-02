@@ -15,10 +15,13 @@ return new class extends Migration {
     {
         Schema::create('product_stocks', function (Blueprint $table) {
             $table->id();
+            $table->string('sku')->nullable();
+            $table->integer("import_price")->nullable();
+            $table->integer("retail_price")->nullable();
+            $table->integer("wholesale_price")->nullable();
+            $table->integer("qty_inventory")->default(0);
 
             $table->foreignIdFor(ProductVariationValue::class);
-
-            $table->integer("total_stock")->default(0);
 
             $table->timestamps();
         });
