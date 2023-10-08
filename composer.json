@@ -29,7 +29,8 @@
     "autoload": {
         "files": [
             "app/Http/Helpers/ResponseHelper.php",
-            "app/Http/Helpers/S3Helper.php"
+            "app/Http/Helpers/S3Helper.php",
+            "app/Http/Helpers/helper.php"
         ],
         "psr-4": {
             "App\\": "app/",

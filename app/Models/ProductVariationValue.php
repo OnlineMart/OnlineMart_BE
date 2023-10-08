@@ -14,23 +14,14 @@ class ProductVariationValue extends Model
 
     protected $fillable = [
         'product_variation_id',
-        'product_sku_id',
         'variation_value_name',
     ];
 
     /**
      * @return BelongsTo
      */
-    public function variation()
+    public function variation(): BelongsTo
     {
         return $this->belongsTo(ProductVariation::class, 'product_variation_id');
-    }
-
-    /**
-     * @return BelongsTo
-     */
-    public function sku()
-    {
-        return $this->belongsTo(ProductSku::class, 'product_sku_id');
     }
 }

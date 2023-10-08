@@ -13,15 +13,24 @@ class ProductMedia extends Model
     protected $table = 'product_media';
 
     protected $fillable = [
-        'product_variation_value_id',
-        'product_media',
+        'product_id',
+        'media',
+        'is_main'
     ];
 
     /**
      * @return BelongsTo
      */
-    public function product_variation_value()
+    public function product_variation_value(): BelongsTo
     {
         return $this->belongsTo(ProductVariationValue::class, 'product_variation_value_id');
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function products(): BelongsTo
+    {
+        return $this->belongsTo(Product::class);
     }
 }

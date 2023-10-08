@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,3 +42,7 @@ Route::apiResource('categories', CategoryController::class)->except(['show']);
 Route::get('categories/list', [CategoryController::class, 'getListCategories']);
 Route::get('categories/root', [CategoryController::class, 'getRootCategories']);
 Route::get('categories/shop/{shopId}', [CategoryController::class, 'getShopCategories']);
+
+Route::prefix('product')->group(function () {
+    Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
+});
