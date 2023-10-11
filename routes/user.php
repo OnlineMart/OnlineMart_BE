@@ -33,16 +33,24 @@ Route::group([
 ], function () {
     Route::get('me', [UserController::class, 'me']);
 });
+
+// Api user
 Route::apiResource('/user', UserController::class)->except(['show']);
 Route::patch("user/avatar/{id}", [UserController::class, 'uploadAvatar']);
 Route::put("user/password/{id}", [UserController::class, 'changePassword']);
 Route::post("user/delete-avatar/{id}", [UserController::class, 'deleteAvatar']);
 
-Route::apiResource('categories', CategoryController::class)->except(['show']);
+// Api category
+Route::apiResource('categories', CategoryController::class);
 Route::get('categories/list', [CategoryController::class, 'getListCategories']);
 Route::get('categories/root', [CategoryController::class, 'getRootCategories']);
 Route::get('categories/shop/{shopId}', [CategoryController::class, 'getShopCategories']);
+Route::get('categories/shop/tree/{shopId}', [CategoryController::class, 'getShopTreeCategories']);
+Route::put("categories/{categoryId}/shop/{shopId}/status", [CategoryController::class, 'changeStatusCategoryShop']);
+Route::put("categories/{categoryId}/shop/{shopId}/mass-status", [CategoryController::class, 'massChangeStatusCategoryShop']);
+Route::delete("categories/{categoryId}/shop/{shopId}/mass-delete", [CategoryController::class, 'massDeleteCategoryShop']);
 
+// Api product
 Route::prefix('product')->group(function () {
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
 });

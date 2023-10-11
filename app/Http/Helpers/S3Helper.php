@@ -4,6 +4,7 @@ namespace App\Http\Helpers;
 
 use Exception;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Log;
 use InvalidArgumentException;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;

@@ -2,10 +2,8 @@
 
 namespace App\Http\Requests\Category;
 
-use App\Http\Requests\BaseRequest;
 use App\Rules\MaxCategoryLevel;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Validation\ValidationException;
+use App\Http\Requests\BaseRequest;
 
 class CategoryRequestStore extends BaseRequest
 {
@@ -27,16 +25,19 @@ class CategoryRequestStore extends BaseRequest
     public function rules(): array
     {
         return [
-            'name'          => 'required|string|unique:categories,name',
-            'slug'          => 'nullable|string|unique:categories,slug',
-            'thumbnail_url' => 'required|image|max:2048',
-            'parent_id'     => [
-                'required',
+            'name'             => 'nullable|string|unique:categories,name',
+            'slug'             => 'nullable|string|unique:categories,slug',
+            'thumbnail_url'    => 'nullable',
+            'parent_id'        => [
+                'nullable',
                 'exists:categories,id',
-                new MaxCategoryLevel,
+                new MaxCategoryLevel()
             ],
-            'status'        => 'required|in:0,1',
-            'shop_id'       => 'required'
+            'status'           => 'nullable|in:0,1',
+            'shop_id'          => 'nullable',
+            'meta_title'       => 'nullable|string',
+            'meta_keywords'    => 'nullable|string',
+            'meta_description' => 'nullable|string'
         ];
     }
 

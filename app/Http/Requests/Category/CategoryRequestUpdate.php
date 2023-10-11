@@ -3,9 +3,7 @@
 namespace App\Http\Requests\Category;
 
 use App\Http\Requests\BaseRequest;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Validation\ValidationException;
+use App\Rules\MaxCategoryLevel;
 
 class CategoryRequestUpdate extends BaseRequest
 {
@@ -28,12 +26,19 @@ class CategoryRequestUpdate extends BaseRequest
     {
         $categoryId = $this->route()->parameter('category');
         return [
-            'name'          => 'required|string',
-            'slug'          => 'required|string',
-            'thumbnail_url' => 'required|string',
-            'parent_id'     => 'required|exists:categories,id',
-            'status'        => 'required|in:0,1',
-            'shop_id'       => 'required'
+            'name'             => 'nullable|string|unique:categories,name,' . $categoryId,
+            'slug'             => 'nullable|string|unique:categories,slug,' . $categoryId,
+            'thumbnail_url'    => 'nullable',
+            'parent_id'        => [
+                'nullable',
+                'exists:categories,id',
+                new MaxCategoryLevel()
+            ],
+            'status'           => 'nullable|in:0,1',
+            'shop_id'          => 'nullable',
+            'meta_title'       => 'nullable|string',
+            'meta_keywords'    => 'nullable|string',
+            'meta_description' => 'nullable|string'
         ];
     }
 
