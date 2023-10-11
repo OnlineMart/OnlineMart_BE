@@ -4,6 +4,7 @@ use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\ShopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
- */
+*/
 
 Route::group([
     'middleware' => ['api', 'cors'],
@@ -54,3 +55,9 @@ Route::delete("categories/{categoryId}/shop/{shopId}/mass-delete", [CategoryCont
 Route::prefix('product')->group(function () {
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
 });
+Route::apiResource('/shops', ShopController::class);
+
+
+
+
+

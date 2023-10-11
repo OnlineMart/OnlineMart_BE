@@ -13,9 +13,7 @@ class Shop extends Model
 
     public const DISABLED = "0";
     public const ENABLED  = "1";
-
-    public const UNFOLLOWED = "0";
-    public const FOLLOWED   = "1";
+    protected $table = 'shops';
 
     protected $fillable = [
         'name',
@@ -27,13 +25,12 @@ class Shop extends Model
         'rating',
         'status',
         'user_id',
-        'followed',
     ];
 
     /**
      * @return BelongsTo
      */
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
@@ -41,7 +38,7 @@ class Shop extends Model
     /**
      * @return BelongsTo
      */
-    public function product()
+    public function product(): BelongsTo
     {
 
         return $this->belongsTo(Product::class);
@@ -50,7 +47,7 @@ class Shop extends Model
     /**
      * @return HasMany
      */
-    public function category()
+    public function category(): HasMany
     {
 
         return $this->hasMany(Product::class);
@@ -59,9 +56,13 @@ class Shop extends Model
     /**
      * @return HasMany
      */
-    public function coupon()
+    public function coupon(): HasMany
     {
-
         return $this->hasMany(Product::class);
+    }
+
+    public function cartItem(): HasMany
+    {
+        return $this->hasMany(CartItem::class);
     }
 }
