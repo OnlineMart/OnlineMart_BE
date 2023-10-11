@@ -13,6 +13,10 @@ class Shop extends Model
 
     public const DISABLED = "0";
     public const ENABLED  = "1";
+
+    public const UNFOLLOWED = "0";
+    public const FOLLOWED   = "1";
+
     protected $table = 'shops';
 
     protected $fillable = [
@@ -64,5 +68,14 @@ class Shop extends Model
     public function cartItem(): HasMany
     {
         return $this->hasMany(CartItem::class);
+    }
+
+    /**
+     *
+     * @return belongsTo
+     */
+    public function supplier()
+    {
+        return $this->belongsTo(Supplier::class);
     }
 }

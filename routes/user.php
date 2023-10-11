@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\ShopController;
 use Illuminate\Support\Facades\Route;
@@ -19,20 +20,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'middleware' => ['api', 'cors'],
-    'prefix'     => 'auth'
+  'middleware' => ['api', 'cors'],
+  'prefix'     => 'auth'
 ], function () {
-    Route::post('login', [AuthController::class, 'login']);
-    Route::post('register', [AuthController::class, 'register']);
-    Route::post('logout', [AuthController::class, 'logout']);
-    Route::post('refresh', [AuthController::class, 'refresh']);
+  Route::post('login', [AuthController::class, 'login']);
+  Route::post('register', [AuthController::class, 'register']);
+  Route::post('logout', [AuthController::class, 'logout']);
+  Route::post('refresh', [AuthController::class, 'refresh']);
 });
 
 Route::group([
-    'middleware' => ['api', 'auth:api', 'cors'],
-    'prefix'     => 'users'
+  'middleware' => ['api', 'auth:api', 'cors'],
+  'prefix'     => 'users'
 ], function () {
-    Route::get('me', [UserController::class, 'me']);
+  Route::get('me', [UserController::class, 'me']);
 });
 
 // Api user
@@ -57,7 +58,7 @@ Route::prefix('product')->group(function () {
 });
 Route::apiResource('/shops', ShopController::class);
 
-
-
-
-
+// Supplier route
+Route::apiResource('suppliers', SupplierController::class);
+Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
+Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class, 'deleteMultipleSuppliers']);
