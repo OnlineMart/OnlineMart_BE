@@ -44,13 +44,17 @@ class CategoryController extends Controller
      */
     public function getListCategories(): JsonResponse
     {
-        $categories             = Category::orderBy('id', 'desc')->get();
-        $categoriesWithChildren = $categories->map(function ($category) {
-            $category->category_children = Category::getParentCategories($category);
-            return $category;
-        });
+        try {
+            $categories             = Category::orderBy('id', 'desc')->get();
+            $categoriesWithChildren = $categories->map(function ($category) {
+                $category->category_children = Category::getParentCategories($category);
+                return $category;
+            });
 
-        return jsonResponse($categoriesWithChildren, 200, 'Categories retrieved successfully');
+            return jsonResponse($categoriesWithChildren, 200, 'Categories retrieved successfully');
+        } catch (Exception $e) {
+            return jsonResponse($e->getMessage(), 500, 'Something went wrong');
+        }
     }
 
     /**
@@ -156,14 +160,14 @@ class CategoryController extends Controller
     }
 
     /**
-     * @param int $id
+     * @param int|string $id
      *
      * @return JsonResponse
      */
-    public function show(int $id): JsonResponse
+    public function show(Category $category): JsonResponse
     {
         try {
-            $category = Category::findOrFail($id);
+            $category = Category::findOrFail($category->id);
 
             // Retrieve all parent IDs of the current category and its ancestors
             $parentIds = $this->getAllParentIds($category);

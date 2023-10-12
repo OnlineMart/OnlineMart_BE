@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->string('email');
             $table->string('phone');
             $table->string('address');
+            $table->string('code');
             $table->string('website')->nullable();
 
             $table->foreignIdFor(Shop::class);
