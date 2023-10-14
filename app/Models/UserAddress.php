@@ -9,6 +9,9 @@ class UserAddress extends Model
 {
     use HasFactory;
 
+    const IS_DEFAULT = "1";
+    const IS_NOT_DEFAULT = "0";
+
     protected $table = "user_addresses";
 
     protected $fillable = [
