@@ -24,16 +24,22 @@ class ProductVariantValueSeeder extends Seeder
 
         try {
             for ($i = 1; $i <= $totalVariations; $i++) {
-                $valuesPerVariation = rand(1, 3); // Randomly choose 1, 2, or 3 values per variation
+                $valuesPerVariation = rand(1, 3);
                 $variationValues    = [];
 
                 for ($j = 0; $j < $valuesPerVariation; $j++) {
                     $variationValue = $faker->word;
+                    $thumbnailUrl   = null;
+
+                    if (rand(0, 1) === 1) {
+                        $thumbnailUrl = $faker->imageUrl(100, 100);
+                    }
 
                     if ($variationValue !== null) {
                         $variationValues[] = [
                             'variation_value_name' => $variationValue,
-                            'product_variation_id' => $i, // Assuming variation IDs start from 1.
+                            'product_variation_id' => $i,
+                            'thumbnail_url'        => $thumbnailUrl,
                             'created_at' => now(),
                             'updated_at'           => now()
                         ];

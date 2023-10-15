@@ -19,6 +19,7 @@ return new class extends Migration {
 
             $table->foreignIdFor(ProductVariation::class);
             $table->string("variation_value_name", 20);
+            $table->string("thumbnail_url")->nullable();
 
             $table->timestamps();
         });

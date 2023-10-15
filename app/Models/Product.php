@@ -14,6 +14,8 @@ class Product extends Model
     public const DISABLED = "0";
     public const ENABLED  = "1";
 
+    public const RELATED_LIMIT = 10;
+
     protected $table = "products";
 
     protected $fillable = [

@@ -65,7 +65,10 @@ Route::get('categories/shop/{shopId}', [CategoryController::class, 'getShopCateg
 // Api product
 Route::prefix('product')->group(function () {
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
+    Route::get("{productId}/related", [ProductController::class, 'getRelatedProducts']);
 });
+Route::apiResource('/product', ProductController::class);
+
 Route::apiResource('/shops', ShopController::class);
 
 // Supplier route

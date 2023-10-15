@@ -15,6 +15,7 @@ class ProductVariationValue extends Model
     protected $fillable = [
         'product_variation_id',
         'variation_value_name',
+        'thumbnail_url',
     ];
 
     /**
