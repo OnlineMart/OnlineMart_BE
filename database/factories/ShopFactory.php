@@ -28,7 +28,6 @@ class ShopFactory extends Factory
             'description' => $this->faker->sentence,
             'rating'      => $this->faker->numberBetween(1, 5),
             'status'      => $this->faker->randomElement([Shop::DISABLED, Shop::ENABLED]),
-            'user_id'     => $this->faker->numberBetween(1, 10),
         ];
     }
 }

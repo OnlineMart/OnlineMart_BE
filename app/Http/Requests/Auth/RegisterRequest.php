@@ -26,8 +26,10 @@ class RegisterRequest extends BaseRequest
         return [
             'full_name'        => 'required|string|min:3|max:255',
             'email'            => 'required|email|max:255|unique:users,email',
+            'phone'            => 'nullable|numeric|digits_between:10,11|unique:users,phone',
             'password'         => 'required|string|min:6',
-            'confirm_password' => 'required|string|same:password'
+            'confirm_password' => 'required|string|same:password',
+            'type'             => 'nullable|string|in:user,admin'
         ];
     }
 
@@ -40,7 +42,7 @@ class RegisterRequest extends BaseRequest
             'email'    => 'The :attribute must be a valid email address.',
             'unique'   => 'The :attribute has already been taken.',
             'min'      => 'The :attribute must be at least :min characters.',
-            'same'     => 'The :attribute and :other must match.',
+            'same'     => 'The :attribute and :other must match.'
         ];
     }
 
@@ -50,7 +52,7 @@ class RegisterRequest extends BaseRequest
             'full_name'        => 'Full name',
             'email'            => 'Email',
             'password'         => 'Password',
-            'confirm_password' => 'Confirm password',
+            'confirm_password' => 'Confirm password'
         ];
     }
 

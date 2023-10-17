@@ -11,6 +11,7 @@ use Illuminate\Http\Response;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 use Tymon\JWTAuth\Facades\JWTAuth;
+use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
 
 class JWTMiddleware
 {
@@ -28,14 +29,14 @@ class JWTMiddleware
             JWTAuth::parseToken()->authenticate();
 
         } catch (Exception $e) {
-            if($e instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException) {
-                return response()->json(['status' => 'Token is Invalid'], 403);
-            } else if($e instanceof \Tymon\JWTAuth\Exceptions\TokenExpiredException) {
-                return response()->json(['status' => 'Token is Expired'], 401);
-            } else if($e instanceof \Tymon\JWTAuth\Exceptions\TokenBlacklistedException) {
-                return response()->json(['status' => 'Token is Blacklisted'], 400);
+            if($e instanceof TokenInvalidException) {
+                return jsonResponse(null, 400, 'Token is Invalid');
+            } else if($e instanceof TokenExpiredException) {
+                return jsonResponse(null, 401, 'Token is Expired');
+            } else if($e instanceof TokenBlacklistedException) {
+                return jsonResponse(null, 403, 'Token is Blacklisted');
             } else {
-                return response()->json(['status' => 'Authorization Token not found'], 404);
+                return jsonResponse(null, 404, 'Authorization Token not found');
             }
         }
 

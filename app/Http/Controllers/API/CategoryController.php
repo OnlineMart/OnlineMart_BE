@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\API;
 
-use Exception;
-use App\Models\Category;
-use Illuminate\Support\Str;
-use Illuminate\Http\Response;
-use App\Http\Helpers\S3Helper;
-use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
+use App\Http\Helpers\S3Helper;
 use App\Http\Requests\Category\CategoryRequestStore;
 use App\Http\Requests\Category\CategoryRequestUpdate;
+use App\Models\Category;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -18,6 +18,7 @@ class CategoryController extends Controller
 
     public function __construct()
     {
+        $this->middleware('auth:api')->except('getRootCategories');
         $this->upload = new S3Helper();
     }
 
@@ -82,7 +83,7 @@ class CategoryController extends Controller
     public function getShopCategories(int $shopId): JsonResponse
     {
         try {
-            $categories = Category::where('shop_id', $shopId)
+            $categories             = Category::where('shop_id', $shopId)
                 ->orWhereNull('shop_id')
                 ->orderBy('id', 'desc')
                 ->get();

@@ -19,7 +19,7 @@ class ShopSeeder extends Seeder
         DB::beginTransaction();
 
         try {
-            for ($i = 0; $i < 1000; $i++) {
+            for ($i = 0; $i < 200; $i++) {
                 Shop::factory()->create();
             }
 
