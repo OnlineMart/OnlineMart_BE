@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->string('full_name');
             $table->string('email')->unique();
             $table->date('birthday')->nullable();
-            $table->enum('gender', ['0', '1'])->nullable()->comment('0: male, 1: female');
+            $table->enum('gender', ['0', '1'])->nullable()->default('0')->comment('0: male, 1: female');
             $table->string('phone')->nullable();
             $table->string('password');
             $table->enum('type', ['user', 'admin'])->default('user');

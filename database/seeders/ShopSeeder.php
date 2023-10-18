@@ -3,9 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Shop;
-use Exception;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class ShopSeeder extends Seeder
 {
@@ -16,16 +14,21 @@ class ShopSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::beginTransaction();
+        $data = [
+            [
+                'name'        => 'Tiki Trading',
+                'email'       => 'tiki_trading@gmail.com',
+                'avatar'      => 'https://salt.tikicdn.com/cache/w220/ts/seller/21/ce/5c/b52d0b8576680dc3666474ae31b091ec.jpg',
+                'phone'       => '0774060610',
+                'address'     => 'Cần Thơ',
+                'description' => 'Tiki Trading',
+                'rating'      => 4.7,
+                'status'      => Shop::ENABLED,
+                'created_at'  => now()->toDateTimeString(),
+                'updated_at'  => now()->toDateTimeString()
+            ]
+        ];
 
-        try {
-            for ($i = 0; $i < 200; $i++) {
-                Shop::factory()->create();
-            }
-
-            DB::commit();
-        } catch (Exception $e) {
-            DB::rollBack();
-        }
+        Shop::insert($data);
     }
 }

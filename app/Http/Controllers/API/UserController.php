@@ -186,8 +186,11 @@ class UserController extends Controller
     public function me(): JsonResponse
     {
         try {
-            $user = auth()->user();
-            return jsonResponse($user, 200, 'User retrieved successfully');
+            $user        = auth()->user()->makeHidden(['roles', 'permissions']);
+            $permissions = auth()->user()->getAllPermissions()->pluck('name') ?? NULL;
+
+            $userData = array_merge($user->toArray(), ['permissions' => $permissions->toArray()]);
+            return jsonResponse($userData, 200, 'User retrieved successfully');
         } catch (Exception $e) {
             return jsonResponse(null, 403, 'Something went wrong');
         }

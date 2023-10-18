@@ -19,6 +19,10 @@ class CategoryController extends Controller
     public function __construct()
     {
         $this->middleware('auth:api')->except('getRootCategories');
+        $this->middleware('permission:View categories', ['only' => ['index', 'getListCategories', 'getShopCategories', 'getShopTreeCategories']]);
+        $this->middleware('permission:Create category', ['only' => ['store']]);
+        $this->middleware('permission:Update category', ['only' => ['update', 'changeStatusCategoryShop', 'massChangeStatusCategoryShop']]);
+        $this->middleware('permission:Delete category', ['only' => ['destroy', 'massDeleteCategoryShop']]);
         $this->upload = new S3Helper();
     }
 

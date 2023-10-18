@@ -7,6 +7,9 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Validation\UnauthorizedException;
+use Spatie\Permission\Exceptions\UnauthorizedException as ExceptionsUnauthorizedException;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -50,11 +53,16 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+
+        // 403 error permission not allowed
+        $this->renderable(function (ExceptionsUnauthorizedException $e, $request) {
+            return jsonResponse(null, 403, $e->getMessage());
+        });
     }
 
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        return response()->json(['error' => 'Unauthenticated.'], 401);
+        return jsonResponse(null, 401, $exception->getMessage());
     }
 
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\Admin\PermissionController;
+use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
@@ -57,11 +59,6 @@ Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
 
-Route::apiResource('categories', CategoryController::class)->except(['show']);
-Route::get('categories/list', [CategoryController::class, 'getListCategories']);
-Route::get('categories/root', [CategoryController::class, 'getRootCategories']);
-Route::get('categories/shop/{shopId}', [CategoryController::class, 'getShopCategories']);
-
 // Api product
 Route::prefix('product')->group(function () {
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
@@ -75,3 +72,7 @@ Route::apiResource('/shops', ShopController::class);
 Route::apiResource('suppliers', SupplierController::class);
 Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
 Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class, 'deleteMultipleSuppliers']);
+
+// Api roles and permissions
+Route::apiResource('/roles', RoleController::class)->except(['show']);
+Route::get('/permissions', [PermissionController::class, 'index']);

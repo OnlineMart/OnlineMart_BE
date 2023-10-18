@@ -125,7 +125,7 @@ class AuthController extends Controller
         ], 200, $message);
 
         $response->withCookie(
-            Cookie::make('access_token', $token, env("LOGGED_IN_TTL"), '/', null, false, true) // Set httpOnly to true
+            Cookie::make('access_token', $token, env("LOGGED_IN_TTL"), '/', null, false, false) // Set httpOnly to true
         );
 
         $response->withCookie(
