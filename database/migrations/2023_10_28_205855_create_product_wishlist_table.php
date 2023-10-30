@@ -1,10 +1,10 @@
 <?php
 
 use App\Models\Product;
-use App\Models\User;
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\Wishlist;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration {
     /**
@@ -14,11 +14,9 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('wishlists', function (Blueprint $table) {
-            $table->id();
+        Schema::create('product_wishlist', function (Blueprint $table) {
             $table->foreignIdFor(Product::class);
-            $table->foreignIdFor(User::class);
-            $table->timestamps();
+            $table->foreignIdFor(Wishlist::class);
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('wishlists');
+        Schema::dropIfExists('product_wishlist');
     }
 };

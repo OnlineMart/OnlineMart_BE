@@ -9,6 +9,7 @@ use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\ShopController;
+use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -58,6 +59,12 @@ Route::apiResource('/categories', CategoryController::class);
 // Api address
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
+
+// Api product
+// Api wishlist
+Route::post('wishlist/{productId}', [WishlistController::class, 'storeWishlist']);
+Route::get('wishlist/user/{userId}', [WishlistController::class, 'getUserWishlist']);
+Route::apiResource('/wishlist', WishlistController::class)->except(['update', 'store', 'index']);
 
 // Api product
 Route::prefix('product')->group(function () {

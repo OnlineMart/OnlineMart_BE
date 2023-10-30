@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Product extends Model
@@ -54,13 +55,13 @@ class Product extends Model
         return $this->hasMany(ProductMedia::class);
     }
 
-    /**
-     * @return BelongsTo
-     */
-    public function wishlist(): BelongsTo
-    {
-        return $this->belongsTo(Wishlist::class);
-    }
+    // /**
+    //  * @return BelongsTo
+    //  */
+    // public function users(): BelongsToMany
+    // {
+    //     return $this->belongsToMany(User::class, 'wishlists', 'product_id', 'user_id');
+    // }
 
     /**
      * @return BelongsTo

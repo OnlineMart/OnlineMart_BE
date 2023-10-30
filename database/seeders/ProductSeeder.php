@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Shop;
 use App\Models\Supplier;
+use Exception;
 use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -34,7 +35,7 @@ class ProductSeeder extends Seeder
 
             for ($j = 1; $j <= $totalRecords; $j++) {
                 $regularPrice = $faker->randomFloat(2, 10000, 10000000);
-                $salePrice = $faker->randomElement([0, 0, $faker->randomFloat(2, 0.01, $regularPrice)]);
+                $salePrice    = $faker->randomElement([0, 0, $faker->randomFloat(2, 0.01, $regularPrice)]);
 
                 $products[] = [
                     'name'              => $faker->sentence,
@@ -67,7 +68,7 @@ class ProductSeeder extends Seeder
             $this->command->getOutput()->progressFinish();
 
             DB::commit();
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             DB::rollBack();
         }
     }
