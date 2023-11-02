@@ -9,7 +9,16 @@ class Notification extends Model
 {
     use HasFactory;
 
+    public const UNREAD = "unread";
+    public const READ = "read";
+
     protected $table = 'notifications';
 
-    protected $guarded = [];
+    protected $fillable = [
+        'title',
+        'content',
+        'status',
+        'type',
+        'user_id'
+    ];
 }

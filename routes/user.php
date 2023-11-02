@@ -5,11 +5,12 @@ use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\ShopController;
 use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
+use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\UserController;
-use App\Http\Controllers\API\ShopController;
 use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,7 +63,6 @@ Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
 
-// Api product
 // Api wishlist
 Route::post('wishlist/{productId}', [WishlistController::class, 'storeWishlist']);
 Route::get('wishlist/user/{userId}', [WishlistController::class, 'getUserWishlist']);
@@ -90,3 +90,10 @@ Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class
 // Api roles and permissions
 Route::apiResource('/roles', RoleController::class)->except(['show']);
 Route::get('/permissions', [PermissionController::class, 'index']);
+
+// Notification
+Route::get('/notification/{userId}', [NotificationController::class, 'getNotificationByUser']);
+Route::patch("/notifications/{id}", [NotificationController::class, 'changeStatusNotification']);
+Route::put("/notifications/{type}/mass-status", [NotificationController::class, 'massChangeStatusNotifications']);
+Route::delete('/notifications/{type}/mass-delete', [NotificationController::class, 'massDeleteNotifications']);
+Route::apiResource('/notifications', NotificationController::class)->except(["index"]);
