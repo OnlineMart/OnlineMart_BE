@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             ProductVariantSeeder::class,
             ProductVariantValueSeeder::class,
             WishlistSeeder::class,
+            ProductStockSeeder::class,
         ]);
     }
 }

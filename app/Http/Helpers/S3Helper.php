@@ -34,12 +34,16 @@ class S3Helper
             Storage::disk('s3')->makeDirectory($path);
         }
         try {
-            $image = Image::make($file);
-            $image->resize(480, 480, function ($constraint) {
-                $constraint->aspectRatio();
-            });
-            $imageData = (string) $image->encode($extension);
-            Storage::disk('s3')->put($path . $filename, $imageData);
+            if (str_contains($file->getMimeType(), 'image')) {
+                $image = Image::make($file);
+                $image->resize(480, 480, function ($constraint) {
+                    $constraint->aspectRatio();
+                });
+                $imageData = (string) $image->encode($extension);
+                Storage::disk('s3')->put($path . $filename, $imageData);
+            } else {
+                Storage::disk('s3')->putFileAs($path, $file, $filename);
+            }
 
             return $path . $filename;
         } catch (Exception $e) {
@@ -109,7 +113,6 @@ class S3Helper
     {
         try {
             $s3Disk = Storage::disk('s3');
-
             if ($s3Disk->exists($filePath)) {
                 $s3Disk->delete($filePath);
             } else {

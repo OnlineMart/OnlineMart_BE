@@ -2,18 +2,24 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    public const DISABLED = "0";
-    public const ENABLED  = "1";
+    public const SELLING             = 'selling';
+    public const OUT_OF_STOCK        = 'out-of-stock';
+    public const DRAFT               = 'draft';
+    public const WAITING_FOR_APPROVE = 'waiting-for-approve';
+    public const OFF                 = 'off';
+
+    public const SIMPLE       = 'simple';
+    public const CONFIGURABLE = 'configurable';
 
     public const RELATED_LIMIT = 10;
 
@@ -21,22 +27,23 @@ class Product extends Model
 
     protected $fillable = [
         'category_id',
-        'whislist_id',
-        'brand_id',
+        'supplier_id',
         'shop_id',
+        'origin',
         'name',
         'slug',
+        'stock_qty',
         'regular_price',
         'sale_price',
-        'SKU',
+        'sku',
+        'status',
         'rating',
         'view_count',
         'sold_count',
-        'short_description',
-        'long_description',
+        'description',
         'meta_title',
         'meta_keyword',
-        'meta_description',
+        'meta_description'
     ];
 
     /**
@@ -62,14 +69,6 @@ class Product extends Model
     // {
     //     return $this->belongsToMany(User::class, 'wishlists', 'product_id', 'user_id');
     // }
-
-    /**
-     * @return BelongsTo
-     */
-    public function brand(): BelongsTo
-    {
-        return $this->belongsTo(Brand::class);
-    }
 
     /**
      * @return BelongsTo

@@ -28,7 +28,6 @@ class AuthController extends Controller
     {
         $this->middleware('jwt.verify', ['except' => ['login', 'register']]);
         $this->middleware('auth:api', ['except' => ['login', 'register']]);
-        $this->middleware('guest', ['only' => ['login', 'register']]);
         $this->middleware('throttle:5,1')->only('login');
     }
 

@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
+use Exception;
+use App\Models\User;
+use Illuminate\Http\Request;
 use App\Http\Helpers\S3Helper;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\User\UserRequestStore;
 use App\Http\Requests\User\UserRequestUpdate;
-use App\Models\User;
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
@@ -186,13 +186,26 @@ class UserController extends Controller
     public function me(): JsonResponse
     {
         try {
-            $user        = auth()->user()->makeHidden(['roles', 'permissions']);
-            $permissions = auth()->user()->getAllPermissions()->pluck('name') ?? NULL;
+            $user = auth()->user()->makeHidden(['roles', 'permissions']);
 
-            $userData = array_merge($user->toArray(), ['permissions' => $permissions->toArray()]);
+            if (!$user) {
+                return jsonResponse(null, 404, 'User not found');
+            }
+
+            $permissions = auth()->user()->getAllPermissions()->pluck('name') ?? null;
+
+            $user->load(['shop:id,name,avatar']);
+
+            $shopData = $user->shop;
+
+            $userData = array_merge($user->toArray(), [
+                'permissions' => $permissions->toArray(),
+                'shop'        => $shopData ? $shopData->toArray() : null
+            ]);
+
             return jsonResponse($userData, 200, 'User retrieved successfully');
         } catch (Exception $e) {
-            return jsonResponse(null, 403, 'Something went wrong');
+            return jsonResponse($e->getMessage(), 403, 'Something went wrong');
         }
     }
 }

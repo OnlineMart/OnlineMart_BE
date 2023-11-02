@@ -36,7 +36,7 @@ class ProductController extends Controller
                 'variants'
             ])
                 ->where('category_id', $categoryId)
-                ->where('status', Product::ENABLED)
+                ->where('status', Product::SELLING)
                 ->orderBy('sold_count', 'desc')
                 ->get();
 
@@ -202,7 +202,7 @@ class ProductController extends Controller
             ])
                 ->where('category_id', $product->category_id)
                 ->where('id', '!=', $productId)
-                ->where('status', Product::ENABLED)
+                ->where('status', Product::SELLING)
                 ->orderBy('sold_count', 'desc')
                 ->limit(Product::RELATED_LIMIT)
                 ->get();

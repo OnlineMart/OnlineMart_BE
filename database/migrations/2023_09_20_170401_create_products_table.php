@@ -21,13 +21,14 @@ return new class extends Migration {
             $table->string('slug');
             $table->integer('regular_price');
             $table->integer('sale_price')->nullable();
-            $table->string('sku');
+            $table->string('sku')->nullable();
+            $table->integer('stock_qty')->default(0);
             $table->float('rating')->nullable()->from(0)->to(5);
             $table->integer("view_count")->default(0);
             $table->integer("sold_count")->default(0);
-            $table->text('short_description')->nullable();
-            $table->text('long_description')->nullable();
-            $table->enum('status', ['0', '1'])->comment('0: disabled, 1: enabled');
+            $table->string("origin");
+            $table->text('description')->nullable();
+            $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
             $table->foreignIdFor(Category::class);
             $table->foreignIdFor(Shop::class);
             $table->foreignIdFor(Supplier::class);
@@ -36,6 +37,7 @@ return new class extends Migration {
             $table->string("meta_keyword")->nullable();
             $table->string("meta_description")->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

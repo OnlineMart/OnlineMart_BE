@@ -15,7 +15,7 @@ class RoleController extends Controller
     public function __construct()
     {
         $this->middleware('auth:api');
-        $this->middleware('role_or_permission: Authorizations|admin', ['except' => ['index']]);
+        $this->middleware('role_or_permission: Authorizations|admin');
     }
 
     /**

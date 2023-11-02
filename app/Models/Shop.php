@@ -32,11 +32,11 @@ class Shop extends Model
     ];
 
     /**
-     * @return BelongsTo
+     * @return HasMany
      */
-    public function user(): BelongsTo
+    public function users()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasMany(User::class);
     }
 
     /**

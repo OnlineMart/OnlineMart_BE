@@ -5,6 +5,7 @@ use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\UserController;
@@ -50,6 +51,7 @@ Route::post("user/delete-avatar/{id}", [UserController::class, 'deleteAvatar']);
 Route::get('/categories/list', [CategoryController::class, 'getListCategories']);
 Route::get('/categories/root', [CategoryController::class, 'getRootCategories']);
 Route::get('/categories/shop/{shopId}', [CategoryController::class, 'getShopCategories']);
+Route::get('/categories/shop/{shopId}/sort', [CategoryController::class, 'getCategoryForSort']);
 Route::get('/categories/shop/tree/{shopId}', [CategoryController::class, 'getShopTreeCategories']);
 Route::put("/categories/{categoryId}/shop/{shopId}/status", [CategoryController::class, 'changeStatusCategoryShop']);
 Route::put("/categories/{categoryId}/shop/{shopId}/mass-status", [CategoryController::class, 'massChangeStatusCategoryShop']);
@@ -70,14 +72,19 @@ Route::apiResource('/wishlist', WishlistController::class)->except(['update', 's
 Route::prefix('product')->group(function () {
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
     Route::get("{productId}/related", [ProductController::class, 'getRelatedProducts']);
+    Route::get("status", [ProductController::class, 'getProductStatus']);
+    Route::delete("{productId}/delete-multiple", [AdminProductController::class, 'deleteMultipleProducts']);
+    Route::patch("{productId}/{status}/status", [AdminProductController::class, 'updateMultipleStatus']);
 });
-Route::apiResource('/product', ProductController::class);
+Route::apiResource('/product', AdminProductController::class);
 
 Route::apiResource('/shops', ShopController::class);
 
 // Supplier route
 Route::apiResource('suppliers', SupplierController::class);
 Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
+Route::get('suppliers/shop/{shopId}/sort', [SupplierController::class, 'getSupplierForSort']);
+Route::get('suppliers/shop/{shopId}/select', [SupplierController::class, 'getSupplierForSelect']);
 Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class, 'deleteMultipleSuppliers']);
 
 // Api roles and permissions

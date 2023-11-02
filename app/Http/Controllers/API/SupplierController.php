@@ -28,6 +28,37 @@ class SupplierController extends Controller
         }
     }
 
+    public function getSupplierForSort($shopId): JsonResponse
+    {
+        try {
+            $suppliers = Supplier::where('shop_id', $shopId)
+            ->orWhereNull('shop_id')
+            ->orderBy('id', 'desc')
+            ->select("id", "name as label", "name as value")
+            ->get();
+
+
+            return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
+        } catch (Exception $e) {
+            return jsonResponse(null, 403, 'Something went wrong');
+        }
+    }
+
+    public function getSupplierForSelect($shopId): JsonResponse
+    {
+        try {
+            $suppliers = Supplier::where('shop_id', $shopId)
+            ->orWhereNull('shop_id')
+            ->orderBy('id', 'desc')
+            ->select("id", "name as label", "id as value")
+            ->get();
+
+            return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
+        } catch (Exception $e) {
+            return jsonResponse(null, 403, 'Something went wrong');
+        }
+    }
+
     /**
      * Lấy danh sách suppliers theo shop
      *

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use App\Models\Shop;
+use App\Models\Category;
 use App\Models\Supplier;
 use Exception;
 use Faker\Factory as Faker;
@@ -21,8 +21,8 @@ class ProductSeeder extends Seeder
     {
 
         $faker        = Faker::create();
-        $totalRecords = 5000;
-        $chunkSize    = 500;
+        $totalRecords = 100;
+        $chunkSize    = 10;
 
         DB::beginTransaction();
 
@@ -38,22 +38,22 @@ class ProductSeeder extends Seeder
                 $salePrice    = $faker->randomElement([0, 0, $faker->randomFloat(2, 0.01, $regularPrice)]);
 
                 $products[] = [
-                    'name'              => $faker->sentence,
-                    'slug'              => $faker->slug,
-                    'regular_price'     => $regularPrice,
-                    'sale_price'        => $salePrice,
-                    'sku'               => $faker->unique()->ean13,
-                    'rating'            => $faker->randomFloat(1, 0, 5),
-                    'view_count'        => $faker->numberBetween(0, 10000),
-                    'sold_count'        => $faker->numberBetween(0, 10000),
-                    'short_description' => $faker->paragraph,
-                    'long_description'  => $faker->paragraphs(3, true),
-                    'status'            => $faker->randomElement(['1', '0']),
-                    'category_id'       => $categories->random(),
-                    'shop_id'           => $shops->random(),
-                    'supplier_id'       => $suppliers->random(),
-                    'created_at'        => now()->toDateTimeString(),
-                    'updated_at'        => now()->toDateTimeString()
+                    'name'          => $faker->sentence,
+                    'slug'          => $faker->slug,
+                    'regular_price' => $regularPrice,
+                    'sale_price'    => $salePrice,
+                    'sku'           => $faker->unique()->ean13,
+                    'rating'        => $faker->randomFloat(1, 0, 5),
+                    'view_count'    => $faker->numberBetween(0, 10000),
+                    'sold_count'    => $faker->numberBetween(0, 10000),
+                    'origin'        => $faker->country,
+                    'description'   => $faker->paragraphs(3, true),
+                    'status'        => $faker->randomElement(["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]),
+                    'category_id'   => $categories->random(),
+                    'shop_id'       => $shops->random(),
+                    'supplier_id'   => $suppliers->random(),
+                    'created_at'    => now()->toDateTimeString(),
+                    'updated_at'    => now()->toDateTimeString()
                 ];
             }
 

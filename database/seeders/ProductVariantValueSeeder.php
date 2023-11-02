@@ -37,10 +37,13 @@ class ProductVariantValueSeeder extends Seeder
 
                     if ($variationValue !== null) {
                         $variationValues[] = [
-                            'variation_value_name' => $variationValue,
                             'product_variation_id' => $i,
+                            'variation_value_name' => $variationValue,
                             'thumbnail_url'        => $thumbnailUrl,
-                            'created_at' => now(),
+                            'sku'                  => $faker->uuid,
+                            'regular_price'        => rand(10000, 100000),
+                            'sale_price'           => rand(10000, 10000),
+                            'created_at'           => now(),
                             'updated_at'           => now()
                         ];
                     }
