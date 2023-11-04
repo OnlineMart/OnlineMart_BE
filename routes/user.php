@@ -4,7 +4,7 @@ use App\Http\Controllers\API\Admin\PermissionController;
 use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
-use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\API\User\ProductController;
 use App\Http\Controllers\API\ShopController;
 use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\SupplierController;
@@ -70,6 +70,7 @@ Route::apiResource('/wishlist', WishlistController::class)->except(['update', 's
 
 // Api product
 Route::prefix('product')->group(function () {
+    Route::get("detail/{productId}", [ProductController::class, 'getProductDetail']);
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
     Route::get("{productId}/related", [ProductController::class, 'getRelatedProducts']);
     Route::get("status", [ProductController::class, 'getProductStatus']);

@@ -27,7 +27,7 @@ return new class extends Migration {
             $table->integer("view_count")->default(0);
             $table->integer("sold_count")->default(0);
             $table->string("origin");
-            $table->text('description')->nullable();
+            $table->longText('description')->nullable();
             $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
             $table->foreignIdFor(Category::class);
             $table->foreignIdFor(Shop::class);

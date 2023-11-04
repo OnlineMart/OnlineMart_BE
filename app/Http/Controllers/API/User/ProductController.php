@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\User;
 
 use Exception;
 use App\Models\Product;
@@ -108,7 +108,7 @@ class ProductController extends Controller
      *
      * @return JsonResponse
      */
-    public function show(Product $product): JsonResponse
+    public function getProductDetail($productId): JsonResponse
     {
         try {
             $product = Product::with([
@@ -117,7 +117,7 @@ class ProductController extends Controller
                 'supplier:id,name',
                 'variants',
                 'variants.values'
-            ])->findOrFail($product->id);
+            ])->findOrFail($productId);
 
             if (!$product) {
                 return jsonResponse([], 404, 'Product not found');
@@ -126,36 +126,36 @@ class ProductController extends Controller
             $values = $this->calculateProductValues($product);
 
             $response = [
-                'id'                => $product->id,
-                'name'              => $product->name,
-                'slug'              => $product->slug,
-                'current_price'     => $values['price'],
-                'is_sale'           => $values['isSale'],
-                'regular_price'     => $values['regular_price'],
-                'sale_price'        => $values['sale_price'],
-                "discount_rate"     => $values['discount_rate'],
-                "discount_price"    => $values['discount_price'],
-                'sku'               => $product->sku,
-                'status'            => $product->status == "0" ? "disabled" : "enabled",
-                'rating'            => $product->rating,
-                'view_count'        => $product->view_count,
-                'sold_count'        => $product->sold_count,
-                'thumbnail_url'     => $product->product_media->firstWhere('is_main', true)->media ?: null,
-                'gallery'           => $product->product_media->where('is_main', false)->values()->map(function ($media) {
+                'id'               => $product->id,
+                'name'             => $product->name,
+                'slug'             => $product->slug,
+                'current_price'    => $values['price'],
+                'is_sale'          => $values['isSale'],
+                'regular_price'    => $values['regular_price'],
+                'sale_price'       => $values['sale_price'],
+                "discount_rate"    => $values['discount_rate'],
+                "discount_price"   => $values['discount_price'],
+                'stock_qty'        => $product->stock_qty,
+                'sku'              => $product->sku,
+                'status'           => $product->status == "0" ? "disabled" : "enabled",
+                'rating'           => $product->rating,
+                'view_count'       => $product->view_count,
+                'sold_count'       => $product->sold_count,
+                'thumbnail_url'    => $product->product_media->firstWhere('is_main', true)->media ?: null,
+                'gallery'          => $product->product_media->where('is_main', false)->values()->map(function ($media) {
                     return [
                         'id'    => $media->id,
                         'image' => $media->media
                     ];
                 }),
-                'short_description' => $product->short_description,
-                'long_description'  => $product->long_description,
-                'meta_title'        => $product->meta_title,
-                'meta_keyword'      => $product->meta_keyword,
-                'meta_description'  => $product->meta_description,
-                'supplier_name'     => $product->supplier->name,
-                'shop'              => $product->shop,
-                'is_variant'        => $values['checkVariant'],
-                'variants'          => $product->variants->map(function ($variant) {
+                'description'      => $product->description,
+                'meta_title'       => $product->meta_title,
+                'meta_keyword'     => $product->meta_keyword,
+                'meta_description' => $product->meta_description,
+                'supplier_name'    => $product->supplier->name,
+                'shop'             => $product->shop,
+                'is_variant'       => $values['checkVariant'],
+                'variants'         => $product->variants->map(function ($variant) {
                     return [
                         'id'     => $variant->id,
                         'name'   => $variant->variation_name,
@@ -168,7 +168,21 @@ class ProductController extends Controller
                             ];
                         })
                     ];
-                })
+                }),
+                'info_detail'      => [
+                    [
+                        'code'  => 'origin',
+                        'value' => $product->origin
+                    ],
+                    [
+                        'code'  => 'supplier',
+                        'value' => $product->supplier->name
+                    ],
+                    [
+                        'code'  => 'category',
+                        'value' => $product->category->name
+                    ]
+                ]
             ];
 
             return jsonResponse($response, 200, 'Product found successfully');

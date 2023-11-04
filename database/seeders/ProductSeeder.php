@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
                     'rating'        => $faker->randomFloat(1, 0, 5),
                     'view_count'    => $faker->numberBetween(0, 10000),
                     'sold_count'    => $faker->numberBetween(0, 10000),
-                    'origin'        => $faker->country,
+                    'origin'        => "VI",
                     'description'   => $faker->paragraphs(3, true),
                     'status'        => $faker->randomElement(["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]),
                     'category_id'   => $categories->random(),
