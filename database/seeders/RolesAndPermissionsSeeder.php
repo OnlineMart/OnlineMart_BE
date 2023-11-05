@@ -41,7 +41,10 @@ class RolesAndPermissionsSeeder extends Seeder
                 ['name' => 'Create supllier', 'guard_name' => 'api'],
                 ['name' => 'Update supllier', 'guard_name' => 'api'],
                 ['name' => 'Delete supllier', 'guard_name' => 'api'],
-                ['name' => 'View coupons', 'guard_name' => 'api'],
+                ['name' => 'View vouchers', 'guard_name' => 'api'],
+                ['name' => 'Create voucher', 'guard_name' => 'api'],
+                ['name' => 'Update voucher', 'guard_name' => 'api'],
+                ['name' => 'Delete voucher', 'guard_name' => 'api'],
                 ['name' => 'Manage users', 'guard_name' => 'api'],
                 ['name' => 'Authorizations', 'guard_name' => 'api']
             ]);

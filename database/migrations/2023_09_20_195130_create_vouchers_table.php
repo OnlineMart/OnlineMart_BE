@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\CouponType;
 use App\Models\Shop;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -14,20 +13,18 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('coupons', function (Blueprint $table) {
+        Schema::create('vouchers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('code')->unsigned();
-            $table->text('description')->nullable();
+            $table->string('code');
             $table->integer('usage_limit')->default(0);
+            $table->float('min_discount_amount')->unsigned();
             $table->float('max_discount_amount')->unsigned();
             $table->float('discount')->unsigned();
-            $table->date('start_date');
-            $table->date('expiration_date');
-
+            $table->enum('unit', ['0', '1'])->comment('0: %, 1: VNĐ');
+            $table->string('start_date');
+            $table->string('expired_date');
+            $table->enum('status', ['0', '1', '2'])->comment('0: expired, 1: valid, 2:not activated');
             $table->foreignIdFor(Shop::class);
-            $table->foreignIdFor(CouponType::class);
-
             $table->timestamps();
         });
     }
@@ -39,6 +36,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('coupons');
+        Schema::dropIfExists('vouchers');
     }
 };

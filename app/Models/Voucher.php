@@ -4,36 +4,33 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Coupon extends Model
+class Voucher extends Model
 {
     use HasFactory;
 
-    protected $table = 'coupons';
+    public const EXPIRED = "0";
+
+    public const VALID = "1";
+
+    public const NOT_ACTIVATED = "2";
+    
+    protected $table = 'vouchers';
 
     protected $fillable = [
-        'name',
         'code',
-        'description',
         'usage_limit',
+        'min_discount_amount',
         'max_discount_amount',
         'discount',
+        'unit',
+        'status',
         'start_date',
-        'expiration_date',
+        'expired_date',
         'shop_id',
-        'coupon_type_id'
     ];
 
-    /**
-     * @return BelongsTo
-     */
-    public function coupon_type()
-    {
-
-        return $this->belongsTo(CouponType::class);
-    }
 
     /**
      * @return BelongsToMany
