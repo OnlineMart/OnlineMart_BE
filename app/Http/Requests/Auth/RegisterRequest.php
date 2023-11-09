@@ -29,20 +29,23 @@ class RegisterRequest extends BaseRequest
             'phone'            => 'nullable|numeric|digits_between:10,11|unique:users,phone',
             'password'         => 'required|string|min:6',
             'confirm_password' => 'required|string|same:password',
-            'type'             => 'nullable|string|in:user,admin'
+            'type'             => 'nullable|string|in:user,adminShop,superAdmin'
         ];
     }
 
     public function messages(): array
     {
         return [
-            'required' => 'The :attribute field is required.',
-            'string'   => 'The :attribute must be a string.',
-            'max'      => 'The :attribute may not be greater than :max characters.',
-            'email'    => 'The :attribute must be a valid email address.',
-            'unique'   => 'The :attribute has already been taken.',
-            'min'      => 'The :attribute must be at least :min characters.',
-            'same'     => 'The :attribute and :other must match.'
+            'required'       => 'The :attribute field is required.',
+            'string'         => 'The :attribute must be a string.',
+            'max'            => 'The :attribute may not be greater than :max characters.',
+            'email'          => 'The :attribute must be a valid email address.',
+            'unique'         => 'The :attribute has already been taken.',
+            'min'            => 'The :attribute must be at least :min characters.',
+            'same'           => 'The :attribute and :other must match.',
+            'in'             => 'The :attribute must be one of the following types: :values',
+            'numeric'        => 'The :attribute must be a number.',
+            'digits_between' => 'The :attribute must be between :min and :max digits.'
         ];
     }
 

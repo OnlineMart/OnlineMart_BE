@@ -2,8 +2,9 @@
 
 
 use App\Http\Controllers\API\Admin\VoucherController;
-use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\Admin\ProductController;
+use App\Http\Controllers\API\Admin\SellerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,15 @@ use Illuminate\Support\Facades\Route;
  */
 
 
-Route::resource('files', UploadController::class);
+/* ======== API Products ======== */
+Route::prefix('product')->group(function () {
+    Route::delete("{productId}/delete-multiple", [ProductController::class, 'deleteMultipleProducts']);
+    Route::patch("{productId}/{status}/status", [ProductController::class, 'updateMultipleStatus']);
+});
+Route::apiResource('/product', ProductController::class);
 
+/* ======== API Sellers ======== */
+Route::apiResource('/seller', SellerController::class)->except('show');
 
 // voucher
 Route::apiResource('voucher', VoucherController::class)->except(['index']);

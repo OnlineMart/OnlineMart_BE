@@ -18,8 +18,15 @@ class User extends Authenticatable implements JWTSubject
     use HasApiTokens, HasFactory, Notifiable;
     use HasRoles;
 
-    public const ADMIN = 'admin';
     public const USER = 'user';
+    public const ADMIN_SHOP = 'adminShop';
+    public const SUPER_ADMIN = 'superAdmin';
+
+    public const ACTIVE = 'active';
+    public const INACTIVE = 'inactive';
+
+    public const OWNER = 'owner';
+    public const SELLER = 'seller';
 
     /**
      * The attributes that are mass assignable.
@@ -37,7 +44,10 @@ class User extends Authenticatable implements JWTSubject
         'avatar',
         'token',
         'payment_method',
-        'type'
+        'type',
+        'status',
+        'position',
+        'shop_id'
     ];
 
     /**
@@ -122,5 +132,16 @@ class User extends Authenticatable implements JWTSubject
     public function wishlists(): hasMany
     {
         return $this->hasMany(Wishlist::class, 'user_id', 'id');
+    }
+
+    public function sellers(): HasOne
+    {
+        return $this->hasOne(Seller::class);
+    }
+
+
+    public function getTeamIdFromToken(): int | null
+    {
+        return $this->shop_id;
     }
 }

@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->string('name');
             $table->string('avatar')->default("avatar.png");
             $table->string("email")->unique();
-            $table->integer("phone")->nullable();
+            $table->string("phone")->nullable();
             $table->string("address")->nullable();
             $table->text("description")->nullable();
             $table->integer("rating")->nullable();

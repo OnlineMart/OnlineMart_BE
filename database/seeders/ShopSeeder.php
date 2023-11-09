@@ -26,6 +26,18 @@ class ShopSeeder extends Seeder
                 'status'      => Shop::ENABLED,
                 'created_at'  => now()->toDateTimeString(),
                 'updated_at'  => now()->toDateTimeString()
+            ],
+            [
+                'name'        => 'Nestlé Chính Hãng',
+                'email'       => 'nestlé_chính_hã@gmail.com',
+                'avatar'      => 'https://salt.tikicdn.com/cache/w220/ts/seller/94/a6/98/1a684931b4f44e3e26cd821f1858a13d.jpg',
+                'phone'       => '0774060610',
+                'address'     => 'Cần Thơ',
+                'description' => 'Nestlé Chính Hãng',
+                'rating'      => 4.7,
+                'status'      => Shop::ENABLED,
+                'created_at'  => now()->toDateTimeString(),
+                'updated_at'  => now()->toDateTimeString()
             ]
         ];
 

@@ -203,6 +203,8 @@ class UserController extends Controller
                 'shop'        => $shopData ? $shopData->toArray() : null
             ]);
 
+            setPermissionsTeamId($shopData->id ?? null);
+
             return jsonResponse($userData, 200, 'User retrieved successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 403, 'Something went wrong');

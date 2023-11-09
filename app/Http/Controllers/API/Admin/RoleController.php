@@ -15,7 +15,7 @@ class RoleController extends Controller
     public function __construct()
     {
         $this->middleware('auth:api');
-        $this->middleware('role_or_permission: Authorizations|admin');
+        $this->middleware('permission:Authorizations');
     }
 
     /**
@@ -25,9 +25,11 @@ class RoleController extends Controller
      */
     public function index(): JsonResponse
     {
-        $roles = Role::with('permissions')->get();
+        $roles = Role::with('permissions')->where('shop_id', auth()->user()->shop_id)->get();
+        $shop = auth()->user()->shop;
 
-        $response = $roles->map(function ($role) {
+        $response = $roles->map(function ($role)  use ($shop) {
+            $nameWithoutShop = str_replace('_' . $shop->name, '', $role->name);
             $permissions = $role->permissions->map(function ($permission) {
                 return [
                     'id'   => $permission->id,
@@ -37,7 +39,7 @@ class RoleController extends Controller
 
             return [
                 'id'          => $role->id,
-                'name'        => $role->name,
+                'name'        => $nameWithoutShop,
                 'description' => $role->description,
                 'permissions' => $permissions,
                 'created_at'  => $role->created_at,

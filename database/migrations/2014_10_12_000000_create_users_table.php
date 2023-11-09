@@ -23,11 +23,13 @@ return new class extends Migration {
             $table->enum('gender', ['0', '1'])->nullable()->default('0')->comment('0: male, 1: female');
             $table->string('phone')->nullable();
             $table->string('password');
-            $table->enum('type', ['user', 'admin'])->default('user');
+            $table->enum('type', ['user', 'adminShop', 'superAdmin'])->default('user');
             $table->string('avatar')->nullable();
             $table->string('token', 6)->nullable();
             $table->enum('payment_method', ['0', '1', '2', '3'])->nullable()->comment('0: type_id, 1: provider, 2: expiry_date, 3: is_default');
 
+            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->enum('position', ['owner', 'seller'])->nullable();
             $table->foreignIdFor(Shop::class)->nullable();
 
             $table->timestamps();

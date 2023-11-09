@@ -77,7 +77,6 @@ Route::prefix('product')->group(function () {
     Route::delete("{productId}/delete-multiple", [AdminProductController::class, 'deleteMultipleProducts']);
     Route::patch("{productId}/{status}/status", [AdminProductController::class, 'updateMultipleStatus']);
 });
-Route::apiResource('/product', AdminProductController::class);
 
 Route::apiResource('/shops', ShopController::class);
 

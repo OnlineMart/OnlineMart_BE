@@ -22,6 +22,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
+use App\Http\Middleware\ShopPermission;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Foundation\Http\Middleware\ValidatePostSize;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -43,7 +44,8 @@ class Kernel extends HttpKernel
         PreventRequestsDuringMaintenance::class,
         ValidatePostSize::class,
         TrimStrings::class,
-        ConvertEmptyStringsToNull::class
+        ConvertEmptyStringsToNull::class,
+        ShopPermission::class
     ];
 
     /**
@@ -64,7 +66,7 @@ class Kernel extends HttpKernel
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             'throttle:api',
-            SubstituteBindings::class,
+            SubstituteBindings::class
         ]
     ];
 
@@ -88,9 +90,10 @@ class Kernel extends HttpKernel
         'verified'           => EnsureEmailIsVerified::class,
         'jwt.verify'         => JWTMiddleware::class,
         'cors'               => \App\Http\Middleware\Cors::class,
+        'is_admin'           => \App\Http\Middleware\isAdmin::class,
 
-        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
-        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
-        'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+        'role'               => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+        'permission'         => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+        'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class
     ];
 }

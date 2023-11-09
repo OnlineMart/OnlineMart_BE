@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\Auth\RegisterRequest;
+use Exception;
 use App\Models\Shop;
 use App\Models\User;
-use Exception;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cookie;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Tymon\JWTAuth\Exceptions\JWTException;
+use Spatie\Permission\Models\Role;
 use Tymon\JWTAuth\Facades\JWTAuth;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Cookie;
+use App\Http\Requests\Auth\LoginRequest;
+use Spatie\Permission\Models\Permission;
+use Tymon\JWTAuth\Exceptions\JWTException;
+use App\Http\Requests\Auth\RegisterRequest;
 
 class AuthController extends Controller
 {
@@ -44,7 +46,7 @@ class AuthController extends Controller
             try {
                 $validatedData = $request->validated();
 
-                if ($validatedData['type'] === User::ADMIN) {
+                if ($validatedData['type'] === User::ADMIN_SHOP) {
                     $shop = Shop::create([
                         'name'   => $validatedData['full_name'],
                         'email'  => $validatedData['email'],
@@ -57,15 +59,37 @@ class AuthController extends Controller
                         'email'     => $validatedData['email'],
                         'phone'     => $validatedData['phone'],
                         'password'  => Hash::make($validatedData['password']),
-                        'type'      => User::ADMIN,
-                        'shop_id'   => $shop->id
+                        'type'      => User::ADMIN_SHOP,
+                        'shop_id'   => $shop->id,
+                        'status'    => User::ACTIVE,
+                        'position'  => User::OWNER
                     ]);
+
+                    $rolesAdmin = collect(config('authorize.roles'));
+                    $rolesAdmin = $rolesAdmin->map(function ($role) use ($shop) {
+                        $role['name']    = $role['name'] . '_' . $shop['name'];
+                        $role['shop_id'] = $shop->id;
+                        return $role;
+                    });
+
+                    Role::insert($rolesAdmin->toArray());
+                    $adminPermissions = Permission::pluck('id')->toArray();
+                    $roleAssign       = Role::where('name', 'admin_' . $shop->name)->first();
+
+                    setPermissionsTeamId($shop->id);
+
+                    Role::find($roleAssign->id)->permissions()->sync($adminPermissions);
+
+                    $user->assignRole($roleAssign);
                 } else {
                     $user = User::create([
                         'full_name' => $validatedData['full_name'],
                         'email'     => $validatedData['email'],
                         'password'  => Hash::make($validatedData['password']),
-                        'type'      => User::USER
+                        'type'      => User::USER,
+                        'shop_id'   => null,
+                        'status'    => User::ACTIVE,
+                        'position'  => null
                     ]);
                 }
 
@@ -183,9 +207,9 @@ class AuthController extends Controller
             ->withCookie(
                 Cookie::make('access_token', null, -1)
             )->withCookie(
-                Cookie::make('logged_in', null, -1)
-            )->withCookie(
-                Cookie::make('refresh_token', null, -1)
-            );
+            Cookie::make('logged_in', null, -1)
+        )->withCookie(
+            Cookie::make('refresh_token', null, -1)
+        );
     }
 }
