@@ -11,11 +11,6 @@ use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
-    public function __construct()
-    {
-        // $this->middleware('auth:api')->except(['getCategoryProduct']);
-    }
-
     /**
      * Lấy danh sách sản phẩm theo danh mục
      *
@@ -160,11 +155,17 @@ class ProductController extends Controller
                         'id'     => $variant->id,
                         'name'   => $variant->variation_name,
                         'values' => $variant->values->map(function ($value) {
+                            $price = $value->sale_price > 0 ? $value->sale_price : $value->regular_price;
+
                             return [
-                                'id'       => $value->id,
-                                'label'    => $value->variation_value_name,
-                                'image'    => $value->thumbnail_url,
-                                'is_image' => $value->thumbnail_url ? true : false
+                                'id'            => $value->id,
+                                'label'         => $value->variation_value_name,
+                                'image'         => $value->thumbnail_url,
+                                'is_image'      => $value->thumbnail_url ? true : false,
+                                'current_price' => $price,
+                                'regular_price' => $value->regular_price,
+                                'sale_price'    => $value->sale_price,
+                                'stock'         => $value->stock_qty
                             ];
                         })
                     ];
@@ -282,13 +283,27 @@ class ProductController extends Controller
      */
     private function calculateProductValues($product, int $roundedNumber = 0): array
     {
-        $isSale         = $product->sale_price > 0;
-        $checkVariant   = $product->variants->isNotEmpty();
-        $regular_price  = $product->regular_price;
-        $sale_price     = $product->sale_price;
-        $price          = $isSale ? $sale_price : $regular_price;
-        $discount_rate  = $isSale ? 100 - (($sale_price / $regular_price) * 100) : 0;
-        $discount_price = $isSale ? $regular_price - $sale_price : 0;
+        $isSale       = $product->sale_price > 0;
+        $checkVariant = $product->variants->isNotEmpty();
+
+        $price = 0;
+
+        if ($checkVariant) {
+            $regular_price = $product->variants->first()->values->first()->regular_price;
+            $sale_price    = $product->variants->first()->values->first()->sale_price;
+
+            $discount_rate  = $isSale ? 100 - (($sale_price / $regular_price) * 100) : 0;
+            $discount_price = $isSale ? $regular_price - $sale_price : 0;
+
+            $price = $isSale ? $sale_price : $regular_price;
+        } else {
+            $regular_price  = $product->regular_price;
+            $sale_price     = $product->sale_price;
+            $discount_rate  = $isSale ? 100 - (($sale_price / $regular_price) * 100) : 0;
+            $discount_price = $isSale ? $regular_price - $sale_price : 0;
+
+            $price = $isSale ? $sale_price : $regular_price;
+        }
 
         return [
             "isSale"         => $isSale,
