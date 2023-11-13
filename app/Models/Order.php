@@ -46,10 +46,10 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    public function coupon()
-    {
-        return $this->belongsTo(Coupon::class);
-    }
+    // public function coupon()
+    // {
+    //     return $this->belongsTo(Coupon::class);
+    // }
 
     /**
      * @return BelongsTo
@@ -71,7 +71,7 @@ class Order extends Model
      * @return BelongsTo
      */
     public function shipping_address()
-     {
-         return $this->belongsTo(ShippingAddress::class, 'shipping_address_id');
-     }
+    {
+        return $this->belongsTo(ShippingAddress::class, 'shipping_address_id');
+    }
 }

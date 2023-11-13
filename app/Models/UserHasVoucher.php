@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class UserHasVoucher extends Model
@@ -15,15 +16,8 @@ class UserHasVoucher extends Model
 
     protected $table = 'user_has_voucher';
 
-    protected $fillable = ['user_id', 'voucher_id', 'status', 'received_date',];
+    protected $fillable = ['user_id', 'voucher_id', 'status', 'received_date'];
 
-    /**
-     * @return BelongsToMany
-     */
-    public function coupon()
-    {
-        return $this->belongsToMany(Voucher::class);
-    }
 
     /**
      * @return BelongsToMany
@@ -33,4 +27,11 @@ class UserHasVoucher extends Model
         return $this->belongsToMany(User::class);
     }
 
+    /**
+     * @return BelongsTo
+     */
+    public function voucher()
+    {
+        return $this->belongsTo(Voucher::class, 'id');
+    }
 }

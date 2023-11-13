@@ -10,6 +10,7 @@ use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\NotificationController;
+use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
@@ -62,6 +63,10 @@ Route::apiResource('/categories', CategoryController::class);
 // Api address
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
+
+// Api voucher
+Route::post('user/get-voucher/{voucherId}', [VoucherController::class, 'store']);
+Route::get('voucher/user', [VoucherController::class, 'getVoucherByUser']);
 
 // Api wishlist
 Route::post('wishlist/{productId}', [WishlistController::class, 'storeWishlist']);
