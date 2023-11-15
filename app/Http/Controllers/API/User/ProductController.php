@@ -237,6 +237,36 @@ class ProductController extends Controller
     }
 
     /**
+     * Lấy danh sách sản phẩm trang chủ
+     * @return JsonResponse
+     */
+    public function getAllProduct()
+    {
+        try {
+            $product = Product::with([
+                'product_media:id,product_id,media,is_main',
+                'shop:id,name,avatar,rating,followed',
+                'supplier:id,name',
+                'variants',
+                'variants.values'
+            ])
+                ->where('status', Product::SELLING)
+                ->get();
+            if ($product->isEmpty()) {
+                return jsonResponse([], 404, 'Product not found');
+            }
+
+            $response = $product->map(function ($product) {
+                return $this->formatDataProductList($product);
+            });
+
+            return jsonResponse($response, 200, 'Get all selling products successfully');
+        } catch (Exception $e) {
+            return jsonResponse(null, 500, $e->getMessage());
+        }
+    }
+
+    /**
      * Trả về response sản phẩm theo định dạng
      *
      * @param $product

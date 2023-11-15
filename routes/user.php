@@ -75,6 +75,7 @@ Route::apiResource('/wishlist', WishlistController::class)->except(['update', 's
 
 // Api product
 Route::prefix('product')->group(function () {
+    Route::get("all", [ProductController::class, 'getAllProduct']);
     Route::get("detail/{productId}", [ProductController::class, 'getProductDetail']);
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
     Route::get("{productId}/related", [ProductController::class, 'getRelatedProducts']);
