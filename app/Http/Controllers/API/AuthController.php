@@ -92,6 +92,7 @@ class AuthController extends Controller
                         'position'  => null
                     ]);
                 }
+                logActivity('register', $request, 'Đăng ký tài khoản', 'Đăng ký');
 
                 return jsonResponse($user, 200, 'User created successfully');
             } catch (Exception $e) {
@@ -115,6 +116,7 @@ class AuthController extends Controller
             if (!$token = JWTAuth::attempt($credentials)) {
                 return jsonResponse(null, 401, 'Unauthorized');
             }
+            logActivity('login', $request, 'Đăng nhập hệ thống', 'Đăng nhập');
 
             return $this->createNewToken($token, 'Login successfully');
         } catch (JWTException $e) {
