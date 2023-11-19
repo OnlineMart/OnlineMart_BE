@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\API\Admin\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
@@ -30,7 +31,7 @@ Route::apiResource('/product', ProductController::class);
 /* ======== API Sellers ======== */
 Route::apiResource('/seller', SellerController::class)->except('show');
 
-// voucher
+/* ======== API Voucher ======== */
 Route::apiResource('voucher', VoucherController::class)->except(['index']);
 Route::get('voucher/shop/{shopId}', [VoucherController::class, 'getVoucherShop']);
 Route::delete('voucher/{voucherId}/shop/{shopId}', [VoucherController::class, 'deleteMultipleVoucher']);
@@ -41,3 +42,6 @@ Route::apiResource('/inventory', ProductStockController::class)->only("index");
 /* ======== API Review management ======== */
 Route::apiResource('/reviews', ReviewController::class)->except(['update', 'store', 'destroy']);
 Route::post('/reviews/{reviewId}/reply', [ReviewController::class, 'replyReview']);
+
+/* ======== API Order ======== */
+Route::apiResource('order', OrderController::class);

@@ -1,20 +1,18 @@
 <?php
 
 use App\Http\Controllers\API\Admin\PermissionController;
+use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\User\ProductController;
 use App\Http\Controllers\API\ShopController;
-use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
-use App\Http\Controllers\API\Admin\ProductStockController;
 use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\WishlistController;
-use App\Models\ProductStock;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -86,6 +84,7 @@ Route::prefix('product')->group(function () {
     Route::patch("{productId}/{status}/status", [AdminProductController::class, 'updateMultipleStatus']);
 });
 
+// Api voucher
 Route::apiResource('/shops', ShopController::class);
 
 // Api Supplier

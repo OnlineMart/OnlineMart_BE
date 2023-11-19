@@ -2,16 +2,35 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Order;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Relations\HasMany;
 class OrderStatus extends Model
 {
-    use HasFactory;
+    protected $table = 'order_statuses';
 
-    public const PENDING    = '0';
-    public const PROCESSING = '1';
-    public const DELIVERED  = '2';
-    public const SHIPPING   = '3';
-    public const CANCELLED  = '4';
+    protected $fillable = [
+        'status_name',
+    ];
+
+    // Các giá trị cho trạng thái đơn hàng
+    const STATUS_PENDING_PAYMENT = '0';
+    const STATUS_PROCESSING = '1';
+    const STATUS_DELIVERED = '2';
+    const STATUS_SHIPPING = '3';
+    const STATUS_CANCELLED = '4';
+
+    // Mô tả ý nghĩa của từng giá trị trạng thái
+    // const STATUS_DESCRIPTIONS = [
+    //     self::STATUS_PENDING_PAYMENT => 'Chờ thanh toán',
+    //     self::STATUS_PROCESSING => 'Đang xử lý',
+    //     self::STATUS_DELIVERED => 'Đã giao',
+    //     self::STATUS_SHIPPING => 'Đang vận chuyển',
+    //     self::STATUS_CANCELLED => 'Đã hủy',
+    // ];
+
+
+    public function order(): HasMany{
+        return $this->hasMany(Order::class);
+    }
 }

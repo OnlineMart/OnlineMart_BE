@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Tymon\JWTAuth\Contracts\JWTSubject;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -89,10 +89,10 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function coupon(): BelongsToMany
+    public function voucher(): BelongsToMany
     {
 
-        return $this->belongsToMany(Coupon::class, 'user_has_coupons');
+        return $this->belongsToMany(Voucher::class, 'user_has_voucher');
     }
 
     public function order(): HasMany

@@ -62,7 +62,7 @@ class VoucherSeeder extends Seeder
         ];
 
         foreach ($data as $item) {
-            Voucher::create($item);
+            Voucher::insert($item);
         }
     }
 }

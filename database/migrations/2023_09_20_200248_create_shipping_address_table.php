@@ -24,7 +24,7 @@ return new class extends Migration {
             $table->string('city');
             $table->enum("status", ['0', '1'])->comment("0: active, 1: inactive");
 
-            $table->foreignIdFor(Order::class);
+            $table->foreignIdFor(Order::class)->nullable();
             $table->foreignIdFor(User::class);
 
             $table->timestamps();

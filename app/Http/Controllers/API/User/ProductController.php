@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\API\User;
 
-use Exception;
-use App\Models\Product;
-use App\Models\Category;
-use Illuminate\Support\Str;
-use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Product;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -35,7 +35,6 @@ class ProductController extends Controller
                 ->orderBy('sold_count', 'desc')
                 ->get();
 
-            // get all children categories
             $categories = Category::where('parent_id', $categoryId)->get();
 
             if ($products->isEmpty()) {
@@ -94,7 +93,7 @@ class ProductController extends Controller
         } catch (Exception $e) {
             return jsonResponse(null, 500, $e->getMessage());
         }
-    }
+    }   
 
     /**
      * Lấy sản phẩm chi tiết

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Shop;
 use App\Models\Category;
+use App\Models\Shop;
 use App\Models\Supplier;
 use Exception;
 use Faker\Factory as Faker;
@@ -27,7 +27,7 @@ class ProductSeeder extends Seeder
         DB::beginTransaction();
 
         try {
-            $products   = [];
+            $products = [];
             $categories = collect(Category::all()->modelKeys());
             $shops      = collect(Shop::all()->modelKeys());
             $suppliers  = collect(Supplier::all()->modelKeys());

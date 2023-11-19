@@ -10,7 +10,7 @@ class PaymentMethod extends Model
 {
     use HasFactory;
 
-    protected $table = 'payment_method';
+    protected $table = 'payment_methods';
 
     protected $fillable = [
         'method_name'

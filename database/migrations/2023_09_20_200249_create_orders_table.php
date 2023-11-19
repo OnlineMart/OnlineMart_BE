@@ -1,10 +1,9 @@
 <?php
 
-use App\Models\Coupon;
 use App\Models\OrderStatus;
 use App\Models\PaymentMethod;
-use App\Models\Product;
 use App\Models\User;
+use App\Models\Voucher;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -23,15 +22,13 @@ return new class extends Migration
             $table->unsignedBigInteger('shipping_address_id');
             $table->foreign('shipping_address_id')->references('id')->on('shipping_address');
             $table->timestamp('delivery_date');
-            $table->decimal('total_price', 10, 2);
+            $table->integer('total_price',);
             $table->string('shipping_unit');
 
-            $table->foreignIdFor(Product::class);
             $table->foreignIdFor(User::class);
-            // $table->foreignIdFor(Coupon::class);
+            $table->foreignIdFor(Voucher::class);
             $table->foreignIdFor(OrderStatus::class);
             $table->foreignIdFor(PaymentMethod::class);
-
             $table->timestamps();
         });
     }

@@ -29,6 +29,9 @@ class DatabaseSeeder extends Seeder
             ProductStockSeeder::class,
             NotificationSeeder::class,
             VoucherSeeder::class,
+            ShippingAddressSeeder::class,
+            OrderStatusesSeeder::class,
+            OrdersSeeder::class,
             ReviewSeeder::class,
             ReviewMediaSeeder::class,
         ]);

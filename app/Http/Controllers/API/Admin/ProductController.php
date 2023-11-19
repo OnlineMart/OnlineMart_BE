@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\API\Admin;
 
-use Exception;
-use App\Models\Product;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Str;
-use Illuminate\Http\Response;
-use App\Http\Helpers\S3Helper;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\Http\Helpers\S3Helper;
 use App\Http\Requests\Product\ProductRequestStore;
 use App\Http\Requests\Product\ProductRequestUpdate;
+use App\Models\Product;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {

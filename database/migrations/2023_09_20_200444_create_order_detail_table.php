@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Order;
+use App\Models\Product;
+use App\Models\Shop;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,12 +17,13 @@ return new class extends Migration {
     {
         Schema::create('order_detail', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Order::class);
-
             $table->string('product_name');
             $table->string('product_image');
-            $table->string('product_price');
-            $table->string('product_quantity');
+            $table->integer('product_price');
+            $table->integer('product_quantity');
+            $table->foreignIdFor(Product::class);
+            $table->foreignIdFor(Shop::class);
+            $table->foreignIdFor(Order::class);
             $table->timestamps();
         });
     }
@@ -34,4 +37,6 @@ return new class extends Migration {
     {
         Schema::dropIfExists('order_detail');
     }
+
+
 };

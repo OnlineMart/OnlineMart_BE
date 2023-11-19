@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-
+use Illuminate\Database\Eloquent\Relations\HasMany;
 class Order extends Model
 {
     use HasFactory;
@@ -16,9 +16,8 @@ class Order extends Model
     protected $table = 'orders';
 
     protected $fillable = [
-        'products_id',
         'user_id',
-        'coupon_id',
+        'voucher_id',
         'order_status_id',
         'payment_method_id',
         'shipping_address_id',
@@ -28,13 +27,11 @@ class Order extends Model
     ];
 
     /**
-     * @return BelongsTo
+     * @return HasMany
      */
-    public function product()
-    {
-        return $this->belongsTo(Product::class);
+    public function order_detail(){
+        return $this->hasMany(OrderDetail::class);
     }
-
     /**
      * @return BelongsTo
      */
@@ -46,10 +43,11 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    // public function coupon()
-    // {
-    //     return $this->belongsTo(Coupon::class);
-    // }
+    public function voucher()
+    {
+        return $this->belongsTo(Voucher::class);
+    }
+
 
     /**
      * @return BelongsTo
@@ -62,16 +60,16 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    public function payment_method()
-    {
-        return $this->belongsTo(PaymentMethod::class, 'payment_method_id');
-    }
+        public function payment_method()
+        {
+            return $this->belongsTo(PaymentMethod::class, 'payment_method_id');
+        }
 
     /**
-     * @return BelongsTo
+     * @return BeLongsTo
      */
     public function shipping_address()
-    {
-        return $this->belongsTo(ShippingAddress::class, 'shipping_address_id');
-    }
+     {
+         return $this->belongsTo(ShippingAddress::class);
+     }
 }

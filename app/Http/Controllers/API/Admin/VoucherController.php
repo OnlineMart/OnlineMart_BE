@@ -29,7 +29,7 @@ class VoucherController extends Controller
     public function getVoucherShop($shopId): JsonResponse
     {
         try {
-            $Vouchers = Voucher::where('shop_id', $shopId)->get();
+            $Vouchers = Voucher::where('shop_id', $shopId)->orderByDesc('id')->get();
             return jsonResponse($Vouchers, 200, 'Voucher retrieved successfully');
         } catch (Exception $e) {
             return jsonResponse(null, 403, 'Something went wrong');
