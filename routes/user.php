@@ -88,7 +88,7 @@ Route::prefix('product')->group(function () {
 
 Route::apiResource('/shops', ShopController::class);
 
-// Supplier route
+// Api Supplier
 Route::apiResource('suppliers', SupplierController::class);
 Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
 Route::get('suppliers/shop/{shopId}/sort', [SupplierController::class, 'getSupplierForSort']);

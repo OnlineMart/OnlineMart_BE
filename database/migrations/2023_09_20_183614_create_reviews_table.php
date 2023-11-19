@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Order;
 use App\Models\Product;
+use App\Models\Shop;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -17,12 +19,12 @@ return new class extends Migration {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->text('content');
-            $table->string('image');
             $table->integer('rating');
             $table->integer('like_count');
             $table->integer("parent_id")->nullable();
 
             $table->foreignIdFor(User::class);
+            $table->foreignIdFor(Shop::class);
             $table->foreignIdFor(Product::class);
 
             $table->timestamps();

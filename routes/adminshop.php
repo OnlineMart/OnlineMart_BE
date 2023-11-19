@@ -6,6 +6,7 @@ use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
 use App\Http\Controllers\API\Admin\VoucherController;
 use App\Http\Controllers\API\Admin\ProductStockController;
+use App\Http\Controllers\API\Admin\ReviewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,7 @@ Route::delete('voucher/{voucherId}/shop/{shopId}', [VoucherController::class, 'd
 
 /* ======== API Inventory management ======== */
 Route::apiResource('/inventory', ProductStockController::class)->only("index");
+
+/* ======== API Review management ======== */
+Route::apiResource('/reviews', ReviewController::class)->except(['update', 'store', 'destroy']);
+Route::post('/reviews/{reviewId}/reply', [ReviewController::class, 'replyReview']);

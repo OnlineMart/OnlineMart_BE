@@ -78,4 +78,9 @@ class Shop extends Model
     {
         return $this->belongsTo(Supplier::class);
     }
+
+    public function review(): HasMany
+    {
+        return $this->hasMany(Review::class);
+    }
 }

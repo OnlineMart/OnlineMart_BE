@@ -93,4 +93,12 @@ class Product extends Model
     {
         return $this->belongsTo(Supplier::class);
     }
+
+    /**
+     * @return HasMany
+     */
+    public function review(): HasMany
+    {
+        return $this->hasMany(Review::class);
+    }
 }

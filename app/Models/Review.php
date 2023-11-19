@@ -21,6 +21,8 @@ class Review extends Model
         'parent_id',
         'user_id',
         'product_id',
+        'shop_id',
+        'order_id'
     ];
 
     /**
@@ -28,7 +30,6 @@ class Review extends Model
      */
     public function user()
     {
-
         return $this->belongsTo(User::class);
     }
 
@@ -37,16 +38,20 @@ class Review extends Model
      */
     public function product()
     {
-
         return $this->belongsTo(Product::class);
     }
 
     /**
-     * @return HasMany
+     * @return belongsTo
      */
-    public function replies()
+    public function shop()
     {
-        return $this->hasMany(Review::class, 'parent_id');
+        return $this->belongsTo(Shop::class);
+    }
+
+    public function review_media(): HasMany
+    {
+        return $this->hasMany(ReviewMedia::class);
     }
 
 }
