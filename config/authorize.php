@@ -24,10 +24,12 @@ return [
         ['name' => 'Update voucher', 'guard_name' => 'api'],
         ['name' => 'Delete voucher', 'guard_name' => 'api'],
         ['name' => 'Manage users', 'guard_name' => 'api'],
+        ['name' => 'View inventory', 'guard_name' => 'api'],
+        ['name' => 'Print QR', 'guard_name' => 'api'],
         ['name' => 'Authorizations', 'guard_name' => 'api']
     ],
 
-    'roles'       => [
+    'roles' => [
         [
             'guard_name'  => 'api',
             'name'        => 'admin',

@@ -1,10 +1,11 @@
 <?php
 
 
-use App\Http\Controllers\API\Admin\VoucherController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\Admin\ProductController;
 use App\Http\Controllers\API\Admin\SellerController;
+use App\Http\Controllers\API\Admin\ProductController;
+use App\Http\Controllers\API\Admin\VoucherController;
+use App\Http\Controllers\API\Admin\ProductStockController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,6 @@ Route::apiResource('/seller', SellerController::class)->except('show');
 Route::apiResource('voucher', VoucherController::class)->except(['index']);
 Route::get('voucher/shop/{shopId}', [VoucherController::class, 'getVoucherShop']);
 Route::delete('voucher/{voucherId}/shop/{shopId}', [VoucherController::class, 'deleteMultipleVoucher']);
+
+/* ======== API Inventory management ======== */
+Route::apiResource('/inventory', ProductStockController::class)->only("index");

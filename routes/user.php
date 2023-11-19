@@ -7,12 +7,14 @@ use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\User\ProductController;
 use App\Http\Controllers\API\ShopController;
 use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\API\Admin\ProductStockController;
 use App\Http\Controllers\API\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\WishlistController;
+use App\Models\ProductStock;
 use Illuminate\Support\Facades\Route;
 
 /*
