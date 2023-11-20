@@ -35,7 +35,7 @@ class VoucherObserve
         try {
             Log::info($voucher);
 
-            $currentDate = Carbon::now(); // Current date in the default time zone
+            $currentDate = Carbon::now();
             Log::info($currentDate);
 
             // Convert the start_date and expired_date to Carbon objects
