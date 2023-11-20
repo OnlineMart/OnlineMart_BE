@@ -14,6 +14,8 @@ use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\ActivitiLogController;
+//use App\Http\Controllers\API\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,9 +87,19 @@ Route::prefix('product')->group(function () {
 });
 
 // Api voucher
+
+//Route::apiResource('/cart', CartController::class);
+//Route::delete('/cart/remove/{item}', [CartController::class, 'singleDelete']);
+
+//Route::apiResource('/categories', CategoryController::class);
+
 Route::apiResource('/shops', ShopController::class);
 
 // Api Supplier
+// Activities
+Route::get('/activities-log', [ActivitiLogController::class, 'getActivities']);
+
+// Supplier route
 Route::apiResource('suppliers', SupplierController::class);
 Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
 Route::get('suppliers/shop/{shopId}/sort', [SupplierController::class, 'getSupplierForSort']);
