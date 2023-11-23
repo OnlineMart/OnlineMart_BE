@@ -3,16 +3,17 @@
 namespace App\Observers;
 
 use App\Models\Product;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 
 class ProductObserver
 {
-    public function creating(Product $product)
+    public function created(Product $product)
     {
         $this->checkStock($product);
     }
 
-    public function updating(Product $product)
+    public function updated(Product $product)
     {
         $this->checkStock($product);
     }

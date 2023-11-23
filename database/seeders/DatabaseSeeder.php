@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
             OrdersSeeder::class,
             ReviewSeeder::class,
             ReviewMediaSeeder::class,
+            ProductFullDataSeeder::class
         ]);
     }
 }

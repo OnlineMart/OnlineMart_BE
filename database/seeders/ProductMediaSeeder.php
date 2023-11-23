@@ -17,7 +17,7 @@ class ProductMediaSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(0, 499) as $index) {
+        foreach (range(0, 99) as $index) {
             $mainMedia = $faker->imageUrl(280, 280);
 
             if ($mainMedia !== null) {
