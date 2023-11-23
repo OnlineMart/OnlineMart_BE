@@ -28,6 +28,7 @@ use App\Http\Controllers\API\ActivitiLogController;
 |
 */
 
+/* ======== API Auth ======== */
 Route::group([
     'middleware' => ['api', 'cors'],
     'prefix'     => 'auth'
@@ -38,6 +39,7 @@ Route::group([
     Route::post('refresh', [AuthController::class, 'refresh']);
 });
 
+/* ======== API Products ======== */
 Route::group([
     'middleware' => ['api', 'auth:api', 'cors'],
     'prefix'     => 'users'
@@ -46,10 +48,10 @@ Route::group([
 });
 
 // Api user
-Route::apiResource('/user', UserController::class)->except(['show']);
+Route::apiResource('/user', UserController::class)->except(['index', 'create', 'show']);
 Route::patch("user/avatar/{id}", [UserController::class, 'uploadAvatar']);
 Route::put("user/password/{id}", [UserController::class, 'changePassword']);
-Route::post("user/delete-avatar/{id}", [UserController::class, 'deleteAvatar']);
+Route::put("user/delete-avatar/{id}", [UserController::class, 'deleteAvatar']);
 
 // Api category
 Route::get('/categories/list', [CategoryController::class, 'getListCategories']);
@@ -66,7 +68,7 @@ Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
 
-// Api voucher
+// Api voucheruploadAvatar
 Route::post('user/get-voucher/{voucherId}', [VoucherController::class, 'store']);
 Route::get('voucher/user', [VoucherController::class, 'getVoucherByUser']);
 

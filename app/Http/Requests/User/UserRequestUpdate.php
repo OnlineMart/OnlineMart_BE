@@ -41,30 +41,34 @@ class UserRequestUpdate extends BaseRequest
     public function messages()
     {
         return [
-            'required'        => ':attribute is required',
-            'in'              => ':attribute is invalid',
-            'email'           => ':attribute is invalid',
-            'unique'          => ':attribute already exists',
-            'in'              => ':attribute is invalid',
-            'min'             => ':attribute is too short',
-            'max'             => ':attribute is too long',
-            'date'            => ':attribute is invalid',
-            'before_or_equal' => ':attribute must be before today'
+            'required'        => 'Trường :attribute là bắt buộc',
+            'in'              => 'Giá trị của :attribute không hợp lệ',
+            'email'           => ':attribute không hợp lệ',
+            'unique'          => ':attribute đã tồn tại',
+            'min'             => ':attribute quá ngắn',
+            'max'             => ':attribute quá dài',
+            'date'            => ':attribute không hợp lệ',
+            'before_or_equal' => ':attribute phải trước hoặc bằng ngày hiện tại',
+            'same'            => ':attribute không khớp',
+            'image'           => ':attribute không hợp lệ',
+            'mimes'           => ':attribute không hợp lệ',
+            'avatar.max'      => ':attribute quá lớn'
         ];
     }
 
     public function attributes()
     {
         return [
-            'full_name' => 'Full name',
-            'user_name' => 'User name',
+            'full_name' => 'Họ và tên',
+            'user_name' => 'Tên người dùng',
             'email'     => 'Email',
-            'password'  => 'Password',
-            'birthday'  => 'Birthday',
-            'gender'    => 'Gender',
-            'phone'     => 'Phone',
-            'avatar'    => 'Avatar',
-            'address'   => 'Address'
+            'password'  => 'Mật khẩu',
+            'birthday'  => 'Ngày sinh',
+            'gender'    => 'Giới tính',
+            'phone'     => 'Số điện thoại',
+            'avatar'    => 'Ảnh đại diện',
+            'address'   => 'Địa chỉ'
         ];
     }
+
 }

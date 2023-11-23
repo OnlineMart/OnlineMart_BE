@@ -19,49 +19,8 @@ class UserController extends Controller
 
     public function __construct()
     {
-        // $this->middleware('jwt.verify');
-        // $this->middleware('auth:api');
+        $this->middleware('auth:api');
         $this->upload = new S3Helper();
-    }
-
-    /**
-     * Lấy danh sách users
-     *
-     * @return JsonResponse
-     */
-    public function index(): JsonResponse
-    {
-        try {
-            $users = User::orderBy('id', 'DESC')->get();
-            return jsonResponse($users, 200, 'Users retrieved successfully');
-        } catch (Exception $e) {
-            return jsonResponse(null, 403, 'Something went wrong');
-        }
-    }
-
-    /**
-     * Lưu user mới
-     *
-     * @param UserRequestStore $request
-     *
-     * @return JsonResponse
-     */
-    public function store(UserRequestStore $request): JsonResponse
-    {
-        try {
-            $data = $request->validated();
-
-            $avatar = $this->upload->uploadSingleFileToS3($data['avatar'], 'user');
-            if ($avatar) {
-                $data['avatar'] = $avatar;
-            }
-
-            $user = User::create($data);
-
-            return jsonResponse($user, 200, 'User created successfully');
-        } catch (Exception $e) {
-            return jsonResponse(null, 403, 'Something went wrong');
-        }
     }
 
     /**
@@ -75,15 +34,15 @@ class UserController extends Controller
     public function uploadAvatar(Request $request, $id): JsonResponse
     {
         try {
+            $data = $request->all();
             $user = User::findOrFail($id);
             if (!$user) {
                 return jsonResponse(null, 404, 'User not found');
             }
 
-            $avatar = $this->upload->uploadSingleFileToS3($request->file('avatar'), 'users');
+            $avatar = $this->upload->uploadSingleFileToS3($data['avatar'], 'users');
             if ($avatar) {
-                $avatarUrl = $this->upload->getS3ObjectUrl();
-                $user->update(['avatar' => $avatarUrl . $avatar]);
+                $user->update(['avatar' => $avatar]);
             }
 
             return jsonResponse($user, 200, 'Avatar uploaded successfully');
@@ -104,7 +63,6 @@ class UserController extends Controller
     {
         try {
             $data = $request->validated();
-            Log::info($data);
 
             $avatar = $user->avatar;
             if (isset($data['avatar']) && $data['avatar']) {
@@ -146,19 +104,21 @@ class UserController extends Controller
     {
         try {
             $user = User::findOrFail($id);
-            if (!$user) {
-                return jsonResponse(null, 404, 'User not found');
+
+            if (!empty($user->avatar)) {
+                $this->upload->deleteFileFromS3($user->avatar);
+
+                $user->update(['avatar' => ""]);
+
+                return jsonResponse($user, 200, 'Avatar deleted successfully');
+            } else {
+                return jsonResponse(null, 404, 'User avatar not found');
             }
-
-            $this->upload->deleteFileFromS3($user->avatar);
-
-            $user->update(['avatar' => ""]);
-
-            return jsonResponse($user, 200, 'Avatar deleted successfully');
         } catch (Exception $e) {
-            return jsonResponse(null, 403, 'Something went wrong');
+            return jsonResponse(null, 403, $e->getMessage());
         }
     }
+
 
     /**
      * Xóa user
@@ -207,7 +167,7 @@ class UserController extends Controller
 
             return jsonResponse($userData, 200, 'User retrieved successfully');
         } catch (Exception $e) {
-            return jsonResponse($e->getMessage(), 403, 'Something went wrong');
+            return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
     }
 }
