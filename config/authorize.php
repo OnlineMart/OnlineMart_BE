@@ -26,6 +26,9 @@ return [
         ['name' => 'Manage users', 'guard_name' => 'api'],
         ['name' => 'View inventory', 'guard_name' => 'api'],
         ['name' => 'Print QR', 'guard_name' => 'api'],
+        ['name' => 'View bin', 'guard_name' => 'api'],
+        ['name' => 'Update bin', 'guard_name' => 'api'],
+        ['name' => 'Delete bin', 'guard_name' => 'api'],
         ['name' => 'Authorizations', 'guard_name' => 'api']
     ],
 

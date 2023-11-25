@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\API\Admin\OrderController;
+use App\Http\Controllers\API\Admin\ProductBinController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
@@ -45,3 +46,10 @@ Route::post('/reviews/{reviewId}/reply', [ReviewController::class, 'replyReview'
 
 /* ======== API Order ======== */
 Route::apiResource('order', OrderController::class);
+
+/* ======== API Soft Delete Product ======== */
+Route::prefix('bin')->group(function() {
+    Route::apiResource('/products', ProductBinController::class)->except(['store', 'show']);
+    Route::patch('/{id}/restore', [ProductBinController::class, 'restoreMultiple']);
+    Route::delete('/{id}/delete', [ProductBinController::class, 'deleteMultiple']);
+});
