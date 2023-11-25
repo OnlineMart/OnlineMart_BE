@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'pinecone' => [
+        'api_key' => env('PINECONE_API_KEY', ''),
+        'environment' => env('PINECONE_ENVIRONMENT', ''),
+    ],
+
 ];

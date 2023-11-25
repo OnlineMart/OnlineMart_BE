@@ -2,24 +2,28 @@
 
 namespace App\Http\Controllers\API\Admin;
 
-use App\Http\Controllers\Controller;
+use Exception;
+use App\Models\Product;
+use Illuminate\Support\Str;
+use Illuminate\Http\Response;
 use App\Http\Helpers\S3Helper;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+use Probots\Pinecone\Client as Pinecone;
 use App\Http\Requests\Product\ProductRequestStore;
 use App\Http\Requests\Product\ProductRequestUpdate;
-use App\Models\Product;
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
     private S3Helper $upload;
+    private Pinecone $pinecone;
 
-    public function __construct()
+    public function __construct(Pinecone $pinecone)
     {
         $this->upload = new S3Helper();
+        $this->pinecone = $pinecone;
+
         $this->middleware('auth:api');
         $this->middleware('permission:View products', ['only' => ['index', 'show']]);
         $this->middleware('permission:Create product', ['only' => ['store']]);
@@ -208,6 +212,15 @@ class ProductController extends Controller
                         }
                     }
                 }
+
+                // $this->pinecone->index("online-mart-ai")->vectors()->upsert(
+                //     vectors: [
+                //         [
+                //             'id'     => $product->id,
+                //             'values' => $product->name
+                //         ]
+                //     ]
+                // );
             } catch (Exception $e) {
                 DB::rollBack();
                 return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, $e->getMessage());
