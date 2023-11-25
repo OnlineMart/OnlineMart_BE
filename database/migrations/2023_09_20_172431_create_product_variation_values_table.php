@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->id();
 
             $table->foreignIdFor(ProductVariation::class);
-            $table->string("variation_value_name", 20);
+            $table->string("variation_value_name", 50);
             $table->string("thumbnail_url")->nullable();
             $table->string('sku')->nullable();
             $table->integer("regular_price")->nullable();

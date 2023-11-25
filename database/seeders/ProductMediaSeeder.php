@@ -22,7 +22,7 @@ class ProductMediaSeeder extends Seeder
 
             if ($mainMedia !== null) {
                 ProductMedia::insert([
-                    'product_id' => $index,
+                    'product_id' => $index + 1,
                     'media'      => $mainMedia,
                     'is_main'    => 1,
                     'created_at' => now()->toDateTimeString(),

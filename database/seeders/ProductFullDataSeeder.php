@@ -51,8 +51,8 @@ class ProductFullDataSeeder extends Seeder
                     'is_main'    => true
                 ]);
 
-                if (isset($data['galllery'])) {
-                    foreach (json_decode($data['galllery']) as $image) {
+                if (isset($data['gallery'])) {
+                    foreach (json_decode($data['gallery']) as $image) {
                         ProductMedia::create([
                             'product_id' => $product->id,
                             'media'      => $image,
@@ -82,6 +82,7 @@ class ProductFullDataSeeder extends Seeder
 
             DB::commit();
         } catch (Exception $e) {
+            echo $e->getMessage();
             DB::rollBack();
         }
     }
