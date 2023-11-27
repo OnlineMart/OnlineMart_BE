@@ -20,8 +20,10 @@ class ProductController extends Controller
      */
     public function getCategoryProduct(int $categoryId): JsonResponse
     {
+        $totalPrice = 0;
         $minPrice = PHP_INT_MAX;
         $maxPrice = 0;
+
         try {
             $products = Product::with([
                 'category',
@@ -44,14 +46,13 @@ class ProductController extends Controller
             foreach ($products as $product) {
                 $currentPrice = $product->sale_price > 0 ? $product->sale_price : $product->regular_price;
 
+                $totalPrice += $currentPrice;
                 $minPrice = min($minPrice, $currentPrice);
                 $maxPrice = max($maxPrice, $currentPrice);
             }
 
             $categoryName = $products->first()->category->name;
-            $totalPrice   = $products->sum(function ($product) {
-                return $product->sale_price > 0 ? $product->sale_price : $product->regular_price;
-            });
+
             $productCount = $products->count();
             $averagePrice = $totalPrice / $productCount;
 
@@ -71,8 +72,8 @@ class ProductController extends Controller
                     }),
                     "sort_price" => [
                         "average_price" => roundToTwoSignificantDigits($averagePrice),
-                        "max_price"     => roundToTwoSignificantDigits($products->max('regular_price') - $averagePrice * 0.5),
-                        "min_price"     => roundToTwoSignificantDigits($products->min('regular_price') + $averagePrice * 0.5)
+                        "max_price"     => roundToTwoSignificantDigits($maxPrice - $averagePrice * 0.5),
+                        "min_price"     => roundToTwoSignificantDigits($minPrice + $averagePrice * 0.5)
                     ],
                     "shop"       => $products->pluck('shop')->unique('id')->values()->map(function ($shop) {
                         return [
@@ -93,7 +94,7 @@ class ProductController extends Controller
         } catch (Exception $e) {
             return jsonResponse(null, 500, $e->getMessage());
         }
-    }   
+    }
 
     /**
      * Lấy sản phẩm chi tiết
