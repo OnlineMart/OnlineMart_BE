@@ -18,10 +18,10 @@ class VoucherSeeder extends Seeder
 
         $data = [
             [
-                'code' => 12345,
+                'code' => 'Tiki0310',
                 'usage_limit' => 10,
-                'min_discount_amount' => 40.0,
-                'max_discount_amount' => 50.0,
+                'min_discount_amount' => 100000,
+                'max_discount_amount' => 150000,
                 'discount' => 10.0,
                 'unit' => '0',
                 'start_date' => Carbon::now(),
@@ -32,10 +32,10 @@ class VoucherSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
             [
-                'code' => 67890,
+                'code' => '5tw120',
                 'usage_limit' => 5,
-                'min_discount_amount' => 20.0,
-                'max_discount_amount' => 30.0,
+                'min_discount_amount' => 1500000,
+                'max_discount_amount' => 500000,
                 'discount' => 15.0,
                 'unit' => '1',
                 'start_date' => Carbon::now(),
@@ -46,10 +46,10 @@ class VoucherSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ],
             [
-                'code' => 67890,
+                'code' => 'sale123',
                 'usage_limit' => 5,
-                'min_discount_amount' => 20.0,
-                'max_discount_amount' => 30.0,
+                'min_discount_amount' => 500000,
+                'max_discount_amount' => 2000000,
                 'discount' => 15.0,
                 'unit' => '1',
                 'start_date' => Carbon::now(),

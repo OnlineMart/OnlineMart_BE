@@ -137,6 +137,8 @@ class SellerController extends Controller
                 $seller->syncPermissions($permissions);
             }
 
+            logActivity('system', $request, "Cập nhật quyền hạn cho nhân viên $seller->full_name", 'Phân quyền');
+
             return jsonResponse($seller, 200, 'success');
         } catch (Exception $e) {
             return jsonResponse(null, 500, $e->getMessage());

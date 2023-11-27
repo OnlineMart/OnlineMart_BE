@@ -67,6 +67,7 @@ class RoleController extends Controller
             'description' => $validatedData['description'],
             'guard_name'  => 'api'
         ]);
+        logActivity('create', $request, 'Thêm vai trò mới', 'Thêm vai trò', $role);
 
         $role->givePermissionTo($validatedData['permissions']);
 
@@ -93,6 +94,8 @@ class RoleController extends Controller
                 'description' => $validatedData['description'],
                 'guard_name'  => 'api'
             ]);
+            logActivity('update', $request, 'Cập nhập vai trò', 'Cập nhật vai trò', $role);
+
 
             $role->syncPermissions($validatedData['permissions']);
 
@@ -113,6 +116,7 @@ class RoleController extends Controller
     {
         try {
             $role = Role::findOrFail($id);
+            logActivity('delete', request(), 'Xoá vai trò', 'Xoá vai trò', $role);
             $role->delete();
 
             return jsonResponse(null, 200, 'Xóa role thành công');

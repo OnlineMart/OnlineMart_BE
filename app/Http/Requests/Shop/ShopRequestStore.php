@@ -32,7 +32,7 @@ class ShopRequestStore extends BaseRequest
             'description' => 'nullable|string',
             'rating'      => 'nullable|integer',
             'status'      => 'required|in:0,1',
-            'user_id'     => 'required|exists:users,id',
+            // 'user_id'     => 'required|exists:users,id',
         ];
     }
 
@@ -47,7 +47,7 @@ class ShopRequestStore extends BaseRequest
             'description' => 'Shop Description',
             'rating'      => 'Shop Rating',
             'status'      => 'Shop Status',
-            'user_id'     => 'User ID',
+            // 'user_id'     => 'User ID',
         ];
     }
 

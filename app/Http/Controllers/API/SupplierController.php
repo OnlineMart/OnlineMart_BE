@@ -32,10 +32,10 @@ class SupplierController extends Controller
     {
         try {
             $suppliers = Supplier::where('shop_id', $shopId)
-            ->orWhereNull('shop_id')
-            ->orderBy('id', 'desc')
-            ->select("id", "name as label", "name as value")
-            ->get();
+                ->orWhereNull('shop_id')
+                ->orderBy('id', 'desc')
+                ->select("id", "name as label", "name as value")
+                ->get();
 
 
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
@@ -48,10 +48,10 @@ class SupplierController extends Controller
     {
         try {
             $suppliers = Supplier::where('shop_id', $shopId)
-            ->orWhereNull('shop_id')
-            ->orderBy('id', 'desc')
-            ->select("id", "name as label", "id as value")
-            ->get();
+                ->orWhereNull('shop_id')
+                ->orderBy('id', 'desc')
+                ->select("id", "name as label", "id as value")
+                ->get();
 
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
         } catch (Exception $e) {
@@ -97,6 +97,10 @@ class SupplierController extends Controller
                 'shop_id' => $data['shop_id'],
                 'website' => $data['website'] ?? null,
             ]);
+
+            logActivity('create', $request, 'Thêm mới nhà cung cấp', 'Thêm mới', $supplier);
+
+
             return jsonResponse($supplier, 200, 'Supplier created successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
@@ -141,6 +145,8 @@ class SupplierController extends Controller
                 'address' => $data['address'],
                 'website' => $data['website'] ?? null,
             ]);
+            logActivity('update', $request, 'Cập nhật nhà cung cấp', 'Cập nhật', $supplier);
+
             return jsonResponse($supplier, 200, 'Category updated successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
@@ -159,6 +165,9 @@ class SupplierController extends Controller
         try {
             // Delete the supplier from the database
             $supplier->delete();
+            $request = request();
+            logActivity('delete', $request, "Xoá nhà cung cấp", 'Xoá', $supplier);
+
             return jsonResponse(null, Response::HTTP_OK, 'Supplier deleted successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, 'Something went wrong');
@@ -176,16 +185,18 @@ class SupplierController extends Controller
     {
         try {
             $supplierIds = explode(',', $supplierId);
+            $request     = request();
             $suppliers   = Supplier::where('shop_id', $shopId)
                 ->whereIn('id', $supplierIds)
                 ->get();
             if ($suppliers->isEmpty()) {
-                return jsonResponse(null, Response::HTTP_NOT_FOUND, 'Categories not found');
+                return jsonResponse(null, Response::HTTP_NOT_FOUND, 'Supplier not found');
             }
             foreach ($suppliers as $supplier) {
+                logActivity('delete', $request, "Xoá nhà cung cấp", 'Xoá', $supplier);
                 $supplier->delete();
             }
-            return jsonResponse(null, Response::HTTP_OK, 'Categories deleted successfully');
+            return jsonResponse($suppliers, Response::HTTP_OK, 'Supplier deleted successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, 'Something went wrong');
         }

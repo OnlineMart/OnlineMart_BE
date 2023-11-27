@@ -8,6 +8,7 @@ use App\Http\Requests\Voucher\VoucherRequestUpdate;
 use App\Models\Voucher;
 use Exception;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class VoucherController extends Controller
@@ -76,6 +77,9 @@ class VoucherController extends Controller
                 'shop_id' => $data['shop_id'],
             ]);
 
+            logActivity('create', $request, 'Thêm mới mã giảm giá', 'Thêm mới', $voucher);
+
+
             return jsonResponse($voucher, 200, 'Voucher created successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
@@ -104,6 +108,8 @@ class VoucherController extends Controller
                 'expired_date' => $data['expired_date'],
             ]);
 
+            logActivity('update', $request, "Cập nhật mã giảm giá", 'Cập nhật', $voucher);
+
             return jsonResponse($voucher, 200, 'Cập nhật voucher thành công');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Đã xảy ra lỗi');
@@ -119,8 +125,12 @@ class VoucherController extends Controller
     public function destroy(int $id): JsonResponse
     {
         try {
-            $Voucher = Voucher::findOrFail($id)->Delete();
-            return jsonResponse($Voucher, 200, 'Delete Voucher successfully');
+            $voucher = Voucher::findOrFail($id);
+            $request = request();
+            logActivity('delete', $request, "Xoá mã giảm giá", 'Xoá', $voucher);
+            $voucher->delete();
+
+            return jsonResponse($voucher, 200, 'Delete Voucher successfully');
         } catch (Exception $e) {
             return jsonResponse(null, 403, 'Something went wrong');
         }
@@ -137,6 +147,7 @@ class VoucherController extends Controller
     {
         try {
             $voucherIds = explode(',', $voucherId);
+            $request = request();
             $voucher = Voucher::where('shop_id', $shopId)
                 ->whereIn('id', $voucherIds)
                 ->get();
@@ -144,9 +155,11 @@ class VoucherController extends Controller
                 return jsonResponse(null, Response::HTTP_NOT_FOUND, 'Voucher not found');
             }
             foreach ($voucher as $supplier) {
+                logActivity('delete', $request, "Xoá mã giảm giá", 'Xoá ', $supplier);
                 $supplier->delete();
             }
-            return jsonResponse(null, Response::HTTP_OK, 'Voucher deleted successfully');
+
+            return jsonResponse($voucher, Response::HTTP_OK, 'Voucher deleted successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, 'Something went wrong');
         }

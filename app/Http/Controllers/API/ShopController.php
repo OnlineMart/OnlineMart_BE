@@ -61,7 +61,7 @@ class ShopController extends Controller
                 'address'     => $data['address'],
                 'description' => $data['description'],
                 'status'      => $data['status'],
-                'user_id'     => $data['user_id'],
+                // 'user_id'     => $data['user_id'],
             ]);
 
             return jsonResponse($shop, 200, 'Shop created successfully');
@@ -113,7 +113,7 @@ class ShopController extends Controller
                 'address'     => $data['address'],
                 'description' => $data['description'],
                 'status'      => $data['status'],
-                'user_id'     => $data['user_id'],
+                // 'user_id'     => $data['user_id'],
             ]);
 
             return jsonResponse($data, 200, 'Shop updated successfully.');

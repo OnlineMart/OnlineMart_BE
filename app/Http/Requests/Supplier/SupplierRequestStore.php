@@ -28,7 +28,7 @@ class SupplierRequestStore extends BaseRequest
             'email'   => 'required|email|max:255|unique:suppliers,email',
             'phone'   => 'required|string|min:2|max:255|unique:suppliers,phone',
             'address' => 'required|string|max:255',
-            'code'    => 'required|string|max:255',
+            'code'    => 'required|string|max:255|unique:suppliers,code',
             'shop_id' => 'required|numeric',
             'website' => 'nullable|string|max:255',
         ];

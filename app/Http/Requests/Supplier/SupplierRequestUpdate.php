@@ -29,7 +29,7 @@ class SupplierRequestUpdate extends BaseRequest
             'email'   => 'required|email|max:255|unique:suppliers,email,' . $supplierId,
             'phone'   => 'required|string|min:2|max:255|unique:suppliers,phone,' . $supplierId,
             'address' => 'required|string|max:255',
-            'code'    => 'required|string|max:255',
+            'code'    => 'required|string|max:255|unique:suppliers,code,' . $supplierId,
             'website' => 'nullable|string|max:255',
         ];
     }

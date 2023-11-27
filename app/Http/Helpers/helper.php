@@ -31,20 +31,23 @@ if (!function_exists('logActivity')) {
      * @param mixed  $request
      * @param string $content
      * @param string $action
+     * @param null   $data
      *
      * @return void
      */
-    function logActivity(string $log_name, mixed $request, string $content, string $action): void
+    function logActivity(string $log_name, mixed $request, string $content, string $action, $data = null): void
     {
         $user = Auth::user();
         if ($user->type === User::ADMIN_SHOP) {
             activity($log_name)
-                ->causedBy(Auth::user())
                 ->event(Auth::user()->shop->id)
                 ->withProperties([
                     'ip'         => $request->getClientIp(),
                     'user_agent' => $request->header('User-Agent'),
+                    'author'     => $user->full_name ?? 'Không xác định',
+                    'avatar'     => $user->avatar ?? 'images/users/2023/9/default_avatar.jpg',
                     'content'    => $content,
+                    'data'       => $data,
                 ])
                 ->log($action);
         }
