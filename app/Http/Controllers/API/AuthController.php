@@ -92,7 +92,6 @@ class AuthController extends Controller
                         'position'  => null
                     ]);
                 }
-                logActivity('register', $request, 'Đăng ký tài khoản', 'Đăng ký');
 
                 return jsonResponse($user, 200, 'User created successfully');
             } catch (Exception $e) {

@@ -17,8 +17,8 @@ return new class extends Migration {
             $table->id();
             $table->string('code');
             $table->integer('usage_limit')->default(0);
-            $table->float('min_discount_amount')->unsigned();
-            $table->float('max_discount_amount')->unsigned();
+            $table->unsignedDouble('min_discount_amount');
+            $table->unsignedDouble('max_discount_amount');
             $table->float('discount')->unsigned();
             $table->enum('unit', ['0', '1'])->comment('0: %, 1: VNĐ');
             $table->string('start_date');
