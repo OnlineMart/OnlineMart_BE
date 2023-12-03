@@ -1,14 +1,14 @@
 <?php
 
-
-use App\Http\Controllers\API\Admin\OrderController;
-use App\Http\Controllers\API\Admin\ProductBinController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\Admin\OrderController;
+use App\Http\Controllers\API\Admin\ReviewController;
 use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
 use App\Http\Controllers\API\Admin\VoucherController;
+use App\Http\Controllers\API\Admin\ProductBinController;
 use App\Http\Controllers\API\Admin\ProductStockController;
-use App\Http\Controllers\API\Admin\ReviewController;
+use App\Http\Controllers\API\Admin\TrafficWebsiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,6 @@ use App\Http\Controllers\API\Admin\ReviewController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
  */
-
 
 /* ======== API Products ======== */
 Route::prefix('product')->group(function () {
@@ -48,8 +47,13 @@ Route::post('/reviews/{reviewId}/reply', [ReviewController::class, 'replyReview'
 Route::apiResource('order', OrderController::class);
 
 /* ======== API Soft Delete Product ======== */
-Route::prefix('bin')->group(function() {
+Route::prefix('bin')->group(function () {
     Route::apiResource('/products', ProductBinController::class)->except(['store', 'show']);
     Route::patch('/{id}/restore', [ProductBinController::class, 'restoreMultiple']);
     Route::delete('/{id}/delete', [ProductBinController::class, 'deleteMultiple']);
+});
+
+/* ======== API Develop Center ======== */
+Route::prefix('dev')->group(function () {
+    Route::get('/traffic', [TrafficWebsiteController::class, 'index']);
 });

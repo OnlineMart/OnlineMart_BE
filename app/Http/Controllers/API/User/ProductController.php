@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\API\User;
 
-use App\Http\Controllers\Controller;
-use App\Models\Category;
-use App\Models\Product;
 use Exception;
-use Illuminate\Http\JsonResponse;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\ViewCount;
 use Illuminate\Support\Str;
+use Illuminate\Http\JsonResponse;
+use App\Http\Controllers\Controller;
+use App\Events\IncreaseViewCountEvent;
 
 class ProductController extends Controller
 {
@@ -185,6 +187,7 @@ class ProductController extends Controller
                     ]
                 ]
             ];
+            ViewCount::handleViewCount(ViewCount::PRODUCT, $response['shop']['id'], false);
 
             return jsonResponse($response, 200, 'Product found successfully');
         } catch (Exception $e) {

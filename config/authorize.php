@@ -25,6 +25,8 @@ return [
         ['name' => 'Delete voucher', 'guard_name' => 'api'],
         ['name' => 'Manage users', 'guard_name' => 'api'],
         ['name' => 'View inventory', 'guard_name' => 'api'],
+        ['name' => 'View reviews', 'guard_name' => 'api'],
+        ['name' => 'Reply reviews', 'guard_name' => 'api'],
         ['name' => 'Print QR', 'guard_name' => 'api'],
         ['name' => 'View bin', 'guard_name' => 'api'],
         ['name' => 'Update bin', 'guard_name' => 'api'],

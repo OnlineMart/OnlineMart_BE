@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
+use Exception;
+use App\Models\Shop;
+use App\Models\ViewCount;
 use App\Http\Helpers\S3Helper;
+use Illuminate\Http\JsonResponse;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\Shop\ShopRequestStore;
 use App\Http\Requests\Shop\ShopRequestUpdate;
-use App\Models\Shop;
-use Exception;
-use Illuminate\Http\JsonResponse;
 
 class ShopController extends Controller
 {
@@ -81,6 +82,8 @@ class ShopController extends Controller
     {
         try {
             $data = Shop::findOrFail($shop->id);
+
+            ViewCount::handleViewCount(ViewCount::SHOP, $shop->id, false);
 
             return jsonResponse($data, 200, 'Get data successfully.');
         } catch (Exception $e) {
