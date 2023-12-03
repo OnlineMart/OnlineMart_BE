@@ -7,7 +7,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -21,6 +22,7 @@ return new class extends Migration {
             $table->string('slug');
             $table->integer('regular_price');
             $table->integer('sale_price')->nullable();
+            $table->integer('flashsale_price')->nullable();
             $table->string('sku')->nullable();
             $table->integer('stock_qty')->default(0);
             $table->float('rating')->nullable()->from(0)->to(5);

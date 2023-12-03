@@ -15,6 +15,8 @@ use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ActivitiLogController;
+use App\Http\Controllers\API\User\ProductFlashSaleController;
+
 //use App\Http\Controllers\API\CartController;
 
 /*
@@ -29,6 +31,7 @@ use App\Http\Controllers\API\ActivitiLogController;
 */
 
 /* ======== API Auth ======== */
+
 Route::group([
     'middleware' => ['api', 'cors'],
     'prefix'     => 'auth'
@@ -80,6 +83,7 @@ Route::apiResource('/wishlist', WishlistController::class)->except(['update', 's
 // Api product
 Route::prefix('product')->group(function () {
     Route::get("all", [ProductController::class, 'getAllProduct']);
+    Route::get("flash-sale", [ProductFlashSaleController::class, 'getAllFlashsaleProduct']);
     Route::get("detail/{productId}", [ProductController::class, 'getProductDetail']);
     Route::get("category/{categoryId}", [ProductController::class, 'getCategoryProduct']);
     Route::get("{productId}/related", [ProductController::class, 'getRelatedProducts']);

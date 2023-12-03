@@ -4,10 +4,10 @@ namespace App\Http\Controllers\API\Admin;
 
 use Exception;
 use App\Models\Product;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Str;
 use Illuminate\Http\Response;
 use App\Http\Helpers\S3Helper;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Probots\Pinecone\Client as Pinecone;
