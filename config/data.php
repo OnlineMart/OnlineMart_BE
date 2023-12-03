@@ -1564,6 +1564,688 @@ return [
             ]),
             'variants'      => json_encode([]),
         ],
+        [
+            'name'          => 'Túi Đeo Chéo Nam Nữ Thời Trang Trẻ Trung, Túi Đựng Ipad, Túi Đeo Vai Nhiều Ngăn Kéo Đựng Đồ Rất Tiện Lợi, Vải Oxford Chống Thấm Nước',
+            'regular_price' => 140000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/e3e8ebbbcf57ed17dca4e27b3a2a0ec9.jpg.webp',
+            'description'   => '<p>***THÔNG TIN SẢN PHẨM :</p>
+            <p>Túi Đeo Chéo Nam Thời Trang Cao Cấp,Túi Đeo Nhiều Lớp Có Dây Kéo.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/76/73/0b/e59f022581f2a60940038d22834a333f.jpg" alt="" width="750" height="847"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/0a/24/71/b0452deb68d9500283a9f192991a52d6.jpg" alt="" width="750" height="834"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/11/83/80/7629a84a8e53eb8f0bcb14aec99b885f.jpg" alt="" width="750" height="836"></p>
+            <p>- Kích Thước Túi : Cao 25 x ngang 20 x rộng 7 cm.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/71/37/92/75e5b8724e5b6cc0e69ea11784f07ec0.jpg" alt="" width="750" height="992"></p>
+            <p>- Chất Liệu : Túi đeo chéo được may bằng loại vải Oxford cao cấp chống thấm nước chống trầy, kích thước nhỏ gọn nhưng rất tiện lợi.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/74/63/4a/d1404c5ac4db73e12b74aa70e4972844.jpg" alt="" width="750" height="963"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://salt.tikicdn.com/ts/tmp/c7/73/0a/c47c98423d92d40ec96447c7fd2768ae.jpg" alt="" width="750" height="1178"></p>
+            <p>&nbsp;</p>
+            <p>- Trọng Lượng : 0.3kg</p>
+            <p>- Xuất Xứ : Việt Nam</p>
+            <p>+ Dây đai quai mang được may bằng loại dây có bản dày 4cm, chiều dài 1,4m có thể tăng đưa theo ý muốn.</p>
+            <p>+ Túi đeo chéo được đệm mút dày ở mặt trước của túi sẽ giúp bạn an tâm hơn khi mang theo ipad, điện thoại bên trong</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/44/f6/07/4624f67991ebad2171d0e85f9578400f.jpg" alt="" width="750" height="562"></p>
+            <p>- Đường may tỉ mỉ, chắc chắn được sản xuất bởi những người thợ lành nghề, đảm bảo quý khách sẽ rất hài lòng về sản phẩm.</p>
+            <p>***HƯỚNG DẪN BẢO QUẢN</p>
+            <p>-Không nên để sản phẩm tiếp xúc nhiều với xà bông. Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</p>
+            <p>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau sản phẩm nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn, Lau khô hoàn toàn sau khi vệ sinh.</p>
+            <p>Màu Sắc : đen, xanh , xám</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/d2/25/37/6121c514a4fd56c40534bf884ce7a5ff.jpg" alt="" width="750" height="939"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
+            'sku'           => '11448690001',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/e3e8ebbbcf57ed17dca4e27b3a2a0ec9.jpg.webp',
+                'images/products/2023/11/5cac95a651a45ba65f61e5c5b7b4ff19.jpg.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Màu xanh' => [
+                            'quantity'      => 100,
+                            'selling_price' => 140000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM768'
+                        ],
+                        'Màu xám'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 140000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM769'
+                        ],
+                        'Màu đen'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 140000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM770'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Túi Đeo Chéo Vải Canvas Bền Bỉ Phong Cách Thời Trang Unisex Nam Nữ Hàn BL002',
+            'regular_price' => 135000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/0c6b8f2540f64af76f2a6bfe9af9a6db.jpg.webp',
+            'description'   => '<p>***THÔNG TIN SẢN PHẨM :</p>
+            <p>Túi Đeo Chéo Nam Thời Trang Cao Cấp,Túi Đeo Nhiều Lớp Có Dây Kéo.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/76/73/0b/e59f022581f2a60940038d22834a333f.jpg" alt="" width="750" height="847"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/0a/24/71/b0452deb68d9500283a9f192991a52d6.jpg" alt="" width="750" height="834"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/11/83/80/7629a84a8e53eb8f0bcb14aec99b885f.jpg" alt="" width="750" height="836"></p>
+            <p>- Kích Thước Túi : Cao 25 x ngang 20 x rộng 7 cm.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/71/37/92/75e5b8724e5b6cc0e69ea11784f07ec0.jpg" alt="" width="750" height="992"></p>
+            <p>- Chất Liệu : Túi đeo chéo được may bằng loại vải Oxford cao cấp chống thấm nước chống trầy, kích thước nhỏ gọn nhưng rất tiện lợi.</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/74/63/4a/d1404c5ac4db73e12b74aa70e4972844.jpg" alt="" width="750" height="963"></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://salt.tikicdn.com/ts/tmp/c7/73/0a/c47c98423d92d40ec96447c7fd2768ae.jpg" alt="" width="750" height="1178"></p>
+            <p>&nbsp;</p>
+            <p>- Trọng Lượng : 0.3kg</p>
+            <p>- Xuất Xứ : Việt Nam</p>
+            <p>+ Dây đai quai mang được may bằng loại dây có bản dày 4cm, chiều dài 1,4m có thể tăng đưa theo ý muốn.</p>
+            <p>+ Túi đeo chéo được đệm mút dày ở mặt trước của túi sẽ giúp bạn an tâm hơn khi mang theo ipad, điện thoại bên trong</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/44/f6/07/4624f67991ebad2171d0e85f9578400f.jpg" alt="" width="750" height="562"></p>
+            <p>- Đường may tỉ mỉ, chắc chắn được sản xuất bởi những người thợ lành nghề, đảm bảo quý khách sẽ rất hài lòng về sản phẩm.</p>
+            <p>***HƯỚNG DẪN BẢO QUẢN</p>
+            <p>-Không nên để sản phẩm tiếp xúc nhiều với xà bông. Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</p>
+            <p>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau sản phẩm nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn, Lau khô hoàn toàn sau khi vệ sinh.</p>
+            <p>Màu Sắc : đen, xanh , xám</p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/d2/25/37/6121c514a4fd56c40534bf884ce7a5ff.jpg" alt="" width="750" height="939"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
+            'sku'           => '11448690002',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/0c6b8f2540f64af76f2a6bfe9af9a6db.jpg.webp',
+                'images/products/2023/11/f7ef7cb1920793af66b808d63b03f548.jpg.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Màu rêu' => [
+                            'quantity'      => 100,
+                            'selling_price' => 135000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM771'
+                        ],
+                        'Màu xám'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 135000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM772'
+                        ],
+                        'Màu đen'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 135000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM773'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Túi đeo chéo nam vải canvas TX0012 - Đi học - đi làm - đi chơi',
+            'regular_price' => 275000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/fd3341ac761d364289cfe67449895527.jpg.webp',
+            'description'   => '<ul>
+            <li>Túi đeo chéo nam vải canvas TX0012</li>
+            <li>Thiết kế đơn giản, cá tính, kết cấu nhiều ngăn có thể đựng ipad, điện thoại và nhiều tư trang cá nhân.Chất liệu vải bố canvas kết hợp phụ tiết da bò và hợp kim cao cấp, không gỉ, tạo nên một sản phẩm cực chất.</li>
+            <li>Phong cách vintage dễ phối hợp với các trang phục</li>
+            <li>Đây là một sản phẩm trẻ trung và cá tính không thể thiếu cho các bạn nam .</li>
+            </ul>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/21/aa/59/442c760be5a8b197d6b42e662ba4e661.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/21/aa/59/442c760be5a8b197d6b42e662ba4e661.jpg" alt="" width="750" height="444"></p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/e8/23/52/9f7f134c65ed22db713017700ad7e812.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/e8/23/52/9f7f134c65ed22db713017700ad7e812.jpg" alt="" width="750" height="1126"></p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/f5/60/3d/0eb43b710d533457a6fb57fbaf6729fa.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/f5/60/3d/0eb43b710d533457a6fb57fbaf6729fa.jpg" alt="" width="750" height="1415"></p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/2b/3d/db/b8e62be0d9d470a756a7b49bad21d376.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/2b/3d/db/b8e62be0d9d470a756a7b49bad21d376.jpg" alt="" width="750" height="721"></p>
+            <p>Túi vải Canvas hay còn gọi là túi vải bố, là một loại túi được sản xuất từ vải canvas. Vải canvas là một loại vải rất thông dụng trong cuộc sống hàng ngày của chúng ta, không khó để bắt gặp những đôi giày, balo, túi, rèm cửa… làm từ vải canvas.<br>Túi canvas được làm từ loại sợi cotton đan dệt ngang và không sử dụng thêm bất kỳ một chất độc hại nào đối với con người, bởi vậy túi canvas được rất nhiều người lựa chọn vì kiểu dáng có phần vintage cùng rất nhiều ưu điểm tuyệt vời.</p>
+            <p>ưu điểm:</p>
+            <ul>
+            <li>Độ bền cao và nhẹ nhàng, hoàn toàn lành tính đối với người đeo</li>
+            <li>Dễ dàng vệ sinh và bảo quản</li>
+            <li>Thiết kế đa dạng và mang phong cách cổ điển</li>
+            <li>Hạn chế thấm nước hiệu quả khi gặp mưa hoặc rơi xuống nước</li>
+            <li>Dễ dàng gấp gọn hoặc cuộn lại khi không dùng đến để tiết kiệm không gian</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690003',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/fd3341ac761d364289cfe67449895527.jpg.webp',
+                'images/products/2023/11/396029f8f7d4ab044154b587364184ec.jpg.webp',
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Túi Nam Đeo Chéo Trước Ngực 4U Da Tổng Hợp Cao Cấp Thời Trang Đựng Vừa Ipad Mini Nhiều Ngăn Tiện Dụng BA416',
+            'regular_price' => 199000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/f95f4317cfa9ede1435bedf67aea13db.jpg.webp',
+            'description'   => '<p>1. MÔ TẢ SẢN PHẨM</p>
+            <p>Túi đeo chéo trước ngực thời trang BA416 được làm từ chất da tổng hợp, không bong tróc, đứt gãy và kháng nước tốt, kết hợp lớp lót bằng vải dù êm ái. Được sử dụng dây khóa kéo cùng màu tinh tế và sang trọng, giúp bạn dễ dàng kéo mở và giữ đồ vật an toàn và tốt hơn.</p>
+            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-8v6365ap47jv60" width="750" height="750" alt="sg-11134202-22110-8v6365ap47jv60"><img src="https://cf.shopee.vn/file/sg-11134202-22110-g8gyb0ap47jv67" width="750" height="750" alt="sg-11134202-22110-g8gyb0ap47jv67"></p>
+            <p><strong>2. QUY CÁCH ĐÓNG GÓI</strong></p>
+            <ul>
+            <li>Với mong muốn được trao gửi đến bạn những giá trị và chất lượng trọn vẹn nhất, 4U Shop đã tỉ mỉ trong khâu kiểm tra sản phẩm kỹ lưỡng trước khi giao đến bạn.</li>
+            <li>Tất cả các sản phẩm túi đều được đóng gói cẩn thận, kèm theo thư cảm ơn và cách thức liên hệ để được chăm sóc sau mua.<img src="https://cf.shopee.vn/file/sg-11134202-22110-akop3z0r67jv31" alt="sg-11134202-22110-akop3z0r67jv31" width="750" height="750" style="margin-left: auto; margin-right: auto;"></li>
+            </ul>
+            <p><strong>3. HƯỚNG DẪN BẢO QUẢN</strong></p>
+            <ul>
+            <li>Không nên để sản phẩm bị ẩm ướt.</li>
+            <li>Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</li>
+            <li>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn.</li>
+            <li>Lau khô hoàn toàn sau khi vệ sinh.</li>
+            </ul>
+            <p><img src="https://cf.shopee.vn/file/vn-11134202-23030-zxgcw30o9gov77" alt="vn-11134202-23030-zxgcw30o9gov77" width="750" height="750" style="margin-left: auto; margin-right: auto;"></p>
+            <p>&nbsp;</p>
+            <p><strong>4. ĐẶC QUYỀN MUA SẮM&nbsp;</strong></p>
+            <p>Với 4U Shop, mục tiêu hướng đến là bạn có những trải nghiệm tuyệt vời nhất khi mua sắm và sử dụng sản phẩm.&nbsp;</p>
+            <ul>
+            <li>4U Shop luôn sẵn lòng Đổi/Trả hàng trong vòng 7 ngày nếu sản phẩm chưa đáp ứng được yêu cầu của bạn. Đừng lo nhé!</li>
+            <li>Với chất lượng tuyệt vời, 4U Shop tự tin với dịch vụ Bảo hành 12 tháng tất cả các nguyên phụ liệu, đường chỉ trên sản phẩm. Nên các bạn yên tâm và thoải mái trải nghiệm nhé</li>
+            <li>Và tất cả sản phẩm của 4U Shop đều có giao hàng Hỏa tốc, nếu bạn cần gấp - đừng lo lắng, sản phẩm sẽ đến tay bạn trong vòng 1-2h.</li>
+            </ul>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/b8/68/04/eda43c2cbada18047ebb9c0288ebebba.png" alt="" width="750" height="750"></p>
+            <p><strong>5. BẢO HÀNH VÀ QUY ĐỊNH ĐỔI TRẢ</strong></p>
+            <ul>
+            <li>Tất cả sản phẩm của 4U Shop đều được bảo hành 12 tháng.</li>
+            <li>Sản phẩm được bảo hành tất cả các lỗi trên sản phẩm.</li>
+            <li>Đổi trả hàng miễn phí trong vòng 7 ngày kể từ ngày mua (nhận được) hàng.</li>
+            <li>Bảo hành/Đổi trả sản phẩm online và tại cửa hàng.</li>
+            <li>Khi Đổi trả hàng, sản phẩm phải còn nguyên vẹn, chưa qua giặt - tẩy.</li>
+            </ul>
+            <p>----------------------</p>
+            <p><em><strong>Lời ngỏ từ 4U Shop</strong></em></p>
+            <p><em>Trước khi là 4U Shop, chúng mình cũng từng là khách hàng. Đồng cảm từ điều đó, 4U xuất phát với mục tiêu nhận lấy sự tin yêu của bạn và phát triển. Để chinh phục “sự tin yêu”, 4U luôn tạo ra những giá trị tốt nhất, phù hợp nhất gửi gắm đến bạn.</em></p>
+            <p><em>Hy vọng với những sự cố gắng trong sản phẩm và dịch vụ hỗ trợ sẽ mang đến bạn những trải nghiệm tuyệt vời khi mua hàng tại 4U Shop.&nbsp;</em></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690004',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/f95f4317cfa9ede1435bedf67aea13db.jpg.webp',
+                'images/products/2023/11/d0f72a760604d29ace18b32dc48c021f.JPG.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Màu nâu' => [
+                            'quantity'      => 100,
+                            'selling_price' => 199000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM774'
+                        ],
+                        'Màu đen'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 199000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM775'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Túi Đeo Chéo Vải Oxford Mềm Bền Bỉ Chống Nước Phong Cách Thời Trang Unisex Nam Nữ Âu BL026',
+            'regular_price' => 250000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/7a9484953b3c5486563e73231428487f.jpg.webp',
+            'description'   => '<p><img src="https://salt.tikicdn.com/ts/tmp/5f/a3/f9/96fbe18aa82f27aba5759810b7bf5a27.jpg" alt="" width="750" height="750" style="margin-left: auto; margin-right: auto;"></p>
+            <p>Túi Đeo Chéo Vai Oxford Mềm Bền Bỉ Chống Nước Phong Cách Thời Trang Unisex Nam Nữ Âu BL026</p>
+            <p>* MÔ TẢ SẢN PHẨM:</p>
+            <p>- Phong cách đơn giản và giản dị<br>- Dễ dàng đi học và đi du lịch<br>- Trọng lượng nhẹ, tiện lợi</p>
+            <p>- Chống nước</p>
+            <p>- Túi chính dung tích lớn: Có thể chứa hơn 5 đến 8 cuốn sách và nhiều vật dụng khác.</p>
+            <p>*Chi tiết sản phẩm:</p>
+            <p>Kích thước: 30cm * 23 cm x 8 cm<br>Sử dụng: thời trang / giải trí / đi học<br>Chất liệu: Vai Oxford Mềm<br>Cấu trúc: túi chính và các túi phụ</p>
+            <p><strong>CAM KẾT VỚI KHÁCH HÀNG – DUMBUM STORE</strong></p>
+            <p>- Sản phẩm giống mô tả 100%</p>
+            <p>- Đảm bảo chất lượng, dịch vụ tốt&nbsp;</p>
+            <p>- Đổi trả sản phẩm&nbsp; trong vòng 7 ngày đầu tiên hoặc hoàn tiền&nbsp;</p>
+            <p>- Hàng mới 100% đã được kiểm tra, vận hành hoạt động trước khi giao đến tay khách hàng</p>
+            <p>- Hàng được giao 2h trong Thành Phố Hồ Chí Minh</p>
+            <p>- Sau khi nhận hàng khách hàng thoải mái kiểm tra.</p>
+            <p>Nếu sản phẩm không phù hợp với nhu cầu sử dụng của khách hàng hãy liên hệ với DUMBUM STORE để được đổi trả hoàn tiền</p>
+            <p>- Đổi trả sản phẩm theo chính sách riêng của DUMBUM STORE</p>
+            <p>- Điều kiện áp dụng đổi trả - hoàn tiền trong vòng 7 ngày đầu tiên</p>
+            <ul>
+            <li>Hàng hóa vẫn còn mới, chưa qua sử dụng</li>
+            <li>Hàng hóa hư hỏng do vận chuyển hoặc do nhà sản xuất</li>
+            <li>Hàng không đúng mô tả, chủng loại, mẫu mã như quý khách đặt hàng</li>
+            <li>Không đủ số lượng, không đủ bộ như trong đơn hàng</li>
+            <li>Tình trạng bên ngoài bị ảnh hưởng như rách bao bì, bong tróc, dễ vỡ…</li>
+            </ul>
+            <p>&nbsp;- Hỗ trợ tư vấn</p>
+            <p>– Hướng dẫn sử dụng, bảo hành, đổi trả sản phẩm 24/7</p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9c/1e/9f/3b9ff323ad1a8026560ad1ebe26e5466.jpg" alt="" width="750" height="762"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/b6/eb/ab/ee2e90796a584c13c627dd3f91cb0166.jpg" alt="" width="750" height="980"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/c2/75/4e/4911584b7213da15c63abe94c8446f53.jpg" alt="" width="750" height="987"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/e2/82/08/58a24b209b39d67ce6a34895730af76f.jpg" alt="" width="750" height="1319"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/d7/ff/99/91be287f8293b15f53897c069f739a5b.jpg" alt="" width="750" height="712"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/79/2e/01/a1aebf6f12c9f5e32ce0e1c8d663dbed.jpg" alt="" width="750" height="788"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f2/c1/35/52679515ecf02f7754400f88bb831445.jpg" alt="" width="750" height="592"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/fe/39/f2/0a8424bc6ee3284c5e68aead90828bc9.jpg" alt="" width="750" height="1498"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/d6/f4/3b/48d2e157506e431d00ad68254a3cd4b5.jpg" alt="" width="750" height="1061"></p>
+            <p>&nbsp;</p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9e/97/38/93ec9ecdf717d600309c34d9c997ed2b.jpg" alt="" width="750" height="1113"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/8c/c8/f7/3ce83249ffcbca5628f87456cdffa5fa.jpg" alt="" width="750" height="996"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/79/42/38/808c6efea067663eac438d0cf75a0959.jpg" alt="" width="750" height="1169"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/23/e9/87/511e01f7b271c8ed60143763ec1c9149.jpg" alt="" width="750" height="957"></p>
+            <p><strong>XIN TRÂN THÀNH CẢM ƠN QUÝ KHÁCH ĐÃ LUÔN TIN TƯỞNG VÀ ỦNG HỘ&nbsp;DUMBUM STORE</strong></p>
+            <p><strong>#balonam #balonu&nbsp; #tuideovai #tuinam #tuinu #tuidihoc #capdihoc #tuidichoi #tuithoitrang #tuideovai #tuivaioxford #tuideocheo</strong></p>
+            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
+            'sku'           => '11448690005',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/7a9484953b3c5486563e73231428487f.jpg.webp',
+                'images/products/2023/11/18d6e6d25fc78b08f524f0e728bfff4c.jpg.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Màu đen' => [
+                            'quantity'      => 100,
+                            'selling_price' => 250000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM776'
+                        ],
+                        'Màu ghi'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 250000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM777'
+                        ],
+                        'Màu xanh navy'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 250000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM778'
+                        ],
+                        'Màu xanh rêu'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 250000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM779'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Túi xách - Túi da cao cấp Macsim mã MSTH09',
+            'regular_price' => 1540000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/925961b5707166aa5eabc9a4ae325058.jpg.webp',
+            'description'   => '<ul>
+             <p>Túi da thật Macsim chính hãng mã MSTH09 sản xuất từ da bò thật (hoặc da nhăn) - da thô nguyên miếng loại 1.</p>
+             <p>- Thiết kế phong cách cổ điển</p>
+             <p>- Kích thước: Dài 40 cm x Cao 27 cm x rộng 10 cm</p>
+             <p>- Phụ kiện : Kim loại không rỉ, khóa YKK</p>
+             <p>- Chỉ may: Là chỉ sáp siêu bền 0,65 mm - 0,85 mm</p>
+             <p>- Sản xuất thủ công bằng tay</p>
+             <p>- Xuất xứ: Ấn Độ</p>
+             <p>* Túi da cao cấp Macsim MSTH09 được thiết kế dành riêng cho thương hiệu Macsim độc đáo, không đụng hàng, càng dùng càng sáng bóng. Da túi dày dặn dạng thô, giúp túi cứng cáp giữ được phom dáng sau nhiều năm sử dụng, chịu được va chạm.</p>
+             <p>Túi da cao cấp Macsim MSTH09 thiết kế theo phong cách cổ điển, sang trọng lịch lãm. Túi được thiết kế nhiều ngăn có quai tay cầm kết hợp dây đeo bền đẹp, chắc chắn.</p>
+             <p>Hình ảnh túi là ảnh tự chụp chân thực, không qua xử lý photoshop, ảnh chụp sau 1 quá trình đóng gói và vận chuyển nên sản phẩm chưa có thời gian phục hồi nếp nhăn.</p>
+             <p>Top 8 cách nhận biết túi da thật 100% có thể bạn chưa biết ?</p>
+             <p>1, Kiểm tra bề mặt da: Túi da thật bề mặt túi có những vết lồi lõm gồ ghề nhiều hay ít tùy thuộc vào cách thuộc da và chủ ý xử lý da của thợ gia công.</p>
+             <p>2, Da thật chưa qua xử lý thường có bề mặt với những lỗ chân lông mà giả da không thể có được.</p>
+             <p>3, Kết cấu da: Da thật không thể có bề mặt đều nhau 100% như chất liệu giả da, về cơ bản các vùng da trên cơ thể động vật vẫn có sựu khác biệt về màu sắc độ nhăn của da không thể hoàn hảo như da công nghiệp đã qua xử lý.</p>
+             <p>4, Cảm nhận độ ẩm: Hãy nhỏ 1 giọt nước trên bề mặt túi nếu là da thật chưa qua xử lý, các vết nước này sẽ lan rộng thấm vào các lỗ chân lông của da. Bởi da thật hút ẩm, hấp thụ độ ẩm rất tốt.</p>
+             <p>5, Mùi hương: Da thật dễ dàng cảm nhận mùi chất béo ngầy ngậy, mùi da đặc trưng của động vật. Mùi nặng nhẹ tùy thuộc vào loại động vật và cách xử lý da của người thợ gia công. Thông thường người sử dụng đồ da mùi hương sẽ giảm dần sau thời gian sử dụng.</p>
+             <p>6, Da thật chịu nhiệt rất tốt, không hề biến dạng khi đốt bằng lửa, có mùi khét giống mùi tóc khi cháy. Khi đốt bề mặt sẽ không bị co như giả da.</p>
+             <p>7. Độ đàn hồi Ấn ngón tay lên bề mặt da sẽ cảm thấy độ đàn hồi tốt, vết ngón tay tự phục hồi sau một thời gian.</p>
+             <p>8. Kết cấu da thật khi nhìn ở bề mặt cắt thường sẽ có các sợi nhỏ không đồng đều.</p>
+            </ul>
+
+          <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
+            'sku'           => '11448690011',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/925961b5707166aa5eabc9a4ae325058.jpg.webp',
+                'images/products/2023/11/7fc9433cc53ee59b687cfe7fead69d64.jpg.webp',
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Túi Đeo Chéo Nam 4U Da Tổng Hợp Cao Cấp D267',
+            'regular_price' => 149000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/85c542da3b2542d11e708c1f7c44dbe4.jpg.webp',
+            'description'   => '<p>1. MÔ TẢ SẢN PHẨM</p>
+            <p>Túi Đeo Chéo Nam 4U Thời Trang D267 được làm từ chất da tổng hợp, không bong tróc, đứt gãy và kháng nước tốt, kết hợp lớp lót bằng vải dù êm ái. Được sử dụng dây khóa kéo cùng màu tinh tế và sang trọng, giúp bạn dễ dàng kéo mở và giữ đồ vật an toàn và tốt hơn.</p>
+            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-et4sigmq47jvc0" width="750" height="750" alt="sg-11134202-22110-et4sigmq47jvc0"><img src="https://cf.shopee.vn/file/sg-11134202-22110-kuloilmq47jvac" width="750" height="750" alt="sg-11134202-22110-kuloilmq47jvac"></p>
+            <p style="text-align: left;"><strong>2. QUY CÁCH ĐÓNG GÓI</strong></p>
+            <ul>
+            <li>Với mong muốn được trao gửi đến bạn những giá trị và chất lượng trọn vẹn nhất, 4U Shop đã tỉ mỉ trong khâu kiểm tra sản phẩm kỹ lưỡng trước khi giao đến bạn.</li>
+            <li>Tất cả các sản phẩm túi đều được đóng gói cẩn thận, kèm theo thư cảm ơn và cách thức liên hệ để được chăm sóc sau mua.</li>
+            </ul>
+            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-sattlrn1gojv41" alt="sg-11134202-22110-sattlrn1gojv41" width="750" height="750"></p>
+            <p><strong>3. HƯỚNG DẪN BẢO QUẢN</strong></p>
+            <ul>
+            <li>Không nên để sản phẩm bị ẩm ướt.</li>
+            <li>Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</li>
+            <li>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn.</li>
+            <li>Lau khô hoàn toàn sau khi vệ sinh.</li>
+            </ul>
+            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-o5765yv2gojv4b" alt="sg-11134202-22110-o5765yv2gojv4b" width="750" height="750"></p>
+            <p><strong>4. ĐẶC QUYỀN MUA SẮM&nbsp;</strong></p>
+            <p>Với 4U Shop, mục tiêu hướng đến là bạn có những trải nghiệm tuyệt vời nhất khi mua sắm và sử dụng sản phẩm.&nbsp;</p>
+            <ul>
+            <li>4U Shop luôn sẵn lòng Đổi/Trả hàng trong vòng 7 ngày nếu sản phẩm chưa đáp ứng được yêu cầu của bạn. Đừng lo nhé!</li>
+            <li>Với chất lượng tuyệt vời, 4U Shop tự tin với dịch vụ Bảo hành 12 tháng tất cả các nguyên phụ liệu, đường chỉ trên sản phẩm. Nên các bạn yên tâm và thoải mái trải nghiệm nhé</li>
+            <li>Và tất cả sản phẩm của 4U Shop đều có giao hàng Hỏa tốc, nếu bạn cần gấp - đừng lo lắng, sản phẩm sẽ đến tay bạn trong vòng 1-2h.</li>
+            </ul>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/b8/68/04/77f8016b09b65f2eeef49ff1448d2a7f.png" alt="" width="750" height="750"></p>
+            <p><strong>5. BẢO HÀNH VÀ QUY ĐỊNH ĐỔI TRẢ:&nbsp;</strong></p>
+            <ul>
+            <li>Tất cả sản phẩm của 4U Shop đều được bảo hành 12 tháng.</li>
+            <li>Sản phẩm được bảo hành tất cả các lỗi trên sản phẩm.</li>
+            <li>Đổi trả hàng miễn phí trong vòng 7 ngày kể từ ngày mua (nhận được) hàng.</li>
+            <li>Bảo hành/Đổi trả sản phẩm online và tại cửa hàng.</li>
+            <li>Khi Đổi trả hàng, sản phẩm phải còn nguyên vẹn, chưa qua giặt - tẩy.</li>
+            </ul>
+            <p>----------------------</p>
+            <p><em><strong>Lời ngỏ từ 4U Shop</strong></em></p>
+            <ul>
+            <li><em>Trước khi là 4U Shop, chúng mình cũng từng là khách hàng. Đồng cảm từ điều đó, 4U xuất phát với mục tiêu nhận lấy sự tin yêu của bạn và phát triển. Để chinh phục “sự tin yêu”, 4U luôn tạo ra những giá trị tốt nhất, phù hợp nhất gửi gắm đến bạn.</em></li>
+            <li><em>Hy vọng với những sự cố gắng trong sản phẩm và dịch vụ hỗ trợ sẽ mang đến bạn những trải nghiệm tuyệt vời khi mua hàng tại 4U Shop</em>.&nbsp;</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690012',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 11,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/85c542da3b2542d11e708c1f7c44dbe4.jpg.webp',
+                'images/products/2023/11/ac565d4c89eb948d5961ff097fb0be83.jpg.webp',
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Balo Solo Velocity Max Backpack 17.3” - ACV732 M Black 0211662 (52.5 x 32.5 cm) - Đen',
+            'regular_price' => 1190000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/88765361b792d5446f34e2b55722e860.jpg.webp',
+            'description'   => '<h3>Là sản phẩm thích hợp cho các chuyến du lịch ngắn ngày</h3>
+            <p><strong>Balo Solo Velocity Max Backpack 17.3” - ACV732 M Black 0211662&nbsp;</strong>sở hữu thiết kế đa năng với ngăn đựng laptop/tablet và giày chuyên biệt, kết hợp không gian chứa đồ rộng rãi&nbsp;hướng đến các bạn thích đi phượt, du lịch ngắn ngày, giúp bạn an tâm và tự tin trong những chuyến đi đầy thú vị của mình.&nbsp;</p>
+            <p>Chất liệu được làm chủ yếu bằng polyester cao cấp nên trọng lượng của balo Solo 17.3″ Velocity ACV732 M BLUE chỉ khoảng 1 kg với khả năng chống thấm nước tốt.</p>
+            <h3>Các ngăn kéo có kích thước lớn</h3>
+            <p>Với thiết kế gồm nhiều ngăn chứa đồ lớn nhỏ khác nhau, được sắp xếp đối xứng giúp tổng thể balo trở nên cân đối. Ngăn chính cực kỳ rộng rãi, ngăn kéo đựng laptop 17.3 inch và máy tính bảng có 2 bên đệm dày và dây đai hỗ trợ. Ngăn máy tính bảng có thể chứa vừa 1 chiếc Laptop 13" trở lên.</p>
+            <p>Điểm nối bật và cũng là điểm thu hút nhất của dòng ba lô này là hỗ trợ ngăn để giày riêng biệt với kích thước khá rộng rãi. Người dùng có thể đựng được từ 1 đến 2 đôi giày tùy loại.</p>
+            <p>Ở 2 bên hông có thêm 2 ngăn kéo lớn, được thiết kế nổi bật bởi biểu tượng của Solo bằng kim loại đính vào sợi vải, giúp người dùng cất điện thoại hay những món đồ thường sử dụng. Khi đeo balo trên lưng, bạn có thể dễ dàng đưa tay ra sau lấy vật dụng nhanh chóng và tiện lợi.</p>
+            <h3>Có thể đeo theo nhiều cách khác nhau</h3>
+            <p>Với thiết kế đa năng, balo có thể mang theo 5 kiểu khác nhau, từ kiểu đeo sau lưng truyền thống cho đến cầm xuôi hay mang ngược đều được.</p>
+            <p>Phần quai xách kiểu túi du lịch làm hoàn toàn bằng vải, đem lại cảm giác dễ chịu khi cầm.&nbsp;Kiểu thiết kế quai kép giúp phân bổ đều lực lên lòng bàn tay, giúp bạn có thể thoải mái khi mang nặng.</p>
+            <p>Ở phần đai đeo vai được trang bị lớp đệm dày tạo cảm giác êm ái khi mang. Phần trên dây đeo làm thêm một phần bằng da (da tổng hợp) nhìn khá cách điệu.&nbsp;Ở bên dưới có một dây đai, mục đích giúp người dùng luồn dây đeo qua, cố định nó trong trường hợp muốn cầm theo kiểu ba lô du lịch.</p>
+            <p>Tất cả các móc kéo đều được cột dây màu vàng với phần cầm khá lớn giúp nổi bật so với tông màu tối của ba lô, người dùng sẽ dễ dàng tìm thấy dây kéo khi cần thiết.&nbsp;</p>
+            <h3>Màu sắc trẻ trung, hiện đại</h3>
+            <p>Sự phối hợp giữa 2 màu đen và xám chủ đạo kết hợp với màu vàng nổi bật của dây kéo giúp đem lại cảm giác trẻ trung, có phần hơi phong trần và nổi loạn trong thiết kế của sản phẩm này.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690006',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/88765361b792d5446f34e2b55722e860.jpg.webp',
+                'images/products/2023/11/2db988f24fc0e936e110fa0663650eca.png.webp',
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Vali du lịch - Vali kéo 20 inch',
+            'regular_price' => 549000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp',
+            'description'   => '<p>Gam màu trẻ trung cá tính tạo nên sắc thái mới cho những chuyến đi của mình.<br> ƯU ĐIỂM: <br>✓ Nhựa abs pc chống va đập lên đến 80kg.<br>✓ Bánh xe kép tịnh âm, xoay 360 độ linh hoạt trên mọi địa hình.<br>✓ An toàn tuyệt đối với khoá số bảo mật tuyệt đối <br>✓ Bảo hành 2 năm</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690007',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Trắng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 549000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM780'
+                        ],
+                        'Đỏ'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 549000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM781'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Cặp Tài Liệu Chống Sốc, làm bằng vải bạt, Cầm Tay đeo chéo cho laptop 15.6 Inch, Túi Xách Túi Đeo Vai Đựng Máy Tính Xách Tay Bao Đựng Máy Tính Xách Tay',
+            'regular_price' => 198000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/e040f2a20b024e7955b39524af62f454.jpg.webp',
+            'description'   => '<p>Hàng mới và chất lượng cao. Siêu mỏng và nhẹ.</p>
+            <p>Lưu trữ máy tính xách tay của bạn và bảo vệ nó trong khi mang theo.</p>
+            <p>Nó không thấm nước, không bao giờ lo lắng về việc làm đổ đồ uống hoặc đi bộ dưới mưa khi máy tính xách tay của bạn ở trong túi bọc này.</p>
+            <p>Tay cầm có thể được giấu, và hoạt động như một chiếc vali trong vài giây, mang đến cho bạn tính di động và phong cách trong quá trình vận chuyển.</p>
+            <p>Nó phù hợp cho máy tính xách tay của các thương hiệu khác nhau, chẳng hạn như Macbook, Samsung, HP, Lenovo, Acer, Dell, Toshiba, Xiaomi, Huawei, v. v.</p>
+            <p>Nhiều vật liệu giúp bảo vệ nhiều lớp khỏi bụi, nước, trầy xước hoặc va đập.</p>
+            <p>Chất liệu vải oxford chất lượng cao bền hơn, có thể bảo vệ máy tính xách tay của bạn trong một thời gian dài.</p>
+            <p>Túi đựng laptop cao cấp dành cho nam và nữ.</p>
+            <p>Vui lòng xem ảnh thứ hai, nó cho thấy sự thay đổi bạn chọn.</p>
+            <p>Đặc điểm kỹ thuật:</p>
+            <p>Chất liệu: Vải Oxford</p>
+            <p>Màu sắc: có nhiều màu để lựa chọn</p>
+            <p>Kích thước: 15.6 inch (Vừa Laptop từ 15 đến 15.6 inch): 40x30x3 cm</p>
+            <p>Gói bao gồm:</p>
+            <p>Túi đựng laptop 1*15.6 inch</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690008',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/e040f2a20b024e7955b39524af62f454.jpg.webp',
+                'images/products/2023/11/6387d61820b5d2fac0d9543118c55015.png.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Bạc' => [
+                            'quantity'      => 100,
+                            'selling_price' => 198000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM782'
+                        ],
+                        'Đỏ'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 198000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM783'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Túi chống sốc/Cặp đựng Laptop, Macbook 13 inch vải Canvas cao cấp chống thấm nước phong cách lịch lãm, thời trang,  nhỏ gọn và tiện dụng',
+            'regular_price' => 370000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp',
+            'description'   => '<p>THÔNG SỐ KỸ THUẬT<br>Kích thước: Dài 36cm, Cao 26cm, Dày 3cm<br>Phù hợp với: Tất cả dòng laptop 13 inch<br>Sản xuất: Công nghệ cao<br>Chất liệu: Vải bố Canvas cao cấp nhập khẩu từ Hàn Quốc được mã hóa chống thấm nước, mặt trong lót nhung chống sốc hoàn hảo cho Laptop của bạn<br>Công năng: Túi có 3 ngăn: Ngăn chính để laptop, ngăn phụ bên trái có ngăn riêng để Notebook và bộ sạc cáp của máy, ngăn phụ bên phải có ngăn riêng để điện thoại, bút, và tai nghe.<br>Thiết kế: Tối giản chi tiết mang tới vẻ đẹp thời trang lịch lãm, sang trọng, thời thường cho người sử dụng<br>Màu sắc: Đen, Xám, Ghi</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690009',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp',
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Ghi xám' => [
+                            'quantity'      => 100,
+                            'selling_price' => 370000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM784'
+                        ],
+                        'Xanh'             => [
+                            'quantity'      => 100,
+                            'selling_price' => 370000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM785'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name'          => 'Balo Ulzzang Hàn Quốc Thời Trang HARAS HR284',
+            'regular_price' => 163000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp',
+            'description'   => 'Balo Ulzzang Hàn Quốc Thời Trang HARAS HR284<p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690010',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp',
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Túi Đựng Bảo Vệ Phụ Kiện Công Nhệ Cao Cấp Chống Nước , Túi Du Lịch , Túi Công Sở Văn Phòng',
+            'regular_price' => 99000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/e58f54da1efc0cd7019274ec966c35d8.jpg.webp',
+            'description'   => '<p>Với Sự gia tăng vủa các thiết bị điện tử , thiết bị di động và các phụ kiện như cáp sạc đi kèm. Tất cả cáp dử liệu, ổ cứng và chuột đều cần phải "di chuyển", nếu thiếu cái nào thì rắc rối sẽ xảy ra. Bạn có thể tiếp tục chịu trạng thái lộn xộn và hoảng sợ hay bình tĩnh và tận hưởng cuộc sống một cách vui vẻ và đơn giản nhất.</p>
+            <p><strong>Túi Đựng Bảo Vệ Phụ Kiện Công Nhệ Cao Cấp Chống Nước Túi Du Lịch Túi Công Sở Văn Phòng&nbsp;</strong></p>
+            <p>Kích thước chuẩn (DxRxC) 24,5 x10 x 18 cm<br>Ngăn phân chia tùy biến được theo kích thước mọi loại phụ kiện<br>Vừa cả máy đọc sách<br>Đệm dày bảo vệ phụ kiện nhưng vẫn đảm bảo tính gọn nhẹ<br>Chống va đập hay ma sát cho các phụ kiện &amp; vật dụng an toàn chống trầy<br>Vải loại cao cấp 300D chống nước cấp độ 4 đồng thời giúp dáng túi chắc và thẩm mỹ cao<br>Thích hợp cho mọi nhu cầu di chuyển công việc, du lịch<br>Tính thẩm mỹ và bảo vệ được tính toán trong từng chi tiết</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/e4/ee/44/aff03076622eaf49cbfda68d0816507f.jpg" alt="" width="750" height="8316"></p>
+            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690013',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/e58f54da1efc0cd7019274ec966c35d8.jpg.webp',
+                'images/products/2023/11/365e9981b6cfb95cb9990597708d5847.jpg.webp'
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Túi du lịch đa năng, có gài vali, ngăn đựng giày và ngăn chống nước riêng biệt, túi xách du lịch MO hi - Hàng chính hãng',
+            'regular_price' => 155750,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/30259463d00a2a458e1753310729fc81.jpg.webp',
+            'description'   => '<p><strong>Chi tiết sản phẩm.</strong></p>
+            <p><iframe src="//www.youtube.com/embed/Ub-udNmFGsI" width="892" height="500" allowfullscreen=""></iframe></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/32/c8/2b/b42660ea50828f3cc1a166e89367351a.jpg" alt="" width="750" height="750"></strong></p>
+            <p><strong>Thiết kế với nhiều tiện ích.</strong></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/87/ae/70/9da22172673a98eacfdec2512140dd21.jpg" alt="" width="750" height="750"></strong></p>
+            <p><strong>Khả năng gài vali tiện lợi</strong></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/40/6d/05/e7afad241daefda230baa2553d037424.jpg" alt="" width="750" height="750"></strong></p>
+            <p><strong>Đeo chéo năng động</strong></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/a6/64/03/65b2f619aa0778f539d761fbc53b62eb.jpg" alt="" width="750" height="760"></strong></p>
+            <p><strong>Thiết kế cá tính, phù hợp cho cả nam và nữ.</strong></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/dc/6b/95/41cb0feb301ec970436deeb92fccc17a.jpg" alt="" width="750" height="750"></strong></p>
+            <p><strong>Chân thành cảm ơn quý khách!</strong></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
+            'sku'           => '11448690014',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 12,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/30259463d00a2a458e1753310729fc81.jpg.webp',
+                'images/products/2023/11/7f0c2ad350f304537fe52ad9f5a1a8bc.jpg.webp'
+            ]),
+            'variants'      => json_encode([]),
+        ],
 
     ]
 ];
