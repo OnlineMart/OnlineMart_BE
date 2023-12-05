@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\Auth;
 
 use Exception;
 use App\Models\Shop;
@@ -113,7 +113,7 @@ class AuthController extends Controller
 
         try {
             if (!$token = JWTAuth::attempt($credentials)) {
-                return jsonResponse(null, 401, 'Unauthorized');
+                return jsonResponse(null, 401, 'Tài khoản hoặc mật khẩu không hợp lệ');
             }
             logActivity('login', $request, 'Đăng nhập hệ thống', 'Đăng nhập');
 

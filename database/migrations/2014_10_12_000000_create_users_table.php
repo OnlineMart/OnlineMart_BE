@@ -25,11 +25,14 @@ return new class extends Migration {
             $table->string('password');
             $table->enum('type', ['user', 'adminShop', 'superAdmin'])->default('user');
             $table->string('avatar')->nullable();
-            $table->string('token', 6)->nullable();
             $table->enum('payment_method', ['0', '1', '2', '3'])->nullable()->comment('0: type_id, 1: provider, 2: expiry_date, 3: is_default');
 
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->enum('position', ['owner', 'seller'])->nullable();
+
+            $table->string('otp')->nullable();
+            $table->timestamp('otp_send_at')->nullable();
+
             $table->foreignIdFor(Shop::class)->nullable();
 
             $table->timestamps();

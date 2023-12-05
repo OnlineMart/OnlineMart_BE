@@ -3,7 +3,7 @@
 use App\Http\Controllers\API\Admin\PermissionController;
 use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\Admin\RoleController;
-use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\Auth\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\User\ProductController;
 use App\Http\Controllers\API\ShopController;
@@ -16,6 +16,7 @@ use App\Http\Controllers\API\User\WishlistController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ActivitiLogController;
 use App\Http\Controllers\API\User\ProductFlashSaleController;
+use App\Http\Controllers\API\Auth\ForgotPasswordController;
 
 //use App\Http\Controllers\API\CartController;
 
@@ -31,7 +32,6 @@ use App\Http\Controllers\API\User\ProductFlashSaleController;
 */
 
 /* ======== API Auth ======== */
-
 Route::group([
     'middleware' => ['api', 'cors'],
     'prefix'     => 'auth'
@@ -41,6 +41,12 @@ Route::group([
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('refresh', [AuthController::class, 'refresh']);
 });
+
+/* ======== API Forgot password ======== */
+Route::post("otp/generate", [ForgotPasswordController::class, 'sendVerificationToReceiver']);
+Route::post("otp/verify", [ForgotPasswordController::class, 'verifiedOTP']);
+Route::post("reset-password", [ForgotPasswordController::class, 'resetPassword']);
+Route::get("otp/{receiverAddress}/send-at", [ForgotPasswordController::class, 'getOTPSendAt']);
 
 /* ======== API Products ======== */
 Route::group([

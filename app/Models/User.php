@@ -3,15 +3,24 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+
+use Exception;
+use App\Models\Shop;
+use App\Models\Order;
+use App\Models\Voucher;
+use Illuminate\Http\JsonResponse;
+use Twilio\Rest\Client;
+use App\Mail\SendVerifiedEmail;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Mail;
 use Spatie\Permission\Traits\HasRoles;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -42,7 +51,8 @@ class User extends Authenticatable implements JWTSubject
         'gender',
         'phone',
         'avatar',
-        'token',
+        'otp',
+        'otp_send_at',
         'payment_method',
         'type',
         'status',
@@ -142,5 +152,41 @@ class User extends Authenticatable implements JWTSubject
     public function getTeamIdFromToken(): int | null
     {
         return $this->shop_id;
+    }
+
+    /**
+     * @param $receiverEmail
+     * @param $user
+     */
+    public function sendEmailVerification($receiverEmail, $user)
+    {
+        try {
+            Mail::to($receiverEmail)->send(new SendVerifiedEmail($user));
+
+        } catch(Exception $e) {
+            return jsonResponse(null, 400, $e->getMessage());
+        }
+    }
+
+    /**
+     * @param $receiverPhone
+     * @param $message
+     */
+    public function sendSmsVerification($receiverPhone, $message)
+    {
+        try {
+            $account_id = getenv("TWILIO_SID");
+            $auth_token = getenv("TWILIO_TOKEN");
+            $twilio_number = getenv("TWILIO_FROM");
+
+            $client = new Client($account_id, $auth_token);
+            $client->messages->create($receiverPhone, [
+                'from' => $twilio_number,
+                'body' => $message
+            ]);
+
+        } catch(Exception $e) {
+            return jsonResponse(null, 400, $e->getMessage());
+        }
     }
 }
