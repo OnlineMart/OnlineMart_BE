@@ -31,6 +31,10 @@ return [
         ['name' => 'View bin', 'guard_name' => 'api'],
         ['name' => 'Update bin', 'guard_name' => 'api'],
         ['name' => 'Delete bin', 'guard_name' => 'api'],
+        ['name' => 'View reports', 'guard_name' => 'api'],
+        ['name' => 'View operations', 'guard_name' => 'api'],
+        ['name' => 'View traffic', 'guard_name' => 'api'],
+        ['name' => 'View settings', 'guard_name' => 'api'],
         ['name' => 'Authorizations', 'guard_name' => 'api']
     ],
 
