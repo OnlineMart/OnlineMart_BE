@@ -12,7 +12,9 @@ use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\User\ReviewController;
 use App\Http\Controllers\API\User\WishlistController;
+use App\Http\Controllers\API\User\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ActivitiLogController;
 use App\Http\Controllers\API\User\ProductFlashSaleController;
@@ -128,3 +130,10 @@ Route::patch("/notifications/{id}", [NotificationController::class, 'changeStatu
 Route::put("/notifications/{type}/mass-status", [NotificationController::class, 'massChangeStatusNotifications']);
 Route::delete('/notifications/{type}/mass-delete', [NotificationController::class, 'massDeleteNotifications']);
 Route::apiResource('/notifications', NotificationController::class)->except(["index"]);
+// Order
+Route::apiResource('user/order', OrderController::class)->except(['store']);
+Route::get('/user/order/get/{userId}',[OrderController::class,'getOrderUser']);
+Route::post('/user/order/reason-cancel',[OrderController::class,'addReasonCancel']);
+// Review product
+Route::apiResource('/review/product',ReviewController::class)->except(['index','show','update','destroy']);
+Route::get('/get/review/{productId}/{userId}',[ReviewController::class, 'getReviewProduct']);

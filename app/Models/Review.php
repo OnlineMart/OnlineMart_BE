@@ -18,6 +18,8 @@ class Review extends Model
         'image',
         'rating',
         'like_count',
+        'agree',
+        'disagree',
         'parent_id',
         'user_id',
         'product_id',
@@ -49,9 +51,22 @@ class Review extends Model
         return $this->belongsTo(Shop::class);
     }
 
+    /**
+     *
+     * @return HasMany
+     */
     public function review_media(): HasMany
     {
         return $this->hasMany(ReviewMedia::class);
+    }
+
+    /**
+     *
+     * @return HasMany
+     */
+    public function order():HasMany
+    {
+        return $this->hasMany(Order::class);
     }
 
 }

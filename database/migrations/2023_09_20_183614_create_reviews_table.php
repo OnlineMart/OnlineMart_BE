@@ -19,12 +19,15 @@ return new class extends Migration {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->text('content');
-            $table->integer('rating');
-            $table->integer('like_count');
+            $table->integer('rating')->nullable();
+            $table->integer('like_count')->nullable();
             $table->integer("parent_id")->nullable();
+            $table->string('agree')->nullable();
+            $table->string('disagree')->nullable();
 
             $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Shop::class);
+            $table->foreignIdFor(Order::class);
+            $table->foreignIdFor(Shop::class)->nullable();
             $table->foreignIdFor(Product::class);
 
             $table->timestamps();
