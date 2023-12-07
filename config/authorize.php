@@ -18,11 +18,11 @@ return [
         ['name' => 'Create supllier', 'guard_name' => 'api'],
         ['name' => 'Update supllier', 'guard_name' => 'api'],
         ['name' => 'Delete supllier', 'guard_name' => 'api'],
-        ['name' => 'View coupons', 'guard_name' => 'api'],
         ['name' => 'View vouchers', 'guard_name' => 'api'],
         ['name' => 'Create voucher', 'guard_name' => 'api'],
         ['name' => 'Update voucher', 'guard_name' => 'api'],
         ['name' => 'Delete voucher', 'guard_name' => 'api'],
+        ['name' => 'View orders', 'guard_name' => 'api'],
         ['name' => 'Manage users', 'guard_name' => 'api'],
         ['name' => 'View inventory', 'guard_name' => 'api'],
         ['name' => 'View reviews', 'guard_name' => 'api'],
@@ -35,6 +35,10 @@ return [
         ['name' => 'View operations', 'guard_name' => 'api'],
         ['name' => 'View traffic', 'guard_name' => 'api'],
         ['name' => 'View settings', 'guard_name' => 'api'],
+        ['name' => 'View reason cancel', 'guard_name' => 'api'],
+        ['name' => 'Create reason cancel', 'guard_name' => 'api'],
+        ['name' => 'Update reason cancel', 'guard_name' => 'api'],
+        ['name' => 'Delete reason cancel', 'guard_name' => 'api'],
         ['name' => 'Authorizations', 'guard_name' => 'api']
     ],
 

@@ -3,10 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\Admin\OrderController;
 use App\Http\Controllers\API\Admin\ReviewController;
+use App\Http\Controllers\API\Admin\ProductBinController;
+use App\Http\Controllers\API\Admin\ReasonCancelController;
 use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
 use App\Http\Controllers\API\Admin\VoucherController;
-use App\Http\Controllers\API\Admin\ProductBinController;
 use App\Http\Controllers\API\Admin\ProductStockController;
 use App\Http\Controllers\API\Admin\TrafficWebsiteController;
 
@@ -45,6 +46,7 @@ Route::post('/reviews/{reviewId}/reply', [ReviewController::class, 'replyReview'
 
 /* ======== API Order ======== */
 Route::apiResource('order', OrderController::class);
+Route::get('/order/shop/{shopId}',[OrderController::class,'getOrderShop']);
 
 /* ======== API Soft Delete Product ======== */
 Route::prefix('bin')->group(function () {
@@ -52,6 +54,9 @@ Route::prefix('bin')->group(function () {
     Route::patch('/{id}/restore', [ProductBinController::class, 'restoreMultiple']);
     Route::delete('/{id}/delete', [ProductBinController::class, 'deleteMultiple']);
 });
+/* ======== API Reason Cancel ======== */
+Route::apiResource('reason-cancel',ReasonCancelController::class)->except(["index", "show"]);
+Route::get('/reason-cancel/shop/{shopId}',[ReasonCancelController::class,'getReasonCancelShop']);
 
 /* ======== API Develop Center ======== */
 Route::prefix('dev')->group(function () {

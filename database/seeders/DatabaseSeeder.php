@@ -31,11 +31,14 @@ class DatabaseSeeder extends Seeder
             VoucherSeeder::class,
             ShippingAddressSeeder::class,
             OrderStatusesSeeder::class,
+            PaymentMethodsSeeder::class,
             OrdersSeeder::class,
+            OrderDetailSeeder::class,
             ReviewSeeder::class,
             ReviewMediaSeeder::class,
             ProductFullDataSeeder::class,
             ViewCountSeeder::class,
+            ReasonCancelSeeder::class
         ]);
     }
 }

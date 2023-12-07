@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 
 class S3Helper
 {
-    private array $directoryType = ['users', 'products', 'categories'];
+    private array $directoryType = ['users', 'products', 'categories','reviews'];
 
     /**
      * @param        $file

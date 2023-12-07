@@ -83,7 +83,9 @@ class Shop extends Model
     {
         return $this->hasMany(Review::class);
     }
-
+    public function order(){
+        return $this->hasMany(Order::class);
+    }
      /**
      *
      * @return belongsTo
@@ -91,5 +93,12 @@ class Shop extends Model
     public function order_detail(): HasMany
     {
         return $this->hasMany(OrderDetail::class);
+    }
+      /**
+     * @return HasMany
+     */
+    public function reasonCancels()
+    {
+        return $this->hasMany(ReasonCancel::class);
     }
 }
