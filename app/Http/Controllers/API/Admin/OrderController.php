@@ -139,4 +139,61 @@ class OrderController extends Controller
             return jsonResponse(null, 500, $e->getMessage());
         }
     }
+
+    /**
+     * Lấy chi tiết đơn hàng
+     *
+     * @param $id
+     * @return JsonResponse
+     */
+    public function show($id): JsonResponse
+    {
+        try {
+            $orders = Order::with([
+                'order_detail',
+                'order_detail.shop',
+                'order_detail.product',
+                'user:id,full_name,phone',
+                'voucher:id,discount,unit',
+                'order_status:id,status_name',
+                'payment_method:id,method_name',
+                'shipping_address:id,street,district,city',
+            ])->where('id', $id)->first();
+
+            $response = [
+                'id' => $orders->id,
+                'status' => $orders->order_status->status_name,
+                'full_name' => $orders->user->full_name,
+                'shipping_unit' => $orders->shipping_unit,
+                'street' => $orders->shipping_address->street,
+                'district' => $orders->shipping_address->district,
+                'city' => $orders->shipping_address->city,
+                'delivery_date' => $orders->delivery_date,
+                'created_at' => $orders->created_at,
+                'grand_total' => $orders->total_price,
+                'user' => $orders->user,
+                'voucher' => $orders->voucher,
+                'order_item' => $orders->order_detail->map(function ($order_detail) {
+                    $totalMoney = $order_detail->product_quantity * $order_detail->product_price - $order_detail->sale_price;
+                    return [
+                        'shop_id' => $order_detail->shop->id,
+                        'shop_name' => $order_detail->shop->name,
+                        'product' => [
+                            'id'          => $order_detail->id,
+                            'product_name' => $order_detail->product_name,
+                            'product_image' => $order_detail->product_image,
+                            'product_quantity' => $order_detail->product_quantity,
+                            'product_price' => $order_detail->product_price,
+                            'product_sale' => $order_detail->product->sale_price,
+                            'product_sku' => $order_detail->product->sku,
+                            'total_money' => $totalMoney
+                        ],
+                    ];
+                })->values(),
+            ];
+            return jsonResponse($response, 200, "Get orders successfully");
+        } catch (Exception $e) {
+            return jsonResponse(null, 500, $e->getMessage());
+        }
+    }
 }

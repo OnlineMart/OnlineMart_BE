@@ -24,7 +24,7 @@ class ReplyRequestStore extends BaseRequest
     public function rules(): array
     {
         return [
-            'content' => 'required|string',
+           'content' => 'required|string',
         ];
     }
 
