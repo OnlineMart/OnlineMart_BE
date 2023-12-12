@@ -14,6 +14,7 @@ class Review extends Model
     protected $table = 'reviews';
 
     protected $fillable = [
+        'id',
         'content',
         'image',
         'rating',
@@ -58,6 +59,16 @@ class Review extends Model
     public function review_media(): HasMany
     {
         return $this->hasMany(ReviewMedia::class);
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Review::class, "parent_id")->whereNotNull("parent_id");
+    }
+
+    public function likes(): HasMany
+    {
+        return $this->hasMany(Like::class);
     }
 
     /**

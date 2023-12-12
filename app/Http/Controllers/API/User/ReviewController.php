@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\API\User;
 
-use App\Http\Helpers\S3Helper;
-use App\Http\Requests\Review\ReviewProductRequest;
-use App\Models\ReviewMedia;
 use Exception;
 use App\Models\Review;
+use App\Models\ReviewMedia;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use App\Http\Helpers\S3Helper;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Log;
-use Probots\Pinecone\Client as Pinecone;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Review\ReplyRequestStore;
+use App\Http\Requests\Review\ReviewProductRequest;
 
 class ReviewController extends Controller
 {
@@ -19,6 +19,7 @@ class ReviewController extends Controller
     private S3Helper $upload;
     public function __construct()
     {
+        $this->middleware('auth:api')->only("commentReview");
         $this->upload = new S3Helper();
     }
 
@@ -101,6 +102,134 @@ class ReviewController extends Controller
             return jsonResponse($response, 200, 'Review product successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
+        }
+    }
+
+    /**
+     * Lấy ra tất cả các review theo product_id
+     *
+     * @param Request $request
+     *
+     * @return JsonResponse
+     */
+    public function getCustomerReviews(Request $request): JsonResponse
+    {
+
+        try {
+            $productId = $request->product_id;
+
+            $reviews = Review::with([
+                'user:id,user_name,avatar,created_at',
+                'product:id',
+                'review_media:review_id,media',
+                'replies' => function ($query) {
+                    $query->orderBy('id', 'DESC');
+                },
+                'replies.user',
+
+                // TODO: Cần lấy thêm thông tin của sản phẩm (biến thể,...) để hiển thị
+                // TODO: Cần "Ngày đã dùng" = Ngày nhận hàng - Ngày review
+            ])->where('product_id', $productId)
+                ->whereNull("parent_id")
+                ->orderBy('id', 'DESC')
+                ->get();
+
+            return jsonResponse($reviews, 200, 'Reviews render successfull!');
+        } catch (Exception $e) {
+            return jsonResponse($e->getMessage(), 500, 'Something went wrong');
+        }
+    }
+
+
+    /**
+     * Lấy ra tất cả hình ảnh trong tất cả bình luận của một sản phẩm
+     *
+     * @param int $productId
+     *
+     * @return JsonResponse
+     */
+    public function getAllImages(int $productId): JsonResponse
+    {
+        try {
+            $images = Review::where('product_id', $productId)
+                ->with('review_media')
+                ->get()
+                ->pluck('review_media.*.media')
+                ->flatten();
+
+            return jsonResponse($images, 200, 'Lấy hình ảnh từ các bình luận thành công!');
+        } catch (Exception $e) {
+            return jsonResponse($e->getMessage(), 500, 'Có lỗi xảy ra');
+        }
+    }
+
+
+    /**
+     * Lấy số lượt đánh giá và thống kê từ 1-5 cho một sản phẩm
+     *
+     * @param int $productId
+     *
+     * @return JsonResponse
+     */
+    public function getRating(int $productId): JsonResponse
+    {
+        $ratings = Review::where('product_id', $productId)->pluck('rating')->toArray();
+
+        $counts = array_fill(1, 5, 0);
+
+        foreach ($ratings as $rating) {
+            $roundedRating = round($rating);
+            if (isset($counts[$roundedRating])) {
+                $counts[$roundedRating]++;
+            }
+        }
+
+        $total = array_sum($counts);
+
+        $result = [];
+        for ($i = 1; $i <= 5; $i++) {
+            $count = $counts[$i];
+            $percent = $total > 0 ? round(($count / $total) * 100) : 0;
+
+            $result[$i] = [
+                'count'   => $count,
+                'percent' => $percent,
+            ];
+        }
+
+        return jsonResponse($result, 200, "ok");
+    }
+
+
+    /**
+     * Tạo comment mới (người khác sẽ bình luận bên dưới một review nào đó = trả lời bình luận đã tồn tại)
+     *
+     * @param ReplyRequestStore $request
+     * @param int               $reviewId
+     * @param int               $productId
+     *
+     * @return JsonResponse
+     */
+    public function commentReview(ReplyRequestStore $request, int $reviewId, int $productId): JsonResponse
+    {
+        try {
+            $data = $request->validated();
+
+            $comment = Review::create([
+                'user_id'    => auth()->user()->id,
+                'product_id' => $productId,
+                'shop_id'    => null,
+                'content'    => $data['content'],
+                'rating'     => null,
+                'like_count' => 0,
+                'agree'      => null,
+                'disagree'   => null,
+                'parent_id'  => $reviewId,
+            ]);
+
+            return jsonResponse($comment, 200, 'Commenting on a review has been successfully !');
+        } catch (Exception $e) {
+            return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, 'Something went wrong');
         }
     }
 }

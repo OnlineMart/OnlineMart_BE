@@ -19,7 +19,7 @@ return new class extends Migration {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->text('content');
-            $table->integer('rating')->nullable();
+            $table->float('rating')->nullable();
             $table->integer('like_count')->nullable();
             $table->integer("parent_id")->nullable();
             $table->string('agree')->nullable();

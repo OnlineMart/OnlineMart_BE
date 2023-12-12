@@ -48,7 +48,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'type'      => User::ADMIN_SHOP,
                     'shop_id'   => 1,
                     'status'    => User::ACTIVE,
-                    'position'  => User::OWNER
+                    'position'  => User::OWNER,
+                    'created_at' => now()->toDateTimeString(),
+                    'updated_at' => now()->toDateTimeString()
                 ],
                 [
                     'full_name' => 'Admin',
@@ -62,7 +64,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'type'      => User::ADMIN_SHOP,
                     'shop_id'   => 2,
                     'status'    => User::ACTIVE,
-                    'position'  => User::OWNER
+                    'position'  => User::OWNER,
+                    'created_at' => now()->toDateTimeString(),
+                    'updated_at' => now()->toDateTimeString()
                 ],
                 [
                     'full_name' => 'Owner',
@@ -76,7 +80,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'type'      => User::ADMIN_SHOP,
                     'shop_id'   => 1,
                     'status'    => User::ACTIVE,
-                    'position'  => USER::SELLER
+                    'position'  => USER::SELLER,
+                    'created_at' => now()->toDateTimeString(),
+                    'updated_at' => now()->toDateTimeString()
                 ],
                 [
                     'full_name' => 'Editor',
@@ -90,7 +96,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'type'      => User::ADMIN_SHOP,
                     'shop_id'   => 1,
                     'status'    => User::ACTIVE,
-                    'position'  => USER::SELLER
+                    'position'  => USER::SELLER,
+                    'created_at' => now()->toDateTimeString(),
+                    'updated_at' => now()->toDateTimeString()
                 ],
                 [
                     'user_name' => 'quangthai',
@@ -105,7 +113,9 @@ class RolesAndPermissionsSeeder extends Seeder
                     'type'      => User::USER,
                     'shop_id'   => null,
                     'status'    => User::ACTIVE,
-                    'position'  => null
+                    'position'  => null,
+                    'created_at' => now()->toDateTimeString(),
+                    'updated_at' => now()->toDateTimeString()
                 ]
             ]);
 

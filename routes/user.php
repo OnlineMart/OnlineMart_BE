@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ActivitiLogController;
 use App\Http\Controllers\API\User\ProductFlashSaleController;
 use App\Http\Controllers\API\Auth\ForgotPasswordController;
+use App\Http\Controllers\API\User\LikeController;
 
 //use App\Http\Controllers\API\CartController;
 
@@ -130,10 +131,23 @@ Route::patch("/notifications/{id}", [NotificationController::class, 'changeStatu
 Route::put("/notifications/{type}/mass-status", [NotificationController::class, 'massChangeStatusNotifications']);
 Route::delete('/notifications/{type}/mass-delete', [NotificationController::class, 'massDeleteNotifications']);
 Route::apiResource('/notifications', NotificationController::class)->except(["index"]);
+
 // Order
 Route::apiResource('user/order', OrderController::class)->except(['store']);
 Route::get('/user/order/get/{userId}',[OrderController::class,'getOrderUser']);
 Route::post('/user/order/reason-cancel',[OrderController::class,'addReasonCancel']);
+
 // Review product
 Route::apiResource('/review/product',ReviewController::class)->except(['index','show','update','destroy']);
 Route::get('/get/review/{productId}/{userId}',[ReviewController::class, 'getReviewProduct']);
+
+// Api reviews
+Route::prefix('customer_reviews')->group(function() {
+    Route::get('/', [ReviewController::class, 'getCustomerReviews']);
+    Route::post('/{reviewId}/{productId}/comment', [ReviewController::class, 'commentReview']);
+    Route::get('{productId}/all-images', [ReviewController::class, 'getAllImages']);
+    Route::get('{productId}/ratings', [ReviewController::class, 'getRating']);
+
+    Route::get('/{productId}/likes', [LikeController::class, 'getAllLike']);
+    Route::patch('/{userId}/{productId}/{reviewId}/like', [LikeController::class, 'updateLikeStatus']);
+});
