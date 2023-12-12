@@ -1,7 +1,5 @@
 <?php
 
-use Carbon\Carbon;
-
 return [
     /*
      * name phải nhỏ hơn 255 kí tự - KHÔNG ĐƯỢC TRÙNG
@@ -87,10 +85,10 @@ return [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
                         'Vàng kem' => [
-                            'quantity'      => 100, // quantity variant
+                            'quantity'     => 100, // quantity variant
                             'selling_price' => 11590000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'ABC'
+                            'sale_price'   => 0,
+                            'product_code' => 'ABC'
                         ],
                         'Đen'      => [
                             'quantity'      => 100,
@@ -100,7 +98,7 @@ return [
                         ]
                     ]
                 ]
-            ]),
+            ])
         ],
         [
             'name'          => 'NEVER GIVE UP, mã G112. Áo thun nam nữ in chữ siêu đẹp, form unisex. Áo phông GOKING hàng hiệu, quà tặng cao cấp cho gia đình, cặp đôi, hội nhóm, doanh nghiệp',
@@ -160,13 +158,13 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Navy, vải 100% cotton'  => [
+                        'Navy, vải 100% cotton'         => [
                             'quantity'      => 100,
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM301'
                         ],
-                        'Đô, vải 100% cotton'    => [
+                        'Đô, vải 100% cotton'         => [
                             'quantity'      => 100,
                             'selling_price' => 99000,
                             'sale_price'    => 0,
@@ -177,8 +175,8 @@ return [
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM303'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -200,10 +198,10 @@ return [
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM306'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Gia đình là số 1, mã LV2. Áo thun hàng hiệu GOKING, form unisex cho nam nữ, trẻ em, bé trai gái. Áo phông in hình chữ đẹp. Quà tặng cao cấp cho gia đình, cặp đôi, hội nhóm, doanh nghiệp',
@@ -263,7 +261,7 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Vàng, vải 100% cotton'  => [
+                        'Vàng, vải 100% cotton'   => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
@@ -275,13 +273,13 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM308'
                         ],
-                        'Đô, vải thun lạnh'      => [
+                        'Đô, vải thun lạnh'    => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM309'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -303,10 +301,10 @@ return [
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM312'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Áo Thun Nam Ngắn Tay 5S PREMIUM, Chất Liệu Cotton Siêu Mềm, Mát, Thấm Hút Tốt, Thiết Kế Thể Thao, Khỏe Khoắn (TSO23008)',
@@ -337,13 +335,13 @@ return [
             'gallery'       => json_encode([
                 'images/products/2023/11/835362872ccb08137e86b0e0409bbed7.jpg.webp',
                 'images/products/2023/11/c90fe099156cb1b47691b66fee4e9a8f.jpg.webp',
-                'images/products/2023/11/77e3846ed800acb3225220df012a8fbb.jpg.webp',
+                'images/products/2023/11/77e3846ed800acb3225220df012a8fbb.jpg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Nâu'       => [
+                        'Nâu'        => [
                             'quantity'      => 100,
                             'selling_price' => 119000,
                             'sale_price'    => 0,
@@ -360,8 +358,8 @@ return [
                             'selling_price' => 119000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM315'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -383,10 +381,10 @@ return [
                             'selling_price' => 119000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM318'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Quần Túi Hộp Tháo Ống US ARMY U880 Chuyên Phượt Chất Vải Gió Cao Cấp Mau Khô Ống Có Thể Tháo Rời Làm Quần Short -HÀNG CHÍNH HÃNG',
@@ -456,13 +454,13 @@ return [
                             'sale_price'    => 499000,
                             'product_code'  => 'OM313'
                         ],
-                        'Trắng'    => [
+                        'Trắng'   => [
                             'quantity'      => 100,
                             'selling_price' => 598000,
                             'sale_price'    => 525000,
                             'product_code'  => 'OM314'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -484,10 +482,10 @@ return [
                             'selling_price' => 323000,
                             'sale_price'    => 298000,
                             'product_code'  => 'OM318'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Áo khoác dù 2 mặt chống Nước LADOS - 2027 , Form đẹp, chống nắng, chống nước tốt',
@@ -518,25 +516,25 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Xám đậm'  => [
+                        'Xám đậm' => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM319'
                         ],
-                        'Đen'      => [
+                        'Đen'        => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM320'
                         ],
-                        'Xanh Mực' => [
+                        'Xanh Mực'  => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM321'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -558,10 +556,10 @@ return [
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM324'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Quần short nam big size quần sọt nam thể thao chống nóng quần đùi nam mặc nhà quần thun nam cotton 4 chiều co giãn cao cấp WSB2',
@@ -613,13 +611,13 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM326'
                         ],
-                        'Trắng'    => [
+                        'Trắng'   => [
                             'quantity'      => 100,
                             'selling_price' => 59000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM327'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -641,10 +639,10 @@ return [
                             'selling_price' => 203000,
                             'sale_price'    => 198000,
                             'product_code'  => 'OM330'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Áo Sơ Mi Nam Dài Tay Sọc Chữ Mã GM11 Thời Trang EMEY LUXURY Thiết Kế Nam Tính Lịch Lãm Chuẩn Form',
@@ -691,13 +689,13 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Xám'   => [
+                        'Xám'    => [
                             'quantity'      => 100,
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM331'
                         ],
-                        'Đen'   => [
+                        'Đen'    => [
                             'quantity'      => 100,
                             'selling_price' => 160000,
                             'sale_price'    => 0,
@@ -708,8 +706,8 @@ return [
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM333'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -731,10 +729,10 @@ return [
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM336'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => '[ Có Ảnh Thật ] Áo thun trơn tay lỡ form rộng unisex - Phông trơn',
@@ -809,15 +807,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM337'
                         ],
-                        'Đen'   => [
+                        'Đen'    => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM338'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'PARIS, mã G108. Áo phông GOKING hàng hiệu, form unisex cho nam nữ, trẻ em, bé trai gái. Áo thun in hình siêu đẹp, quà tặng cao cấp cho gia đình, cặp đôi, hội nhóm, doanh nghiệp.',
@@ -880,7 +878,7 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Vàng'  => [
+                        'Vàng'   => [
                             'quantity'      => 100,
                             'selling_price' => 269000,
                             'sale_price'    => 0,
@@ -891,8 +889,8 @@ return [
                             'selling_price' => 269000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM340'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -914,10 +912,10 @@ return [
                             'selling_price' => 269000,
                             'sale_price'    => 00,
                             'product_code'  => 'OM343'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Áo thun nam dài tay Julido, Chất thun cotton xịn bo tay và hông mẫu thu đông AT1357',
@@ -952,8 +950,8 @@ return [
                             'selling_price' => 414000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM344'
-                        ],
-                    ],
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -975,10 +973,697 @@ return [
                             'selling_price' => 414000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM347'
-                        ],
-                    ],
-                ],
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Áo thun tay lỡ form rộng unisex - Áo phông nam nữ oversize - T shirt Forest',
+            'regular_price' => 79000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/e68cc901622cce5fdea75c1a217a63d0.jpg.webp',
+            'description'   => 'Bạn ơi đừng ngại nữa, nhà mình còn gì đâu.
+
+                Chỉ toàn là áo xịn, mua rồi là nghiện đó!!!!
+
+                Áo thun tay lỡ form rộng xịn xò cập bến rồi đây ạ
+
+                Với chất liệu thun cotton dày mịn được lựa chọn kĩ lưỡng để phù hợp với mọi hoàn cảnh.
+
+                Thiết kế Unisex sẽ mang đến một outfit năng động và cá tính dù không cần mix-match cầu kì.
+
+                Form áo unisex nam nữ đều mặc được.
+
+                Chiều dài áo 70cm
+
+                Ngang ngực 52cm
+
+                Tay áo dài 26cm
+
+                Ngang vai 53cm
+
+                => Nếu bạn không rõ mình mặc như thế nào, bạn có thể inbox chiều cao và cân nặng cho 2N ngay nhé, chúng mình sẽ cho bạn lời khuyên chuẩn không cần chỉnh lunnnn!!!
+
+                2N CAM KẾT
+
+                Sản phẩm 100% giống mô tả.
+
+                Đảm bảo vải chất lượng.
+
+                Áo được kiểm tra kĩ càng, cẩn thận và tư vấn nhiệt tình trước khi giao hàng.
+
+                Hàng có sẵn, giao hàng ngay khi nhận được đơn.
+
+                Hoàn tiền nếu sản phẩm không giống với mô tả.
+
+                Giao hàng trên toàn quốc, nhận hàng trả tiền.
+
+                Lưu ý :
+
+                Kích thước có thể có sai số 1-3 cm do phép đo thủ công.
+
+                Do màn hình và điều kiện ánh sáng khác nhau, màu sắc thực tế của sản phẩm có thể chênh lệch khoảng 3-5% ạ!!
+
+                2N Unisex sẵn sàng phục vụ
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....
+
+                Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.',
+            'sku'           => '33333333311',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/e68cc901622cce5fdea75c1a217a63d0.jpg.webp',
+                'images/products/2023/11/958d2a3a46985498986a2364243f602c.jpg.webp'
             ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Đỏ' => [
+                            'quantity'      => 100,
+                            'selling_price' => 79000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM348'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Áo thun tay lỡ form rộng - phông nam nữ oversize - T shirt in tọa độ - 2N Unisex',
+            'regular_price' => 99000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/4a33bfcf210d37740b410752e9dd1818.jpg.webp',
+            'description'   => '**THÔNG TIN SẢN PHẨM**
+
+                Tên sản phẩm: Áo thun tay lỡ form rộng unisex.
+
+                Kiểu dáng: Tay lỡ form rộng.
+
+                Kích thước: FREESIZE nam nữ đều mặc được.
+
+                Chiều dài áo: 70cm
+
+                Ngang ngực: 52cm
+
+                Tay áo dài: 26cm
+
+                Ngang vai: 53cm
+
+                =>Từ 45kg đến 65kg: Lên form rộng thoải mái.
+
+                =>Từ 66kg đến 70kg: Lên form rộng vừa.
+
+                Xuất Xứ: Việt Nam.
+
+                Nhà sản xuất: Công Ty TNHH SX TM DV May Mặc Huy Hoàng.
+
+                **ĐẶC ĐIỂM NỔI BẬT**
+
+                Thiết kế tay lỡ form rộng sẽ mang đến một outfit năng động và cá tính dù không cần mix-match cầu kì.
+
+                Form áo unisex nam nữ đều mặc được.
+
+                Hình in đa dạng, sử dụng mực in dẻo bền màu. An toàn với người sử dụng.
+
+                Màu sắc độc lạ được đặt dệt riêng chỉ 2N mới có!
+
+                **QUYỀN LỢI KHÁCH HÀNG**
+
+                - Miễn phí đổi hàng trong vòng 03 ngày nếu sản phẩm kém chất lượng.
+
+                - Hỗ trợ đổi sản phẩm mới khi sản phẩm còn nguyên tem mác.
+
+                - 2N Unisex giải quyết nhanh_nhiệt tình_tận tâm khi đơn hàng gặp vấn đề.
+
+                - Nhận ngay VOUCHER giảm 5% cho đơn hàng tiếp theo khi đánh giá sản phẩm kèm hình ảnh feedback. ( Khi đặt đơn hàng tiếp theo, Bạn nhớ ib cho shop nhé! )
+
+                **HƯỚNG DẪN BẢO QUẢN**
+
+                - Lần đầu giặt không nên sử dụng trực tiếp xà phòng, nên ngâm trong nước xả vải từ 5-10 phút rồi phơi áo. Giúp áo giữ màu lâu.
+
+                - Nên giặt tay để áo có độ bền cao.
+
+                - Giặt với nhiệt độ thường.
+
+                - Không dùng hóa chất tẩy rửa mạnh.
+
+                - Phơi ở nơi thoáng mát, tránh ánh nắng trực tiếp.
+
+                - Là ủi ở nhiệt độ thấp, và không ủi trực tiếp lên hình in.
+
+                **2N UNISEX CAM KẾT**
+
+                Sản phẩm 100% giống mô tả.
+
+                Tư vấn hỗ trợ khách hàng nhiệt tình, chu đáo.
+
+                Thời gian giao hàng tối ưu nhất
+
+                Hàng có sẵn, giao hàng ngay khi nhận được đơn.
+
+                Hoàn tiền nếu sản phẩm không giống với mô tả.
+
+                Lưu ý :
+
+                Kích thước có thể có sai số 1-3 cm do phép đo thủ công.
+
+                2N Unisex sẵn sàng phục vụ
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....
+
+                Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.',
+            'sku'           => '33333333312',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/4a33bfcf210d37740b410752e9dd1818.jpg.webp',
+                'images/products/2023/11/5c59511e458f70dce40916f3bd238161.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Đen'    => [
+                            'quantity'      => 100,
+                            'selling_price' => 99000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM349'
+                        ],
+                        'Trắng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 99000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM350'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Quần jean nam co giãn cao cấp trơn Lados-4068 Form slimfit chuẩn, thoải mái, không xù lông, ra màu',
+            'regular_price' => 295000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/5aa5132f28e43a1b6b3a0f32033a2f69.png.webp',
+            'description'   => '',
+            'sku'           => '33333333313',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/5aa5132f28e43a1b6b3a0f32033a2f69.png.webp',
+                'images/products/2023/11/16689210f02984171f31a3f9c93ad17b.jpg.webp',
+                'images/products/2023/11/83c9ce4e2cb1fb2c199c6b3003191a66.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh đậm' => [
+                            'quantity'      => 100,
+                            'selling_price' => 295000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM351'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Combo 2 Quần shorts thể thao nam dạng sọt sport đùi chất thun lạnh 4 chiều cao cấp phù hợp tập gym hay mặc nhà màu trắng và đen DUI-P101 - tặng 1 khẩu trang chống nắng.',
+            'regular_price' => 79000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/f1f0a699469a0312618f0dbde940b634.jpg.webp',
+            'description'   => 'Quần shorts thể thao nam dạng sọt sport đùi
+
+                Chất liệu : thun lạnh thể thao 4 chiều
+
+                Đặt biệt quần nằm ờ các khóa kéo túi dọc 2 bên thân quần tạo nét cá tính cho sản phẩm.
+
+                Chữ Sports được thêu sắc sảo tạo điểm nhấn cho chiếc quần thể thao nhé
+
+                Quần sọt nam được may từ vải thun lạnh nên mặt  cực kỳ thoải mái
+
+                Sàn phẩm quần đùi được kết hợp áo thun đen, trắng sát nách hay áo phông đi dạo phố  tập gym mặc nhà
+
+                Quần là Thương hiệu đã đăng ký độc quyền
+
+                CÁCH CHỌN SIZE:
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333314',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/f1f0a699469a0312618f0dbde940b634.jpg.webp',
+                'images/products/2023/11/80c152e0efe1fd2b8e25c55cac4e40c4.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Size' => [
+                    'variant_name'   => 'Size',
+                    'variant_values' => [
+                        'M'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 79000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM352'
+                        ],
+                        'XL' => [
+                            'quantity'      => 100,
+                            'selling_price' => 79000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM353'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Áo Khoác Gió Thể Thao Nam 5S TRAINING TIME, Mềm Mượt, Cản Gió, Chống Bám Bụi, Nhẹ, Siêu Ấm (AKG22020)',
+            'regular_price' => 399000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/70621d278576a3a0c5bb7abfe47e56ce.jpg.webp',
+            'description'   => '--------------------------------------
+                <img src="https://salt.tikicdn.com/ts/tmp/0c/5c/d4/6f17ad954f6c9cb3f75e1e4e451e143a.jpg">
+                <img src="https://salt.tikicdn.com/ts/tmp/64/40/7d/eb0d99cfee5ed8f1d53c95ff62eb2445.jpg">
+
+                ƯU ĐÃI KHI MUA TẠI 5S:
+
+                - Click “Theo dõi” shop để nhận ngay VOUCHER giảm giá.
+
+                - Nhận hàng đánh giá 5* kèm hình ảnh sản phẩm và video, nhắn tin 5S ngay để nhận QUÀ nhé!
+
+                ** 5S cảm ơn quý khách hàng đã tin tưởng và đồng hành cùng shop. Chúc bạn có một ngày mua sắm thật thoải mái cùng 5S nhé! Đừng ngần ngại nhắn tin cho shop để được hỗ trợ nhanh nhất bạn nhé!
+
+                #áo_khoác_nam #áo_khoác_nam_5S #áo_thu_đông_nam #áo_khoác_gió_nam #áo_khoác_thể_thao_nam #áo_Khoác_nam_thể_thao #áo_khoác_nam_đẹp #áo_Khoác_hàng_hiệu #áo_khoác_nam_vải_gió #áo_khoác_nam_vải_dù #áo_gió_nam #áo_thể_thao_nam #áo_gió_nam #áo_khoác_gió_nam_chống_nước #áo_dù_thể_thao_nam
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333315',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/70621d278576a3a0c5bb7abfe47e56ce.jpg.webp',
+                'images/products/2023/11/f020f5400ad79337c5a93058df9217c1.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Đen'    => [
+                            'quantity'      => 100,
+                            'selling_price' => 399000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM354'
+                        ],
+                        'Trắng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 399000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM355'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Quần Kaki Nam Khatoco Q2M468R1-VNMA012-1811-1 - Xanh Rêu',
+            'regular_price' => 169000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/262f4244c1eb71b7c69c6a44a56f7e3a.jpg.webp',
+            'description'   => '',
+            'sku'           => '33333333316',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/262f4244c1eb71b7c69c6a44a56f7e3a.jpg.webp',
+                'images/products/2023/11/d32b5b79e71558037badaa5e6b11f073.jpg.webp',
+                'images/products/2023/11/240da48ae8c60bcb2c6833126c795ee8.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Kích cỡ' => [
+                    'variant_name'   => 'Kích cỡ',
+                    'variant_values' => [
+                        '31' => [
+                            'quantity'      => 100,
+                            'selling_price' => 169000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM356'
+                        ],
+                        '32' => [
+                            'quantity'      => 100,
+                            'selling_price' => 169000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM3457'
+                        ],
+                        '33' => [
+                            'quantity'      => 100,
+                            'selling_price' => 169000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM358'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn  Cao Cấp ShopN6 - AD34',
+            'regular_price' => 159000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/df6c8a59d857c322668c8b509d36889f.jpg.webp',
+            'description'   => 'Có VIDEO THẬT Trong Phần MÔ TẢ SẢN PHẨM
+
+                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Lót Caro Cao Cấp ShopN6 - AD34 cực đẹp, tinh tế & đẳng cấp, phong cách, năng động. Áo Khoác Dù phối nón cao cấp chất liệu Dù mịn lót caro ngoại nhập ,đẹp, kiểu dáng thể thao, thoải mái và thời trang.
+
+                Size : Xem bảng bên dưới
+
+                Đảm Bảo Ko Ra Màu , Ko Phai Màu Suốt Quá Trình Sữ Dụng
+
+                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Cao Cấp ShopN6 - AD34 với thiết kế cao cấp và sang trọng, cho bạn sự thoải mái, khỏe khoắn khi kết hợp với nhiều loại trang phục khác nhau , thời tiết nóng hay lạnh đều mặc được rất tiện lợi
+
+                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Cao Cấp ShopN6 - AD34 làm bằng dù tổng hợp cao cấp . Tuyệt đối không ra màu, độ bền cao và thời trang .
+
+                Dây khóa cao cấp lịch lãm , có túi trong , 2 túi 2 bên có dây khóa kéo an toàn.
+
+                Quý Khách Vui Lòng Xem Bảng Kích Thước Áo Khoác Bên Dưới Để  Chọn Size Áo Khoác Theo Đúng Yêu Cầu Cuả Quý Khách
+
+                Size
+
+                M
+
+                L
+
+                XL
+
+                XXL
+
+                Chiều Cao
+
+                150cm -> 165cm
+
+                165cm ->170cm
+
+                170cm -> 175cm
+
+                1m70 ->1m80
+
+                Cân Nặng
+
+                50kg ->60kg
+
+                60kg ->68kg
+
+                68kg ->73kg
+
+                73kg ->80kg
+
+                * Lưu ý khi mua Áo Khoác  :   + Khách thích form body thì lấy nhỏ lại 1 Size
+
+                                                                + Khách có bụng thì lấy to hơn 1 Size
+
+                                                                + Nên lấy Size Lớn hơn khi cân nhắc giữa 2 Size
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333317',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/df6c8a59d857c322668c8b509d36889f.jpg.webp',
+                'images/products/2023/11/2a11ae24adae35725b706de3f4e790e2.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Kích thước' => [
+                    'variant_name'   => 'Kích thước',
+                    'variant_values' => [
+                        'L'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 159000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM359'
+                        ],
+                        'M'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 159000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM360'
+                        ],
+                        'XL' => [
+                            'quantity'      => 100,
+                            'selling_price' => 159000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM361'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Quần kaki nam ( Tặng 1 dây nịt da hàng hiệu)  chất vải cotton mềm mịn, co giãn, chống nhăn, nhanh khô, độ bền cao chuẩn phong cách thời trang Dokafashion DKFQKK01',
+            'regular_price' => 254500,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/b06eba9b0056727295ac46baa23008f4.jpg.webp',
+            'description'   => 'Quần kaki nam ( Tặng 1 dây nịt da hàng hiệu) chất vải cotton mềm mịn, co giãn, chống nhăn, nhanh khô, độ bền cao chuẩn phong cách thời trang Dokafashion DKFQKK01
+
+                + Sản phẩm có nhiều màu và size, bạn tham khảo video và phân loại màu khi chọn sản phẩm
+
+                + Hướng dẫn chọn size:
+
+                - Size 29: 50 đến 56kg/ Cao 1m60 – 1m75/ Vòng eo 77-79cm
+
+                - Size 30: 57 đến 62kg/ Cao 1m65 – 1m80/Vòng eo 80 -81cm
+
+                - Size 31: 63 đến 67kg/ Cao 1m60 – 1m85/Vòng eo 82 - 84cm
+
+                - Size 32: 68 đến 73kg/ Cao 1m65 – 1m90/Vòng eo 84 - 86cm
+
+                - Size 34: 74 đến 78kg/ Cao 1m75 – 1m90/Vòng eo 88-90cm
+
+                - Size 36: 79 đến 85kg/ Cao 1m75 – 1m90/Vòng eo 92 - 94cm
+
+                - Nếu bạn thích mặc kiểu rộng rãi, hoặc có: bụng to, vai to, bắp tay to, mông to, chân dài có thể chọn size lớn hơn để bù trừ kích thước.
+
+                MÀU SẮC & KÍCH THƯỚC (SIZE)
+
+                MÔ TẢ SẢN PHẨM
+
+                + Quần kaki dài nam PigoFashion kiểu dáng Regular fit suông nhẹ, thoải mái.
+
+                + Ống quần ôm, đáy cao kiểu dáng thời trang mới nhất hiện nay.
+
+                + Thiết kế tối giản, các chi tiết may tỉ mỉ, tinh tế, mang đến diện mạo chỉn chu, lịch lãm cho người mặc.
+
+                + Chất liệu: cotton pha, có độ có giãn nhẹ vừa phải, giữ bền form sau nhiều lần giặt.
+
+                + Cạp quần kaki dài nam cao 3cm, giúp người mặc có thể kết hợp dây lưng hoặc không đều phù hợp.
+
+                + Xuất xứ : Việt nam
+
+                HƯỚNG DẪN SỬ DỤNG
+
+                - Giặt những sản phẩm cùng gam màu với nhau lần giặt đầu tiên
+
+                - Giặt ở nhiệt độ bình thường, đồ có màu đậm như: đen, xanh đen, đỏ, tím… nên giặt riêng 1-2 nước đầu.
+
+                - Hạn chế dùng chất tẩy đậm đặc.
+
+                - Ủi và sấy ở nhiệt độ thích hợp.
+
+                - Khuyến khích lộn mặt trái khi phơi để giữ sản phẩm bền màu hơn.
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333318',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/b06eba9b0056727295ac46baa23008f4.jpg.webp',
+                'images/products/2023/11/12165259941ab6532c4f8f8f141cd43a.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh rêu' => [
+                            'quantity'      => 100,
+                            'selling_price' => 254500,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM362'
+                        ],
+                        'Be'        => [
+                            'quantity'      => 100,
+                            'selling_price' => 254500,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM363'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Áo Polo Nam 5S ALTITUDE, Chất Liệu Viscose Siêu Mềm Mịn, Thoáng Mát, Thiết Kế Basic, Trẻ Trung, Lịch Lãm (APC23015)',
+            'regular_price' => 205000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/bf5b445f4c474885dea619cb0440c5df.jpg.webp',
+            'description'   => '-------------------------
+                ƯU ĐÃI KHI MUA TẠI 5S:
+                - Click “Theo dõi” shop để nhận ngay VOUCHER giảm giá.
+                - Nhận hàng đánh giá 5* kèm hình ảnh sản phẩm và video, nhắn tin 5S ngay để nhận QUÀ nhé!
+                ** 5S OFFICIAL cảm ơn quý khách hàng đã tin tưởng và đồng hành cùng shop. Chúc bạn có một ngày mua sắm thật thoải mái cùng 5S nhé! Đừng ngần ngại nhắn tin cho shop để được hỗ trợ nhanh nhất bạn nhé!
+
+                #Ao_polo_nam #Ao_polo_nam #Ao_thun_nam_co_co #ao_phong_nam_co_co #ao_thun_co_co #ao_phong_co_co #ao_thun_polo_nam #ao_phong_polo_nam #ao_thun_nam_polo #ao_polo_nam_dep #polo #polo_nam #ao_phong_nam_co_bo #ao_thun_nam #ao_phong_nam #ao_thun_co_co
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333319',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/bf5b445f4c474885dea619cb0440c5df.jpg.webp',
+                'images/products/2023/11/ebea681207db7c28f14999f372a05fb3.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'M'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 205000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM364'
+                        ],
+                        'S'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 205000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM365'
+                        ],
+                        'XL' => [
+                            'quantity'      => 100,
+                            'selling_price' => 205000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM366'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Quần đùi đũi nam',
+            'regular_price' => 99000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/b2cce187b6ac0d37f6b87d0c7ce56d2b.jpg.webp',
+            'description'   => 'Chất liệu: Vải đũi ( linen ) cao cấp.
+
+                ️ Vải đũi ( linen ) chắc chắn sẽ nhăn, nhưng là nhăn tự nhiên, rất đẹp chứ không là nhăn nhàu. Chú ý là ( ủi ) qua trước khi mặc sẽ đẹp hơn rất nhiều.
+
+                ️ Vải xuất chuẩn đảm bảo chất lượng cam kết đã khiến hàng nghìn khách hàng trải nghiệm đã mua thêm , mua tiếp , mua tặng....
+
+                ️ Vải mềm, mịn, có co giãn nhẹ.
+
+                ️ Thấn hút mồ hôi, mát mẻ, tạo sự thoải mái khi mặc.
+
+                --------------------------------------------------------
+
+                HƯỚNG DẪN SỬ DỤNG:
+
+                Giặt sản phẩm bằng nước lạnh.
+                Nên sử dụng cách loại xà phòng, nước tẩy nhẹ, không dùng chất ngâm tẩy
+                Không nên giặt quần Quần đũi với các sản phẩm thời trang cầu kì khác : như có móc, có khóa cứng, có nhiều họa tiết…sẽ làm ảnh hưởng đến sợi vải đũi.
+                Là, ủi ở nhiệt độ trung bình.
+                Có thể giặt khô.
+                Không phơi trực tiếp dưới ánh nắng gắt.
+                Giặt xong nên giũ mạnh để tránh/giảm nhăn.
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333320',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 7,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/b2cce187b6ac0d37f6b87d0c7ce56d2b.jpg.webp',
+                'images/products/2023/11/7c575d63225fe3237b0d98cb8a63dfd4.jpg.webp,'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Đen' => [
+                            'quantity'      => 100,
+                            'selling_price' => 99000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM367'
+                        ],
+                        'Ghi'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 99000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM368'
+                        ],
+                        'Kem'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 99000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM369'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Dép Đi Trong Nhà, Văn Phòng, Nhà Tắm Chống Trơn Đúc Liền DP03',
@@ -993,7 +1678,7 @@ return [
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/92/bd/1a/fd47da4e15ead3f1e4ad0fb60c06815b.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/92/bd/1a/fd47da4e15ead3f1e4ad0fb60c06815b.jpg" alt="" width="750" height="750"></p>
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/85/e5/f7/cd59cbc0c37bc66460deeaa8552144f8.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/85/e5/f7/cd59cbc0c37bc66460deeaa8552144f8.jpg" alt="" width="750" height="750"></p>
                 <p><img id="https://salt.tikicdn.com/ts/tmp/5e/c0/2d/56d175bfab865b6038c51a30d3436994.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/5e/c0/2d/56d175bfab865b6038c51a30d3436994.jpg" alt="" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333311',
+            'sku'           => '33333333321',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1010,19 +1695,19 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Cam'  => [
+                        'Cam'    => [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM348'
+                            'product_code'  => 'OM370'
                         ],
                         'Hồng' => [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM349'
-                        ],
-                    ],
+                            'product_code'  => 'OM371'
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1031,23 +1716,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM350'
+                            'product_code'  => 'OM372'
                         ],
                         '38-39' => [
                             'quantity'      => 100,
                             'selling_price' => 850000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM351'
+                            'product_code'  => 'OM373'
                         ],
                         '40-41' => [
                             'quantity'      => 100,
                             'selling_price' => 1850000,
-                            'sale_price'    => 00,
-                            'product_code'  => 'OM352'
-                        ],
-                    ],
-                ],
-            ]),
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM374'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Bộ 2 cặp lót giày 4D bảo vệ gót chân và chống tuột gót giày (loại vuông) - buybox - BBPK53',
@@ -1090,7 +1775,7 @@ return [
                 <p>2. Tháo miếng dán có keo phía sau lót giày</p>
                 <p>3. Đặt lót 4D và dán cố định vào giày</p>
                 <p><img src="https://salt.tikicdn.com/ts/tmp/80/a5/f3/34e10807639039646de4cd1a86b5922a.jpg" alt="" width="750" height="750"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333312',
+            'sku'           => '33333333322',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1111,23 +1796,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM353'
+                            'product_code'  => 'OM375'
                         ],
-                        '2 cặp Kem'             => [
+                        '2 cặp Kem'                => [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM354'
+                            'product_code'  => 'OM376'
                         ],
-                        '2 cặp Đen'             => [
+                        '2 cặp Đen'               => [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM355'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM377'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Dép Quai Ngang Nam Nữ Siêu Nhẹ Tăng Chiều Cao Chống Trơn DP02',
@@ -1140,7 +1825,7 @@ return [
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/a7/8e/02/770fc5c0dec2f07e9c236d7f55ab44e7.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/a7/8e/02/770fc5c0dec2f07e9c236d7f55ab44e7.jpg" alt="" width="750" height="750"></p>
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/44/1f/7b/965c077233cc1e014b0da0bdb317eb3e.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/44/1f/7b/965c077233cc1e014b0da0bdb317eb3e.jpg" alt="" width="750" height="750"></p>
                 <p><img id="https://salt.tikicdn.com/ts/tmp/6c/70/e4/68dc6f4cf372ca9cecc16785fbf0abfb.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/6c/70/e4/68dc6f4cf372ca9cecc16785fbf0abfb.jpg" alt="" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333313',
+            'sku'           => '33333333323',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1162,21 +1847,21 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM356'
+                            'product_code'  => 'OM378'
                         ],
-                        'Trắng đen'  => [
+                        'Trắng đen' => [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM357'
+                            'product_code'  => 'OM379'
                         ],
-                        'Đen xanh'   => [
+                        'Đen xanh'    => [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM358'
-                        ],
-                    ],
+                            'product_code'  => 'OM380'
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1185,17 +1870,17 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM359'
+                            'product_code'  => 'OM381'
                         ],
                         '38-39' => [
                             'quantity'      => 100,
                             'selling_price' => 750000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM360'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM382'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Chai xịt tạo bọt vệ sinh giày cao cấp, chất tẩy rửa giày, làm sạch, trắng sáng và khử mốc giày hiệu quả - Hàng chính hãng',
@@ -1215,7 +1900,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/55/f4/9c/d6760a05a3b1013d467c1173f5aa64e8.jpg" alt="" width="750" height="867"></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/80/02/7e/5bee9dff4dccfdbbd7138c7e688a3ee1.jpg" alt="" width="750" height="1018"></p>
                 <p>Chân thành cảm ơn quý khách!</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333314',
+            'sku'           => '33333333324',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1244,7 +1929,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/fd/cb/75/89bb1fb3c4cb8e7892d73db1d80e3cac.jpg" alt=""></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/19/55/29/f275f2a37e1a9488739b75c09caa313d.jpg" alt=""></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f9/f0/53/7ed1ecde76bf8a0e81d0aec3c5a4ec6c.jpg" alt=""></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333315',
+            'sku'           => '33333333325',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1265,9 +1950,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 766000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM361'
-                        ],
-                    ],
+                            'product_code'  => 'OM383'
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1276,17 +1961,17 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 766000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM362'
+                            'product_code'  => 'OM384'
                         ],
                         '38' => [
                             'quantity'      => 100,
                             'selling_price' => 7660000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM363'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM385'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Giày thể thao nữ ZAVAS đế cao 3cm màu trắng bằng da không bong tróc mang êm chân S411 - Giày Sneaker Nữ Chính Hãng',
@@ -1333,7 +2018,7 @@ return [
                 <p>- Không dùng bàn chải giặt đồ để giặt giày, vì sợi chải rất cứng sẽ làm các chất liệu bằng lưới bị giãn theo khi dùng lực để chà giày.</p>
                 <p>- Tips quan trọng và cực hữu ích dành cho bạn khi bất kì đôi giày thể thao nào bị ố vàng. Hãy sử dụng kem đánh răng loại Gell màu trắng đánh lên phần ố vàng đó. Đảm bảo sẽ hết nhé.</p>
                 <p>#giàythểthaonữ #giàynữ #giàysneakernữ #giàythểthaonữcổthấp #giàynữmàutrắng #giàythểthaonữmàutrắng #giaythethaonu #giaysneakernu #zavas #giayzavas #giaythoitrangnu #giàynữđếcao3cm #giaynuđẹp #giàythểthaonữchínhhãng #giàychínhhãngnữ</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333316',
+            'sku'           => '33333333326',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1355,9 +2040,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 2299000,
                             'sale_price'    => 2289000,
-                            'product_code'  => 'OM364'
-                        ],
-                    ],
+                            'product_code'  => 'OM386'
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1366,11 +2051,11 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 2299000,
                             'sale_price'    => 2289000,
-                            'product_code'  => 'OM365'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM387'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Chai xịt giày khử mùi hôi giày hôi chân Nano Xclean For Shoes 100ml - Hương Trà Xanh - Nano Bạc AHT Corp (AHTC)',
@@ -1383,7 +2068,7 @@ return [
                 <p>Thành Phần:<br>Nano Bạc<br>Dung môi và phụ gia vừa đủ<br>Hương thơm tự nhiên&nbsp;</p>
                 <p>Công dụng của chai xịt giày:<br>Làm sạch bề mặt giày dép, hạn chế vi khuẩn gây mùi, hương thơm tự nhiên của xịt giày nano xclean khử mùi hôi khi sử dụng giày dép trong thời gian dài.<br>Hương Trà Xanh mang lại cảm giác thoải mái dễ chịu, mát lạnh làm tan biến sự khó chịu. Giúp cho người sử dụng cảm thấy thoải mái khi mang giày trong thời tiết nóng bức.</p>
                 <p>Hướng dẫn sử dụng chai xịt giày:<br>Xịt trực tiếp lên bề mặt giày dép, dùng khăn mềm lau lại và để ở nơi thoáng mát có ánh sáng mặt trời.<br>Quy cách đóng gói:<br>Chai xịt phun sương 100ml</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333317',
+            'sku'           => '33333333327',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1409,7 +2094,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f0/d8/d6/dcb6f442bfa537f6388599f038cd37fc.jpg" alt="" width="750" height="750"></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/93/c9/37/39fccccd13e16b431f6a84ab38aa8903.jpg" alt="" width="750" height="750"></p>
                 <p>Chân thành cảm ơn quý khách!</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333318',
+            'sku'           => '33333333328',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1429,9 +2114,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 265000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM366'
-                        ],
-                    ],
+                            'product_code'  => 'OM388'
+                        ]
+                    ]
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1440,11 +2125,11 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 265000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM367'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM389'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Combo 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2',
@@ -1481,7 +2166,7 @@ return [
                 <p>3. Đặt lót 4D và dán cố định vào giày</p>
                 <p>Lưu ý: Sản phẩm mang thương hiệu buybox có bao bì in logo và hướng dẫn sử dụng chi tiết đi kèm.&nbsp;</p>
                 <p><img src="https://salt.tikicdn.com/ts/tmp/7c/9c/48/60bd6429164e423e0a2643de52ad3497.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"><img src="https://salt.tikicdn.com/ts/tmp/dc/5f/8e/1a36ee4c39d1fc3ab0363afb8106612f.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"><img src="https://salt.tikicdn.com/ts/tmp/74/85/e8/474f9176f9ce4b949aaaa4f062e4b192.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333319',
+            'sku'           => '33333333329',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1503,23 +2188,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM368'
+                            'product_code'  => 'OM390'
                         ],
-                        '2 cặp Kem'             => [
+                        '2 cặp Kem'                => [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM369'
+                            'product_code'  => 'OM391'
                         ],
-                        '2 cặp Đen'             => [
+                        '2 cặp Đen'               => [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM370'
-                        ],
-                    ],
-                ],
-            ]),
+                            'product_code'  => 'OM392'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Sét 2 miếng lót gót chân cao su mềm bảo vệ gót chân khi mang giày ,chống nứt gót ,bảo vệ mắt cá ,chống đau chân',
@@ -1548,7 +2233,7 @@ return [
                    <p>-Sét 2 miếng lót gót chân cao su non mềm sẽ giúp bảo vệ gót chân không bị nhức hay nứt gót</p>
                    <p>-</p>
                 <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p></div>',
-            'sku'           => '33333333320',
+            'sku'           => '33333333330',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1562,7 +2247,336 @@ return [
                 'images/products/2023/11/60a0a107827a35d3d2435d9e4ebbcbac.jpg.webp',
                 'images/products/2023/11/0e848095c8f0ca604a36b33bdace6afe.jpg.webp'
             ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        '1 cặp Kem + 1 cặp Đen' => [
+                            'quantity'      => 100,
+                            'selling_price' => 60000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM390'
+                        ],
+                        '2 cặp Kem'                => [
+                            'quantity'      => 100,
+                            'selling_price' => 60000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM391'
+                        ],
+                        '2 cặp Đen'               => [
+                            'quantity'      => 100,
+                            'selling_price' => 60000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM392'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+
+        [
+            'name'          => 'Giày Bốt Đế Xuồng Kéo Khóa 10CM PB739-4128',
+            'regular_price' => 739000,
+            'sale_price'    => 709000,
+            'thumbnail_url' => 'images/products/2023/11/fb6853a3f57f6de3aa9b230452566e5e.jpg.webp',
+            'description'   => 'Giày Bốt Đế Xuồng Kéo Khóa 10CM PB739-4128
+
+                ● Chiều cao gót: 10cm
+
+                ● Màu: ĐEN/TRẮNG/NÂU
+
+                ● Đóng GÓI HỘP VÀ KHO SẴN SÀNG
+
+                ● Chất liệu: Da vi sợi
+
+                ● Chức năng: chống trượt, nhẹ và chống mài mòn
+
+                ● Dành cho dịp: hàng ngày
+
+                ✪✪✪ Kích THƯỚC: 34-40
+
+                Size 34 = chiều dài chân 22,0 CM; 35 = chiều dài chân 22,5 CM; 36 = 23,0 CM; 37 = 23,5 CM; 38 = 24,0 CM; 39 = 24,5 CM; 40 = 25CM
+
+                Kích thước tiêu chuẩn
+
+                Hàng sẵn
+
+                ☻☻☻ Dịch vụ
+
+                1 Các mặt hàng là 100% mới
+
+                2 Nếu mặt hàng bạn nhận được bị lỗi, vui lòng liên hệ với chúng tôi ngay lập tức.
+
+                ☞☞ Cho phép sử dụng mã khuyến mãi để đảm bảo an toàn và tiết kiệm hơn!
+
+                【Phản Hồi】
+
+                ※ Xin vui lòng để lại cho chúng tôi một phản hồi tích cực (5 sao), nếu bạn hài lòng với các mặt hàng của chúng tôi, Cảm ơn!
+
+                ※ Vui lòng liên hệ với chúng tôi trước khi phát sinh tranh chấp, xin vui lòng cho chúng tôi cơ hội để giải quyết bất kỳ vấn đề nào.
+
+                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333331',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/fb6853a3f57f6de3aa9b230452566e5e.jpg.webp',
+                'images/products/2023/11/c6587b55473ae8a7b9d56101f5a03950.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Size' => [
+                    'variant_name'   => 'Size',
+                    'variant_values' => [
+                        '34' => [
+                            'quantity'      => 100,
+                            'selling_price' => 739000,
+                            'sale_price'    => 709000,
+                            'product_code'  => 'OM393'
+                        ],
+                        '35' => [
+                            'quantity'      => 100,
+                            'selling_price' => 739000,
+                            'sale_price'    => 709000,
+                            'product_code'  => 'OM394'
+                        ],
+                        '36' => [
+                            'quantity'      => 100,
+                            'selling_price' => 739000,
+                            'sale_price'    => 709000,
+                            'product_code'  => 'OM395'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Giày Nữ Đế Xuồng 5cm Da Bò Màu Đen Trường Hải DX115Đ',
+            'regular_price' => 257000,
+            'sale_price'    => 242000,
+            'thumbnail_url' => 'images/products/2023/11/0c58667bc6858b787c37e32f4ef5d32d.jpg.webp',
+            'description'   => 'THÔNG TIN CHI TIẾT SẢN PHẨM:
+                Xuất xứ: được sản xuất tại Việt Nam
+                Chất liệu: được làm bằng da bò thật cao cấp tuyệt đối không bong tróc hay nổ da. Da mềm mại hạn chế trày xước
+                Phía trong giày được lót bằng vải dệt thấm hút mồ hôi không hôi chân trong thời gian sử dụng. mang lại cảm giác êm ái khi sử dụng
+                Đế giày được làm bằng cao su chống mòn không trơn
+                Giày Nữ Đế Xuồng 5cm Da Bò Màu Đen Trường Hải DX115Đ Hàng gia công đường may chắc chắn, Dáng form chuẩn ôm gọn đôi chân
+                Màu sắc như hình
+                Hình ảnh thật
+                Size: 35-36-37-38-39
+                Màu : Đen
+                chiều cao : 5cm
+
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333332',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/0c58667bc6858b787c37e32f4ef5d32d.jpg.webp',
+                'images/products/2023/11/451a40f8e7eb522d7ce62cc5d5ea5cba.jpg.webp',
+                'images/products/2023/11/577e80e3e080e1313337b96947be5ea8.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Size' => [
+                    'variant_name'   => 'Size',
+                    'variant_values' => [
+                        '34' => [
+                            'quantity'      => 100,
+                            'selling_price' => 257000,
+                            'sale_price'    => 242000,
+                            'product_code'  => 'OM396'
+                        ],
+                        '35' => [
+                            'quantity'      => 100,
+                            'selling_price' => 257000,
+                            'sale_price'    => 242000,
+                            'product_code'  => 'OM397'
+                        ],
+                        '36' => [
+                            'quantity'      => 100,
+                            'selling_price' => 257000,
+                            'sale_price'    => 242000,
+                            'product_code'  => 'OM398'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Dép Bông Đi Trong Nhà Chống Trơn Trượt, Đế Khâu Cao Cấp LACEVA DP94',
+            'regular_price' => 72000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/6585b5048dd0e7ae648c9811bfc22c83.jpg.webp',
+            'description'   => 'Dép bông đi trong nhà siêu ấm, cực hữu ích cho bạn trong mùa đông này
+                Thiết kế sang trọng hiện đại, phong cách Hàn Quốc trẻ trung
+                Lớp bông cao cấp dày, mềm mịn giữ ấm cực tốt
+                Đế Dép được khâu chắc chắn và chống trơn trượt, cực kỳ an toàn
+                Màu sắc nhẹ nhàng, tinh tế với nhiều màu lựa chọn.
+                Dép Form nhỏ, các bạn đặt tăng 1 size nha.
+
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333333',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/6585b5048dd0e7ae648c9811bfc22c83.jpg.webp',
+                'images/products/2023/11/dea7cfc4bc7205080819fba3770b9337.jpg.webp',
+                'images/products/2023/11/f4805765e2584eb7ebf4f9451e0fcb5d.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Ghi'    => [
+                            'quantity'      => 100,
+                            'selling_price' => 72000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM399'
+                        ],
+                        'Hồng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 72000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM400'
+                        ],
+                        'Đỏ'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 72000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM401'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Chai xịt khử mùi giày dép Nano bạc mini 100ml tiện mang theo đi làm, đi học, đi du lịch - Hàng chính hãng, nhiều mẫu mã - Giao mẫu ngẫu nhiên theo từng đợt sản xuất',
+            'regular_price' => 20000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/7485c21e49f70027a5e84bba3b2fa3f0.jpg.webp',
+            'description'   => 'Với công nghê Nano bạc tiên tiến nhất, tiêu diệt 99, 99% vi khuẩn, nấm mốc, vi sinh vật.
+
+                Có tác dụng siêu tốc chỉ sau 5 giây
+
+                Thời gian bảo vệ kéo dài từ 24-72 giờ
+
+                Trị nấm chân, ngứa, nổi mụn nước do nhiễm khuẩn khi ra nhiều mồ hôi.
+
+                Trị nấm mốc trên giày, nón bảo hiểm, giường chiế
+
+                Hoàn toàn không có tác dụng phụ cũng như gây hại cho sức khỏe.
+
+                Dung tích :100ml
+
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng)....',
+            'sku'           => '33333333334',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/7485c21e49f70027a5e84bba3b2fa3f0.jpg.webp',
+                'images/products/2023/11/469aab6a4c66e3dcf6fc918981003fcb.jpg.webp'
+            ]),
             'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Dép phòng ngủ khách sạn, dép đi trong nhà - Hàng chính hãng',
+            'regular_price' => 25000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/1f5970defada015b181a6de07d771ab2.jpg.webp',
+            'description'   => '
+                Dép phòng ngủ khách sạn màu trắng. Đây là dòng thiết kế đi trong nhà, trong khách sạn. Chất liệu mềm mại, thoải mái. Phù hợp đi trong nhà vào mùa hè, mùa đông, đi trong văn phòng. Phù hợp cho mọi độ tuổi, người lớn tuổi và phụ nữ mang thai
+                Đây là dòng thiết kế đi trong nhà, trong khách sạn.
+                Chất liệu mềm mại, thoải mái.
+                Phù hợp đi trong nhà vào mùa hè, mùa đông, đi trong văn phòng.
+                Phù hợp cho mọi độ tuổi, người lớn tuổi và phụ nữ mang thai
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333335',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/1f5970defada015b181a6de07d771ab2.jpg.webp',
+                'images/products/2023/11/90682aedbfa8abc74f6c8d913ed89afe.jpg.webp',
+                'images/products/2023/11/ecb830d088bded2a921e6505ef7f5b8c.jpg.webp'
+            ]),
+            'variants'      => json_encode([]),
+        ],
+        [
+            'name'          => 'Giày búp bê đế bằng da bò trơn Trường Hải da mềm GBB120 có 2 màu đen, trắng',
+            'regular_price' => 231000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/df179e1849a2f812efea177a73152d3d.jpg.webp',
+            'description'   => 'Tên sản phẩm:Giày búp bê đế bằng da bò trơn Trường Hải da mềm GBB120 có 2 màu đen, trắng
+                Chất liệu: giày được làm bằng da bò thật mềm mại tuyệt đối không bong tróc hay nổ da
+                Đế : cao su không trơn êm ái
+                phía trong lót bằng nguyên liệu cao cấp không hôi chân trong suốt thời gian sử dụng
+                màu sắc sản phẩm như hình
+                hình ảnh thật 100% không chỉnh sửa
+                Màu : đen, trắng
+                Size: 35-36-37-38-39
+                Giày búp bê trơn da bò mũi vuông Trường Hải CÓ DÁNG FORM TO HƠN BÌNH THƯỜNG QUÝ KHÁCH LƯU Ý KHI CHỌN SIZE
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333336',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/df179e1849a2f812efea177a73152d3d.jpg.webp',
+                'images/products/2023/11/69648b860ea514c080e211d7b6e4fcbe.jpg.webp',
+                'images/products/2023/11/4772d2212102c852abfeb403277d0d7e.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Trắng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 231000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM402'
+                        ],
+                        'Đen'    => [
+                            'quantity'      => 100,
+                            'selling_price' => 231000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM403'
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi Đeo Chéo Nam Nữ Thời Trang Trẻ Trung, Túi Đựng Ipad, Túi Đeo Vai Nhiều Ngăn Kéo Đựng Đồ Rất Tiện Lợi, Vải Oxford Chống Thấm Nước',
@@ -1602,7 +2616,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/e3e8ebbbcf57ed17dca4e27b3a2a0ec9.jpg.webp',
-                'images/products/2023/11/5cac95a651a45ba65f61e5c5b7b4ff19.jpg.webp',
+                'images/products/2023/11/5cac95a651a45ba65f61e5c5b7b4ff19.jpg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -1614,21 +2628,21 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM768'
                         ],
-                        'Màu xám'             => [
+                        'Màu xám' => [
                             'quantity'      => 100,
                             'selling_price' => 140000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM769'
                         ],
-                        'Màu đen'             => [
+                        'Màu đen' => [
                             'quantity'      => 100,
                             'selling_price' => 140000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM770'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi Đeo Chéo Vải Canvas Bền Bỉ Phong Cách Thời Trang Unisex Nam Nữ Hàn BL002',
@@ -1668,7 +2682,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/0c6b8f2540f64af76f2a6bfe9af9a6db.jpg.webp',
-                'images/products/2023/11/f7ef7cb1920793af66b808d63b03f548.jpg.webp',
+                'images/products/2023/11/f7ef7cb1920793af66b808d63b03f548.jpg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -1680,21 +2694,21 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM771'
                         ],
-                        'Màu xám'             => [
+                        'Màu xám' => [
                             'quantity'      => 100,
                             'selling_price' => 135000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM772'
                         ],
-                        'Màu đen'             => [
+                        'Màu đen' => [
                             'quantity'      => 100,
                             'selling_price' => 135000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM773'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi đeo chéo nam vải canvas TX0012 - Đi học - đi làm - đi chơi',
@@ -1731,7 +2745,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/fd3341ac761d364289cfe67449895527.jpg.webp',
-                'images/products/2023/11/396029f8f7d4ab044154b587364184ec.jpg.webp',
+                'images/products/2023/11/396029f8f7d4ab044154b587364184ec.jpg.webp'
             ]),
             'variants'      => json_encode([]),
         ],
@@ -1788,7 +2802,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/f95f4317cfa9ede1435bedf67aea13db.jpg.webp',
-                'images/products/2023/11/d0f72a760604d29ace18b32dc48c021f.JPG.webp',
+                'images/products/2023/11/d0f72a760604d29ace18b32dc48c021f.JPG.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -1800,15 +2814,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM774'
                         ],
-                        'Màu đen'             => [
+                        'Màu đen' => [
                             'quantity'      => 100,
                             'selling_price' => 199000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM775'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi Đeo Chéo Vải Oxford Mềm Bền Bỉ Chống Nước Phong Cách Thời Trang Unisex Nam Nữ Âu BL026',
@@ -1870,39 +2884,39 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/7a9484953b3c5486563e73231428487f.jpg.webp',
-                'images/products/2023/11/18d6e6d25fc78b08f524f0e728bfff4c.jpg.webp',
+                'images/products/2023/11/18d6e6d25fc78b08f524f0e728bfff4c.jpg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Màu đen' => [
+                        'Màu đen'      => [
                             'quantity'      => 100,
                             'selling_price' => 250000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM776'
                         ],
-                        'Màu ghi'             => [
+                        'Màu ghi'       => [
                             'quantity'      => 100,
                             'selling_price' => 250000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM777'
                         ],
-                        'Màu xanh navy'             => [
+                        'Màu xanh navy' => [
                             'quantity'      => 100,
                             'selling_price' => 250000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM778'
                         ],
-                        'Màu xanh rêu'             => [
+                        'Màu xanh rêu' => [
                             'quantity'      => 100,
                             'selling_price' => 250000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM779'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi xách - Túi da cao cấp Macsim mã MSTH09',
@@ -1943,7 +2957,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/925961b5707166aa5eabc9a4ae325058.jpg.webp',
-                'images/products/2023/11/7fc9433cc53ee59b687cfe7fead69d64.jpg.webp',
+                'images/products/2023/11/7fc9433cc53ee59b687cfe7fead69d64.jpg.webp'
             ]),
             'variants'      => json_encode([]),
         ],
@@ -2002,7 +3016,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/85c542da3b2542d11e708c1f7c44dbe4.jpg.webp',
-                'images/products/2023/11/ac565d4c89eb948d5961ff097fb0be83.jpg.webp',
+                'images/products/2023/11/ac565d4c89eb948d5961ff097fb0be83.jpg.webp'
             ]),
             'variants'      => json_encode([]),
         ],
@@ -2015,7 +3029,7 @@ return [
             <p><strong>Balo Solo Velocity Max Backpack 17.3” - ACV732 M Black 0211662&nbsp;</strong>sở hữu thiết kế đa năng với ngăn đựng laptop/tablet và giày chuyên biệt, kết hợp không gian chứa đồ rộng rãi&nbsp;hướng đến các bạn thích đi phượt, du lịch ngắn ngày, giúp bạn an tâm và tự tin trong những chuyến đi đầy thú vị của mình.&nbsp;</p>
             <p>Chất liệu được làm chủ yếu bằng polyester cao cấp nên trọng lượng của balo Solo 17.3″ Velocity ACV732 M BLUE chỉ khoảng 1 kg với khả năng chống thấm nước tốt.</p>
             <h3>Các ngăn kéo có kích thước lớn</h3>
-            <p>Với thiết kế gồm nhiều ngăn chứa đồ lớn nhỏ khác nhau, được sắp xếp đối xứng giúp tổng thể balo trở nên cân đối. Ngăn chính cực kỳ rộng rãi, ngăn kéo đựng laptop 17.3 inch và máy tính bảng có 2 bên đệm dày và dây đai hỗ trợ. Ngăn máy tính bảng có thể chứa vừa 1 chiếc Laptop 13" trở lên.</p>
+            <p>Với thiết kế gồm nhiều ngăn chứa đồ lớn nhỏ khác nhau, được sắp xếp đối xứng giúp tổng thể balo trở nên cân đối. Ngăn chính cực kỳ rộng rãi, ngăn kéo đựng laptop 17.3 inch và máy tính bảng có 2 bên đệm dày và dây đai hỗ trợ. Ngăn máy tính bảng có thể chứa vừa 1 chiếc Laptop 13 trở lên.</p>
             <p>Điểm nối bật và cũng là điểm thu hút nhất của dòng ba lô này là hỗ trợ ngăn để giày riêng biệt với kích thước khá rộng rãi. Người dùng có thể đựng được từ 1 đến 2 đôi giày tùy loại.</p>
             <p>Ở 2 bên hông có thêm 2 ngăn kéo lớn, được thiết kế nổi bật bởi biểu tượng của Solo bằng kim loại đính vào sợi vải, giúp người dùng cất điện thoại hay những món đồ thường sử dụng. Khi đeo balo trên lưng, bạn có thể dễ dàng đưa tay ra sau lấy vật dụng nhanh chóng và tiện lợi.</p>
             <h3>Có thể đeo theo nhiều cách khác nhau</h3>
@@ -2036,7 +3050,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/88765361b792d5446f34e2b55722e860.jpg.webp',
-                'images/products/2023/11/2db988f24fc0e936e110fa0663650eca.png.webp',
+                'images/products/2023/11/2db988f24fc0e936e110fa0663650eca.png.webp'
             ]),
             'variants'      => json_encode([]),
         ],
@@ -2056,7 +3070,7 @@ return [
             'category_id'   => 12,
             'supplier_id'   => 3,
             'gallery'       => json_encode([
-                'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp',
+                'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -2068,15 +3082,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM780'
                         ],
-                        'Đỏ'             => [
+                        'Đỏ'   => [
                             'quantity'      => 100,
                             'selling_price' => 549000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM781'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Cặp Tài Liệu Chống Sốc, làm bằng vải bạt, Cầm Tay đeo chéo cho laptop 15.6 Inch, Túi Xách Túi Đeo Vai Đựng Máy Tính Xách Tay Bao Đựng Máy Tính Xách Tay',
@@ -2109,7 +3123,7 @@ return [
             'supplier_id'   => 3,
             'gallery'       => json_encode([
                 'images/products/2023/11/e040f2a20b024e7955b39524af62f454.jpg.webp',
-                'images/products/2023/11/6387d61820b5d2fac0d9543118c55015.png.webp',
+                'images/products/2023/11/6387d61820b5d2fac0d9543118c55015.png.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -2121,15 +3135,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM782'
                         ],
-                        'Đỏ'             => [
+                        'Đỏ' => [
                             'quantity'      => 100,
                             'selling_price' => 198000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM783'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Túi chống sốc/Cặp đựng Laptop, Macbook 13 inch vải Canvas cao cấp chống thấm nước phong cách lịch lãm, thời trang,  nhỏ gọn và tiện dụng',
@@ -2147,7 +3161,7 @@ return [
             'category_id'   => 12,
             'supplier_id'   => 3,
             'gallery'       => json_encode([
-                'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp',
+                'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp'
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
@@ -2159,15 +3173,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM784'
                         ],
-                        'Xanh'             => [
+                        'Xanh'     => [
                             'quantity'      => 100,
                             'selling_price' => 370000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM785'
-                        ],
-                    ],
-                ],
-            ]),
+                        ]
+                    ]
+                ]
+            ])
         ],
         [
             'name'          => 'Balo Ulzzang Hàn Quốc Thời Trang HARAS HR284',
@@ -2185,7 +3199,7 @@ return [
             'category_id'   => 12,
             'supplier_id'   => 3,
             'gallery'       => json_encode([
-                'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp',
+                'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp'
             ]),
             'variants'      => json_encode([]),
         ],
@@ -2246,6 +3260,300 @@ return [
             ]),
             'variants'      => json_encode([]),
         ],
+        [
+            'name'          => 'Dép đúc nguyên khối mang trong nhà chống trơn trượt cao cấp mới nhất',
+            'regular_price' => 48000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/b4e3e6e34812e09bdbe14df3def16ea3.jpg.webp',
+            'description'   => 'Tư vấn chọn size dép: khách nên đặt LỚN HƠN 1 SIZE so với size dép thông thường
+                Ví dụ:
 
+                + Khách đang mang size 40, đặt size dép 40-41
+
+                + Khách đang mang size 41, đặt size dép 42-43
+
+                VỀ SẢN PHẨM
+
+                • Chất liệu: Cao su dẻo siêu nhẹ đúc nguyên khối, có rãnh bám
+
+                • Chiều cao: 2cm
+
+                • Màu sắc: đỏ, đen, xanh lá, vàng, tím, cam
+
+                • Đế chống trơn trượt
+
+                • Có thể dùng cho mọi dịp: trong nhà, đi học, shopping, đi dạ
+
+                • Kiểu dáng phù hợp mọi lứa tuổi
+
+                Kiểm tra hàng thoải mái trước khi thanh toán
+
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333337',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/b4e3e6e34812e09bdbe14df3def16ea3.jpg.webp',
+                'images/products/2023/11/0324af5514faff17149d815ea3132445.jpg.webp',
+                'images/products/2023/11/0ada8efd85145e7416f25efd6b2c56f5.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh' => [
+                            'quantity'      => 100,
+                            'selling_price' => 48000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM404'
+                        ],
+                        'Cam'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 48000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM405'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Dép Đi Trong Nhà, Dép Bông Nam Nữ Đế Chống Trơn, Dép Đi Trong Văn Phòng Êm Chân D37',
+            'regular_price' => 79000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/2b4addf75ae43abf8e38635c02f327bb.PNG.webp',
+            'description'   => 'Dép size kép Form Nhỏ, Các Bạn Đặt tăng 1 size nhé.
+                Thường bạn đi 34-35 thì đặt 36/37
+                Thường Đi 36-37 thì đặt 38/39
+                Thường Đi 38-39 thì đặt 40/41
+                Thường Đi 40-41 thì đặt 42/43
+                Thường Đi 42-43 thì đặt 44/45
+                Với phương châm phát triển bền vững, shop sẽ đem đến những sản phẩm chất lượng nhất đến với khách hàng. những sản phẩm chất lượng kém sẽ đc loại bỏ khỏi danh mục bán hàng của shop. Sản Phẩm ảnh chụp thực tế và video shop tự quay nên các bạn yên tâm về chất lượng.
+
+                Dép Bông Dẻo ." lưu ý ko phải loại đế xốp rẻ tiền Không phải loại đế xốp rẻ tiền như 1 số shop bán hàng kém chất lượng.
+
+                -- Là mẫu dép Hot nhất hiện nay với hoạ tiết dễ thương
+
+                -- Đế cao su mềm, dẻo, đi êm chân, tạo cảm giác thoải mái
+
+                -- Chất liệu lông bằng sợi bông tự nhiên siêu mịn, sợi bông siêu mỏng.
+
+                -- Sản Phẩm được khâu rất chắc chắn
+
+                -- Sợi bông tự nhiên cách nhiệt tốt, giúp bàn chân của bạn ấm áp trong thời tiết lạnh giá hay trong phòng máy lạnh
+
+                -- Dép cao cấp, độ bền cao, lâu hỏng
+
+                -- Giữ ấm tuyệt đối cho đôi chân của bạn trong mùa đông lạnh giá
+
+                -- Có thể dùng làm dép đi trong nhà, trong văn phòng làm việc, đi dạo phố .
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng)...',
+            'sku'           => '33333333338',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/2b4addf75ae43abf8e38635c02f327bb.PNG.webp',
+                'images/products/2023/11/02e997235e92124af8a9f5599f7e3c54.PNG.webp',
+                'images/products/2023/11/a06589d2f69dedd6a5e8d2a29fa8041b.PNG.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh đen' => [
+                            'quantity'      => 100,
+                            'selling_price' => 79000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM406'
+                        ],
+                        'Xanh lá'  => [
+                            'quantity'      => 100,
+                            'selling_price' => 79000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM407'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Dép đi trong nhà - Dép bông hình lợn',
+            'regular_price' => 47000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/072bdb544f30eda438134c167e553e7c.jpg.webp',
+            'description'   => 'DÉP ĐI TRONG NHÀ
+                ( 1 ĐÔI )
+
+                Dép đi trong nhà là đồ không thế thiếu trong mỗi gia đinh nhất là vào mùa đông
+
+                Bạn là người làm văn phòng muốn có 1 đôi dép siêu cute và ấm áp đôi chân
+
+                Dép bông hình lợn: dùng đi trong nhà hoặc đi nơi văn phòng làm việc\
+
+                Với chất liệu vải nỉ bông ấm áp, đế cao su chống trượt tuyệt đối
+
+                Với hai màu sắc Nâu và Hồng các cặp đôi cũng có thể sắm cho mình những bộ đôi riêng
+
+                Siêu bền và đẹp
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333339',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/072bdb544f30eda438134c167e553e7c.jpg.webp',
+                'images/products/2023/11/99ffd4fa0cf6684a856ccae89ee1cde0.jpg.webp',
+                'images/products/2023/11/c41d79bab613d6862df793e33d637e75.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Nâu'   => [
+                            'quantity'      => 100,
+                            'selling_price' => 47000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM408'
+                        ],
+                        'Hồng' => [
+                            'quantity'      => 100,
+                            'selling_price' => 47000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM409'
+                        ]
+                    ]
+                ]
+            ])
+        ],
+        [
+            'name'          => 'Dép nhựa cao su nam nữ đi trong nhà / Nhà về sinh dẻo chống trơn trượt gấu BearBrick - D28',
+            'regular_price' => 49000,
+            'sale_price'    => 0,
+            'thumbnail_url' => 'images/products/2023/11/b59880291b77947ba9343758c7dfb5b8.jpg.webp',
+            'description'   => 'MÔ TẢ SẢN PHẨM :
+
+                - Dép được đúc nguyên khối đảm bảo bền đẹp.
+
+                - Chất liệu cao su non và nhựa tổng hợp cao cấp đã tạo nên đôi dép siêu êm, siêu nhẹ, mang lại cảm giác thoải mái, thoáng mát cho người sử dụng.
+
+                - Đế dép đúc với bề mặt có những đường gân chống trơn trượt cho độ bền cao, chống trơn trượt an toàn cho người sử dụng, chống thấm nước khi đi vào nhà vệ sinh hoặc những nơi ẩm ướt
+
+                - Dép đi trong nhà được làm bằng chất liệu mềm dẻo nên theo thời gian dép vẫn giữ nguyên độ mềm dẻo thư giãn và ko bị chai cứng như các mẫu dép nhựa thông thường.
+
+                - Chất liệu tuyệt đối an toàn da nên các anh chị em hoàn toàn yên tâm.
+
+                - Màu sắc trang nhã, đa dạng nhiều sự lựa chọn :
+
+                BẢNG SIZE Dép Đi Trong Nhà, Văn Phòng, Nhà Tắm hàng xuất Nhật chống trơn trượt:
+
+                + Chân dài 23cm - 23,5cm đi size 36-37 hoặc size 35,36
+
+                + Chân dài 24cm - 24,5cm đi size 38-39 hoặc size 37,38
+
+                + Chân dài 25cm - 25,5cm đi size 40-41 hoặc size 39,40
+
+                + Chân dài 26cm - 26,5cm đi size 42 -43 hoặc size 41,42
+
+                + Chân dài 27cm - 27,5cm đi size 44-45 hoặc size 43-44
+
+                Dép đi trong nhà này đang Hot nhất hiện nay, được chị em và các bạn nữ ưa chuộng bởi tính thời trang, siêu nhẹ, siêu êm, bền đẹp và thoáng khí.
+
+                - Đế được đúc nguyên khối bằng cao su non và nhựa tổng hợp nên rất nhẹ, êm chân, đặc biệt phần đế chống trơn trượt tuyệt đối.
+
+                - Form gọn, chất mềm, kiểu dáng năng động, trẻ trung, thích hợp mọi lứa tuổi.
+
+                - Dép siêu nhẹ, siêu êm này có thể sử dụng làm:
+
+                + Dép đi trong nhà.
+
+                + Dép đi trong nhà tắm.
+
+                + Dép đi trong văn phòng.
+
+                + Dép đi biển.
+
+                + Dép đi du lịch.
+
+                + Dép đi dạo phố.
+
+                + Dép đi chơi cùng bạn bè với một bộ dạng bánh bèo cũng rất đẹp.
+
+                Hoặc làm :
+
+                + Dép đi trong Khách Sạn
+
+                + Dép đi trong Nhà Hàng.
+
+                + Dép đi trong Homestay.
+
+                + Dép đi trong Nhà Nghỉ.
+
+                THÔNG TIN SẢN PHẨM:
+
+                Chất liệu: Cao su non và nhựa tổng hợp đúc nguyên khối.
+
+                CAM KẾT CỦA SHOP :
+
+                - Sản phẩm 100% giống như mô tả.
+
+                - Giao hàng tận nhà – nhận hàng tận nơi trong thời gian ngắn nhất.
+
+                - Khách hàng được đổi trả hàng hoàn toàn miễn phí nếu sản phẩm khi nhận hàng bị lỗi - vỡ – hỏng – không giống hình ảnh và mô tả.
+
+                - Hỗ trợ giải quyết đơn hàng trong thời gian sớm nhất với phương án tốt nhất để Quý Khách hàng luôn cảm thấy hài lòng và yên tâm khi mua sắm tại Shop.
+                - Chân thành cảm ơn Quý khách hàng đã quan tâm và ủng hộ Shop ... !!!
+
+                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
+            'sku'           => '33333333340',
+            'status'        => 'selling',
+            'origin'        => 'VN',
+            'rating'        => rand(30, 50) / 10,
+            'sold_count'    => rand(0, 100),
+            'view_count'    => rand(100, 1000),
+            'shop_id'       => 1,
+            'category_id'   => 8,
+            'supplier_id'   => 3,
+            'gallery'       => json_encode([
+                'images/products/2023/11/b59880291b77947ba9343758c7dfb5b8.jpg.webp',
+                'images/products/2023/11/92837ae0ec60d900da849f9ba98cc512.jpg.webp',
+                'images/products/2023/11/76b88d16a9b7ce8dffc2fb5d680505fd.jpg.webp'
+            ]),
+            'variants'      => json_encode([
+                'Màu sắc' => [
+                    'variant_name'   => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh lá đậm' => [
+                            'quantity'      => 100,
+                            'selling_price' => 49000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM410'
+                        ],
+                        'Hồng'          => [
+                            'quantity'      => 100,
+                            'selling_price' => 49000,
+                            'sale_price'    => 0,
+                            'product_code'  => 'OM411'
+                        ]
+                    ]
+                ]
+            ])
+        ]
     ]
 ];
