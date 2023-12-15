@@ -3428,7 +3428,7 @@ return [
                     'variant_values' => [
                         'Nâu'   => [
                             'quantity'      => 100,
-                            'selling_price' => 47000,
+                            'selling_price' => 59000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM408'
                         ],
@@ -3547,7 +3547,7 @@ return [
                         ],
                         'Hồng'          => [
                             'quantity'      => 100,
-                            'selling_price' => 49000,
+                            'selling_price' => 52000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM411'
                         ]

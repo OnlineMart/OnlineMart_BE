@@ -21,10 +21,7 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             UserAddressSeeder::class,
             SupplierSeeder::class,
-            // ProductSeeder::class,
-            // ProductMediaSeeder::class,
-            // ProductVariantSeeder::class,
-            // ProductVariantValueSeeder::class,
+            ProductFullDataSeeder::class,
             WishlistSeeder::class,
             ProductStockSeeder::class,
             NotificationSeeder::class,
@@ -36,7 +33,6 @@ class DatabaseSeeder extends Seeder
             OrderDetailSeeder::class,
             ReviewSeeder::class,
             ReviewMediaSeeder::class,
-            ProductFullDataSeeder::class,
             ViewCountSeeder::class,
             ReasonCancelSeeder::class
         ]);

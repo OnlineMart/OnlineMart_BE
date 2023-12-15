@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Exception;
 use App\Models\Product;
-use Illuminate\Support\Str;
 use App\Models\ProductMedia;
+use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ProductFullDataSeeder extends Seeder
 {
@@ -41,7 +41,7 @@ class ProductFullDataSeeder extends Seeder
                     'shop_id'          => $data['shop_id'],
                     'supplier_id'      => $data['supplier_id'],
                     'meta_title'       => $data['meta_title'] ?? '',
-                    'meta_keyword'     => $data['meta_keyword'] ?? '',
+                    'meta_keywords'    => $data['meta_keywords'] ?? '',
                     'meta_description' => $data['meta_description'] ?? ''
                 ]);
 

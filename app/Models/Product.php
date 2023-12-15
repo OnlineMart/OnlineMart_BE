@@ -15,7 +15,7 @@ class Product extends Model
     public const SELLING             = 'selling';
     public const OUT_OF_STOCK        = 'out-of-stock';
     public const DRAFT               = 'draft';
-    public const WAITING_FOR_APPROVE = 'waiting-for-approve';
+//    public const WAITING_FOR_APPROVE = 'waiting-for-approve';
     public const OFF                 = 'off';
 
     public const SIMPLE       = 'simple';
@@ -42,7 +42,7 @@ class Product extends Model
         'sold_count',
         'description',
         'meta_title',
-        'meta_keyword',
+        'meta_keywords',
         'meta_description'
     ];
 

@@ -31,9 +31,9 @@ class ProductRequestStore extends BaseRequest
                 Rule::unique('products', 'sku')->ignore($this->id),
                 Rule::unique('product_variation_values', 'sku')
             ],
-            'thumbnail_url'    => 'required|image|max:2048',
-            'gallery'          => 'nullable',
-            'gallery.*'        => 'nullable|file|max:2048',
+            'thumbnail_url'    => 'required',
+            'gallery'          => 'nullable|array',
+            'gallery.*'        => 'nullable',
             'regular_price'    => [
                 'numeric',
                 function ($attribute, $value, $fail) {
@@ -69,6 +69,26 @@ class ProductRequestStore extends BaseRequest
         if ($this->input('type') === 'normal') {
             $rules['regular_price'][] = 'required';
             $rules['sku'][] = 'required';
+        } else {
+            $rules['variants'] = 'required';
+            $rules['variants.*.sku'] = [
+                'required',
+                'string',
+                Rule::unique('product_variation_values', 'sku')
+            ];
+            $rules['variants.*.price'] = 'required|numeric';
+            $rules['variants.*.sale_price'] = [
+                'nullable',
+                'numeric',
+                function ($attribute, $value, $fail) {
+                    $regularPrice = $this->input('variants.*.price');
+
+                    if ($value != 0 && $value >= $regularPrice) {
+                        $fail('The sale price must be less than the regular price when not zero.');
+                    }
+                }
+            ];
+            $rules['variants.*.stock_qty'] = 'required|numeric';
         }
 
         $rules['sale_price'] = array_merge($rules['sale_price'], [

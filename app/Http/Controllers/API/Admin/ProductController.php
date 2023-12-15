@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers\API\Admin;
 
-use Exception;
-use App\Models\Product;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Str;
-use Illuminate\Http\Response;
-use App\Http\Helpers\S3Helper;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Probots\Pinecone\Client as Pinecone;
+use App\Http\Helpers\S3Helper;
 use App\Http\Requests\Product\ProductRequestStore;
 use App\Http\Requests\Product\ProductRequestUpdate;
+use App\Models\Product;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
+use Probots\Pinecone\Client as Pinecone;
 
 class ProductController extends Controller
 {
@@ -21,7 +22,7 @@ class ProductController extends Controller
 
     public function __construct(Pinecone $pinecone)
     {
-        $this->upload = new S3Helper();
+        $this->upload   = new S3Helper();
         $this->pinecone = $pinecone;
 
         $this->middleware('auth:api');
@@ -84,7 +85,7 @@ class ProductController extends Controller
                 return [
                     'id'              => $product->id,
                     'name'            => $product->name,
-                    'thumbnail_url'   => $product->product_media->firstWhere('is_main', true)->media ?: null,
+                    'thumbnail_url'   => $product->product_media->firstWhere('is_main', true)->media ?? null,
                     'sku'             => $sku,
                     'parent_category' => $product->category,
                     'category'        => $product->category->name,
@@ -101,7 +102,7 @@ class ProductController extends Controller
                             return [
                                 'id'            => $value->id,
                                 'name'          => $product->name . " - " . $value->variation_value_name,
-                                'thumbnail_url' => $value->thumbnail_url ?? $product->product_media->firstWhere('is_main', true)->media ?: null,
+                                'thumbnail_url' => $value->thumbnail_url ?? $product->product_media->firstWhere('is_main', true)->media ?? null,
                                 'sku'           => $value->sku,
                                 'price'         => $this->checkSale($value->sale_price, $value->regular_price),
                                 'stock'         => $value->stock_qty,
@@ -154,8 +155,6 @@ class ProductController extends Controller
                 $validatedData['variants'] = json_decode($validatedData['variants'], true);
             }
 
-            $product = null;
-
             try {
                 $product = Product::create([
                     'name'             => $validatedData['name'],
@@ -174,10 +173,11 @@ class ProductController extends Controller
                     'shop_id'          => $validatedData['shop_id'],
                     'supplier_id'      => $validatedData['supplier_id'],
                     'meta_title'       => $validatedData['meta_title'] ?? '',
-                    'meta_keyword'     => $validatedData['meta_keyword'] ?? '',
+                    'meta_keywords'    => $validatedData['meta_keywords'] ?? '',
                     'meta_description' => $validatedData['meta_description'] ?? ''
                 ]);
 
+                Log::info($validatedData['thumbnail_url']);
                 $product->product_media()->create([
                     'product_id' => $product->id,
                     'media'      => $this->upload->uploadSingleFileToS3($validatedData['thumbnail_url'], 'products'),
@@ -195,7 +195,7 @@ class ProductController extends Controller
                 }
 
                 if ($isHaveVariant) {
-                    foreach ($validatedData['variants'] as $variantName => $variantData) {
+                    foreach ($validatedData['variants'] as $variantData) {
                         $variant = $product->variants()->create([
                             'variation_name' => $variantData['variant_name'],
                             'product_id'     => $product->id
@@ -268,25 +268,25 @@ class ProductController extends Controller
             $parentCategoryIds = $getParentCategoryIds($currentCategory);
 
             $response = [
-                'id'              => $product->id,
-                'name'            => $product->name,
-                'thumbnail_url'   => $product->product_media->firstWhere('is_main', true)->media ?: null,
-                'gallery'         => $product->product_media->where('is_main', false)->values()->map(function ($image) {
+                'id'               => $product->id,
+                'name'             => $product->name,
+                'thumbnail_url'    => $product->product_media->firstWhere('is_main', true)->media ?: null,
+                'gallery'          => $product->product_media->where('is_main', false)->values()->map(function ($image) {
                     return $image->media;
                 }),
-                'origin'          => $product->origin,
-                'sku'             => $isVariant ? $product->variants->first()->sku : $product->sku,
-                'all_category_id' => $parentCategoryIds,
-                'category'        => $product->category->name,
-                'brand'           => $product->supplier->name,
-                'status'          => $product->status,
-                'stock'           => $isVariant ? $product->variants->sum('stock') : $product->stock_qty,
-                'price'           => $product->regular_price,
-                'sale_price'      => $product->sale_price,
-                'updated_at'      => $product->updated_at,
-                'isVariant'       => $isVariant,
-                'type'            => $isVariant ? Product::CONFIGURABLE : Product::SIMPLE,
-                'variants'        => $product->variants->map(function ($variant, $key) {
+                'origin'           => $product->origin,
+                'sku'              => $isVariant ? $product->variants->first()->sku : $product->sku,
+                'all_category_id'  => $parentCategoryIds,
+                'category'         => $product->category->name,
+                'brand'            => $product->supplier->name,
+                'status'           => $product->status,
+                'stock'            => $isVariant ? $product->variants->sum('stock') : $product->stock_qty,
+                'price'            => $product->regular_price,
+                'sale_price'       => $product->sale_price,
+                'updated_at'       => $product->updated_at,
+                'isVariant'        => $isVariant,
+                'type'             => $isVariant ? Product::CONFIGURABLE : Product::SIMPLE,
+                'variants'         => $product->variants->map(function ($variant, $key) {
                     return [
                         'id'              => $variant->id,
                         'key'             => $key,
@@ -304,7 +304,7 @@ class ProductController extends Controller
                         })
                     ];
                 }),
-                'variant_values'  => $product->variants->flatMap(function ($variant) {
+                'variant_values'   => $product->variants->flatMap(function ($variant) {
                     return $variant->values->map(function ($value) {
                         return [
                             'id'                   => $value->id,
@@ -317,7 +317,10 @@ class ProductController extends Controller
                         ];
                     });
                 })->all(),
-                'description'     => $product->description
+                'description'      => $product->description,
+                'meta_title'       => $product->meta_title,
+                'meta_keywords'    => $product->meta_keywords,
+                'meta_description' => $product->meta_description
             ];
 
             return jsonResponse($response, 200, 'Product retrieved successfully');
@@ -337,91 +340,107 @@ class ProductController extends Controller
     public function update(ProductRequestUpdate $request, Product $product): JsonResponse
     {
         try {
-            DB::beginTransaction();
-
             $validatedData = $request->validated();
             $isHaveVariant = $request->input("type") == "variant";
             if ($isHaveVariant) {
                 $validatedData['variants'] = json_decode($validatedData['variants'], true);
             }
+            $product->update([
+                'name'             => $validatedData['name'],
+                'slug'             => Str::slug($validatedData['name']),
+                'regular_price'    => $validatedData['regular_price'] ?? 0,
+                'sale_price'       => $validatedData['sale_price'] ?? 0,
+                'sku'              => $validatedData['sku'] ?? null,
+                'stock_qty'        => $validatedData['stock_qty'] ?? 0,
+                'rating'           => 0,
+                'view_count'       => 0,
+                'sold_count'       => 0,
+                'description'      => $validatedData['description'] ?? null,
+                'origin'           => $validatedData['origin'],
+                'status'           => $validatedData['status'] ?? $product->status,
+                'category_id'      => $validatedData['category_id'],
+                'shop_id'          => $validatedData['shop_id'],
+                'supplier_id'      => $validatedData['supplier_id'],
+                'meta_title'       => $validatedData['meta_title'] ?? "",
+                'meta_keywords'    => $validatedData['meta_keywords'] ?? "",
+                'meta_description' => $validatedData['meta_description'] ?? ""
+            ]);
 
-            try {
-                $product->update([
-                    'name'             => $validatedData['name'],
-                    'slug'             => Str::slug($validatedData['name']),
-                    'regular_price'    => $validatedData['regular_price'] ?? 0,
-                    'sale_price'       => $validatedData['sale_price'] ?? 0,
-                    'sku'              => $validatedData['sku'] ?? null,
-                    'stock_qty'        => $validatedData['stock_qty'] ?? 0,
-                    'rating'           => 0,
-                    'view_count'       => 0,
-                    'sold_count'       => 0,
-                    'description'      => $validatedData['description'] ?? null,
-                    'origin'           => $validatedData['origin'],
-                    'status'           => $validatedData['status'] ?? $product->status,
-                    'category_id'      => $validatedData['category_id'],
-                    'shop_id'          => $validatedData['shop_id'],
-                    'supplier_id'      => $validatedData['supplier_id'],
-                    'meta_title'       => $validatedData['meta_title'] ?? null,
-                    'meta_keyword'     => $validatedData['meta_keyword'] ?? null,
-                    'meta_description' => $validatedData['meta_description'] ?? null
-                ]);
+            if (isset($validatedData['thumbnail_url'])) {
+                if (!is_string($validatedData['thumbnail_url'])) {
+                    $product->product_media()->updateOrCreate(
+                        ['product_id' => $product->id, 'is_main' => true],
+                        ['media' => $this->upload->uploadSingleFileToS3($validatedData['thumbnail_url'], 'products')]
+                    );
+                }
+            }
 
-                // !FIX: check update image
-                if (isset($validatedData['thumbnail_url'])) {
-                    $product->product_media()->where('is_main', true)->delete();
+            $this->handleDeleteGalleryImages($product, $validatedData['gallery'] ?? []);
 
-                    $product->product_media()->create([
-                        'product_id' => $product->id,
-                        'media'      => $this->upload->uploadSingleFileToS3($validatedData['thumbnail_url'], 'products'),
-                        'is_main'    => true
+            if ($isHaveVariant) {
+                $product->variants()->delete();
+
+                foreach ($validatedData['variants'] as $variantData) {
+                    $variant = $product->variants()->create([
+                        'variation_name' => $variantData['variant_name'],
+                        'product_id'     => $product->id
                     ]);
-                }
 
-                if (isset($validatedData['gallery'])) {
-                    $product->product_media()->where('is_main', false)->delete();
-
-                    foreach ($validatedData['gallery'] as $image) {
-                        $product->product_media()->create([
-                            'product_id' => $product->id,
-                            'media'      => $this->upload->uploadSingleFileToS3($image, 'products'),
-                            'is_main'    => false
-                        ]);
-                    }
-                }
-
-                if ($isHaveVariant) {
-                    $product->variants()->delete();
-
-                    foreach ($validatedData['variants'] as $variantData) {
-                        $variant = $product->variants()->create([
-                            'variation_name' => $variantData['variant_name'],
-                            'product_id'     => $product->id
-                        ]);
-
-                        foreach ($variantData['variant_values'] as $valueName => $valueAttributes) {
-                            if (is_array($valueAttributes)) {
-                                $variant->values()->create([
-                                    'variation_value_name' => $valueName,
-                                    'sku'                  => $valueAttributes['product_code'],
-                                    'regular_price'        => $valueAttributes['selling_price'],
-                                    'sale_price'           => $valueAttributes['sale_price'] ?? 0,
-                                    'stock_qty'            => $valueAttributes['quantity'] ?? 0
-                                ]);
-                            }
+                    foreach ($variantData['variant_values'] as $valueName => $valueAttributes) {
+                        if (is_array($valueAttributes)) {
+                            $variant->values()->create([
+                                'variation_value_name' => $valueName,
+                                'sku'                  => $valueAttributes['product_code'],
+                                'regular_price'        => $valueAttributes['selling_price'],
+                                'sale_price'           => $valueAttributes['sale_price'] ?? 0,
+                                'stock_qty'            => $valueAttributes['quantity'] ?? 0
+                            ]);
                         }
                     }
                 }
-            } catch (Exception $e) {
-                DB::rollBack();
-                return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, $e->getMessage());
             }
-
-            DB::commit();
-
             return jsonResponse($product, Response::HTTP_OK, "Cập nhật sản phẩm thành công");
+
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR, $e->getMessage());
+        }
+    }
+
+    /**
+     * @param Product $product
+     * @param array   $galleryImages
+     *
+     * @return void
+     * @throws Exception
+     */
+    private function handleDeleteGalleryImages(Product $product, array $galleryImages): void
+    {
+        if (!empty($galleryImages)) {
+            $baseS3Image   = $this->upload->getS3ObjectUrl();
+            $existingMedia = $product->product_media()->where('is_main', false)->pluck('media')->toArray();
+
+            $existingMediaWithPrefix = array_map(function ($image) use ($baseS3Image) {
+                return $baseS3Image . $image;
+            }, $existingMedia);
+
+            $deletedMedia = array_diff($existingMediaWithPrefix, $galleryImages);
+
+            foreach ($deletedMedia as $media) {
+                $product->product_media()->where('is_main', false)->where('media', str_replace($baseS3Image, '', $media))->delete();
+            }
+
+
+            foreach ($galleryImages as $image) {
+                if (!is_string($image)) {
+                    $product->product_media()->create([
+                        'product_id' => $product->id,
+                        'is_main'    => false,
+                        'media'      => $this->upload->uploadSingleFileToS3($image, 'products')
+                    ]);
+                }
+            }
+        } else {
+            $product->product_media()->where('is_main', false)->delete();
         }
     }
 
@@ -435,13 +454,6 @@ class ProductController extends Controller
     public function destroy(Product $product): JsonResponse
     {
         try {
-            $productMedia = $product->product_media->toArray();
-            if ($productMedia) {
-                foreach ($productMedia as $media) {
-                    // $this->upload->deleteFileFromS3($media['media']);
-                }
-            }
-
             $product->delete();
 
             return jsonResponse(null, Response::HTTP_OK, "Xóa sản phẩm thành công");
@@ -487,7 +499,7 @@ class ProductController extends Controller
      *
      * @return JsonResponse
      */
-    public function updateMultipleStatus(string $productId, string $status)
+    public function updateMultipleStatus(string $productId, string $status): JsonResponse
     {
         try {
             $productIds = explode(',', $productId);

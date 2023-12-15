@@ -31,9 +31,9 @@ class ProductRequestUpdate extends BaseRequest
                 'string',
                 'unique:products,sku,' . $productId,
             ],
-            'thumbnail_url'    => 'nullable|image|max:2048',
+            'thumbnail_url'    => 'required',
             'gallery'          => 'nullable|array',
-            'gallery.*'        => 'nullable|file|mimetypes:image/jpeg,image/png,video/mp4|max:2048',
+            'gallery.*'        => 'nullable',
             'regular_price'    => [
                 'numeric',
                 function ($attribute, $value, $fail) {
@@ -61,7 +61,7 @@ class ProductRequestUpdate extends BaseRequest
             'supplier_id'      => 'required|exists:suppliers,id',
             'category_id'      => 'required|exists:categories,id',
             'meta_title'       => 'nullable|string',
-            'meta_keywords'    => 'nullable|string',
+            'meta_keywords'    => 'nullable',
             'meta_description' => 'nullable|string',
             'variants'         => 'nullable'
         ];

@@ -30,13 +30,14 @@ return new class extends Migration
             $table->integer("sold_count")->default(0);
             $table->string("origin");
             $table->longText('description')->nullable();
-            $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
+//            $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
+            $table->enum('status', ["selling", "out-of-stock", "draft", "off"]);
             $table->foreignIdFor(Category::class);
             $table->foreignIdFor(Shop::class);
             $table->foreignIdFor(Supplier::class);
 
             $table->string("meta_title")->nullable();
-            $table->string("meta_keyword")->nullable();
+            $table->string("meta_keywords")->nullable();
             $table->string("meta_description")->nullable();
             $table->timestamps();
             $table->softDeletes();
