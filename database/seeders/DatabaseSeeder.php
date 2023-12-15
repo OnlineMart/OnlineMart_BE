@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             ShippingAddressSeeder::class,
             OrderStatusesSeeder::class,
             PaymentMethodsSeeder::class,
+            ProductFullDataSeeder::class,
             OrdersSeeder::class,
             OrderDetailSeeder::class,
             ReviewSeeder::class,
