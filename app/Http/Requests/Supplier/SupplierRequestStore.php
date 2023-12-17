@@ -11,7 +11,7 @@ class SupplierRequestStore extends BaseRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -24,12 +24,12 @@ class SupplierRequestStore extends BaseRequest
     public function rules(): array
     {
         return [
-            'name'    => 'required|string|min:6|max:255',
+            'name'    => 'required|string|min:4|max:255',
             'email'   => 'required|email|max:255|unique:suppliers,email',
             'phone'   => 'required|string|min:2|max:255|unique:suppliers,phone',
             'address' => 'required|string|max:255',
+            'avatar'  => 'sometimes|required|image',
             'code'    => 'required|string|max:255|unique:suppliers,code',
-            'shop_id' => 'required|numeric',
             'website' => 'nullable|string|max:255',
         ];
     }
@@ -46,6 +46,7 @@ class SupplierRequestStore extends BaseRequest
             'string'   => ':attribute phải là chuỗi',
             'numeric'  => ':attribute phải là số',
             'email'    => ':attribute không đúng định dạng',
+            'avatar'   => ':attribute không đúng định dạng',
             'unique'   => ':attribute đã tồn tại',
             'min'      => ':attribute có độ dài tối thiểu :min ký tự',
             'max'      => ':attribute có độ dài tối đa :max ký tự',
@@ -64,8 +65,8 @@ class SupplierRequestStore extends BaseRequest
             'email'   => 'Địa chỉ email',
             'code'    => 'Mã nhà cung cấp',
             'phone'   => 'Số điện thoại',
+            'avatar'  => 'Ảnh nhà cung cấp',
             'address' => 'Địa chỉ',
-            'shop_id' => 'Cửa hàng'
         ];
     }
 }

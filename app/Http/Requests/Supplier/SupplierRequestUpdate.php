@@ -11,7 +11,7 @@ class SupplierRequestUpdate extends BaseRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -25,11 +25,12 @@ class SupplierRequestUpdate extends BaseRequest
     {
         $supplierId = $this->route()->parameter('supplier')->id;
         return [
-            'name'    => 'required|string|min:6|max:255',
+            'name'    => 'required|string|min:4|max:255',
             'email'   => 'required|email|max:255|unique:suppliers,email,' . $supplierId,
             'phone'   => 'required|string|min:2|max:255|unique:suppliers,phone,' . $supplierId,
             'address' => 'required|string|max:255',
-            'code'    => 'required|string|max:255|unique:suppliers,code,' . $supplierId,
+            'avatar'  => 'nullable|image',
+            'code'    => 'required|string|max:255',
             'website' => 'nullable|string|max:255',
         ];
     }
@@ -45,6 +46,7 @@ class SupplierRequestUpdate extends BaseRequest
             'string'   => ':attribute phải là chuỗi',
             'numeric'  => ':attribute phải là số',
             'email'    => ':attribute không đúng định dạng',
+            'avatar'   => ':attribute không đúng định dạng',
             'unique'   => ':attribute đã tồn tại',
             'min'      => ':attribute có độ dài tối thiểu :min ký tự',
             'max'      => ':attribute có độ dài tối đa :max ký tự',
@@ -62,6 +64,7 @@ class SupplierRequestUpdate extends BaseRequest
             'name'    => 'Tên nhà cung cấp',
             'email'   => 'Địa chỉ email',
             'code'    => 'Mã nhà cung cấp',
+            'avatar'  => 'Ảnh nhà cung cấp',
             'phone'   => 'Số điện thoại',
             'address' => 'Địa chỉ',
         ];

@@ -7,8 +7,10 @@ use App\Http\Controllers\API\Admin\ProductBinController;
 use App\Http\Controllers\API\Admin\ReasonCancelController;
 use App\Http\Controllers\API\Admin\SellerController;
 use App\Http\Controllers\API\Admin\ProductController;
-use App\Http\Controllers\API\Admin\VoucherController;
 use App\Http\Controllers\API\Admin\ProductStockController;
+use App\Http\Controllers\API\Admin\ShopController;
+use App\Http\Controllers\API\Admin\SupplierController;
+use App\Http\Controllers\API\Admin\VoucherController;
 use App\Http\Controllers\API\Admin\TrafficWebsiteController;
 
 /*
@@ -62,3 +64,17 @@ Route::get('/reason-cancel/shop/{shopId}',[ReasonCancelController::class,'getRea
 Route::prefix('dev')->group(function () {
     Route::get('/traffic', [TrafficWebsiteController::class, 'index']);
 });
+
+/* ======== API Shop ======== */
+Route::get('/shop-profile/{shopId}', [ShopController::class, 'index']);
+Route::put('/shop/change-status/{shopId}', [ShopController::class, 'changeStatusShop']);
+Route::patch('/shop/update-document/{shopId}', [ShopController::class, 'updateDocument']);
+Route::patch('/shop/update-booth/{shopId}', [ShopController::class, 'updateBooth']);
+Route::patch('/shop/front-side/{shopId}', [ShopController::class, 'updateFrontSide']);
+Route::patch('/shop/update-bank/{shopId}', [ShopController::class, 'updateBank']);
+
+/* ======== API Supplier ======== */
+Route::apiResource('suppliers', SupplierController::class);
+Route::get('suppliers/shop/{shopId}/sort', [SupplierController::class, 'getSupplierForSort']);
+Route::get('suppliers/shop/{shopId}/select', [SupplierController::class, 'getSupplierForSelect']);
+Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class, 'deleteMultipleSuppliers']);

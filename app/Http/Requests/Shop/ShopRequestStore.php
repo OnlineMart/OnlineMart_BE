@@ -36,6 +36,11 @@ class ShopRequestStore extends BaseRequest
         ];
     }
 
+    /**
+     * Get the validation attributes that apply to the request.
+     *
+     * @return array<string, string>
+     */
     public function attributes(): array
     {
         return [
@@ -51,6 +56,11 @@ class ShopRequestStore extends BaseRequest
         ];
     }
 
+    /**
+     * Get the validation messages that apply to the request.
+     *
+     * @return array<string, string>
+     */
     public function messages(): array
     {
         return [

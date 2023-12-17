@@ -1,49 +1,58 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\Admin;
 
+use Exception;
+use App\Models\Supplier;
+use Illuminate\Http\Response;
+use App\Http\Helpers\S3Helper;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Supplier\SupplierRequestStore;
 use App\Http\Requests\Supplier\SupplierRequestUpdate;
-use App\Models\Supplier;
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Response;
 
 class SupplierController extends Controller
 {
+    protected S3Helper $upload;
+
+    public function __construct()
+    {
+        $this->upload = new S3Helper();
+        $this->middleware('auth:api');
+        // $this->middleware('permission:View suppliers', ['only' => ['getShopSuppliers']]);
+        // $this->middleware('permission:Create supplier', ['only' => ['store']]);
+        // $this->middleware('permission:Update supplier', ['only' => ['update']]);
+        // $this->middleware('permission:Delete supplier', ['only' => ['delete']]);
+    }
 
     /**
-     * Lấy danh sách nhà cung cấp
+     * Lấy danh sách suppliers theo shop
      *
      * @return JsonResponse
      */
-    public function index(): JsonResponse
+    public function getSupplierForSort(): JsonResponse
     {
         try {
-            $suppliers = Supplier::orderBy('id', 'DESC')->get();
-            return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
-        } catch (Exception $e) {
-            return jsonResponse(null, 403, 'Something went wrong');
-        }
-    }
-
-    public function getSupplierForSort($shopId): JsonResponse
-    {
-        try {
+            $shopId = auth()->user()->shop_id;
             $suppliers = Supplier::where('shop_id', $shopId)
                 ->orWhereNull('shop_id')
                 ->orderBy('id', 'desc')
                 ->select("id", "name as label", "name as value")
                 ->get();
 
-
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
         } catch (Exception $e) {
             return jsonResponse(null, 403, 'Something went wrong');
         }
     }
 
+    /**
+     * @param array $suppliers
+     * @param int $shopId
+     *
+     * return JsonResponse
+     * */
     public function getSupplierForSelect($shopId): JsonResponse
     {
         try {
@@ -66,9 +75,10 @@ class SupplierController extends Controller
      *
      * @return JsonResponse
      */
-    public function getShopSuppliers($shopId): JsonResponse
+    public function index(): JsonResponse
     {
         try {
+            $shopId = auth()->user()->shop_id;
             $suppliers = Supplier::where('shop_id', $shopId)->get();
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
         } catch (Exception $e) {
@@ -87,19 +97,19 @@ class SupplierController extends Controller
     {
         try {
             $data = $request->validated();
-
+            $shopId = auth()->user()->shop_id;
             $supplier = Supplier::create([
-                'name'    => $data['name'],
-                'email'   => $data['email'],
-                'code'    => $data['code'],
-                'phone'   => $data['phone'],
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'code' => $data['code'],
+                'phone' => $data['phone'],
+                'avatar' => $this->upload->uploadSingleFileToS3($data['avatar'], 'suppliers'),
                 'address' => $data['address'],
-                'shop_id' => $data['shop_id'],
                 'website' => $data['website'] ?? null,
+                'shop_id' => $shopId,
             ]);
 
             logActivity('create', $request, 'Thêm mới nhà cung cấp', 'Thêm mới', $supplier);
-
 
             return jsonResponse($supplier, 200, 'Supplier created successfully');
         } catch (Exception $e) {
@@ -136,18 +146,24 @@ class SupplierController extends Controller
     {
         try {
             $data = $request->validated();
-
+            Log::info($data);
+            $avatar = null;
+            if (isset($data['avatar'])) {
+              $avatar = $this->upload->uploadSingleFileToS3($data['avatar'], 'shops');
+          }
             $supplier->update([
-                'name'    => $data['name'],
-                'email'   => $data['email'],
-                'code'    => $data['code'],
-                'phone'   => $data['phone'],
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'code' => $data['code'],
+                'avatar' => $avatar ?? $supplier->avatar,
+                'phone' => $data['phone'],
                 'address' => $data['address'],
-                'website' => $data['website'] ?? null,
+                'website' => $data['website'],
             ]);
+
             logActivity('update', $request, 'Cập nhật nhà cung cấp', 'Cập nhật', $supplier);
 
-            return jsonResponse($supplier, 200, 'Category updated successfully');
+            return jsonResponse($supplier, 200, 'Supplier updated successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
@@ -177,7 +193,8 @@ class SupplierController extends Controller
     /**
      * Xóa nhiều supplier.
      *
-     * @param  $supplierId , int $shopId
+     * @param  $supplierId
+     * @param int $shopId
      *
      * @return JsonResponse
      */

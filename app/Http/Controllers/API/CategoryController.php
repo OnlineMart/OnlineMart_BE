@@ -130,10 +130,10 @@ class CategoryController extends Controller
     {
         try {
             $suppliers = Category::where('shop_id', $shopId)
-            ->orWhereNull('shop_id')
-            ->orderBy('id', 'desc')
-            ->select("id", "name as label", "name as value")
-            ->get();
+                ->orWhereNull('shop_id')
+                ->orderBy('id', 'desc')
+                ->select("id", "name as label", "name as value")
+                ->get();
 
 
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');

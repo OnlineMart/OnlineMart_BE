@@ -18,6 +18,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use Spatie\Permission\Models\Permission;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use App\Http\Requests\Auth\RegisterRequest;
+use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
@@ -48,9 +49,8 @@ class AuthController extends Controller
 
                 if ($validatedData['type'] === User::ADMIN_SHOP) {
                     $shop = Shop::create([
-                        'name'   => $validatedData['full_name'],
-                        'email'  => $validatedData['email'],
-                        'phone'  => $validatedData['phone'],
+                        'name'   => 'OM SHOP ' . $validatedData['full_name'],
+                        'url'    => Str::slug($validatedData['full_name']),
                         'status' => Shop::DISABLED
                     ]);
 
@@ -93,7 +93,9 @@ class AuthController extends Controller
                     ]);
                 }
 
-                return jsonResponse($user, 200, 'User created successfully');
+                return jsonResponse(
+                  ['shop' => $shop,
+                'user' => $user ], 200, 'User created successfully');
             } catch (Exception $e) {
                 return jsonResponse($e->getMessage(), 500, 'Something went wrong');
             }

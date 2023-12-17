@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use App\Models\Product;
 use \Probots\Pinecone\Client as Pinecone;
+use App\Models\Shop;
 use App\Observers\ProductObserver;
+use App\Observers\ShopStatusObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -16,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if($this->app->getLocale()){
+        if ($this->app->getLocale()) {
             $this->app->register(TelescopeServiceProvider::class);
         }
 
@@ -33,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        Shop::observe(ShopStatusObserver::class);
     }
 }

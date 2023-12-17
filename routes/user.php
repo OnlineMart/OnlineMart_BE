@@ -6,8 +6,7 @@ use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\Auth\AuthController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\User\ProductController;
-use App\Http\Controllers\API\ShopController;
-use App\Http\Controllers\API\SupplierController;
+use App\Http\Controllers\API\User\ShopController;
 use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\User\VoucherController;
@@ -80,7 +79,7 @@ Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
 
-// Api voucheruploadAvatar
+// Api voucher
 Route::post('user/get-voucher/{voucherId}', [VoucherController::class, 'store']);
 Route::get('voucher/user', [VoucherController::class, 'getVoucherByUser']);
 
@@ -108,18 +107,8 @@ Route::prefix('product')->group(function () {
 
 //Route::apiResource('/categories', CategoryController::class);
 
-Route::apiResource('/shops', ShopController::class);
-
-// Api Supplier
 // Activities
 Route::get('/activities-log', [ActivitiLogController::class, 'getActivities']);
-
-// Supplier route
-Route::apiResource('suppliers', SupplierController::class);
-Route::get('suppliers/shop/{shopId}', [SupplierController::class, 'getShopSuppliers']);
-Route::get('suppliers/shop/{shopId}/sort', [SupplierController::class, 'getSupplierForSort']);
-Route::get('suppliers/shop/{shopId}/select', [SupplierController::class, 'getSupplierForSelect']);
-Route::delete('suppliers/{supplierId}/shop/{shopId}', [SupplierController::class, 'deleteMultipleSuppliers']);
 
 // Api roles and permissions
 Route::apiResource('/roles', RoleController::class)->except(['show']);
@@ -151,3 +140,7 @@ Route::prefix('customer_reviews')->group(function() {
     Route::get('/{productId}/likes', [LikeController::class, 'getAllLike']);
     Route::patch('/{userId}/{productId}/{reviewId}/like', [LikeController::class, 'updateLikeStatus']);
 });
+
+/* ======== API Shop ======== */
+Route::get('shops', [ShopController::class, 'index']);
+Route::get('/shops/{slug}', [ShopController::class, 'getShop']);

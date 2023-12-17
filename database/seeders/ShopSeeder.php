@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Shop;
+use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
 
 class ShopSeeder extends Seeder
@@ -14,31 +15,29 @@ class ShopSeeder extends Seeder
      */
     public function run(): void
     {
+        $faker = Faker::create();
+
         $data = [
             [
-                'name'        => 'Tiki Trading',
-                'email'       => 'tiki_trading@gmail.com',
-                'avatar'      => 'https://salt.tikicdn.com/cache/w220/ts/seller/21/ce/5c/b52d0b8576680dc3666474ae31b091ec.jpg',
-                'phone'       => '0774060610',
-                'address'     => 'Cần Thơ',
-                'description' => 'Tiki Trading',
-                'rating'      => 4.7,
-                'status'      => Shop::ENABLED,
-                'created_at'  => now()->toDateTimeString(),
-                'updated_at'  => now()->toDateTimeString()
+                'name' => 'Online Mart',
+                'type' => Shop::NOT_YET_APPROVED,
+                'profile_number' => Shop::ACCOUNT_INFORMATION,
+                'description' => 'Online Mart Trading',
+                'status' => Shop::ENABLED,
+                'created_at' => now()->toDateTimeString(),
+                'updated_at' => now()->toDateTimeString(),
+                'url' => 'online-mart',
             ],
             [
-                'name'        => 'Nestlé Chính Hãng',
-                'email'       => 'nestlé_chính_hã@gmail.com',
-                'avatar'      => 'https://salt.tikicdn.com/cache/w220/ts/seller/94/a6/98/1a684931b4f44e3e26cd821f1858a13d.jpg',
-                'phone'       => '0774060610',
-                'address'     => 'Cần Thơ',
-                'description' => 'Nestlé Chính Hãng',
-                'rating'      => 4.7,
-                'status'      => Shop::ENABLED,
-                'created_at'  => now()->toDateTimeString(),
-                'updated_at'  => now()->toDateTimeString()
-            ]
+                'name' => 'Shop Chính Hãng',
+                'type' => Shop::NOT_YET_APPROVED,
+                'profile_number' => Shop::ACCOUNT_INFORMATION,
+                'description' => 'Shop trading',
+                'status' => Shop::ENABLED,
+                'created_at' => now()->toDateTimeString(),
+                'updated_at' => now()->toDateTimeString(),
+                'url' => 'shop-chinh-hang',
+            ],
         ];
 
         Shop::insert($data);

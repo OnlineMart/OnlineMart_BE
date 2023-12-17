@@ -126,6 +126,39 @@ class SupplierSeeder extends Seeder
                 'shop_id'    => 1,
                 'created_at' => now()->toDateTimeString(),
                 'updated_at' => now()->toDateTimeString(),
+            ],
+            [
+                'id'      => 11,
+                'name'    => 'Nike OM',
+                'email'   => 'nike.contact.@gmail.com',
+                'avatar'  => 'images/shops/default_avatar.png',
+                'phone'   => '0836775904',
+                'website' => 'https://www.nike.com',
+                'code'    => 'NIKE',
+                'address' => 'HỒ CHÍ MINH',
+                'shop_id' => 1
+            ],
+            [
+                'id'      => 12,
+                'name'    => 'Puma OM',
+                'email'   => 'puma.contact.@gmail.com',
+                'avatar'  => 'images/shops/default_avatar.png',
+                'phone'   => '0837129785',
+                'website' => 'https://us.puma.com',
+                'code'    => 'PUMA',
+                'address' => 'CẦN THƠ',
+                'shop_id' => 1
+            ],
+            [
+                'id'      => 13,
+                'name'    => 'Gucci',
+                'email'   => 'gucci.contact.@gmail.com',
+                'avatar'  => 'images/shops/default_avatar.png',
+                'phone'   => '0376606032',
+                'website' => 'https://www.gucci.com',
+                'code'    => 'GUCCI',
+                'address' => 'HÀ NỘI',
+                'shop_id' => 1
             ]
         ];
         Supplier::insert($data);

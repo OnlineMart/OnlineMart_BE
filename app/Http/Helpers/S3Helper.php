@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 
 class S3Helper
 {
-    private array $directoryType = ['users', 'products', 'categories','reviews'];
+    private array $directoryType = ['users', 'products', 'categories','reviews', 'shops', 'suppliers'];
 
     /**
      * @param        $file
@@ -39,7 +39,7 @@ class S3Helper
                 $image->resize(480, 480, function ($constraint) {
                     $constraint->aspectRatio();
                 });
-                $imageData = (string) $image->encode($extension);
+                $imageData = (string)$image->encode($extension);
                 Storage::disk('s3')->put($path . $filename, $imageData);
             } else {
                 Storage::disk('s3')->putFileAs($path, $file, $filename);
@@ -80,7 +80,7 @@ class S3Helper
                 $image->resize(480, 480, function ($constraint) {
                     $constraint->aspectRatio();
                 });
-                $imageData = (string) $image->encode($extension);
+                $imageData = (string)$image->encode($extension);
                 Storage::disk('s3')->put($path . $filename, $imageData);
 
                 $uploadedFiles[] = $path . $filename;
@@ -107,6 +107,7 @@ class S3Helper
      * Delete a file from Amazon S3.
      *
      * @param string $filePath The path of the file to delete, e.g., 'images/users/2023/09/user_12345.jpg'
+     *
      * @throws Exception If the file deletion fails.
      */
     public function deleteFileFromS3(string $filePath)

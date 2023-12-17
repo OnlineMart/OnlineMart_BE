@@ -2,21 +2,20 @@
 
 namespace App\Http\Controllers\API\Admin;
 
-use Exception;
-use App\Models\User;
-use App\Models\Review;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Review\ReplyRequestStore;
+use App\Models\Review;
+use App\Models\User;
+use Exception;
+use Illuminate\Http\JsonResponse;
 
 class ReviewController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth:api');
-        $this->middleware('permission:View reviews', ['only' => ['index']]);
-        $this->middleware('permission:Reply reviews', ['only' => ['replyReview']]);
+        // $this->middleware('permission:View reviews', ['only' => ['index']]);
+        // $this->middleware('permission:Reply reviews', ['only' => ['replyReview']]);
     }
 
     /**
@@ -27,20 +26,20 @@ class ReviewController extends Controller
     public function index(): JsonResponse
     {
         try {
-            $reivews = Review::with([
+            $reviews = Review::with([
                 'user',
                 'product',
                 'shop',
                 'review_media:id,review_id,media',
                 'product.product_media:id,product_id,media,is_main',
                 'product.category:id,name',
-                'shop.supplier:id,name'
+                'shop.supplier:id,name',
             ])
                 ->where('shop_id', auth()->user()->shop_id)
                 ->whereNull('parent_id')
                 ->orderBy('id', 'DESC')->get();
 
-            $response = $reivews->map(function ($review) {
+            $response = $reviews->map(function ($review) {
                 $product_thumbnail = $review->product->product_media->firstWhere('is_main', true)->media ?: null;
                 $adminReply        = Review::where('parent_id', $review->id)
                     ->where('shop_id', auth()->user()->shop_id)->first();
