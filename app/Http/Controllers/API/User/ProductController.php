@@ -254,6 +254,7 @@ class ProductController extends Controller
                 'variants.values'
             ])
                 ->where('status', Product::SELLING)
+                ->orderBy('id', "DESC")
                 ->get();
             if ($product->isEmpty()) {
                 return jsonResponse([], 404, 'Product not found');
