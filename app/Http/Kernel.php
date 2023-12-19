@@ -89,6 +89,8 @@ class Kernel extends HttpKernel
         'throttle'           => ThrottleRequests::class,
         'verified'           => EnsureEmailIsVerified::class,
         'jwt.verify'         => JWTMiddleware::class,
+        'jwt.xauth'          => \App\Http\Middleware\JwtXAuth::class,
+        'jwt.xrefresh'       => \App\Http\Middleware\JwtXRefresh::class,
         'cors'               => \App\Http\Middleware\Cors::class,
         'is_admin'           => \App\Http\Middleware\isAdmin::class,
 

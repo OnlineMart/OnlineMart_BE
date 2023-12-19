@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\User\UserRequestStore;
 use App\Http\Requests\User\UserRequestUpdate;
+use Tymon\JWTAuth\Exceptions\JWTException;
 
 class UserController extends Controller
 {
@@ -19,7 +20,8 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth:api');
+//        $this->middleware('auth:api');
+        $this->middleware('jwt.verify', ['only' => ['me']]);
         $this->upload = new S3Helper();
     }
 
@@ -166,7 +168,7 @@ class UserController extends Controller
             setPermissionsTeamId($shopData->id ?? null);
 
             return jsonResponse($userData, 200, 'User retrieved successfully');
-        } catch (Exception $e) {
+        } catch (JWTException $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
     }

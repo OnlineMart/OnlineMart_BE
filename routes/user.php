@@ -140,7 +140,3 @@ Route::prefix('customer_reviews')->group(function() {
     Route::get('/{productId}/likes', [LikeController::class, 'getAllLike']);
     Route::patch('/{userId}/{productId}/{reviewId}/like', [LikeController::class, 'updateLikeStatus']);
 });
-
-/* ======== API Shop ======== */
-Route::get('shops', [ShopController::class, 'index']);
-Route::get('/shops/{slug}', [ShopController::class, 'getShop']);

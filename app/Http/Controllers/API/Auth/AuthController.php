@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\Auth;
 use Exception;
 use App\Models\Shop;
 use App\Models\User;
+use App\Models\Token;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
@@ -141,7 +142,16 @@ class AuthController extends Controller
             return jsonResponse(null, 401, 'Token has expired');
         }
 
+
         $refreshToken = JWTAuth::fromUser(Auth::user());
+
+        Token::updateOrCreate(
+            ['user_id' => Auth::user()->id],
+            [
+                'refresh_token_value' => $refreshToken,
+                'expires_at'          => now()->addMinutes(env("REFRESH_TTL"))
+            ]
+        );
 
         $response = jsonResponse([
             'user'         => Auth::user(),
@@ -166,16 +176,6 @@ class AuthController extends Controller
     }
 
     /**
-     * Get the authenticated User.
-     *
-     * @return JsonResponse
-     */
-    public function profile(): JsonResponse
-    {
-        return jsonResponse(Auth::user(), 200, 'Get data successfully');
-    }
-
-    /**
      * Refresh a token
      *
      * @return JsonResponse
@@ -185,6 +185,12 @@ class AuthController extends Controller
         try {
             $refreshToken = $request->cookie('refresh_token');
 
+            $refreshTokenServer = Token::where('refresh_token_value', $refreshToken)->value('refresh_token_value');
+
+            if ($refreshTokenServer !== $refreshToken) {
+                return jsonResponse(null, 401, 'Unauthorized');
+            }
+
             if ($refreshToken) {
                 $token = JWTAuth::parseToken()->refresh();
 
@@ -193,7 +199,7 @@ class AuthController extends Controller
                 return jsonResponse(null, 401, 'Unauthorized');
             }
         } catch (JWTException $e) {
-            return response()->json(['error' => 'Could not refresh token'], 403);
+            return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
     }
 

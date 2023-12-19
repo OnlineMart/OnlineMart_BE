@@ -148,6 +148,11 @@ class User extends Authenticatable implements JWTSubject
         return $this->hasOne(Seller::class);
     }
 
+    public function token(): HasMany
+    {
+        return $this->hasMany(Token::class);
+    }
+
 
     public function getTeamIdFromToken(): int | null
     {
@@ -157,6 +162,8 @@ class User extends Authenticatable implements JWTSubject
     /**
      * @param $receiverEmail
      * @param $user
+     *
+     * @return JsonResponse|void
      */
     public function sendEmailVerification($receiverEmail, $user)
     {
@@ -171,6 +178,8 @@ class User extends Authenticatable implements JWTSubject
     /**
      * @param $receiverPhone
      * @param $message
+     *
+     * @return JsonResponse|void
      */
     public function sendSmsVerification($receiverPhone, $message)
     {
