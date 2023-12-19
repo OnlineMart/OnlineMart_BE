@@ -45,6 +45,8 @@ class ProductStockController extends Controller
                         return $variant->values->map(function ($value) use ($product, $variant) {
                             return [
                                 'id'            => $value->id,
+                                'variant_id'    => $variant->id,
+                                'product_id'    => $product->id,
                                 'thumbnail_url' => $product->product_media->firstWhere('is_main', true)->media ?: null,
                                 'name'          => $product->name,
                                 'variant'       => $product->id . '-' . $variant->variation_name . '-' . $value->variation_value_name,
@@ -67,7 +69,7 @@ class ProductStockController extends Controller
                         [
                             'id'            => $product->id,
                             'name'          => $product->name,
-                            'variant'       => $product->id,
+                            'variant'       => $product->id, //?????
                             'isVariant'     => false,
                             'category'      => $product->category->name,
                             'brand'         => $product->supplier->name,

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\Admin\OrderController;
+use App\Http\Controllers\API\Admin\PrintQRController;
 use App\Http\Controllers\API\Admin\ReviewController;
 use App\Http\Controllers\API\Admin\ProductBinController;
 use App\Http\Controllers\API\Admin\ReasonCancelController;
@@ -56,6 +57,7 @@ Route::prefix('bin')->group(function () {
     Route::patch('/{id}/restore', [ProductBinController::class, 'restoreMultiple']);
     Route::delete('/{id}/delete', [ProductBinController::class, 'deleteMultiple']);
 });
+
 /* ======== API Reason Cancel ======== */
 Route::apiResource('reason-cancel',ReasonCancelController::class)->except(["index", "show"]);
 Route::get('/reason-cancel/shop/{shopId}',[ReasonCancelController::class,'getReasonCancelShop']);
@@ -65,6 +67,11 @@ Route::prefix('dev')->group(function () {
     Route::get('/traffic', [TrafficWebsiteController::class, 'index']);
 });
 
+/* ======== API Print QR Code ======== */
+Route::prefix('print_qrcode')->group(function() {
+    Route::get('/', [PrintQRController::class, 'getProductPrintQR']);
+    Route::get('/products', [PrintQRController::class, 'getProductList']);
+});
 /* ======== API Shop ======== */
 Route::get('/shop-profile/{shopId}', [ShopController::class, 'index']);
 Route::put('/shop/change-status/{shopId}', [ShopController::class, 'changeStatusShop']);
