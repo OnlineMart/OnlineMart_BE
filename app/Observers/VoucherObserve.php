@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Log;
 
 class VoucherObserve
 {
+
+    public function retrieved(Voucher $voucher)
+    {
+        $this->checkStatus($voucher);
+    }
+
+
     /**
      * Handle the Voucher "created" event.
      *
@@ -38,22 +45,21 @@ class VoucherObserve
             $currentDate = Carbon::now();
             Log::info($currentDate);
 
-            // Convert the start_date and expired_date to Carbon objects
-            $startDate = Carbon::parse($voucher->start_date); // Replace 'Asia/Ho_Chi_Minh' with the actual time zone
-            $expiredDate = Carbon::parse($voucher->expired_date); // Replace 'your_timezone' with the actual time zone
+            $startDate = Carbon::parse($voucher->start_date);
+            $expiredDate = Carbon::parse($voucher->expired_date);
 
-            if ($currentDate >= $expiredDate) {
-                Log::info("expired");
-                $voucher->status = Voucher::EXPIRED;
-            } elseif ($startDate > $currentDate) {
+            if ($currentDate < $startDate) {
                 Log::info("not activated");
                 $voucher->status = Voucher::NOT_ACTIVATED;
-            } else {
-                Log::info("valid");
+            } else if ($currentDate >= $startDate && $currentDate <= $expiredDate) {
+                Log::info("activated");
                 $voucher->status = Voucher::VALID;
+            } else {
+                Log::info("expired");
+                $voucher->status = Voucher::EXPIRED;
             }
 
-            // Save the updated status
+
             $voucher->save();
         } catch (\Exception $e) {
             Log::error('Error while saving voucher: ' . $e->getMessage());

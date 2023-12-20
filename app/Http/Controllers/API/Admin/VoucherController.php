@@ -7,8 +7,10 @@ use App\Http\Requests\Voucher\VoucherRequestStore;
 use App\Http\Requests\Voucher\VoucherRequestUpdate;
 use App\Models\Voucher;
 use Exception;
+use App\Models\Notification;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Response;
 
 class VoucherController extends Controller
@@ -17,7 +19,7 @@ class VoucherController extends Controller
     {
         $this->middleware('auth:api');
         $this->middleware('permission:View vouchers', ['only' => ['show', 'getVoucherShop']]);
-        $this->middleware('permission:Create voucher', ['only' => ['store']]);
+        // $this->middleware('permission:Create voucher', ['only' => ['store']]);
         $this->middleware('permission:Update voucher', ['only' => ['update']]);
         $this->middleware('permission:Delete voucher', ['only' => ['destroy', 'deleteVoucher']]);
     }
@@ -76,6 +78,38 @@ class VoucherController extends Controller
                 'expired_date' => $data['expired_date'],
                 'shop_id' => $data['shop_id'],
             ]);
+
+            $userFollowers = DB::table('user_shop_followers')
+            ->where('shop_id',$voucher->shop_id)
+            ->pluck('user_id');
+
+            foreach ($userFollowers as $userId) {
+                if (!empty($userId)) {
+                    $notification = Notification::create([
+                        "title"   => 'Shop bạn đang theo dõi đã đăng voucher mới',
+                        "content" => 'Shop bạn đã thêm một voucher là: ' . $voucher->code . ' giảm tối đa tới ' . formatPrice($voucher->max_discount_amount),
+                        "status"  => 'unread',
+                        "type"    => 'voucher',
+                        "user_id" => $userId
+                    ]);
+                }
+            }
+
+            $userFollowers = DB::table('user_shop_followers')
+            ->where('shop_id',$voucher->shop_id)
+            ->pluck('user_id');
+
+            foreach ($userFollowers as $userId) {
+                if (!empty($userId)) {
+                    $notification = Notification::create([
+                        "title"   => 'Shop bạn đang theo dõi đã đăng voucher mới',
+                        "content" => 'Shop bạn đã thêm một voucher là: ' . $voucher->code . ' giảm tối đa tới ' . formatPrice($voucher->max_discount_amount),
+                        "status"  => 'unread',
+                        "type"    => 'voucher',
+                        "user_id" => $userId
+                    ]);
+                }
+            }
 
             logActivity('create', $request, 'Thêm mới mã giảm giá', 'Thêm mới', $voucher);
 

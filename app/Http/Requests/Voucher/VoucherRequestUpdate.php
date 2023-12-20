@@ -25,14 +25,14 @@ class VoucherRequestUpdate extends BaseRequest
     public function rules()
     {
         return [
-            'code' => 'required|max:10|min:5|unique:vouchers,code',
+            'code' => 'required|max:10|min:5',
             'usage_limit' => 'integer|min:0',
             'min_discount_amount' => 'required|numeric|min:0',
             'max_discount_amount' => 'required|numeric|min:0',
             'discount' => 'required|min:0',
             'unit' => 'required|in:0,1',
-            'start_date' => 'required|date',
-            'expired_date' => 'required|date|after:start_date',
+            'start_date' => 'required',
+            'expired_date' => 'required',
             'shop_id' => 'required',
         ];
     }
