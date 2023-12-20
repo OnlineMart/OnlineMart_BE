@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\PaymentMethod;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -28,12 +29,12 @@ class DatabaseSeeder extends Seeder
             VoucherSeeder::class,
             ShippingAddressSeeder::class,
             OrderStatusesSeeder::class,
-            PaymentMethodsSeeder::class,
-            ProductFullDataSeeder::class,
             OrdersSeeder::class,
             OrderDetailSeeder::class,
             ReviewSeeder::class,
             ReviewMediaSeeder::class,
+            ProductFullDataSeeder::class,
+            PaymentMethodSeeder::class,
             ViewCountSeeder::class,
             ReasonCancelSeeder::class
         ]);
