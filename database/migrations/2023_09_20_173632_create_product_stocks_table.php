@@ -21,7 +21,7 @@ return new class extends Migration {
             $table->integer("wholesale_price")->nullable();
             $table->integer("qty_inventory")->default(0);
 
-            $table->foreignIdFor(ProductVariationValue::class);
+            $table->foreignId('product_variant_value_id')->references('id')->on('product_variation_values');
 
             $table->timestamps();
         });

@@ -14,7 +14,7 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
@@ -25,10 +25,10 @@ return new class extends Migration {
             $table->string('agree')->nullable();
             $table->string('disagree')->nullable();
 
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Order::class);
-            $table->foreignIdFor(Shop::class)->nullable();
-            $table->foreignIdFor(Product::class);
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('order_id')->references('id')->on('orders');
+            $table->foreignId('shop_id')->references('id')->on('shops');
+            $table->foreignId('product_id')->references('id')->on('products');
 
             $table->timestamps();
         });
@@ -39,7 +39,7 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('reviews');
     }

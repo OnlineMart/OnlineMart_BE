@@ -4,20 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Transaction extends Model
 {
     use HasFactory;
 
-    public const CODE = '0';
-    public const MOMO = "1";
-    public const VN_PAY = '2';
-    public const ZALO_PAY = '3';
+    public const CODE     = '0';
+    public const VN_PAY   = '1';
 
-    public const PENDING = "0";
+    public const PENDING   = "0";
     public const COMPLETED = "1";
-    public const DECLINE = "2";
-    public const REFUND = "3";
+    public const DECLINE   = "2";
+    public const REFUND    = "3";
 
     protected $fillable = [
         'user_id',
@@ -27,16 +26,16 @@ class Transaction extends Model
     ];
 
     protected $casts = [
-        'type' => 'integer',
+        'type'   => 'integer',
         'status' => 'integer',
     ];
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
-    public function order()
+    public function order(): BelongsTo
     {
         return $this->belongsTo(Order::class);
     }

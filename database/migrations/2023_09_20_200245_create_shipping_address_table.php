@@ -22,11 +22,8 @@ return new class extends Migration {
             $table->string('ward');
             $table->string('district');
             $table->string('city');
-            $table->enum("status", ['0', '1'])->comment("0: active, 1: inactive");
-
-            $table->foreignIdFor(Order::class)->nullable();
-            $table->foreignIdFor(User::class);
-
+            $table->enum("status", ['0', '1'])->nullable()->comment("0: active, 1: inactive");
+            $table->foreignId('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

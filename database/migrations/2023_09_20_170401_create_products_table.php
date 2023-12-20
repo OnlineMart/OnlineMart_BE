@@ -1,8 +1,5 @@
 <?php
 
-use App\Models\Category;
-use App\Models\Shop;
-use App\Models\Supplier;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -30,11 +27,10 @@ return new class extends Migration
             $table->integer("sold_count")->default(0);
             $table->string("origin");
             $table->longText('description')->nullable();
-//            $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
-            $table->enum('status', ["selling", "out-of-stock", "draft", "off"]);
-            $table->foreignIdFor(Category::class);
-            $table->foreignIdFor(Shop::class);
-            $table->foreignIdFor(Supplier::class);
+            $table->enum('status', ["selling", "out-of-stock", "draft", "waiting-for-approve", "off"]);
+            $table->foreignId('category_id')->references('id')->on('categories');
+            $table->foreignId('shop_id')->references('id')->on('shops');
+            $table->foreignId('supplier_id')->references('id')->on('suppliers');
 
             $table->string("meta_title")->nullable();
             $table->string("meta_keywords")->nullable();

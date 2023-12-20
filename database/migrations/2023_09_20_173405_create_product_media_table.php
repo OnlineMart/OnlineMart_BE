@@ -17,7 +17,7 @@ return new class extends Migration {
         Schema::create('product_media', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignIdFor(Product::class);
+            $table->foreignId('product_id')->references('id')->on('products');
             $table->string("media");
             $table->boolean("is_main")->default(true)->comment('0: Gallery, 1: Thumbnail');
             $table->timestamps();

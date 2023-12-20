@@ -19,8 +19,8 @@ return new class extends Migration {
             $table->text('content');
             $table->enum('status', ['unread', 'read'])->default('unread');
             $table->enum('type', ['voucher', 'order', 'other']);
-            
-            $table->foreignIdFor(User::class);
+
+            $table->foreignId('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

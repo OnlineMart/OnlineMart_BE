@@ -29,11 +29,12 @@ return new class extends Migration {
 
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->enum('position', ['owner', 'seller'])->nullable();
+            $table->foreignId('shop_id')->nullable(); // Keep the foreign key nullable if needed
+            $table->foreign('shop_id')->references('id')->on('shops');
 
             $table->string('otp')->nullable();
             $table->timestamp('otp_send_at')->nullable();
 
-            $table->foreignIdFor(Shop::class)->nullable();
 
             $table->timestamps();
         });

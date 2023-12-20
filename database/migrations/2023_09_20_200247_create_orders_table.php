@@ -18,22 +18,23 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamp('delivery_date');
-            $table->integer('total_price',);
+            $table->integer('total_price');
             $table->string('shipping_unit');
+            $table->string('code');
+            $table->integer('shipping_fee');
+            $table->foreignId('shipping_address_id')->references('id')->on('shipping_address');
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('shop_id')->nullable()->references('id')->on('shops');
+            $table->foreignId('voucher_id')->nullable()->references('id')->on('vouchers');
             $table->string('cf_token')->nullable();
 
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Voucher::class)->nullable();
-            $table->foreignIdFor(OrderStatus::class);
-            $table->foreignIdFor(ShippingAddress::class);
-            $table->foreignIdFor(ReasonCancel::class)->nullable();
-            $table->foreignIdFor(Shop::class);
-            $table->foreignIdFor(PaymentMethod::class);
+            $table->foreignId('order_status_id')->references('id')->on('order_statuses');
+            $table->foreignId('payment_method_id')->references('id')->on('payment_methods');
             $table->timestamps();
         });
     }
@@ -43,7 +44,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('orders');
     }

@@ -22,13 +22,14 @@ class ShippingAddress extends Model
         'ward',
         'district',
         'city',
-        'status'
+        'status',
+        'user_id',
     ];
 
     /**
      * @return BelongsTo
      */
-    public function order()
+    public function order(): BelongsTo
     {
         return $this->belongsTo(Order::class);
     }
@@ -36,7 +37,7 @@ class ShippingAddress extends Model
     /**
      * @return BelongsTo
      */
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }

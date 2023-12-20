@@ -19,11 +19,12 @@ return new class extends Migration {
             $table->id();
             $table->string('product_name');
             $table->string('product_image');
+            $table->string('product_variant')->nullable();
             $table->integer('product_price');
             $table->integer('product_quantity');
-            $table->foreignIdFor(Product::class);
-            $table->foreignIdFor(Shop::class);
-            $table->foreignIdFor(Order::class);
+            $table->foreignId('product_id')->references('id')->on('products');
+            $table->foreignId('shop_id')->references('id')->on('shops');
+            $table->foreignId('order_id')->references('id')->on('orders');
             $table->timestamps();
         });
     }

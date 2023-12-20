@@ -19,8 +19,8 @@ return new class extends Migration {
             $table->enum('status', ['0', '1'])->comment('0: Unused, 1: Used')->default(0);
             $table->timestamp('received_date')->nullable();
 
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Voucher::class);
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('voucher_id')->references('id')->on('vouchers');
 
             $table->timestamps();
         });

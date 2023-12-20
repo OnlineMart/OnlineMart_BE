@@ -12,11 +12,11 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('product_wishlist', function (Blueprint $table) {
-            $table->foreignIdFor(Product::class);
-            $table->foreignIdFor(Wishlist::class);
+            $table->foreignIdFor(Product::class)->nullable();
+            $table->foreignIdFor(Wishlist::class)->nullable();
         });
     }
 

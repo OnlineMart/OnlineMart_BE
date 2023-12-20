@@ -13,18 +13,19 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('cart_item', function (Blueprint $table) {
             $table->id();
+            $table->text('name');
+            $table->string('thumbnail');
             $table->integer('price');
             $table->integer('quantity');
             $table->string('SKU');
-
-            $table->foreignIdFor(Product::class);
-            $table->foreignIdFor(Shop::class);
-            $table->foreignIdFor(Cart::class);
-
+            $table->enum('is_checked', ['0', '1'])->comment('0: Unchecked, 1: Checked');
+            $table->foreignId('product_id')->references('id')->on('products');
+            $table->foreignId('shop_id')->references('id')->on('shops');
+            $table->foreignId('cart_id')->references('id')->on('carts');
             $table->timestamps();
         });
     }
@@ -34,7 +35,7 @@ return new class extends Migration {
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('cart_item');
     }

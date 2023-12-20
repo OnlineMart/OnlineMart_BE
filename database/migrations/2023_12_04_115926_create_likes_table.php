@@ -14,16 +14,16 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
             $table->boolean('status')->default(false);
 
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Product::class);
-            $table->foreignIdFor(Review::class);
-            
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('product_id')->references('id')->on('products');
+            $table->foreignId('review_id')->references('id')->on('reviews');
+
             $table->timestamps();
         });
     }
@@ -33,7 +33,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('likes');
     }

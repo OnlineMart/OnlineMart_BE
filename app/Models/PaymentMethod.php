@@ -19,7 +19,7 @@ class PaymentMethod extends Model
     /**
      * @return HasMany
      */
-    public function order()
+    public function order(): HasMany
     {
         return $this->hasMany(Order::class, 'payment_method_id');
     }

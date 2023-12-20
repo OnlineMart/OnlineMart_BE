@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+
 class Order extends Model
 {
     use HasFactory;
@@ -20,6 +21,7 @@ class Order extends Model
         'user_id',
         'voucher_id',
         'shop_id',
+        'shipping_fee',
         'order_status_id',
         'payment_method_id',
         'shipping_address_id',
@@ -27,19 +29,22 @@ class Order extends Model
         'cf_token',
         'delivery_date',
         'total_price',
+        'code',
         'shipping_unit',
     ];
 
     /**
      * @return HasMany
      */
-    public function order_detail(){
+    public function order_detail(): HasMany
+    {
         return $this->hasMany(OrderDetail::class);
     }
+
     /**
      * @return BelongsTo
      */
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
@@ -47,13 +52,14 @@ class Order extends Model
      *
      * @return BelongsTo
      */
-    public function shop(){
+    public function shop(): BelongsTo
+    {
         return $this->belongsTo(Shop::class);
     }
     /**
      * @return BelongsTo
      */
-    public function voucher()
+    public function voucher(): BelongsTo
     {
         return $this->belongsTo(Voucher::class);
     }
@@ -62,7 +68,7 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    public function order_status()
+    public function order_status(): BelongsTo
     {
         return $this->belongsTo(OrderStatus::class, 'order_status_id');
     }
@@ -70,12 +76,12 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    public function payment_method()
+    public function payment_method(): BelongsTo
     {
         return $this->belongsTo(PaymentMethod::class, 'payment_method_id');
     }
 
-    public function review()
+    public function review(): BelongsTo
     {
         return $this->belongsTo(Review::class);
     }
@@ -83,14 +89,21 @@ class Order extends Model
     /**
      * @return BeLongsTo
      */
-    public function shipping_address()
-     {
-         return $this->belongsTo(ShippingAddress::class);
-     }
+    public function shipping_address(): BelongsTo
+    {
+        return $this->belongsTo(ShippingAddress::class);
+    }
+
+    public function transaction(): HasOne
+    {
+        return $this->hasOne(Transaction::class);
+    }
+
      /**
       * @return HasOne
       */
-      public function reason_cancel(){
+      public function reason_cancel(): HasOne
+      {
         return $this->hasOne(ReasonCancel::class);
       }
 }

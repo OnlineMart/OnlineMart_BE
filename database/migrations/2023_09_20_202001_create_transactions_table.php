@@ -17,10 +17,10 @@ return new class extends Migration {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Order::class);
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('order_id')->references('id')->on('orders');
 
-            $table->enum("type", ['0', '1', '2', '3'])->comment("0: code, 1: momo, 2: vnpay, 3: zalopay");
+            $table->enum("type", ['0', '1'])->comment("0: cod, 1: vnpay");
             $table->enum("status", ['0', '1', '2', '3'])->comment("0: pending, 1: completed, 2: decline, 3: refund");
             $table->timestamps();
         });

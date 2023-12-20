@@ -17,8 +17,8 @@ return new class extends Migration
         Schema::create('review_media', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignIdFor(Review::class);
-            
+            $table->foreignId('review_id')->references('id')->on('reviews');
+
             $table->string("media")->nullable();
             $table->timestamps();
         });

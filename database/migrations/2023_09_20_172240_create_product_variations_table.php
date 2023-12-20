@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->id();
             $table->string('variation_name', 50);
 
-            $table->foreignIdFor(Product::class);
+            $table->foreignId('product_id')->references('id')->on('products');
 
             $table->timestamps();
         });

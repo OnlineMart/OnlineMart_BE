@@ -18,7 +18,7 @@ return new class extends Migration
         Schema::create('product_variation_values', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignIdFor(ProductVariation::class);
+            $table->foreignId('product_variation_id')->references('id')->on('product_variations');
             $table->string("variation_value_name", 50);
             $table->string("thumbnail_url")->nullable();
             $table->string('sku')->nullable();
