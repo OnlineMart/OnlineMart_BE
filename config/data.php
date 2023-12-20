@@ -1,5 +1,7 @@
 <?php
 
+use Carbon\Carbon;
+
 return [
     /*
      * name phải nhỏ hơn 255 kí tự - KHÔNG ĐƯỢC TRÙNG
@@ -85,10 +87,10 @@ return [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
                         'Vàng kem' => [
-                            'quantity'     => 100, // quantity variant
+                            'quantity'      => 100, // quantity variant
                             'selling_price' => 11590000,
-                            'sale_price'   => 0,
-                            'product_code' => 'ABC'
+                            'sale_price'    => 0,
+                            'product_code'  => 'ABC'
                         ],
                         'Đen'      => [
                             'quantity'      => 100,
@@ -158,13 +160,13 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Navy, vải 100% cotton'         => [
+                        'Navy, vải 100% cotton'  => [
                             'quantity'      => 100,
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM301'
                         ],
-                        'Đô, vải 100% cotton'         => [
+                        'Đô, vải 100% cotton'    => [
                             'quantity'      => 100,
                             'selling_price' => 99000,
                             'sale_price'    => 0,
@@ -175,8 +177,8 @@ return [
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM303'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -198,10 +200,10 @@ return [
                             'selling_price' => 99000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM306'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Gia đình là số 1, mã LV2. Áo thun hàng hiệu GOKING, form unisex cho nam nữ, trẻ em, bé trai gái. Áo phông in hình chữ đẹp. Quà tặng cao cấp cho gia đình, cặp đôi, hội nhóm, doanh nghiệp',
@@ -261,7 +263,7 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Vàng, vải 100% cotton'   => [
+                        'Vàng, vải 100% cotton'  => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
@@ -273,13 +275,13 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM308'
                         ],
-                        'Đô, vải thun lạnh'    => [
+                        'Đô, vải thun lạnh'      => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM309'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -301,10 +303,10 @@ return [
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM312'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Áo Thun Nam Ngắn Tay 5S PREMIUM, Chất Liệu Cotton Siêu Mềm, Mát, Thấm Hút Tốt, Thiết Kế Thể Thao, Khỏe Khoắn (TSO23008)',
@@ -335,13 +337,13 @@ return [
             'gallery'       => json_encode([
                 'images/products/2023/11/835362872ccb08137e86b0e0409bbed7.jpg.webp',
                 'images/products/2023/11/c90fe099156cb1b47691b66fee4e9a8f.jpg.webp',
-                'images/products/2023/11/77e3846ed800acb3225220df012a8fbb.jpg.webp'
+                'images/products/2023/11/77e3846ed800acb3225220df012a8fbb.jpg.webp',
             ]),
             'variants'      => json_encode([
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Nâu'        => [
+                        'Nâu'       => [
                             'quantity'      => 100,
                             'selling_price' => 119000,
                             'sale_price'    => 0,
@@ -358,8 +360,8 @@ return [
                             'selling_price' => 119000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM315'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -381,10 +383,10 @@ return [
                             'selling_price' => 119000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM318'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Quần Túi Hộp Tháo Ống US ARMY U880 Chuyên Phượt Chất Vải Gió Cao Cấp Mau Khô Ống Có Thể Tháo Rời Làm Quần Short -HÀNG CHÍNH HÃNG',
@@ -454,13 +456,13 @@ return [
                             'sale_price'    => 499000,
                             'product_code'  => 'OM313'
                         ],
-                        'Trắng'   => [
+                        'Trắng'    => [
                             'quantity'      => 100,
                             'selling_price' => 598000,
                             'sale_price'    => 525000,
                             'product_code'  => 'OM314'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -482,10 +484,10 @@ return [
                             'selling_price' => 323000,
                             'sale_price'    => 298000,
                             'product_code'  => 'OM318'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Áo khoác dù 2 mặt chống Nước LADOS - 2027 , Form đẹp, chống nắng, chống nước tốt',
@@ -516,25 +518,25 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Xám đậm' => [
+                        'Xám đậm'  => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM319'
                         ],
-                        'Đen'        => [
+                        'Đen'      => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM320'
                         ],
-                        'Xanh Mực'  => [
+                        'Xanh Mực' => [
                             'quantity'      => 100,
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM321'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -556,10 +558,10 @@ return [
                             'selling_price' => 1203000,
                             'sale_price'    => 1198000,
                             'product_code'  => 'OM324'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Quần short nam big size quần sọt nam thể thao chống nóng quần đùi nam mặc nhà quần thun nam cotton 4 chiều co giãn cao cấp WSB2',
@@ -611,13 +613,13 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM326'
                         ],
-                        'Trắng'   => [
+                        'Trắng'    => [
                             'quantity'      => 100,
                             'selling_price' => 59000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM327'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -639,10 +641,10 @@ return [
                             'selling_price' => 203000,
                             'sale_price'    => 198000,
                             'product_code'  => 'OM330'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Áo Sơ Mi Nam Dài Tay Sọc Chữ Mã GM11 Thời Trang EMEY LUXURY Thiết Kế Nam Tính Lịch Lãm Chuẩn Form',
@@ -689,13 +691,13 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Xám'    => [
+                        'Xám'   => [
                             'quantity'      => 100,
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM331'
                         ],
-                        'Đen'    => [
+                        'Đen'   => [
                             'quantity'      => 100,
                             'selling_price' => 160000,
                             'sale_price'    => 0,
@@ -706,8 +708,8 @@ return [
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM333'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -729,10 +731,10 @@ return [
                             'selling_price' => 160000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM336'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => '[ Có Ảnh Thật ] Áo thun trơn tay lỡ form rộng unisex - Phông trơn',
@@ -807,15 +809,15 @@ return [
                             'sale_price'    => 0,
                             'product_code'  => 'OM337'
                         ],
-                        'Đen'    => [
+                        'Đen'   => [
                             'quantity'      => 100,
                             'selling_price' => 69000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM338'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'PARIS, mã G108. Áo phông GOKING hàng hiệu, form unisex cho nam nữ, trẻ em, bé trai gái. Áo thun in hình siêu đẹp, quà tặng cao cấp cho gia đình, cặp đôi, hội nhóm, doanh nghiệp.',
@@ -878,7 +880,7 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Vàng'   => [
+                        'Vàng'  => [
                             'quantity'      => 100,
                             'selling_price' => 269000,
                             'sale_price'    => 0,
@@ -889,8 +891,8 @@ return [
                             'selling_price' => 269000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM340'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -912,10 +914,10 @@ return [
                             'selling_price' => 269000,
                             'sale_price'    => 00,
                             'product_code'  => 'OM343'
-                        ]
-                    ]
-                ]
-            ])
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Áo thun nam dài tay Julido, Chất thun cotton xịn bo tay và hông mẫu thu đông AT1357',
@@ -950,8 +952,8 @@ return [
                             'selling_price' => 414000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM344'
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -973,697 +975,10 @@ return [
                             'selling_price' => 414000,
                             'sale_price'    => 0,
                             'product_code'  => 'OM347'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Áo thun tay lỡ form rộng unisex - Áo phông nam nữ oversize - T shirt Forest',
-            'regular_price' => 79000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/e68cc901622cce5fdea75c1a217a63d0.jpg.webp',
-            'description'   => 'Bạn ơi đừng ngại nữa, nhà mình còn gì đâu.
-
-                Chỉ toàn là áo xịn, mua rồi là nghiện đó!!!!
-
-                Áo thun tay lỡ form rộng xịn xò cập bến rồi đây ạ
-
-                Với chất liệu thun cotton dày mịn được lựa chọn kĩ lưỡng để phù hợp với mọi hoàn cảnh.
-
-                Thiết kế Unisex sẽ mang đến một outfit năng động và cá tính dù không cần mix-match cầu kì.
-
-                Form áo unisex nam nữ đều mặc được.
-
-                Chiều dài áo 70cm
-
-                Ngang ngực 52cm
-
-                Tay áo dài 26cm
-
-                Ngang vai 53cm
-
-                => Nếu bạn không rõ mình mặc như thế nào, bạn có thể inbox chiều cao và cân nặng cho 2N ngay nhé, chúng mình sẽ cho bạn lời khuyên chuẩn không cần chỉnh lunnnn!!!
-
-                2N CAM KẾT
-
-                Sản phẩm 100% giống mô tả.
-
-                Đảm bảo vải chất lượng.
-
-                Áo được kiểm tra kĩ càng, cẩn thận và tư vấn nhiệt tình trước khi giao hàng.
-
-                Hàng có sẵn, giao hàng ngay khi nhận được đơn.
-
-                Hoàn tiền nếu sản phẩm không giống với mô tả.
-
-                Giao hàng trên toàn quốc, nhận hàng trả tiền.
-
-                Lưu ý :
-
-                Kích thước có thể có sai số 1-3 cm do phép đo thủ công.
-
-                Do màn hình và điều kiện ánh sáng khác nhau, màu sắc thực tế của sản phẩm có thể chênh lệch khoảng 3-5% ạ!!
-
-                2N Unisex sẵn sàng phục vụ
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....
-
-                Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.',
-            'sku'           => '33333333311',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/e68cc901622cce5fdea75c1a217a63d0.jpg.webp',
-                'images/products/2023/11/958d2a3a46985498986a2364243f602c.jpg.webp'
+                        ],
+                    ],
+                ],
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Đỏ' => [
-                            'quantity'      => 100,
-                            'selling_price' => 79000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM348'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Áo thun tay lỡ form rộng - phông nam nữ oversize - T shirt in tọa độ - 2N Unisex',
-            'regular_price' => 99000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/4a33bfcf210d37740b410752e9dd1818.jpg.webp',
-            'description'   => '**THÔNG TIN SẢN PHẨM**
-
-                Tên sản phẩm: Áo thun tay lỡ form rộng unisex.
-
-                Kiểu dáng: Tay lỡ form rộng.
-
-                Kích thước: FREESIZE nam nữ đều mặc được.
-
-                Chiều dài áo: 70cm
-
-                Ngang ngực: 52cm
-
-                Tay áo dài: 26cm
-
-                Ngang vai: 53cm
-
-                =>Từ 45kg đến 65kg: Lên form rộng thoải mái.
-
-                =>Từ 66kg đến 70kg: Lên form rộng vừa.
-
-                Xuất Xứ: Việt Nam.
-
-                Nhà sản xuất: Công Ty TNHH SX TM DV May Mặc Huy Hoàng.
-
-                **ĐẶC ĐIỂM NỔI BẬT**
-
-                Thiết kế tay lỡ form rộng sẽ mang đến một outfit năng động và cá tính dù không cần mix-match cầu kì.
-
-                Form áo unisex nam nữ đều mặc được.
-
-                Hình in đa dạng, sử dụng mực in dẻo bền màu. An toàn với người sử dụng.
-
-                Màu sắc độc lạ được đặt dệt riêng chỉ 2N mới có!
-
-                **QUYỀN LỢI KHÁCH HÀNG**
-
-                - Miễn phí đổi hàng trong vòng 03 ngày nếu sản phẩm kém chất lượng.
-
-                - Hỗ trợ đổi sản phẩm mới khi sản phẩm còn nguyên tem mác.
-
-                - 2N Unisex giải quyết nhanh_nhiệt tình_tận tâm khi đơn hàng gặp vấn đề.
-
-                - Nhận ngay VOUCHER giảm 5% cho đơn hàng tiếp theo khi đánh giá sản phẩm kèm hình ảnh feedback. ( Khi đặt đơn hàng tiếp theo, Bạn nhớ ib cho shop nhé! )
-
-                **HƯỚNG DẪN BẢO QUẢN**
-
-                - Lần đầu giặt không nên sử dụng trực tiếp xà phòng, nên ngâm trong nước xả vải từ 5-10 phút rồi phơi áo. Giúp áo giữ màu lâu.
-
-                - Nên giặt tay để áo có độ bền cao.
-
-                - Giặt với nhiệt độ thường.
-
-                - Không dùng hóa chất tẩy rửa mạnh.
-
-                - Phơi ở nơi thoáng mát, tránh ánh nắng trực tiếp.
-
-                - Là ủi ở nhiệt độ thấp, và không ủi trực tiếp lên hình in.
-
-                **2N UNISEX CAM KẾT**
-
-                Sản phẩm 100% giống mô tả.
-
-                Tư vấn hỗ trợ khách hàng nhiệt tình, chu đáo.
-
-                Thời gian giao hàng tối ưu nhất
-
-                Hàng có sẵn, giao hàng ngay khi nhận được đơn.
-
-                Hoàn tiền nếu sản phẩm không giống với mô tả.
-
-                Lưu ý :
-
-                Kích thước có thể có sai số 1-3 cm do phép đo thủ công.
-
-                2N Unisex sẵn sàng phục vụ
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....
-
-                Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.',
-            'sku'           => '33333333312',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/4a33bfcf210d37740b410752e9dd1818.jpg.webp',
-                'images/products/2023/11/5c59511e458f70dce40916f3bd238161.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Đen'    => [
-                            'quantity'      => 100,
-                            'selling_price' => 99000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM349'
-                        ],
-                        'Trắng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 99000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM350'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Quần jean nam co giãn cao cấp trơn Lados-4068 Form slimfit chuẩn, thoải mái, không xù lông, ra màu',
-            'regular_price' => 295000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/5aa5132f28e43a1b6b3a0f32033a2f69.png.webp',
-            'description'   => '',
-            'sku'           => '33333333313',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/5aa5132f28e43a1b6b3a0f32033a2f69.png.webp',
-                'images/products/2023/11/16689210f02984171f31a3f9c93ad17b.jpg.webp',
-                'images/products/2023/11/83c9ce4e2cb1fb2c199c6b3003191a66.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Xanh đậm' => [
-                            'quantity'      => 100,
-                            'selling_price' => 295000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM351'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Combo 2 Quần shorts thể thao nam dạng sọt sport đùi chất thun lạnh 4 chiều cao cấp phù hợp tập gym hay mặc nhà màu trắng và đen DUI-P101 - tặng 1 khẩu trang chống nắng.',
-            'regular_price' => 79000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/f1f0a699469a0312618f0dbde940b634.jpg.webp',
-            'description'   => 'Quần shorts thể thao nam dạng sọt sport đùi
-
-                Chất liệu : thun lạnh thể thao 4 chiều
-
-                Đặt biệt quần nằm ờ các khóa kéo túi dọc 2 bên thân quần tạo nét cá tính cho sản phẩm.
-
-                Chữ Sports được thêu sắc sảo tạo điểm nhấn cho chiếc quần thể thao nhé
-
-                Quần sọt nam được may từ vải thun lạnh nên mặt  cực kỳ thoải mái
-
-                Sàn phẩm quần đùi được kết hợp áo thun đen, trắng sát nách hay áo phông đi dạo phố  tập gym mặc nhà
-
-                Quần là Thương hiệu đã đăng ký độc quyền
-
-                CÁCH CHỌN SIZE:
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333314',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/f1f0a699469a0312618f0dbde940b634.jpg.webp',
-                'images/products/2023/11/80c152e0efe1fd2b8e25c55cac4e40c4.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Size' => [
-                    'variant_name'   => 'Size',
-                    'variant_values' => [
-                        'M'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 79000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM352'
-                        ],
-                        'XL' => [
-                            'quantity'      => 100,
-                            'selling_price' => 79000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM353'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Áo Khoác Gió Thể Thao Nam 5S TRAINING TIME, Mềm Mượt, Cản Gió, Chống Bám Bụi, Nhẹ, Siêu Ấm (AKG22020)',
-            'regular_price' => 399000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/70621d278576a3a0c5bb7abfe47e56ce.jpg.webp',
-            'description'   => '--------------------------------------
-                <img src="https://salt.tikicdn.com/ts/tmp/0c/5c/d4/6f17ad954f6c9cb3f75e1e4e451e143a.jpg">
-                <img src="https://salt.tikicdn.com/ts/tmp/64/40/7d/eb0d99cfee5ed8f1d53c95ff62eb2445.jpg">
-
-                ƯU ĐÃI KHI MUA TẠI 5S:
-
-                - Click “Theo dõi” shop để nhận ngay VOUCHER giảm giá.
-
-                - Nhận hàng đánh giá 5* kèm hình ảnh sản phẩm và video, nhắn tin 5S ngay để nhận QUÀ nhé!
-
-                ** 5S cảm ơn quý khách hàng đã tin tưởng và đồng hành cùng shop. Chúc bạn có một ngày mua sắm thật thoải mái cùng 5S nhé! Đừng ngần ngại nhắn tin cho shop để được hỗ trợ nhanh nhất bạn nhé!
-
-                #áo_khoác_nam #áo_khoác_nam_5S #áo_thu_đông_nam #áo_khoác_gió_nam #áo_khoác_thể_thao_nam #áo_Khoác_nam_thể_thao #áo_khoác_nam_đẹp #áo_Khoác_hàng_hiệu #áo_khoác_nam_vải_gió #áo_khoác_nam_vải_dù #áo_gió_nam #áo_thể_thao_nam #áo_gió_nam #áo_khoác_gió_nam_chống_nước #áo_dù_thể_thao_nam
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333315',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/70621d278576a3a0c5bb7abfe47e56ce.jpg.webp',
-                'images/products/2023/11/f020f5400ad79337c5a93058df9217c1.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Đen'    => [
-                            'quantity'      => 100,
-                            'selling_price' => 399000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM354'
-                        ],
-                        'Trắng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 399000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM355'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Quần Kaki Nam Khatoco Q2M468R1-VNMA012-1811-1 - Xanh Rêu',
-            'regular_price' => 169000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/262f4244c1eb71b7c69c6a44a56f7e3a.jpg.webp',
-            'description'   => '',
-            'sku'           => '33333333316',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/262f4244c1eb71b7c69c6a44a56f7e3a.jpg.webp',
-                'images/products/2023/11/d32b5b79e71558037badaa5e6b11f073.jpg.webp',
-                'images/products/2023/11/240da48ae8c60bcb2c6833126c795ee8.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Kích cỡ' => [
-                    'variant_name'   => 'Kích cỡ',
-                    'variant_values' => [
-                        '31' => [
-                            'quantity'      => 100,
-                            'selling_price' => 169000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM356'
-                        ],
-                        '32' => [
-                            'quantity'      => 100,
-                            'selling_price' => 169000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM3457'
-                        ],
-                        '33' => [
-                            'quantity'      => 100,
-                            'selling_price' => 169000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM358'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn  Cao Cấp ShopN6 - AD34',
-            'regular_price' => 159000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/df6c8a59d857c322668c8b509d36889f.jpg.webp',
-            'description'   => 'Có VIDEO THẬT Trong Phần MÔ TẢ SẢN PHẨM
-
-                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Lót Caro Cao Cấp ShopN6 - AD34 cực đẹp, tinh tế & đẳng cấp, phong cách, năng động. Áo Khoác Dù phối nón cao cấp chất liệu Dù mịn lót caro ngoại nhập ,đẹp, kiểu dáng thể thao, thoải mái và thời trang.
-
-                Size : Xem bảng bên dưới
-
-                Đảm Bảo Ko Ra Màu , Ko Phai Màu Suốt Quá Trình Sữ Dụng
-
-                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Cao Cấp ShopN6 - AD34 với thiết kế cao cấp và sang trọng, cho bạn sự thoải mái, khỏe khoắn khi kết hợp với nhiều loại trang phục khác nhau , thời tiết nóng hay lạnh đều mặc được rất tiện lợi
-
-                Áo Khoác Nam Áo Khoác Dù Dày Nam Trơn Cao Cấp ShopN6 - AD34 làm bằng dù tổng hợp cao cấp . Tuyệt đối không ra màu, độ bền cao và thời trang .
-
-                Dây khóa cao cấp lịch lãm , có túi trong , 2 túi 2 bên có dây khóa kéo an toàn.
-
-                Quý Khách Vui Lòng Xem Bảng Kích Thước Áo Khoác Bên Dưới Để  Chọn Size Áo Khoác Theo Đúng Yêu Cầu Cuả Quý Khách
-
-                Size
-
-                M
-
-                L
-
-                XL
-
-                XXL
-
-                Chiều Cao
-
-                150cm -> 165cm
-
-                165cm ->170cm
-
-                170cm -> 175cm
-
-                1m70 ->1m80
-
-                Cân Nặng
-
-                50kg ->60kg
-
-                60kg ->68kg
-
-                68kg ->73kg
-
-                73kg ->80kg
-
-                * Lưu ý khi mua Áo Khoác  :   + Khách thích form body thì lấy nhỏ lại 1 Size
-
-                                                                + Khách có bụng thì lấy to hơn 1 Size
-
-                                                                + Nên lấy Size Lớn hơn khi cân nhắc giữa 2 Size
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333317',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/df6c8a59d857c322668c8b509d36889f.jpg.webp',
-                'images/products/2023/11/2a11ae24adae35725b706de3f4e790e2.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Kích thước' => [
-                    'variant_name'   => 'Kích thước',
-                    'variant_values' => [
-                        'L'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 159000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM359'
-                        ],
-                        'M'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 159000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM360'
-                        ],
-                        'XL' => [
-                            'quantity'      => 100,
-                            'selling_price' => 159000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM361'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Quần kaki nam ( Tặng 1 dây nịt da hàng hiệu)  chất vải cotton mềm mịn, co giãn, chống nhăn, nhanh khô, độ bền cao chuẩn phong cách thời trang Dokafashion DKFQKK01',
-            'regular_price' => 254500,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/b06eba9b0056727295ac46baa23008f4.jpg.webp',
-            'description'   => 'Quần kaki nam ( Tặng 1 dây nịt da hàng hiệu) chất vải cotton mềm mịn, co giãn, chống nhăn, nhanh khô, độ bền cao chuẩn phong cách thời trang Dokafashion DKFQKK01
-
-                + Sản phẩm có nhiều màu và size, bạn tham khảo video và phân loại màu khi chọn sản phẩm
-
-                + Hướng dẫn chọn size:
-
-                - Size 29: 50 đến 56kg/ Cao 1m60 – 1m75/ Vòng eo 77-79cm
-
-                - Size 30: 57 đến 62kg/ Cao 1m65 – 1m80/Vòng eo 80 -81cm
-
-                - Size 31: 63 đến 67kg/ Cao 1m60 – 1m85/Vòng eo 82 - 84cm
-
-                - Size 32: 68 đến 73kg/ Cao 1m65 – 1m90/Vòng eo 84 - 86cm
-
-                - Size 34: 74 đến 78kg/ Cao 1m75 – 1m90/Vòng eo 88-90cm
-
-                - Size 36: 79 đến 85kg/ Cao 1m75 – 1m90/Vòng eo 92 - 94cm
-
-                - Nếu bạn thích mặc kiểu rộng rãi, hoặc có: bụng to, vai to, bắp tay to, mông to, chân dài có thể chọn size lớn hơn để bù trừ kích thước.
-
-                MÀU SẮC & KÍCH THƯỚC (SIZE)
-
-                MÔ TẢ SẢN PHẨM
-
-                + Quần kaki dài nam PigoFashion kiểu dáng Regular fit suông nhẹ, thoải mái.
-
-                + Ống quần ôm, đáy cao kiểu dáng thời trang mới nhất hiện nay.
-
-                + Thiết kế tối giản, các chi tiết may tỉ mỉ, tinh tế, mang đến diện mạo chỉn chu, lịch lãm cho người mặc.
-
-                + Chất liệu: cotton pha, có độ có giãn nhẹ vừa phải, giữ bền form sau nhiều lần giặt.
-
-                + Cạp quần kaki dài nam cao 3cm, giúp người mặc có thể kết hợp dây lưng hoặc không đều phù hợp.
-
-                + Xuất xứ : Việt nam
-
-                HƯỚNG DẪN SỬ DỤNG
-
-                - Giặt những sản phẩm cùng gam màu với nhau lần giặt đầu tiên
-
-                - Giặt ở nhiệt độ bình thường, đồ có màu đậm như: đen, xanh đen, đỏ, tím… nên giặt riêng 1-2 nước đầu.
-
-                - Hạn chế dùng chất tẩy đậm đặc.
-
-                - Ủi và sấy ở nhiệt độ thích hợp.
-
-                - Khuyến khích lộn mặt trái khi phơi để giữ sản phẩm bền màu hơn.
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333318',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/b06eba9b0056727295ac46baa23008f4.jpg.webp',
-                'images/products/2023/11/12165259941ab6532c4f8f8f141cd43a.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Xanh rêu' => [
-                            'quantity'      => 100,
-                            'selling_price' => 254500,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM362'
-                        ],
-                        'Be'        => [
-                            'quantity'      => 100,
-                            'selling_price' => 254500,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM363'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Áo Polo Nam 5S ALTITUDE, Chất Liệu Viscose Siêu Mềm Mịn, Thoáng Mát, Thiết Kế Basic, Trẻ Trung, Lịch Lãm (APC23015)',
-            'regular_price' => 205000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/bf5b445f4c474885dea619cb0440c5df.jpg.webp',
-            'description'   => '-------------------------
-                ƯU ĐÃI KHI MUA TẠI 5S:
-                - Click “Theo dõi” shop để nhận ngay VOUCHER giảm giá.
-                - Nhận hàng đánh giá 5* kèm hình ảnh sản phẩm và video, nhắn tin 5S ngay để nhận QUÀ nhé!
-                ** 5S OFFICIAL cảm ơn quý khách hàng đã tin tưởng và đồng hành cùng shop. Chúc bạn có một ngày mua sắm thật thoải mái cùng 5S nhé! Đừng ngần ngại nhắn tin cho shop để được hỗ trợ nhanh nhất bạn nhé!
-
-                #Ao_polo_nam #Ao_polo_nam #Ao_thun_nam_co_co #ao_phong_nam_co_co #ao_thun_co_co #ao_phong_co_co #ao_thun_polo_nam #ao_phong_polo_nam #ao_thun_nam_polo #ao_polo_nam_dep #polo #polo_nam #ao_phong_nam_co_bo #ao_thun_nam #ao_phong_nam #ao_thun_co_co
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333319',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/bf5b445f4c474885dea619cb0440c5df.jpg.webp',
-                'images/products/2023/11/ebea681207db7c28f14999f372a05fb3.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'M'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 205000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM364'
-                        ],
-                        'S'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 205000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM365'
-                        ],
-                        'XL' => [
-                            'quantity'      => 100,
-                            'selling_price' => 205000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM366'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Quần đùi đũi nam',
-            'regular_price' => 99000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/b2cce187b6ac0d37f6b87d0c7ce56d2b.jpg.webp',
-            'description'   => 'Chất liệu: Vải đũi ( linen ) cao cấp.
-
-                ️ Vải đũi ( linen ) chắc chắn sẽ nhăn, nhưng là nhăn tự nhiên, rất đẹp chứ không là nhăn nhàu. Chú ý là ( ủi ) qua trước khi mặc sẽ đẹp hơn rất nhiều.
-
-                ️ Vải xuất chuẩn đảm bảo chất lượng cam kết đã khiến hàng nghìn khách hàng trải nghiệm đã mua thêm , mua tiếp , mua tặng....
-
-                ️ Vải mềm, mịn, có co giãn nhẹ.
-
-                ️ Thấn hút mồ hôi, mát mẻ, tạo sự thoải mái khi mặc.
-
-                --------------------------------------------------------
-
-                HƯỚNG DẪN SỬ DỤNG:
-
-                Giặt sản phẩm bằng nước lạnh.
-                Nên sử dụng cách loại xà phòng, nước tẩy nhẹ, không dùng chất ngâm tẩy
-                Không nên giặt quần Quần đũi với các sản phẩm thời trang cầu kì khác : như có móc, có khóa cứng, có nhiều họa tiết…sẽ làm ảnh hưởng đến sợi vải đũi.
-                Là, ủi ở nhiệt độ trung bình.
-                Có thể giặt khô.
-                Không phơi trực tiếp dưới ánh nắng gắt.
-                Giặt xong nên giũ mạnh để tránh/giảm nhăn.
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333320',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 7,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/b2cce187b6ac0d37f6b87d0c7ce56d2b.jpg.webp',
-                'images/products/2023/11/7c575d63225fe3237b0d98cb8a63dfd4.jpg.webp,'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 99000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM367'
-                        ],
-                        'Ghi'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 99000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM368'
-                        ],
-                        'Kem'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 99000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM369'
-                        ]
-                    ]
-                ]
-            ])
         ],
         [
             'name'          => 'Dép Đi Trong Nhà, Văn Phòng, Nhà Tắm Chống Trơn Đúc Liền DP03',
@@ -1678,7 +993,7 @@ return [
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/92/bd/1a/fd47da4e15ead3f1e4ad0fb60c06815b.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/92/bd/1a/fd47da4e15ead3f1e4ad0fb60c06815b.jpg" alt="" width="750" height="750"></p>
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/85/e5/f7/cd59cbc0c37bc66460deeaa8552144f8.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/85/e5/f7/cd59cbc0c37bc66460deeaa8552144f8.jpg" alt="" width="750" height="750"></p>
                 <p><img id="https://salt.tikicdn.com/ts/tmp/5e/c0/2d/56d175bfab865b6038c51a30d3436994.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/5e/c0/2d/56d175bfab865b6038c51a30d3436994.jpg" alt="" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333321',
+            'sku'           => '33333333311',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1695,19 +1010,19 @@ return [
                 'Màu sắc' => [
                     'variant_name'   => 'Màu sắc',
                     'variant_values' => [
-                        'Cam'    => [
+                        'Cam'  => [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM370'
+                            'product_code'  => 'OM348'
                         ],
                         'Hồng' => [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM371'
-                        ]
-                    ]
+                            'product_code'  => 'OM349'
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1716,23 +1031,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 185000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM372'
+                            'product_code'  => 'OM350'
                         ],
                         '38-39' => [
                             'quantity'      => 100,
                             'selling_price' => 850000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM373'
+                            'product_code'  => 'OM351'
                         ],
                         '40-41' => [
                             'quantity'      => 100,
                             'selling_price' => 1850000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM374'
-                        ]
-                    ]
-                ]
-            ])
+                            'sale_price'    => 00,
+                            'product_code'  => 'OM352'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Bộ 2 cặp lót giày 4D bảo vệ gót chân và chống tuột gót giày (loại vuông) - buybox - BBPK53',
@@ -1775,7 +1090,7 @@ return [
                 <p>2. Tháo miếng dán có keo phía sau lót giày</p>
                 <p>3. Đặt lót 4D và dán cố định vào giày</p>
                 <p><img src="https://salt.tikicdn.com/ts/tmp/80/a5/f3/34e10807639039646de4cd1a86b5922a.jpg" alt="" width="750" height="750"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333322',
+            'sku'           => '33333333312',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1796,23 +1111,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM375'
+                            'product_code'  => 'OM353'
                         ],
-                        '2 cặp Kem'                => [
+                        '2 cặp Kem'             => [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM376'
+                            'product_code'  => 'OM354'
                         ],
-                        '2 cặp Đen'               => [
+                        '2 cặp Đen'             => [
                             'quantity'      => 100,
                             'selling_price' => 30000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM377'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM355'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Dép Quai Ngang Nam Nữ Siêu Nhẹ Tăng Chiều Cao Chống Trơn DP02',
@@ -1825,7 +1140,7 @@ return [
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/a7/8e/02/770fc5c0dec2f07e9c236d7f55ab44e7.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/a7/8e/02/770fc5c0dec2f07e9c236d7f55ab44e7.jpg" alt="" width="750" height="750"></p>
                 <p style="text-align: center;"><img id="https://salt.tikicdn.com/ts/tmp/44/1f/7b/965c077233cc1e014b0da0bdb317eb3e.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/44/1f/7b/965c077233cc1e014b0da0bdb317eb3e.jpg" alt="" width="750" height="750"></p>
                 <p><img id="https://salt.tikicdn.com/ts/tmp/6c/70/e4/68dc6f4cf372ca9cecc16785fbf0abfb.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/6c/70/e4/68dc6f4cf372ca9cecc16785fbf0abfb.jpg" alt="" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333323',
+            'sku'           => '33333333313',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1847,21 +1162,21 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM378'
+                            'product_code'  => 'OM356'
                         ],
-                        'Trắng đen' => [
+                        'Trắng đen'  => [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM379'
+                            'product_code'  => 'OM357'
                         ],
-                        'Đen xanh'    => [
+                        'Đen xanh'   => [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM380'
-                        ]
-                    ]
+                            'product_code'  => 'OM358'
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1870,17 +1185,17 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 75000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM381'
+                            'product_code'  => 'OM359'
                         ],
                         '38-39' => [
                             'quantity'      => 100,
                             'selling_price' => 750000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM382'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM360'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Chai xịt tạo bọt vệ sinh giày cao cấp, chất tẩy rửa giày, làm sạch, trắng sáng và khử mốc giày hiệu quả - Hàng chính hãng',
@@ -1900,7 +1215,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/55/f4/9c/d6760a05a3b1013d467c1173f5aa64e8.jpg" alt="" width="750" height="867"></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/80/02/7e/5bee9dff4dccfdbbd7138c7e688a3ee1.jpg" alt="" width="750" height="1018"></p>
                 <p>Chân thành cảm ơn quý khách!</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333324',
+            'sku'           => '33333333314',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1929,7 +1244,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/fd/cb/75/89bb1fb3c4cb8e7892d73db1d80e3cac.jpg" alt=""></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/19/55/29/f275f2a37e1a9488739b75c09caa313d.jpg" alt=""></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f9/f0/53/7ed1ecde76bf8a0e81d0aec3c5a4ec6c.jpg" alt=""></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333325',
+            'sku'           => '33333333315',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -1950,9 +1265,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 766000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM383'
-                        ]
-                    ]
+                            'product_code'  => 'OM361'
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -1961,17 +1276,17 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 766000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM384'
+                            'product_code'  => 'OM362'
                         ],
                         '38' => [
                             'quantity'      => 100,
                             'selling_price' => 7660000,
                             'sale_price'    => 750000,
-                            'product_code'  => 'OM385'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM363'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Giày thể thao nữ ZAVAS đế cao 3cm màu trắng bằng da không bong tróc mang êm chân S411 - Giày Sneaker Nữ Chính Hãng',
@@ -2018,7 +1333,7 @@ return [
                 <p>- Không dùng bàn chải giặt đồ để giặt giày, vì sợi chải rất cứng sẽ làm các chất liệu bằng lưới bị giãn theo khi dùng lực để chà giày.</p>
                 <p>- Tips quan trọng và cực hữu ích dành cho bạn khi bất kì đôi giày thể thao nào bị ố vàng. Hãy sử dụng kem đánh răng loại Gell màu trắng đánh lên phần ố vàng đó. Đảm bảo sẽ hết nhé.</p>
                 <p>#giàythểthaonữ #giàynữ #giàysneakernữ #giàythểthaonữcổthấp #giàynữmàutrắng #giàythểthaonữmàutrắng #giaythethaonu #giaysneakernu #zavas #giayzavas #giaythoitrangnu #giàynữđếcao3cm #giaynuđẹp #giàythểthaonữchínhhãng #giàychínhhãngnữ</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333326',
+            'sku'           => '33333333316',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -2040,9 +1355,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 2299000,
                             'sale_price'    => 2289000,
-                            'product_code'  => 'OM386'
-                        ]
-                    ]
+                            'product_code'  => 'OM364'
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -2051,11 +1366,11 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 2299000,
                             'sale_price'    => 2289000,
-                            'product_code'  => 'OM387'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM365'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Chai xịt giày khử mùi hôi giày hôi chân Nano Xclean For Shoes 100ml - Hương Trà Xanh - Nano Bạc AHT Corp (AHTC)',
@@ -2068,7 +1383,7 @@ return [
                 <p>Thành Phần:<br>Nano Bạc<br>Dung môi và phụ gia vừa đủ<br>Hương thơm tự nhiên&nbsp;</p>
                 <p>Công dụng của chai xịt giày:<br>Làm sạch bề mặt giày dép, hạn chế vi khuẩn gây mùi, hương thơm tự nhiên của xịt giày nano xclean khử mùi hôi khi sử dụng giày dép trong thời gian dài.<br>Hương Trà Xanh mang lại cảm giác thoải mái dễ chịu, mát lạnh làm tan biến sự khó chịu. Giúp cho người sử dụng cảm thấy thoải mái khi mang giày trong thời tiết nóng bức.</p>
                 <p>Hướng dẫn sử dụng chai xịt giày:<br>Xịt trực tiếp lên bề mặt giày dép, dùng khăn mềm lau lại và để ở nơi thoáng mát có ánh sáng mặt trời.<br>Quy cách đóng gói:<br>Chai xịt phun sương 100ml</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333327',
+            'sku'           => '33333333317',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -2094,7 +1409,7 @@ return [
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f0/d8/d6/dcb6f442bfa537f6388599f038cd37fc.jpg" alt="" width="750" height="750"></p>
                 <p><img title="" src="https://salt.tikicdn.com/ts/tmp/93/c9/37/39fccccd13e16b431f6a84ab38aa8903.jpg" alt="" width="750" height="750"></p>
                 <p>Chân thành cảm ơn quý khách!</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333328',
+            'sku'           => '33333333318',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -2114,9 +1429,9 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 265000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM388'
-                        ]
-                    ]
+                            'product_code'  => 'OM366'
+                        ],
+                    ],
                 ],
                 'Kích cỡ' => [
                     'variant_name'   => 'Kích cỡ',
@@ -2125,11 +1440,11 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 265000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM389'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM367'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Combo 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2',
@@ -2166,7 +1481,7 @@ return [
                 <p>3. Đặt lót 4D và dán cố định vào giày</p>
                 <p>Lưu ý: Sản phẩm mang thương hiệu buybox có bao bì in logo và hướng dẫn sử dụng chi tiết đi kèm.&nbsp;</p>
                 <p><img src="https://salt.tikicdn.com/ts/tmp/7c/9c/48/60bd6429164e423e0a2643de52ad3497.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"><img src="https://salt.tikicdn.com/ts/tmp/dc/5f/8e/1a36ee4c39d1fc3ab0363afb8106612f.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"><img src="https://salt.tikicdn.com/ts/tmp/74/85/e8/474f9176f9ce4b949aaaa4f062e4b192.jpg" alt="Combp 2 cặp Lót gót giày 4D hình cánh bướm có mặt gai silicone chống trầy rách da và chống tuột gót chân - buybox - BBPK70_2" width="750" height="750" style="display: block; margin-left: auto; margin-right: auto;"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div>',
-            'sku'           => '33333333329',
+            'sku'           => '33333333319',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -2188,23 +1503,23 @@ return [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM390'
+                            'product_code'  => 'OM368'
                         ],
-                        '2 cặp Kem'                => [
+                        '2 cặp Kem'             => [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM391'
+                            'product_code'  => 'OM369'
                         ],
-                        '2 cặp Đen'               => [
+                        '2 cặp Đen'             => [
                             'quantity'      => 100,
                             'selling_price' => 60000,
                             'sale_price'    => 0,
-                            'product_code'  => 'OM392'
-                        ]
-                    ]
-                ]
-            ])
+                            'product_code'  => 'OM370'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
             'name'          => 'Sét 2 miếng lót gót chân cao su mềm bảo vệ gót chân khi mang giày ,chống nứt gót ,bảo vệ mắt cá ,chống đau chân',
@@ -2233,7 +1548,7 @@ return [
                    <p>-Sét 2 miếng lót gót chân cao su non mềm sẽ giúp bảo vệ gót chân không bị nhức hay nứt gót</p>
                    <p>-</p>
                 <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p></div>',
-            'sku'           => '33333333330',
+            'sku'           => '33333333320',
             'status'        => 'selling',
             'origin'        => 'VN',
             'rating'        => rand(30, 50) / 10,
@@ -2247,1313 +1562,1478 @@ return [
                 'images/products/2023/11/60a0a107827a35d3d2435d9e4ebbcbac.jpg.webp',
                 'images/products/2023/11/0e848095c8f0ca604a36b33bdace6afe.jpg.webp'
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        '1 cặp Kem + 1 cặp Đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 60000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM390'
-                        ],
-                        '2 cặp Kem'                => [
-                            'quantity'      => 100,
-                            'selling_price' => 60000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM391'
-                        ],
-                        '2 cặp Đen'               => [
-                            'quantity'      => 100,
-                            'selling_price' => 60000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM392'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-
-        [
-            'name'          => 'Giày Bốt Đế Xuồng Kéo Khóa 10CM PB739-4128',
-            'regular_price' => 739000,
-            'sale_price'    => 709000,
-            'thumbnail_url' => 'images/products/2023/11/fb6853a3f57f6de3aa9b230452566e5e.jpg.webp',
-            'description'   => 'Giày Bốt Đế Xuồng Kéo Khóa 10CM PB739-4128
-
-                ● Chiều cao gót: 10cm
-
-                ● Màu: ĐEN/TRẮNG/NÂU
-
-                ● Đóng GÓI HỘP VÀ KHO SẴN SÀNG
-
-                ● Chất liệu: Da vi sợi
-
-                ● Chức năng: chống trượt, nhẹ và chống mài mòn
-
-                ● Dành cho dịp: hàng ngày
-
-                ✪✪✪ Kích THƯỚC: 34-40
-
-                Size 34 = chiều dài chân 22,0 CM; 35 = chiều dài chân 22,5 CM; 36 = 23,0 CM; 37 = 23,5 CM; 38 = 24,0 CM; 39 = 24,5 CM; 40 = 25CM
-
-                Kích thước tiêu chuẩn
-
-                Hàng sẵn
-
-                ☻☻☻ Dịch vụ
-
-                1 Các mặt hàng là 100% mới
-
-                2 Nếu mặt hàng bạn nhận được bị lỗi, vui lòng liên hệ với chúng tôi ngay lập tức.
-
-                ☞☞ Cho phép sử dụng mã khuyến mãi để đảm bảo an toàn và tiết kiệm hơn!
-
-                【Phản Hồi】
-
-                ※ Xin vui lòng để lại cho chúng tôi một phản hồi tích cực (5 sao), nếu bạn hài lòng với các mặt hàng của chúng tôi, Cảm ơn!
-
-                ※ Vui lòng liên hệ với chúng tôi trước khi phát sinh tranh chấp, xin vui lòng cho chúng tôi cơ hội để giải quyết bất kỳ vấn đề nào.
-
-                Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333331',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/fb6853a3f57f6de3aa9b230452566e5e.jpg.webp',
-                'images/products/2023/11/c6587b55473ae8a7b9d56101f5a03950.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Size' => [
-                    'variant_name'   => 'Size',
-                    'variant_values' => [
-                        '34' => [
-                            'quantity'      => 100,
-                            'selling_price' => 739000,
-                            'sale_price'    => 709000,
-                            'product_code'  => 'OM393'
-                        ],
-                        '35' => [
-                            'quantity'      => 100,
-                            'selling_price' => 739000,
-                            'sale_price'    => 709000,
-                            'product_code'  => 'OM394'
-                        ],
-                        '36' => [
-                            'quantity'      => 100,
-                            'selling_price' => 739000,
-                            'sale_price'    => 709000,
-                            'product_code'  => 'OM395'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Giày Nữ Đế Xuồng 5cm Da Bò Màu Đen Trường Hải DX115Đ',
-            'regular_price' => 257000,
-            'sale_price'    => 242000,
-            'thumbnail_url' => 'images/products/2023/11/0c58667bc6858b787c37e32f4ef5d32d.jpg.webp',
-            'description'   => 'THÔNG TIN CHI TIẾT SẢN PHẨM:
-                Xuất xứ: được sản xuất tại Việt Nam
-                Chất liệu: được làm bằng da bò thật cao cấp tuyệt đối không bong tróc hay nổ da. Da mềm mại hạn chế trày xước
-                Phía trong giày được lót bằng vải dệt thấm hút mồ hôi không hôi chân trong thời gian sử dụng. mang lại cảm giác êm ái khi sử dụng
-                Đế giày được làm bằng cao su chống mòn không trơn
-                Giày Nữ Đế Xuồng 5cm Da Bò Màu Đen Trường Hải DX115Đ Hàng gia công đường may chắc chắn, Dáng form chuẩn ôm gọn đôi chân
-                Màu sắc như hình
-                Hình ảnh thật
-                Size: 35-36-37-38-39
-                Màu : Đen
-                chiều cao : 5cm
-
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333332',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/0c58667bc6858b787c37e32f4ef5d32d.jpg.webp',
-                'images/products/2023/11/451a40f8e7eb522d7ce62cc5d5ea5cba.jpg.webp',
-                'images/products/2023/11/577e80e3e080e1313337b96947be5ea8.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Size' => [
-                    'variant_name'   => 'Size',
-                    'variant_values' => [
-                        '34' => [
-                            'quantity'      => 100,
-                            'selling_price' => 257000,
-                            'sale_price'    => 242000,
-                            'product_code'  => 'OM396'
-                        ],
-                        '35' => [
-                            'quantity'      => 100,
-                            'selling_price' => 257000,
-                            'sale_price'    => 242000,
-                            'product_code'  => 'OM397'
-                        ],
-                        '36' => [
-                            'quantity'      => 100,
-                            'selling_price' => 257000,
-                            'sale_price'    => 242000,
-                            'product_code'  => 'OM398'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Dép Bông Đi Trong Nhà Chống Trơn Trượt, Đế Khâu Cao Cấp LACEVA DP94',
-            'regular_price' => 72000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/6585b5048dd0e7ae648c9811bfc22c83.jpg.webp',
-            'description'   => 'Dép bông đi trong nhà siêu ấm, cực hữu ích cho bạn trong mùa đông này
-                Thiết kế sang trọng hiện đại, phong cách Hàn Quốc trẻ trung
-                Lớp bông cao cấp dày, mềm mịn giữ ấm cực tốt
-                Đế Dép được khâu chắc chắn và chống trơn trượt, cực kỳ an toàn
-                Màu sắc nhẹ nhàng, tinh tế với nhiều màu lựa chọn.
-                Dép Form nhỏ, các bạn đặt tăng 1 size nha.
-
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333333',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/6585b5048dd0e7ae648c9811bfc22c83.jpg.webp',
-                'images/products/2023/11/dea7cfc4bc7205080819fba3770b9337.jpg.webp',
-                'images/products/2023/11/f4805765e2584eb7ebf4f9451e0fcb5d.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Ghi'    => [
-                            'quantity'      => 100,
-                            'selling_price' => 72000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM399'
-                        ],
-                        'Hồng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 72000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM400'
-                        ],
-                        'Đỏ'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 72000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM401'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Chai xịt khử mùi giày dép Nano bạc mini 100ml tiện mang theo đi làm, đi học, đi du lịch - Hàng chính hãng, nhiều mẫu mã - Giao mẫu ngẫu nhiên theo từng đợt sản xuất',
-            'regular_price' => 20000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/7485c21e49f70027a5e84bba3b2fa3f0.jpg.webp',
-            'description'   => 'Với công nghê Nano bạc tiên tiến nhất, tiêu diệt 99, 99% vi khuẩn, nấm mốc, vi sinh vật.
-
-                Có tác dụng siêu tốc chỉ sau 5 giây
-
-                Thời gian bảo vệ kéo dài từ 24-72 giờ
-
-                Trị nấm chân, ngứa, nổi mụn nước do nhiễm khuẩn khi ra nhiều mồ hôi.
-
-                Trị nấm mốc trên giày, nón bảo hiểm, giường chiế
-
-                Hoàn toàn không có tác dụng phụ cũng như gây hại cho sức khỏe.
-
-                Dung tích :100ml
-
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng)....',
-            'sku'           => '33333333334',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/7485c21e49f70027a5e84bba3b2fa3f0.jpg.webp',
-                'images/products/2023/11/469aab6a4c66e3dcf6fc918981003fcb.jpg.webp'
-            ]),
             'variants'      => json_encode([]),
         ],
         [
-            'name'          => 'Dép phòng ngủ khách sạn, dép đi trong nhà - Hàng chính hãng',
-            'regular_price' => 25000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/1f5970defada015b181a6de07d771ab2.jpg.webp',
-            'description'   => '
-                Dép phòng ngủ khách sạn màu trắng. Đây là dòng thiết kế đi trong nhà, trong khách sạn. Chất liệu mềm mại, thoải mái. Phù hợp đi trong nhà vào mùa hè, mùa đông, đi trong văn phòng. Phù hợp cho mọi độ tuổi, người lớn tuổi và phụ nữ mang thai
-                Đây là dòng thiết kế đi trong nhà, trong khách sạn.
-                Chất liệu mềm mại, thoải mái.
-                Phù hợp đi trong nhà vào mùa hè, mùa đông, đi trong văn phòng.
-                Phù hợp cho mọi độ tuổi, người lớn tuổi và phụ nữ mang thai
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333335',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/1f5970defada015b181a6de07d771ab2.jpg.webp',
-                'images/products/2023/11/90682aedbfa8abc74f6c8d913ed89afe.jpg.webp',
-                'images/products/2023/11/ecb830d088bded2a921e6505ef7f5b8c.jpg.webp'
+            'name' => 'Bộ bài tây mạ vàng cao cấp, chống nước - Bài lá bằng nhựa PVC - Hàng chính hãng',
+            'regular_price' => 46550,
+            'sale_price' => 0,
+            'stock_qty' => 50,
+            'thumbnail_url' => 'images/products/2023/11/580d1d66dc73231b9f1a57735f1ee30d.jfif',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p>Nếu bạn thích sự độc đáo, sang trọng và muốn tăng thêm độ thú vị, mới lạ trong môn giải trí với 52 lá bài tây thì chắc chắn đây chính là sản phẩm dành cho bạn.<br>Bộ bài tây in hình, 500 Euro mạ vàng - mạ bạc cực kỳ độc đáo,<br>Bộ bài được mạ đồng nhất vàng, hoặc bạc ở cả mặt trước và mặt sau, mặt sau của mỗi lá bài sẽ được in hình của tờ tiền 500 Euro hoặc hình Rồng. Hộp đựng bài cũng được in hình tương ứng với các lá bài.<br>Chất liệu: Plastic cứng cáp, rất bền và không sợ bị phai màu.</p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9a/c0/c0/c37c9de02ea56a404f5106246b255706.jfif" alt="" width="750" height="750"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/93/9e/e2/6ee53e8be2bce0af78c6f9c183044e9c.jpg" alt="" width="750" height="561"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/1d/d7/9c/15ca11950c85f058cc2c60b2f78dbfe5.jpg" alt="" width="750" height="544"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/35/15/ea/ad518a296bc21ea274d0c4cbaa36a731.jpg" alt="" width="750" height="514"></p>
+            <p><strong>Cảm ơn quý khách!!!</strong></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '2499170741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 4,
+            'category_id' => 1,
+            'supplier_id' => 2,
+            'gallery' => json_encode([
+                'images/products/2023/11/580d1d66dc73231b9f1a57735f1ee30d.jfif',
             ]),
-            'variants'      => json_encode([]),
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Giày búp bê đế bằng da bò trơn Trường Hải da mềm GBB120 có 2 màu đen, trắng',
-            'regular_price' => 231000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/df179e1849a2f812efea177a73152d3d.jpg.webp',
-            'description'   => 'Tên sản phẩm:Giày búp bê đế bằng da bò trơn Trường Hải da mềm GBB120 có 2 màu đen, trắng
-                Chất liệu: giày được làm bằng da bò thật mềm mại tuyệt đối không bong tróc hay nổ da
-                Đế : cao su không trơn êm ái
-                phía trong lót bằng nguyên liệu cao cấp không hôi chân trong suốt thời gian sử dụng
-                màu sắc sản phẩm như hình
-                hình ảnh thật 100% không chỉnh sửa
-                Màu : đen, trắng
-                Size: 35-36-37-38-39
-                Giày búp bê trơn da bò mũi vuông Trường Hải CÓ DÁNG FORM TO HƠN BÌNH THƯỜNG QUÝ KHÁCH LƯU Ý KHI CHỌN SIZE
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333336',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/df179e1849a2f812efea177a73152d3d.jpg.webp',
-                'images/products/2023/11/69648b860ea514c080e211d7b6e4fcbe.jpg.webp',
-                'images/products/2023/11/4772d2212102c852abfeb403277d0d7e.jpg.webp'
+            'name' => 'Máy hút sữa tay hiện đại handy 5 - FB1011HY',
+            'regular_price' => 165000,
+            'sale_price' => 160000,
+            'stock_qty' => 50,
+            'thumbnail_url' => 'images/products/2023/11/765a60e423a72ffe315a809c7bf40171.png.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h2>1. THIẾT KẾ VÀ CÔNG DỤNG</h2>
+            <p><img class="has-transparency aligncenter wp-image-8526 size-full" src="https://genex.com.vn/wp-content/uploads/2023/08/MAY-HUT-SUA-TAY-HANDY-5-FB1011HY-7.png" alt="mÁy hÚt sỮa tay handy 5 fb1011hy" width="3334" height="3334"></p>
+            <ul>
+            <li>Tay cầm dáng cong dễ cầm nắm và bóp xuống.</li>
+            <li>Lực hút có thể điều chỉnh bằng cần bóp: bóp nhẹ hoặc bóp mạnh tùy lực ở tay mẹ (Lực hút mạnh nhất ~350 mmHg).</li>
+            <li>2 chế độ cài đặt lực hút.</li>
+            <li>Phễu silicon mềm dẻo với cấu tạo bong bóng giúp mát xa bầu vú mẹ trong khi hút. Việc đó kích thích quá trình xuống sữa để tiết sữa và mẹ cảm thấy dễ chịu nhất.</li>
+            <li>Bộ phận van 1 chiều chống chảy ngược đảm bảo dòng sữa trực tiếp từ miệng phễu xuống bình đựng sữa không bị trào ngược trở lại, giữ cho bộ phận hút chân không luôn sạch và khô.</li>
+            <li>Nắp chống bụi vừa khít với miệng phễu, giữ cho phễu hút luôn sạch trong khi mẹ di chuyển hoặc khi lắp ráp máy hút.</li>
+            <li>Chức năng khóa tiện lợi khi lưu trữ hoặc di chuyển.</li>
+            </ul>
+            <p><img class="has-transparency aligncenter wp-image-8527 size-full" src="https://genex.com.vn/wp-content/uploads/2023/08/MAY-HUT-SUA-TAY-HANDY-5-FB1011HY-8.png" alt="mÁy hÚt sỮa tay handy 5 fb1011hy" width="3334" height="3334"></p>
+            <h2>2. HƯỚNG DẪN SỬ DỤNG</h2>
+            <p><iframe title="Hướng dẫn sử dụng Máy hút sữa tay Handy 5 FB1011HY | Nuôi con bằng sữa mẹ | FATZBABY" src="https://www.youtube.com/embed/XHEaACXUZRs?feature=oembed" width="660" height="371" frameborder="0" allowfullscreen=""></iframe></p>
+            <h2>3. LƯU Ý</h2>
+            <ul>
+            <li>Làm sạch và tiệt trùng máy hút sữa cho lần đầu tiên sử dụng. Làm sạch tất cả các bộ phận sau mỗi lần sử dụng và tiệt trùng chúng trước khi lắp ráp cho lần sử dụng kế tiếp.</li>
+            <li>Hãy cẩn thận khi tháo lắp và làm sạch van silicon và vòng silicon, chúng có thể dễ dàng bị làm rách bằng một lực kéo mạnh.</li>
+            <li>Giữ sản phẩm khỏi ánh sáng mặt trời chiếu trực tiếp.</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '2499170741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 4,
+            'category_id' => 1,
+            'supplier_id' => 2,
+            'gallery' => json_encode([
+                'images/products/2023/11/765a60e423a72ffe315a809c7bf40171.png.webp',
+                'images/products/2023/11/32cd20435a8349ae05066cb67249b979.png.webp',
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Trắng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 231000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM402'
-                        ],
-                        'Đen'    => [
-                            'quantity'      => 100,
-                            'selling_price' => 231000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM403'
-                        ]
-                    ]
-                ]
-            ])
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Túi Đeo Chéo Nam Nữ Thời Trang Trẻ Trung, Túi Đựng Ipad, Túi Đeo Vai Nhiều Ngăn Kéo Đựng Đồ Rất Tiện Lợi, Vải Oxford Chống Thấm Nước',
-            'regular_price' => 140000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/e3e8ebbbcf57ed17dca4e27b3a2a0ec9.jpg.webp',
-            'description'   => '<p>***THÔNG TIN SẢN PHẨM :</p>
-            <p>Túi Đeo Chéo Nam Thời Trang Cao Cấp,Túi Đeo Nhiều Lớp Có Dây Kéo.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/76/73/0b/e59f022581f2a60940038d22834a333f.jpg" alt="" width="750" height="847"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/0a/24/71/b0452deb68d9500283a9f192991a52d6.jpg" alt="" width="750" height="834"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/11/83/80/7629a84a8e53eb8f0bcb14aec99b885f.jpg" alt="" width="750" height="836"></p>
-            <p>- Kích Thước Túi : Cao 25 x ngang 20 x rộng 7 cm.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/71/37/92/75e5b8724e5b6cc0e69ea11784f07ec0.jpg" alt="" width="750" height="992"></p>
-            <p>- Chất Liệu : Túi đeo chéo được may bằng loại vải Oxford cao cấp chống thấm nước chống trầy, kích thước nhỏ gọn nhưng rất tiện lợi.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/74/63/4a/d1404c5ac4db73e12b74aa70e4972844.jpg" alt="" width="750" height="963"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://salt.tikicdn.com/ts/tmp/c7/73/0a/c47c98423d92d40ec96447c7fd2768ae.jpg" alt="" width="750" height="1178"></p>
-            <p>&nbsp;</p>
-            <p>- Trọng Lượng : 0.3kg</p>
-            <p>- Xuất Xứ : Việt Nam</p>
-            <p>+ Dây đai quai mang được may bằng loại dây có bản dày 4cm, chiều dài 1,4m có thể tăng đưa theo ý muốn.</p>
-            <p>+ Túi đeo chéo được đệm mút dày ở mặt trước của túi sẽ giúp bạn an tâm hơn khi mang theo ipad, điện thoại bên trong</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/44/f6/07/4624f67991ebad2171d0e85f9578400f.jpg" alt="" width="750" height="562"></p>
-            <p>- Đường may tỉ mỉ, chắc chắn được sản xuất bởi những người thợ lành nghề, đảm bảo quý khách sẽ rất hài lòng về sản phẩm.</p>
-            <p>***HƯỚNG DẪN BẢO QUẢN</p>
-            <p>-Không nên để sản phẩm tiếp xúc nhiều với xà bông. Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</p>
-            <p>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau sản phẩm nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn, Lau khô hoàn toàn sau khi vệ sinh.</p>
-            <p>Màu Sắc : đen, xanh , xám</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/d2/25/37/6121c514a4fd56c40534bf884ce7a5ff.jpg" alt="" width="750" height="939"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
-            'sku'           => '11448690001',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/e3e8ebbbcf57ed17dca4e27b3a2a0ec9.jpg.webp',
-                'images/products/2023/11/5cac95a651a45ba65f61e5c5b7b4ff19.jpg.webp'
+            'name' => 'Sữa bột Nestlé NAN OPTIPRO PLUS 1 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (0 - 6 tháng)',
+            'regular_price' => 482000,
+            'sale_price' => 0,
+            'stock_qty' => 150,
+            'thumbnail_url' => 'images/products/2023/11/5982fa5f42b200a0c89a9313e13aa42b.png.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p>Với công thức cải tiến được phát triển bởi Nestlé Thụy Sĩ, <strong>NAN OPTIPRO PLUS 1</strong> là sản phẩm dinh dưỡng công thức bổ sung các dưỡng chất thiết yếu, phù hợp với nhu cầu của trẻ từ 0-6 tháng tuổi, hỗ trợ trẻ tiêu hóa tốt, tăng cường đề kháng và phát triển khỏe mạnh.</p>
+            <h3>Tăng cường đề kháng</h3>
+            <p>- 100 triệu lợi khuẩn Bifidus BL được chứng minh lâm sàng giúp tăng thêm 200% lượng IgA (kháng thể miễn dịch quan trọng nhất trong sữa mẹ).</p>
+            <h3>Hỗ trợ tiêu hóa và phát triển thể chất</h3>
+            <p>- Đạm chất lượng Optipro: phát minh độc quyền của Nestlé Thụy Sĩ cho dòng sản phẩm NAN với hàm lượng đạm và chất lượng đạm phù hợp, giúp trẻ dễ tiêu hóa, dễ hấp thu và phát triển hệ mô, cơ.</p>
+            <p>- 100 triệu lợi khuẩn Bifidus BL: được nghiên cứu giúp giảm 49% nguy cơ tiêu chảy ở trẻ dưới 1 tuổi.</p>
+            <h3>Hỗ trợ chiều cao và trí não</h3>
+            <p>- DHA &amp; ARA: Hỗ trợ phát triển trí não và thị lực.</p>
+            <p>- Canxi &amp; Vitamin D: hỗ trợ phát triển chiều cao.</p>
+            <p><strong>Thành phần</strong></p>
+            <h3>Cách pha chế:</h3>
+            <p>1. Rửa sạch tay trước khi pha NAN OPTIPRO PLUS cho trẻ.</p>
+            <p>2. Rửa cốc và nắp đậy thật sạch. Đun sôi trong 5 phút. Đậy kín nắp đến khi sử dụng.</p>
+            <p>3. Đun sôi nước và để nguội bớt bằng với nhiệt độ của cơ thể.</p>
+            <p>4. Theo sát bảng hướng dẫn cách pha trên bao bì. Đầu tiên, đổ nước ấm vào cốc. Sau đó, thêm chính xác số muỗng lường đã gạt ngang tương ứng với độ tuổi của trẻ.</p>
+            <p>5. Đảm bảo muỗng lường khô ráo rồi đặt lại vào hộp. Đậy nắp kín sau mỗi lần sử dụng và bảo quản nơi khô ráo, thoáng mát.</p>
+            <p>6. Đậy nắp và lắc hoặc khuấy cho đều đến khi bột được hòa tan hoàn toàn. Kiểm tra nhiệt độ trước khi cho trẻ uống.</p>
+            <p>Chú ý:</p>
+            <p>- Nước phải được đun sôi và làm nguội lại bằng với nhiệt độ của cơ thể để đảm bảo những vi sinh vật có lợi còn sống.</p>
+            <p>- Dụng cụ pha chế phải được luộc kỹ.</p>
+            <p>- Chỉ dùng muỗng lường trong hộp. Cho bột nhiều hơn hoạt ít hơn chỉ dẫn đều dẫn đến việc mất nước hoặc cung cấp không đủ dưỡng chất cho con bạn. Không được thay đổi tỷ lệ pha mà không có chỉ dẫn của cán bộ y tế.</p>
+            <p>Chỉ pha chế mỗi lần một cốc và cho trẻ uống ngay (luôn bồng trẻ khi cho uống để tránh sặc), không giữ lại phần thừa. Bảo quản, pha chế và cho trẻ uống không đúng cách có thể dẫn đến những tác dụng không mong muốn cho sức khỏe của trẻ. Việc bú mẹ cần được duy trì càng lâu càng tốt.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '2489170741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 5,
+            'category_id' => 1,
+            'supplier_id' => 2,
+            'gallery' => json_encode([
+                'images/products/2023/11/5982fa5f42b200a0c89a9313e13aa42b.png.webp',
+                'images/products/2023/11/0626ae5799d1433f0bc5b97c5ef9a983.jpg.webp',
+                'images/products/2023/11/5f9ae049492b61b21019d72356b3e2f6.jpg.webp',
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Màu xanh' => [
-                            'quantity'      => 100,
-                            'selling_price' => 140000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM768'
-                        ],
-                        'Màu xám' => [
-                            'quantity'      => 100,
-                            'selling_price' => 140000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM769'
-                        ],
-                        'Màu đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 140000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM770'
-                        ]
-                    ]
-                ]
-            ])
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Túi Đeo Chéo Vải Canvas Bền Bỉ Phong Cách Thời Trang Unisex Nam Nữ Hàn BL002',
-            'regular_price' => 135000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/0c6b8f2540f64af76f2a6bfe9af9a6db.jpg.webp',
-            'description'   => '<p>***THÔNG TIN SẢN PHẨM :</p>
-            <p>Túi Đeo Chéo Nam Thời Trang Cao Cấp,Túi Đeo Nhiều Lớp Có Dây Kéo.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/76/73/0b/e59f022581f2a60940038d22834a333f.jpg" alt="" width="750" height="847"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/0a/24/71/b0452deb68d9500283a9f192991a52d6.jpg" alt="" width="750" height="834"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img title="" src="https://salt.tikicdn.com/ts/tmp/11/83/80/7629a84a8e53eb8f0bcb14aec99b885f.jpg" alt="" width="750" height="836"></p>
-            <p>- Kích Thước Túi : Cao 25 x ngang 20 x rộng 7 cm.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/71/37/92/75e5b8724e5b6cc0e69ea11784f07ec0.jpg" alt="" width="750" height="992"></p>
-            <p>- Chất Liệu : Túi đeo chéo được may bằng loại vải Oxford cao cấp chống thấm nước chống trầy, kích thước nhỏ gọn nhưng rất tiện lợi.</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/74/63/4a/d1404c5ac4db73e12b74aa70e4972844.jpg" alt="" width="750" height="963"></p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="https://salt.tikicdn.com/ts/tmp/c7/73/0a/c47c98423d92d40ec96447c7fd2768ae.jpg" alt="" width="750" height="1178"></p>
-            <p>&nbsp;</p>
-            <p>- Trọng Lượng : 0.3kg</p>
-            <p>- Xuất Xứ : Việt Nam</p>
-            <p>+ Dây đai quai mang được may bằng loại dây có bản dày 4cm, chiều dài 1,4m có thể tăng đưa theo ý muốn.</p>
-            <p>+ Túi đeo chéo được đệm mút dày ở mặt trước của túi sẽ giúp bạn an tâm hơn khi mang theo ipad, điện thoại bên trong</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/44/f6/07/4624f67991ebad2171d0e85f9578400f.jpg" alt="" width="750" height="562"></p>
-            <p>- Đường may tỉ mỉ, chắc chắn được sản xuất bởi những người thợ lành nghề, đảm bảo quý khách sẽ rất hài lòng về sản phẩm.</p>
-            <p>***HƯỚNG DẪN BẢO QUẢN</p>
-            <p>-Không nên để sản phẩm tiếp xúc nhiều với xà bông. Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</p>
-            <p>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau sản phẩm nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn, Lau khô hoàn toàn sau khi vệ sinh.</p>
-            <p>Màu Sắc : đen, xanh , xám</p>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://salt.tikicdn.com/ts/tmp/d2/25/37/6121c514a4fd56c40534bf884ce7a5ff.jpg" alt="" width="750" height="939"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
-            'sku'           => '11448690002',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/0c6b8f2540f64af76f2a6bfe9af9a6db.jpg.webp',
-                'images/products/2023/11/f7ef7cb1920793af66b808d63b03f548.jpg.webp'
+            'name' => 'Combo 2 Túi Nước Giặt Omo Matic Máy Giặt Cửa Trên Hương Comfort Tinh Dầu Thơm Xoáy Bay Vết Bẩn Thơm Bền Lâu 3.6Kg',
+            'regular_price' => 350000,
+            'sale_price' => 0,
+            'stock_qty' => 35,
+            'thumbnail_url' => 'images/products/2023/11/60fc6d0b66244096cb7dc6b543b4f19d.png.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style="overflow: hidden; height: 250px;"><p><strong>OMO MATIC - LỰA CHỌN THÔNG MINH ĐỂ CHĂM SÓC ÁO QUẦN GIA ĐÌNH MỘT CÁCH TOÀN DIỆN NHẤT</strong></p>
+            <p>OMO Matic mới được nâng cấp với hoạt chất làm sạch nguồn gốc thiên nhiên, thân thiện hơn với môi trường.</p>
+            <p>Công nghệ Màn chắn Kháng bẩn Polyshield Xanh, giúp bao bọc và phủ một lớp màn chắn vô hình lên bề mặt sợi vải, loại bỏ nhanh chóng vết bẩn cứng đầu và mùi hôi trên áo quần</p>
+            <p>Công thức Giữ Màu ColorShield giúp Bền Màu quần áo sau 100 lần giặt.</p>
+            <p>Sản phẩm nước giặt OMO Matic là sự lựa chọn hàng đầu cho máy giặt cửa trước và luôn được khuyên dùng bởi 11 hãng máy giặt hàng đầu thế giới như Aqua, Panasonic, LG, S <br><br><strong>ƯU ĐIỂM NỔI BẬT</strong></p>
+            <p>- Túi có vòi, dễ sử dụng</p>
+            <p>- Phù hợp với mọi loại máy giặt</p>
+            <p>- Hoạt chất làm sạch nguồn gốc thiên nhiên, thân thiện hơn với môi trường</p>
+            <p>- Công thức Màn chắn Kháng bẩn Xanh Polyshield ưu việt</p>
+            <p>- Lựu đỏ với khả năng chống oxy hóa và giữ màu tự nhiên</p>
+            <p>- Sợi tre với khả năng ngăn tia cực tím<br><br><strong>HIỆU QUẢ SỬ DỤNG</strong></p>
+            <p>- Xoáy bay vết bẩn vượt trội</p>
+            <p>- Ngăn ngừa mùi hôi do phơi thiếu nắng hay đồ giặt để lâu chưa phơi<br><br><strong>HƯỚNG DẪN SỬ DỤNG</strong></p>
+            <p>- Đổ nước giặt OMO Matic vào nắp với liều lượng theo hướng dẫn.</p>
+            <p>- Thoa một lượng nhỏ nước giặt trực tiếp lên vết bẩn.</p>
+            <p>- Đổ phần nước giặt còn lại trong nắp vào máy giặt cùng với quần áo.<br><br><strong>LƯU Ý:</strong></p>
+            <p>- Kiểm tra độ bền màu trước khi sử dụng.</p>
+            <p>- Khuyến nghị giặt với nhiệt độ thường.</p>
+            <p>- Để xa tầm tay trẻ em. Không được uống.</p>
+            <p>- Tránh để tiếp xúc với mắt. Nếu sản phẩm dính vào mắt hãy rửa kỹ với nước.</p>
+            <p>- Rửa sạch và lau khô tay sau khi sử dụng.</p>
+            <p><strong>Hướng dẫn bảo quản:</strong> Nơi thoáng mát, tránh ánh nắng trực tiếp</p>
+            <p><em>Lưu ý: Bao bì sản phẩm có thể thay đổi tùy theo từng đợt nhập hàng</em></p>
+            <p><em>Thời gian “sử dụng tốt nhất” của các sản phẩm nước giặt Omo Matic (Unilever Việt Nam khuyến nghị, trong điều kiện lưu trữ như được hướng dẫn trên bao bì): 24 tháng từ ngày sản xuất. (Sau thời hạn “sử dụng tốt nhất” được khuyến nghị như trên, sản phẩm vẫn có thể tiếp tục sử dụng nếu được lưu trữ đúng như hướng dẫn trên bao bì. Tuy nhiên, một số các tính chất về cảm quan như mùi hương, màu sắc hoặc tính chất hóa lý của sản phẩm có thể thay đổi tùy vào điều kiện lưu trữ và bảo quản thực tế.)</em></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><div class="gradient"></div></div><a class="btn-more" data-view-id="pdp_view_description_button">Xem thêm</a></div></div>',
+            'sku' => '2481273741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 1,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/60fc6d0b66244096cb7dc6b543b4f19d.png.webp',
+                'images/products/2023/11/082a87adce84a1d4adf05e1e68c809a7.png.webp',
+                'images/products/2023/11/a696c798ae1390bd81d7f5929f1bd388.png.webp',
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Màu rêu' => [
-                            'quantity'      => 100,
-                            'selling_price' => 135000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM771'
-                        ],
-                        'Màu xám' => [
-                            'quantity'      => 100,
-                            'selling_price' => 135000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM772'
-                        ],
-                        'Màu đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 135000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM773'
-                        ]
-                    ]
-                ]
-            ])
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Túi đeo chéo nam vải canvas TX0012 - Đi học - đi làm - đi chơi',
+            'name' => 'Xe lắc cho bé, Xe chòi chân trẻ em hình ô tô phát nhạc đèn sinh động hàng cao cấp',
             'regular_price' => 275000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/fd3341ac761d364289cfe67449895527.jpg.webp',
-            'description'   => '<ul>
-            <li>Túi đeo chéo nam vải canvas TX0012</li>
-            <li>Thiết kế đơn giản, cá tính, kết cấu nhiều ngăn có thể đựng ipad, điện thoại và nhiều tư trang cá nhân.Chất liệu vải bố canvas kết hợp phụ tiết da bò và hợp kim cao cấp, không gỉ, tạo nên một sản phẩm cực chất.</li>
-            <li>Phong cách vintage dễ phối hợp với các trang phục</li>
-            <li>Đây là một sản phẩm trẻ trung và cá tính không thể thiếu cho các bạn nam .</li>
-            </ul>
-            <p><img id="https://salt.tikicdn.com/ts/tmp/21/aa/59/442c760be5a8b197d6b42e662ba4e661.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/21/aa/59/442c760be5a8b197d6b42e662ba4e661.jpg" alt="" width="750" height="444"></p>
-            <p><img id="https://salt.tikicdn.com/ts/tmp/e8/23/52/9f7f134c65ed22db713017700ad7e812.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/e8/23/52/9f7f134c65ed22db713017700ad7e812.jpg" alt="" width="750" height="1126"></p>
-            <p><img id="https://salt.tikicdn.com/ts/tmp/f5/60/3d/0eb43b710d533457a6fb57fbaf6729fa.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/f5/60/3d/0eb43b710d533457a6fb57fbaf6729fa.jpg" alt="" width="750" height="1415"></p>
-            <p><img id="https://salt.tikicdn.com/ts/tmp/2b/3d/db/b8e62be0d9d470a756a7b49bad21d376.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/2b/3d/db/b8e62be0d9d470a756a7b49bad21d376.jpg" alt="" width="750" height="721"></p>
-            <p>Túi vải Canvas hay còn gọi là túi vải bố, là một loại túi được sản xuất từ vải canvas. Vải canvas là một loại vải rất thông dụng trong cuộc sống hàng ngày của chúng ta, không khó để bắt gặp những đôi giày, balo, túi, rèm cửa… làm từ vải canvas.<br>Túi canvas được làm từ loại sợi cotton đan dệt ngang và không sử dụng thêm bất kỳ một chất độc hại nào đối với con người, bởi vậy túi canvas được rất nhiều người lựa chọn vì kiểu dáng có phần vintage cùng rất nhiều ưu điểm tuyệt vời.</p>
-            <p>ưu điểm:</p>
-            <ul>
-            <li>Độ bền cao và nhẹ nhàng, hoàn toàn lành tính đối với người đeo</li>
-            <li>Dễ dàng vệ sinh và bảo quản</li>
-            <li>Thiết kế đa dạng và mang phong cách cổ điển</li>
-            <li>Hạn chế thấm nước hiệu quả khi gặp mưa hoặc rơi xuống nước</li>
-            <li>Dễ dàng gấp gọn hoặc cuộn lại khi không dùng đến để tiết kiệm không gian</li>
-            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690003',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/fd3341ac761d364289cfe67449895527.jpg.webp',
-                'images/products/2023/11/396029f8f7d4ab044154b587364184ec.jpg.webp'
-            ]),
-            'variants'      => json_encode([]),
-        ],
-        [
-            'name'          => 'Túi Nam Đeo Chéo Trước Ngực 4U Da Tổng Hợp Cao Cấp Thời Trang Đựng Vừa Ipad Mini Nhiều Ngăn Tiện Dụng BA416',
-            'regular_price' => 199000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/f95f4317cfa9ede1435bedf67aea13db.jpg.webp',
-            'description'   => '<p>1. MÔ TẢ SẢN PHẨM</p>
-            <p>Túi đeo chéo trước ngực thời trang BA416 được làm từ chất da tổng hợp, không bong tróc, đứt gãy và kháng nước tốt, kết hợp lớp lót bằng vải dù êm ái. Được sử dụng dây khóa kéo cùng màu tinh tế và sang trọng, giúp bạn dễ dàng kéo mở và giữ đồ vật an toàn và tốt hơn.</p>
-            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-8v6365ap47jv60" width="750" height="750" alt="sg-11134202-22110-8v6365ap47jv60"><img src="https://cf.shopee.vn/file/sg-11134202-22110-g8gyb0ap47jv67" width="750" height="750" alt="sg-11134202-22110-g8gyb0ap47jv67"></p>
-            <p><strong>2. QUY CÁCH ĐÓNG GÓI</strong></p>
-            <ul>
-            <li>Với mong muốn được trao gửi đến bạn những giá trị và chất lượng trọn vẹn nhất, 4U Shop đã tỉ mỉ trong khâu kiểm tra sản phẩm kỹ lưỡng trước khi giao đến bạn.</li>
-            <li>Tất cả các sản phẩm túi đều được đóng gói cẩn thận, kèm theo thư cảm ơn và cách thức liên hệ để được chăm sóc sau mua.<img src="https://cf.shopee.vn/file/sg-11134202-22110-akop3z0r67jv31" alt="sg-11134202-22110-akop3z0r67jv31" width="750" height="750" style="margin-left: auto; margin-right: auto;"></li>
-            </ul>
-            <p><strong>3. HƯỚNG DẪN BẢO QUẢN</strong></p>
-            <ul>
-            <li>Không nên để sản phẩm bị ẩm ướt.</li>
-            <li>Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</li>
-            <li>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn.</li>
-            <li>Lau khô hoàn toàn sau khi vệ sinh.</li>
-            </ul>
-            <p><img src="https://cf.shopee.vn/file/vn-11134202-23030-zxgcw30o9gov77" alt="vn-11134202-23030-zxgcw30o9gov77" width="750" height="750" style="margin-left: auto; margin-right: auto;"></p>
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/de08fb58c3f298988b550c85ec13b7b9.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Xe chòi chân ô tô cho bé có nhạc, có đèn led nháy, có cốp xe, chòi chân giá rẻ phù hợp cho trẻ em từ 1 - 5 tuổi&nbsp;</h3>
             <p>&nbsp;</p>
-            <p><strong>4. ĐẶC QUYỀN MUA SẮM&nbsp;</strong></p>
-            <p>Với 4U Shop, mục tiêu hướng đến là bạn có những trải nghiệm tuyệt vời nhất khi mua sắm và sử dụng sản phẩm.&nbsp;</p>
-            <ul>
-            <li>4U Shop luôn sẵn lòng Đổi/Trả hàng trong vòng 7 ngày nếu sản phẩm chưa đáp ứng được yêu cầu của bạn. Đừng lo nhé!</li>
-            <li>Với chất lượng tuyệt vời, 4U Shop tự tin với dịch vụ Bảo hành 12 tháng tất cả các nguyên phụ liệu, đường chỉ trên sản phẩm. Nên các bạn yên tâm và thoải mái trải nghiệm nhé</li>
-            <li>Và tất cả sản phẩm của 4U Shop đều có giao hàng Hỏa tốc, nếu bạn cần gấp - đừng lo lắng, sản phẩm sẽ đến tay bạn trong vòng 1-2h.</li>
-            </ul>
-            <p><img src="https://salt.tikicdn.com/ts/tmp/b8/68/04/eda43c2cbada18047ebb9c0288ebebba.png" alt="" width="750" height="750"></p>
-            <p><strong>5. BẢO HÀNH VÀ QUY ĐỊNH ĐỔI TRẢ</strong></p>
-            <ul>
-            <li>Tất cả sản phẩm của 4U Shop đều được bảo hành 12 tháng.</li>
-            <li>Sản phẩm được bảo hành tất cả các lỗi trên sản phẩm.</li>
-            <li>Đổi trả hàng miễn phí trong vòng 7 ngày kể từ ngày mua (nhận được) hàng.</li>
-            <li>Bảo hành/Đổi trả sản phẩm online và tại cửa hàng.</li>
-            <li>Khi Đổi trả hàng, sản phẩm phải còn nguyên vẹn, chưa qua giặt - tẩy.</li>
-            </ul>
-            <p>----------------------</p>
-            <p><em><strong>Lời ngỏ từ 4U Shop</strong></em></p>
-            <p><em>Trước khi là 4U Shop, chúng mình cũng từng là khách hàng. Đồng cảm từ điều đó, 4U xuất phát với mục tiêu nhận lấy sự tin yêu của bạn và phát triển. Để chinh phục “sự tin yêu”, 4U luôn tạo ra những giá trị tốt nhất, phù hợp nhất gửi gắm đến bạn.</em></p>
-            <p><em>Hy vọng với những sự cố gắng trong sản phẩm và dịch vụ hỗ trợ sẽ mang đến bạn những trải nghiệm tuyệt vời khi mua hàng tại 4U Shop.&nbsp;</em></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690004',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/f95f4317cfa9ede1435bedf67aea13db.jpg.webp',
-                'images/products/2023/11/d0f72a760604d29ace18b32dc48c021f.JPG.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Màu nâu' => [
-                            'quantity'      => 100,
-                            'selling_price' => 199000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM774'
-                        ],
-                        'Màu đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 199000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM775'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Túi Đeo Chéo Vải Oxford Mềm Bền Bỉ Chống Nước Phong Cách Thời Trang Unisex Nam Nữ Âu BL026',
-            'regular_price' => 250000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/7a9484953b3c5486563e73231428487f.jpg.webp',
-            'description'   => '<p><img src="https://salt.tikicdn.com/ts/tmp/5f/a3/f9/96fbe18aa82f27aba5759810b7bf5a27.jpg" alt="" width="750" height="750" style="margin-left: auto; margin-right: auto;"></p>
-            <p>Túi Đeo Chéo Vai Oxford Mềm Bền Bỉ Chống Nước Phong Cách Thời Trang Unisex Nam Nữ Âu BL026</p>
-            <p>* MÔ TẢ SẢN PHẨM:</p>
-            <p>- Phong cách đơn giản và giản dị<br>- Dễ dàng đi học và đi du lịch<br>- Trọng lượng nhẹ, tiện lợi</p>
-            <p>- Chống nước</p>
-            <p>- Túi chính dung tích lớn: Có thể chứa hơn 5 đến 8 cuốn sách và nhiều vật dụng khác.</p>
-            <p>*Chi tiết sản phẩm:</p>
-            <p>Kích thước: 30cm * 23 cm x 8 cm<br>Sử dụng: thời trang / giải trí / đi học<br>Chất liệu: Vai Oxford Mềm<br>Cấu trúc: túi chính và các túi phụ</p>
-            <p><strong>CAM KẾT VỚI KHÁCH HÀNG – DUMBUM STORE</strong></p>
-            <p>- Sản phẩm giống mô tả 100%</p>
-            <p>- Đảm bảo chất lượng, dịch vụ tốt&nbsp;</p>
-            <p>- Đổi trả sản phẩm&nbsp; trong vòng 7 ngày đầu tiên hoặc hoàn tiền&nbsp;</p>
-            <p>- Hàng mới 100% đã được kiểm tra, vận hành hoạt động trước khi giao đến tay khách hàng</p>
-            <p>- Hàng được giao 2h trong Thành Phố Hồ Chí Minh</p>
-            <p>- Sau khi nhận hàng khách hàng thoải mái kiểm tra.</p>
-            <p>Nếu sản phẩm không phù hợp với nhu cầu sử dụng của khách hàng hãy liên hệ với DUMBUM STORE để được đổi trả hoàn tiền</p>
-            <p>- Đổi trả sản phẩm theo chính sách riêng của DUMBUM STORE</p>
-            <p>- Điều kiện áp dụng đổi trả - hoàn tiền trong vòng 7 ngày đầu tiên</p>
-            <ul>
-            <li>Hàng hóa vẫn còn mới, chưa qua sử dụng</li>
-            <li>Hàng hóa hư hỏng do vận chuyển hoặc do nhà sản xuất</li>
-            <li>Hàng không đúng mô tả, chủng loại, mẫu mã như quý khách đặt hàng</li>
-            <li>Không đủ số lượng, không đủ bộ như trong đơn hàng</li>
-            <li>Tình trạng bên ngoài bị ảnh hưởng như rách bao bì, bong tróc, dễ vỡ…</li>
-            </ul>
-            <p>&nbsp;- Hỗ trợ tư vấn</p>
-            <p>– Hướng dẫn sử dụng, bảo hành, đổi trả sản phẩm 24/7</p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9c/1e/9f/3b9ff323ad1a8026560ad1ebe26e5466.jpg" alt="" width="750" height="762"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/b6/eb/ab/ee2e90796a584c13c627dd3f91cb0166.jpg" alt="" width="750" height="980"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/c2/75/4e/4911584b7213da15c63abe94c8446f53.jpg" alt="" width="750" height="987"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/e2/82/08/58a24b209b39d67ce6a34895730af76f.jpg" alt="" width="750" height="1319"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/d7/ff/99/91be287f8293b15f53897c069f739a5b.jpg" alt="" width="750" height="712"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/79/2e/01/a1aebf6f12c9f5e32ce0e1c8d663dbed.jpg" alt="" width="750" height="788"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/f2/c1/35/52679515ecf02f7754400f88bb831445.jpg" alt="" width="750" height="592"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/fe/39/f2/0a8424bc6ee3284c5e68aead90828bc9.jpg" alt="" width="750" height="1498"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/d6/f4/3b/48d2e157506e431d00ad68254a3cd4b5.jpg" alt="" width="750" height="1061"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/23/fa/3f/ed4036da10ddbcc2d97b3491de957045.jpg" alt="" width="750" height="750"></p>
             <p>&nbsp;</p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9e/97/38/93ec9ecdf717d600309c34d9c997ed2b.jpg" alt="" width="750" height="1113"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/8c/c8/f7/3ce83249ffcbca5628f87456cdffa5fa.jpg" alt="" width="750" height="996"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/79/42/38/808c6efea067663eac438d0cf75a0959.jpg" alt="" width="750" height="1169"></p>
-            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/23/e9/87/511e01f7b271c8ed60143763ec1c9149.jpg" alt="" width="750" height="957"></p>
-            <p><strong>XIN TRÂN THÀNH CẢM ƠN QUÝ KHÁCH ĐÃ LUÔN TIN TƯỞNG VÀ ỦNG HỘ&nbsp;DUMBUM STORE</strong></p>
-            <p><strong>#balonam #balonu&nbsp; #tuideovai #tuinam #tuinu #tuidihoc #capdihoc #tuidichoi #tuithoitrang #tuideovai #tuivaioxford #tuideocheo</strong></p>
-            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
-            'sku'           => '11448690005',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/7a9484953b3c5486563e73231428487f.jpg.webp',
-                'images/products/2023/11/18d6e6d25fc78b08f524f0e728bfff4c.jpg.webp'
+            <p><img src="https://salt.tikicdn.com/ts/tmp/d2/de/b7/dd19a03aa5e71f759da94ff4d2271e3c.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/22/7e/db/7f4fc285c6f93e03b61da8a8d63098cb.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/3a/05/d6/9820ec6c575bc38e63e1faf34a3cb2fe.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <h3>Thông tin sản phẩm</h3>
+            <h3>- Mã sản phẩm: Xe chòi chân ô tô audi có nhạc</h3>
+            <h3>- Tải trọng: 30kg</h3>
+            <h3>- Kích thước: 59*25.5*21cm</h3>
+            <h3>- Trọng lượng: 3.2kg&nbsp;</h3>
+            <h3>- Màu sắc: Hồng, Be, Xanh</h3>
+            <h3>- Kiểu dáng: Audi</h3>
+            <h3>- Loại xe: Chòi chân vận động</h3>
+            <h3>- Ảnh sản phẩm đều là ảnh thật shop tự chụp</h3>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/84/04/42/ec49e5762b13ea6b153969c4416b45ed.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/4b/74/32/c9dcebb9354d81df573e9d348946fabc.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/55/63/4b/7da8b2af2f33a2dbd26d08447efca18c.jpg" alt="" width="661" height="661"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/be/81/ac/7971f13efaf36435e4b4c5d3b37bb294.jpg" alt="" width="661" height="661"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5f/c0/30/7166116a5cf30269afb30d06e9dcee60.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <h3>Đặc điểm nổi bật</h3>
+            <h3>Kích thước lớn, phù hợp với nhiều độ tuổi, bé chơi được lâu hơn</h3>
+            <h3>Chất liệu nhựa PP, ABS cao cấp, giúp xe nhẹ và bền hơn</h3>
+            <h3>Thiết kế bo tròn, không góc cạnh, an toàn cho bé</h3>
+            <h3>Lốp xe được làm từ nhựa xốp EVA Foam có trọng lượng nhẹ, lại không cần bơm vá</h3>
+            <h3>Vô lăng xoay trong phạm vi 135 độ an toàn và chống lật hiệu quả</h3>
+            <h3>Chỗ ngồi rộng, thiết kế giúp bé ngồi đúng tư thế</h3>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/df/39/4b/7b8c7be3ea3302da4e4b7779eb54b006.jpg" alt="" width="608" height="608"></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/18/d8/11/752bdf893475b6fd3a6cf4d4db90c77e.jpg" alt="" width="750" height="750"></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5e/5b/2a/9d59a53a6e795eb5797136c3a757fdc0.jpg" alt="" width="750" height="750"></p>
+            <h3>#xechoi #audi #oto #choichanoto #xechoiconhac #xetreem #xechoigiare #otogiare #otoconhac #xechoichan #otoaudi #giare #oto #xechobe #xegiare #choichangiare #audi #choichan #giare #choi #nhacaudi #choichan #xechobe</h3><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '2412373741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 5,
+            'category_id' => 1,
+            'supplier_id' => 3,
+            'gallery' => json_encode([
+                'images/products/2023/11/de08fb58c3f298988b550c85ec13b7b9.jpg.webp',
+                'images/products/2023/11/12ed1243b23260783b2667846d2440b5.jpg.webp',
+                'images/products/2023/11/cabf8802e63855caf5ffdc96be671d4b.jpg.webp',
             ]),
-            'variants'      => json_encode([
+            'variants' => json_encode([
                 'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
+                    'variant_name' => 'Màu sắc',
                     'variant_values' => [
-                        'Màu đen'      => [
-                            'quantity'      => 100,
-                            'selling_price' => 250000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM776'
+                        'Màu hồng' => [
+                            'quantity' => 30,
+                            'selling_price' => 275000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM371'
                         ],
-                        'Màu ghi'       => [
-                            'quantity'      => 100,
-                            'selling_price' => 250000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM777'
+                        'Màu xanh' => [
+                            'quantity' => 100,
+                            'selling_price' => 275000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM372'
                         ],
-                        'Màu xanh navy' => [
-                            'quantity'      => 100,
-                            'selling_price' => 250000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM778'
+                        'Màu be' => [
+                            'quantity' => 35,
+                            'selling_price' => 275000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM373'
                         ],
-                        'Màu xanh rêu' => [
-                            'quantity'      => 100,
-                            'selling_price' => 250000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM779'
-                        ]
-                    ]
-                ]
-            ])
+                    ],
+                ],
+            ]),
         ],
         [
-            'name'          => 'Túi xách - Túi da cao cấp Macsim mã MSTH09',
-            'regular_price' => 1540000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/925961b5707166aa5eabc9a4ae325058.jpg.webp',
-            'description'   => '<ul>
-             <p>Túi da thật Macsim chính hãng mã MSTH09 sản xuất từ da bò thật (hoặc da nhăn) - da thô nguyên miếng loại 1.</p>
-             <p>- Thiết kế phong cách cổ điển</p>
-             <p>- Kích thước: Dài 40 cm x Cao 27 cm x rộng 10 cm</p>
-             <p>- Phụ kiện : Kim loại không rỉ, khóa YKK</p>
-             <p>- Chỉ may: Là chỉ sáp siêu bền 0,65 mm - 0,85 mm</p>
-             <p>- Sản xuất thủ công bằng tay</p>
-             <p>- Xuất xứ: Ấn Độ</p>
-             <p>* Túi da cao cấp Macsim MSTH09 được thiết kế dành riêng cho thương hiệu Macsim độc đáo, không đụng hàng, càng dùng càng sáng bóng. Da túi dày dặn dạng thô, giúp túi cứng cáp giữ được phom dáng sau nhiều năm sử dụng, chịu được va chạm.</p>
-             <p>Túi da cao cấp Macsim MSTH09 thiết kế theo phong cách cổ điển, sang trọng lịch lãm. Túi được thiết kế nhiều ngăn có quai tay cầm kết hợp dây đeo bền đẹp, chắc chắn.</p>
-             <p>Hình ảnh túi là ảnh tự chụp chân thực, không qua xử lý photoshop, ảnh chụp sau 1 quá trình đóng gói và vận chuyển nên sản phẩm chưa có thời gian phục hồi nếp nhăn.</p>
-             <p>Top 8 cách nhận biết túi da thật 100% có thể bạn chưa biết ?</p>
-             <p>1, Kiểm tra bề mặt da: Túi da thật bề mặt túi có những vết lồi lõm gồ ghề nhiều hay ít tùy thuộc vào cách thuộc da và chủ ý xử lý da của thợ gia công.</p>
-             <p>2, Da thật chưa qua xử lý thường có bề mặt với những lỗ chân lông mà giả da không thể có được.</p>
-             <p>3, Kết cấu da: Da thật không thể có bề mặt đều nhau 100% như chất liệu giả da, về cơ bản các vùng da trên cơ thể động vật vẫn có sựu khác biệt về màu sắc độ nhăn của da không thể hoàn hảo như da công nghiệp đã qua xử lý.</p>
-             <p>4, Cảm nhận độ ẩm: Hãy nhỏ 1 giọt nước trên bề mặt túi nếu là da thật chưa qua xử lý, các vết nước này sẽ lan rộng thấm vào các lỗ chân lông của da. Bởi da thật hút ẩm, hấp thụ độ ẩm rất tốt.</p>
-             <p>5, Mùi hương: Da thật dễ dàng cảm nhận mùi chất béo ngầy ngậy, mùi da đặc trưng của động vật. Mùi nặng nhẹ tùy thuộc vào loại động vật và cách xử lý da của người thợ gia công. Thông thường người sử dụng đồ da mùi hương sẽ giảm dần sau thời gian sử dụng.</p>
-             <p>6, Da thật chịu nhiệt rất tốt, không hề biến dạng khi đốt bằng lửa, có mùi khét giống mùi tóc khi cháy. Khi đốt bề mặt sẽ không bị co như giả da.</p>
-             <p>7. Độ đàn hồi Ấn ngón tay lên bề mặt da sẽ cảm thấy độ đàn hồi tốt, vết ngón tay tự phục hồi sau một thời gian.</p>
-             <p>8. Kết cấu da thật khi nhìn ở bề mặt cắt thường sẽ có các sợi nhỏ không đồng đều.</p>
-            </ul>
-
-          <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p>',
-            'sku'           => '11448690011',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/925961b5707166aa5eabc9a4ae325058.jpg.webp',
-                'images/products/2023/11/7fc9433cc53ee59b687cfe7fead69d64.jpg.webp'
+            'name' => 'Tã dán sơ sinh Huggies Tràm Trà Tự Nhiên NB70 (dưới 5kg) - Gói 70 miếng + Tặng 6 miếng',
+            'regular_price' => 196000,
+            'sale_price' => 0,
+            'stock_qty' => 200,
+            'thumbnail_url' => 'images/products/2023/11/8121608bea1163d876d31efe5e3833b3.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><ul><li><strong>Tã Dán Sơ Sinh Huggies&nbsp;</strong>là tã dán Sơ sinh duy nhất có thiết kế độc đáo Bọc Kén Con Tằm mới với vùng lưng có Lớp đệm siêu mềm như bọc kén giúp nâng niu bảo vệ da bé từ ngày đầu chào đời.</li>
+            <li>Bề mặt với 1,000 phễu siêu thấm giúp thấm hút nhanh ngay cả phân lỏng, giữ mông bé luôn khô thoáng.</li>
+            <li>Bề mặt Soft touch êm mềm với chất liệu siêu mềm mại từ trong ra ngoái giúp nâng niu làn da non nớt của bé.</li>
+            <li>Hộc chống tràn sau với thiết kế dạng hộc ở phần lưng giúp chống tràn sau hiệu quả, ngăn chất lỏng chảy ngược ra ngoài khi bé nằm.</li>
+            <li>Màng đáy thoát ẩm 100% cho phép không khí lưu thông và thoát khỏi màn đáy dễ dàng, giúp da bé khô thoáng và ngăn ngừa hăm tã hiệu quả.</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '2412373741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 5,
+            'category_id' => 1,
+            'supplier_id' => 3,
+            'gallery' => json_encode([
+                'images/products/2023/11/8121608bea1163d876d31efe5e3833b3.jpg.webp',
+                'images/products/2023/11/680e3e763193b94f0d6da0676ecead60.jpg.webp',
             ]),
-            'variants'      => json_encode([]),
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Túi Đeo Chéo Nam 4U Da Tổng Hợp Cao Cấp D267',
-            'regular_price' => 149000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/85c542da3b2542d11e708c1f7c44dbe4.jpg.webp',
-            'description'   => '<p>1. MÔ TẢ SẢN PHẨM</p>
-            <p>Túi Đeo Chéo Nam 4U Thời Trang D267 được làm từ chất da tổng hợp, không bong tróc, đứt gãy và kháng nước tốt, kết hợp lớp lót bằng vải dù êm ái. Được sử dụng dây khóa kéo cùng màu tinh tế và sang trọng, giúp bạn dễ dàng kéo mở và giữ đồ vật an toàn và tốt hơn.</p>
-            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-et4sigmq47jvc0" width="750" height="750" alt="sg-11134202-22110-et4sigmq47jvc0"><img src="https://cf.shopee.vn/file/sg-11134202-22110-kuloilmq47jvac" width="750" height="750" alt="sg-11134202-22110-kuloilmq47jvac"></p>
-            <p style="text-align: left;"><strong>2. QUY CÁCH ĐÓNG GÓI</strong></p>
+            'name' => 'Xe tròn tập đi AA1 cho bé- Song Long',
+            'regular_price' => 224000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/7582647a922dace390b72209f2f1b093.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style="overflow: hidden; height: 250px;"><p><strong>Xe tập đi cho bé Song Long AA1 được sản xuất tại Việt Nam, dành cho bé từ 0 đến 2 tuổi. Chiếc xe được làm từ chất liệu nhựa cao cấp, màu sắc tươi sáng, không chất độc hại, an toàn cho sức khỏe của bé. Sản phẩm với những thanh đồ chơi xinh xắn sẽ mang lại sự hứng thú cho bé mỗi khi tập đi, vì vậy bé sẽ nhanh biết đi hơn và những giây phút ngồi trên xe không còn nhàm chán.&nbsp;Đây sẽ là người bạn đồng hành thân thiết với con từ những bước chập chững đầu tiên.</strong></p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/1f/86/13/00ddabd976970f73ea59889814cb331a.jpg" alt="" width="695" height="695"></strong></p>
+            <h2 dir="ltr"><strong>Đặc điểm nổi bật của sản phẩm:</strong></h2>
             <ul>
-            <li>Với mong muốn được trao gửi đến bạn những giá trị và chất lượng trọn vẹn nhất, 4U Shop đã tỉ mỉ trong khâu kiểm tra sản phẩm kỹ lưỡng trước khi giao đến bạn.</li>
-            <li>Tất cả các sản phẩm túi đều được đóng gói cẩn thận, kèm theo thư cảm ơn và cách thức liên hệ để được chăm sóc sau mua.</li>
+            <li><strong>Xe tập đi cho bé Song Long AA1&nbsp;</strong>được làm bằng chất liệu nhựa cao cấp, không độc hại cho bé, có khung xe đỡ xung quanh bằng kim loại bền đảm bảo xe luôn chắc chắn và an toàn cho bé trong suốt quá trình tập.</li>
+            <li>Xe được thiết kế gọn nhẹ, chiều cao của xe có thể điều chỉnh phù hợp với từng bé giúp bé thuận tiện chạm đất khi tập đi.</li>
+            <li>Khoang xe rộng rãi bé có thể đứng vào thoải mái, phía dưới có lớp đệm đỡ cho con đi không bị ngã, hoặc có thể ngồi khi mỏi. Bố mẹ có thể tháo lớp nệm này ra để giặt, đảm bảo vệ sinh cho bé.</li>
+            <li>Xe có bàn nhựa cho bé để tay khi ngồi và khung nhựa nối liền 2 bên cho bé giữ khi đi, có gắn kèm các hình thú đồ chơi ngộ nghĩnh, giúp bé chơi ngoan hơn, tạo cảm giác thích thú cho bé.</li>
+            <li>Phía sau xe có gắn tay cầm dài để bố mẹ có thể dễ dàng điều chỉnh giúp bé tập đi hoặc đẩy khi bé ngồi.</li>
+            <li><strong>Xe tập đi Song Long AA1</strong>&nbsp;có phần lưng tựa chắc chắn giúp bé không bị mỏi khi ngồi lâu.</li>
+            <li>8 bánh xe có độ ma sát cao, không lo xe chạy quá nhanh khiến bé sợ hãi.</li>
             </ul>
-            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-sattlrn1gojv41" alt="sg-11134202-22110-sattlrn1gojv41" width="750" height="750"></p>
-            <p><strong>3. HƯỚNG DẪN BẢO QUẢN</strong></p>
+            <h2>Lợi ích của việc sử dụng&nbsp;<strong>Xe tập đi Song Long AA1 cho bé:</strong></h2>
             <ul>
-            <li>Không nên để sản phẩm bị ẩm ướt.</li>
-            <li>Có thể vệ sinh bằng khăn ẩm và các dung dịch làm sạch đã pha loãng.</li>
-            <li>Trong trường hợp không có sẵn dung dịch làm sạch, có thể pha loãng dầu gội đầu và lau nhẹ nhàng với khăn sạch hoặc dùng cồn cùng một chút ít xà phòng để chà nhẹ lên bề mặt vết bẩn.</li>
-            <li>Lau khô hoàn toàn sau khi vệ sinh.</li>
-            </ul>
-            <p><img src="https://cf.shopee.vn/file/sg-11134202-22110-o5765yv2gojv4b" alt="sg-11134202-22110-o5765yv2gojv4b" width="750" height="750"></p>
-            <p><strong>4. ĐẶC QUYỀN MUA SẮM&nbsp;</strong></p>
-            <p>Với 4U Shop, mục tiêu hướng đến là bạn có những trải nghiệm tuyệt vời nhất khi mua sắm và sử dụng sản phẩm.&nbsp;</p>
-            <ul>
-            <li>4U Shop luôn sẵn lòng Đổi/Trả hàng trong vòng 7 ngày nếu sản phẩm chưa đáp ứng được yêu cầu của bạn. Đừng lo nhé!</li>
-            <li>Với chất lượng tuyệt vời, 4U Shop tự tin với dịch vụ Bảo hành 12 tháng tất cả các nguyên phụ liệu, đường chỉ trên sản phẩm. Nên các bạn yên tâm và thoải mái trải nghiệm nhé</li>
-            <li>Và tất cả sản phẩm của 4U Shop đều có giao hàng Hỏa tốc, nếu bạn cần gấp - đừng lo lắng, sản phẩm sẽ đến tay bạn trong vòng 1-2h.</li>
-            </ul>
-            <p><img src="https://salt.tikicdn.com/ts/tmp/b8/68/04/77f8016b09b65f2eeef49ff1448d2a7f.png" alt="" width="750" height="750"></p>
-            <p><strong>5. BẢO HÀNH VÀ QUY ĐỊNH ĐỔI TRẢ:&nbsp;</strong></p>
-            <ul>
-            <li>Tất cả sản phẩm của 4U Shop đều được bảo hành 12 tháng.</li>
-            <li>Sản phẩm được bảo hành tất cả các lỗi trên sản phẩm.</li>
-            <li>Đổi trả hàng miễn phí trong vòng 7 ngày kể từ ngày mua (nhận được) hàng.</li>
-            <li>Bảo hành/Đổi trả sản phẩm online và tại cửa hàng.</li>
-            <li>Khi Đổi trả hàng, sản phẩm phải còn nguyên vẹn, chưa qua giặt - tẩy.</li>
-            </ul>
-            <p>----------------------</p>
-            <p><em><strong>Lời ngỏ từ 4U Shop</strong></em></p>
-            <ul>
-            <li><em>Trước khi là 4U Shop, chúng mình cũng từng là khách hàng. Đồng cảm từ điều đó, 4U xuất phát với mục tiêu nhận lấy sự tin yêu của bạn và phát triển. Để chinh phục “sự tin yêu”, 4U luôn tạo ra những giá trị tốt nhất, phù hợp nhất gửi gắm đến bạn.</em></li>
-            <li><em>Hy vọng với những sự cố gắng trong sản phẩm và dịch vụ hỗ trợ sẽ mang đến bạn những trải nghiệm tuyệt vời khi mua hàng tại 4U Shop</em>.&nbsp;</li>
-            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690012',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 11,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/85c542da3b2542d11e708c1f7c44dbe4.jpg.webp',
-                'images/products/2023/11/ac565d4c89eb948d5961ff097fb0be83.jpg.webp'
+            <li>Bé nhanh biết đi hơn, tự tin hơn khi bước đi bằng chính đôi chân của mình.</li>
+            <li>Giúp cho cơ và hệ xương của bé phát triển nhanh hơn.</li>
+            <li>Giúp bé vận động nhiều hơn, phát triển kĩ năng quan sát và định hướng.</li>
+            <li>Giúp cho bé giao tiếp với thế giới xung quanh nhiều hơn.</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><div class="gradient"></div></div><a class="btn-more" data-view-id="pdp_view_description_button">Xem thêm</a></div></div>',
+            'sku' => '2411313541',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 5,
+            'category_id' => 1,
+            'supplier_id' => 3,
+            'gallery' => json_encode([
+                'images/products/2023/11/7582647a922dace390b72209f2f1b093.jpg.webp',
+                'images/products/2023/11/64b3dbb502321616717b45122db47f9e.jpg.webp',
+                'images/products/2023/11/dd346ea14df4b8d7e54f19aa01ed8f2b.jpg.webp',
+                'images/products/2023/11/35c9591ccf77826a8e1b6ceef1b5ae2b.jpg.webp',
             ]),
-            'variants'      => json_encode([]),
-        ],
-        [
-            'name'          => 'Balo Solo Velocity Max Backpack 17.3” - ACV732 M Black 0211662 (52.5 x 32.5 cm) - Đen',
-            'regular_price' => 1190000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/88765361b792d5446f34e2b55722e860.jpg.webp',
-            'description'   => '<h3>Là sản phẩm thích hợp cho các chuyến du lịch ngắn ngày</h3>
-            <p><strong>Balo Solo Velocity Max Backpack 17.3” - ACV732 M Black 0211662&nbsp;</strong>sở hữu thiết kế đa năng với ngăn đựng laptop/tablet và giày chuyên biệt, kết hợp không gian chứa đồ rộng rãi&nbsp;hướng đến các bạn thích đi phượt, du lịch ngắn ngày, giúp bạn an tâm và tự tin trong những chuyến đi đầy thú vị của mình.&nbsp;</p>
-            <p>Chất liệu được làm chủ yếu bằng polyester cao cấp nên trọng lượng của balo Solo 17.3″ Velocity ACV732 M BLUE chỉ khoảng 1 kg với khả năng chống thấm nước tốt.</p>
-            <h3>Các ngăn kéo có kích thước lớn</h3>
-            <p>Với thiết kế gồm nhiều ngăn chứa đồ lớn nhỏ khác nhau, được sắp xếp đối xứng giúp tổng thể balo trở nên cân đối. Ngăn chính cực kỳ rộng rãi, ngăn kéo đựng laptop 17.3 inch và máy tính bảng có 2 bên đệm dày và dây đai hỗ trợ. Ngăn máy tính bảng có thể chứa vừa 1 chiếc Laptop 13 trở lên.</p>
-            <p>Điểm nối bật và cũng là điểm thu hút nhất của dòng ba lô này là hỗ trợ ngăn để giày riêng biệt với kích thước khá rộng rãi. Người dùng có thể đựng được từ 1 đến 2 đôi giày tùy loại.</p>
-            <p>Ở 2 bên hông có thêm 2 ngăn kéo lớn, được thiết kế nổi bật bởi biểu tượng của Solo bằng kim loại đính vào sợi vải, giúp người dùng cất điện thoại hay những món đồ thường sử dụng. Khi đeo balo trên lưng, bạn có thể dễ dàng đưa tay ra sau lấy vật dụng nhanh chóng và tiện lợi.</p>
-            <h3>Có thể đeo theo nhiều cách khác nhau</h3>
-            <p>Với thiết kế đa năng, balo có thể mang theo 5 kiểu khác nhau, từ kiểu đeo sau lưng truyền thống cho đến cầm xuôi hay mang ngược đều được.</p>
-            <p>Phần quai xách kiểu túi du lịch làm hoàn toàn bằng vải, đem lại cảm giác dễ chịu khi cầm.&nbsp;Kiểu thiết kế quai kép giúp phân bổ đều lực lên lòng bàn tay, giúp bạn có thể thoải mái khi mang nặng.</p>
-            <p>Ở phần đai đeo vai được trang bị lớp đệm dày tạo cảm giác êm ái khi mang. Phần trên dây đeo làm thêm một phần bằng da (da tổng hợp) nhìn khá cách điệu.&nbsp;Ở bên dưới có một dây đai, mục đích giúp người dùng luồn dây đeo qua, cố định nó trong trường hợp muốn cầm theo kiểu ba lô du lịch.</p>
-            <p>Tất cả các móc kéo đều được cột dây màu vàng với phần cầm khá lớn giúp nổi bật so với tông màu tối của ba lô, người dùng sẽ dễ dàng tìm thấy dây kéo khi cần thiết.&nbsp;</p>
-            <h3>Màu sắc trẻ trung, hiện đại</h3>
-            <p>Sự phối hợp giữa 2 màu đen và xám chủ đạo kết hợp với màu vàng nổi bật của dây kéo giúp đem lại cảm giác trẻ trung, có phần hơi phong trần và nổi loạn trong thiết kế của sản phẩm này.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690006',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/88765361b792d5446f34e2b55722e860.jpg.webp',
-                'images/products/2023/11/2db988f24fc0e936e110fa0663650eca.png.webp'
-            ]),
-            'variants'      => json_encode([]),
-        ],
-        [
-            'name'          => 'Vali du lịch - Vali kéo 20 inch',
-            'regular_price' => 549000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp',
-            'description'   => '<p>Gam màu trẻ trung cá tính tạo nên sắc thái mới cho những chuyến đi của mình.<br> ƯU ĐIỂM: <br>✓ Nhựa abs pc chống va đập lên đến 80kg.<br>✓ Bánh xe kép tịnh âm, xoay 360 độ linh hoạt trên mọi địa hình.<br>✓ An toàn tuyệt đối với khoá số bảo mật tuyệt đối <br>✓ Bảo hành 2 năm</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690007',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/4575312e6ec5831269e74109cf7267b9.jpeg.webp'
-            ]),
-            'variants'      => json_encode([
+            'variants' => json_encode([
                 'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
+                    'variant_name' => 'Màu sắc',
                     'variant_values' => [
-                        'Trắng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 549000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM780'
+                        'Màu hồng' => [
+                            'quantity' => 30,
+                            'selling_price' => 224000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM374'
                         ],
-                        'Đỏ'   => [
-                            'quantity'      => 100,
-                            'selling_price' => 549000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM781'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Cặp Tài Liệu Chống Sốc, làm bằng vải bạt, Cầm Tay đeo chéo cho laptop 15.6 Inch, Túi Xách Túi Đeo Vai Đựng Máy Tính Xách Tay Bao Đựng Máy Tính Xách Tay',
-            'regular_price' => 198000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/e040f2a20b024e7955b39524af62f454.jpg.webp',
-            'description'   => '<p>Hàng mới và chất lượng cao. Siêu mỏng và nhẹ.</p>
-            <p>Lưu trữ máy tính xách tay của bạn và bảo vệ nó trong khi mang theo.</p>
-            <p>Nó không thấm nước, không bao giờ lo lắng về việc làm đổ đồ uống hoặc đi bộ dưới mưa khi máy tính xách tay của bạn ở trong túi bọc này.</p>
-            <p>Tay cầm có thể được giấu, và hoạt động như một chiếc vali trong vài giây, mang đến cho bạn tính di động và phong cách trong quá trình vận chuyển.</p>
-            <p>Nó phù hợp cho máy tính xách tay của các thương hiệu khác nhau, chẳng hạn như Macbook, Samsung, HP, Lenovo, Acer, Dell, Toshiba, Xiaomi, Huawei, v. v.</p>
-            <p>Nhiều vật liệu giúp bảo vệ nhiều lớp khỏi bụi, nước, trầy xước hoặc va đập.</p>
-            <p>Chất liệu vải oxford chất lượng cao bền hơn, có thể bảo vệ máy tính xách tay của bạn trong một thời gian dài.</p>
-            <p>Túi đựng laptop cao cấp dành cho nam và nữ.</p>
-            <p>Vui lòng xem ảnh thứ hai, nó cho thấy sự thay đổi bạn chọn.</p>
-            <p>Đặc điểm kỹ thuật:</p>
-            <p>Chất liệu: Vải Oxford</p>
-            <p>Màu sắc: có nhiều màu để lựa chọn</p>
-            <p>Kích thước: 15.6 inch (Vừa Laptop từ 15 đến 15.6 inch): 40x30x3 cm</p>
-            <p>Gói bao gồm:</p>
-            <p>Túi đựng laptop 1*15.6 inch</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690008',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/e040f2a20b024e7955b39524af62f454.jpg.webp',
-                'images/products/2023/11/6387d61820b5d2fac0d9543118c55015.png.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Bạc' => [
-                            'quantity'      => 100,
-                            'selling_price' => 198000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM782'
+                        'Màu vàng' => [
+                            'quantity' => 100,
+                            'selling_price' => 221000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM375'
                         ],
-                        'Đỏ' => [
-                            'quantity'      => 100,
-                            'selling_price' => 198000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM783'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Túi chống sốc/Cặp đựng Laptop, Macbook 13 inch vải Canvas cao cấp chống thấm nước phong cách lịch lãm, thời trang,  nhỏ gọn và tiện dụng',
-            'regular_price' => 370000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp',
-            'description'   => '<p>THÔNG SỐ KỸ THUẬT<br>Kích thước: Dài 36cm, Cao 26cm, Dày 3cm<br>Phù hợp với: Tất cả dòng laptop 13 inch<br>Sản xuất: Công nghệ cao<br>Chất liệu: Vải bố Canvas cao cấp nhập khẩu từ Hàn Quốc được mã hóa chống thấm nước, mặt trong lót nhung chống sốc hoàn hảo cho Laptop của bạn<br>Công năng: Túi có 3 ngăn: Ngăn chính để laptop, ngăn phụ bên trái có ngăn riêng để Notebook và bộ sạc cáp của máy, ngăn phụ bên phải có ngăn riêng để điện thoại, bút, và tai nghe.<br>Thiết kế: Tối giản chi tiết mang tới vẻ đẹp thời trang lịch lãm, sang trọng, thời thường cho người sử dụng<br>Màu sắc: Đen, Xám, Ghi</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690009',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/2719842d6ef928818c747186b3b2eff2.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Ghi xám' => [
-                            'quantity'      => 100,
-                            'selling_price' => 370000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM784'
+                        'Màu xanh dương' => [
+                            'quantity' => 25,
+                            'selling_price' => 220000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM376'
                         ],
-                        'Xanh'     => [
-                            'quantity'      => 100,
-                            'selling_price' => 370000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM785'
-                        ]
-                    ]
-                ]
-            ])
-        ],
-        [
-            'name'          => 'Balo Ulzzang Hàn Quốc Thời Trang HARAS HR284',
-            'regular_price' => 163000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp',
-            'description'   => 'Balo Ulzzang Hàn Quốc Thời Trang HARAS HR284<p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690010',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/71cbb5bb996cba6dc1f43fba1566193f.jpg.webp'
+                        'Màu xanh lá' => [
+                            'quantity' => 10,
+                            'selling_price' => 220000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM377'
+                        ],
+                    ],
+                ],
             ]),
-            'variants'      => json_encode([]),
         ],
         [
-            'name'          => 'Túi Đựng Bảo Vệ Phụ Kiện Công Nhệ Cao Cấp Chống Nước , Túi Du Lịch , Túi Công Sở Văn Phòng',
+            'name' => 'Combo 2 Kem tẩy chuyên dụng Sunlight | Phiên bản nâng cấp từ Cif | Siêu sạch Siêu sáng | Chai 690g',
+            'regular_price' => 67000,
+            'sale_price' => 50000,
+            'stock_qty' => 100,
+            'thumbnail_url' => 'images/products/2023/11/48eebbdae9186fa83f6d8656186394fe.png.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><strong>KEM TẨY CHUYÊN DỤNG SUNLIGHT - TẨY SẠCH VẾT BẨN CỨNG ĐẦU - SIÊU SẠCH SIÊU SÁNG</strong></p>
+            <p>Có "trợ thủ" Kem Tẩy Chuyên Dụng Sunlight sẽ giúp việc tẩy rửa, đặc biệt là lau bếp trở nên dễ dàng và nhanh chóng. Kể cả nhiều loại vết bẩn khó tẩy như: vết gỉ sét trên bếp ga, vết bám lâu ngày trên lò vi sóng hay máy hút mùi. Nhờ đó, luôn giữ cho ngôi nhà bạn được sạch sẽ, sáng bóng.</p>
+            <p><strong>ƯU ĐIỂM NỔI BẬT:</strong></p>
+            <p>- Tẩy sạch các vết bẩn cứng đầu bám trên nhiều bề mặt như bếp ga, lò vi sóng, máy hút mùi.</p>
+            <p>- Hạn chế làm trầy xước bề mặt, trả lại vẻ sáng bóng cho các vật dụng.</p>
+            <p>- An toàn cùng hương chanh thanh mát</p>
+            <p><strong>HƯỚNG DẪN SỬ DỤNG:</strong></p>
+            <p>1. Cho một lượng nhỏ Kem Tẩy Sunlight lên bề mặt cần làm sạch (không cần phải làm ướt bề mặt).</p>
+            <p>2. Dùng khăn ẩm hoặc bàn chải mềm chà nhẹ các vết bẩn.</p>
+            <p>3. Lau sạch lại bằng khăn ẩm. Cho bề mặt sáng bóng như mới. Thích hợp với tất cả các bề mặt như gạch men, sứ, thép không gỉ, crôm và kính.</p>
+            <p>Không sử dụng trên màn hình TV và máy tính.</p>
+            <p><strong>CHÚ Ý:</strong></p>
+            <p>Để xa tầm tay trẻ em. Không được uống. Nếu nuốt phải, cần đến ngay cơ sở y tế, khi đi mang theo sản phẩm và nhãn chai. Nếu sản phẩm tiếp xúc với mắt, cần rửa ngay bằng nước sạch. Tránh tiếp xúc trực tiếp với vùng da nhạy cảm. Mang găng tay khi sử dụng. Nên thử sản phẩm trên diện tích nhỏ trong lần đầu tiên sử dụng.</p>
+            <p>Xuất xứ thương hiệu: Việt Nam<br>Nơi sản xuất: Việt Nam<br>Ngày sản xuất: Xem trên bao bì sản phẩm <br>Hạn sử dụng: 3 năm kể từ ngày sản xuất<br>Thành phần: Sodium Linear Alkylbenzene Sulfonate; Laureth-5; Calcium Carbonate (Hạt làm sạch từ tự nhiên 40%); Oleic Fatty Acid; Sodium Carbonate; Poly(dimethylsiloxane) and Treated Amorphous Silica; Acrylates Copolymer; Phenoxyethanol; Chất thơm; Chất tạo màu; Nước.<br>Hướng dẫn bảo quản: Nơi thoáng mát, tránh ánh nắng trực tiếp</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1214313541',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 1,
+            'supplier_id' => 4,
+            'gallery' => json_encode([
+                'images/products/2023/11/48eebbdae9186fa83f6d8656186394fe.png.webp',
+                'images/products/2023/11/c6371662071434a38b3fef35c54d7199.png.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => '[CRM] Dung dịch diệt khuẩn đa năng Dettol 500ml',
+            'regular_price' => 132000,
+            'sale_price' => 0,
+            'stock_qty' => 200,
+            'thumbnail_url' => 'images/products/2023/11/7d072208d9b4c1d8bb64f31c478309d8.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><strong>Dettol là nhãn hiệu thuộc sở hữu của tập đoàn Reckitt Benckiser. Hiện tại, Dettol đã trở thành thương hiệu diệt khuẩn nổi tiếng nhất thế giới và có lịch sử phát triển hơn 85 năm.</strong></p>
+            <p><strong>Dung dịch diệt khuẩn đa năng Dettol 500ml CRM</strong></p>
+            <p><strong>THÔNG TIN SẢN PHẨM</strong><br><br>Đọc kĩ hướng dẫn sử dụng trước khi dùng.<br>Dung dịch Dettol có chứa hoạt chất Chloroxylenol 4.8% w/v với đặc tính diệt vi khuẩn (diệt đến 99.9% vi khuẩn gây nhiễm trùng). Dettol giúp sát trùng diệt khuẩn, cũng như bảo vệ khỏi các vi khuẩn gây nhiễm trùng.</p>
+            <p><strong>ĐẶC ĐIỂM NỔI BẬT</strong><br>• Sử dụng để sát khuẩn da, quần áo, bề mặt; <br>• Sát khuẩn da<br>• Vệ sinh cá nhân<br>• Vệ sinh đồ dùng gia đình: Giặt giũ; Vệ sinh sàn nhà và các bề mặt cứng khác; Vệ sinh bồn cầu, chậu rửa (không acrylic), cống,…</p>
+            <p><strong>HƯỚNG DẪN SỬ DỤNG</strong><br>Tùy theo mục đích sử dụng, người sử dụng nên pha dung dịch khử trùng và sát khuẩn đa năng Dettol với nước theo tỉ lệ tương ứng với hướng dẫn bên dưới.</p>
+            <p><strong>CÔNG DỤNG VÀ HƯỚNG DẪN SỬ DỤNG:</strong> <br>• Hiệu lực diệt các vi khuẩn Salmonella typhi, S, S, E, P, B và Mycobacterium tuberculosis sau thời gian tiếp xúc 1 phút. <br>• Sử dụng để sát khuẩn da, quần áo, bề mặt. Sát khuẩn da: pha 21ml* dung dịch Dettol với 420ml nước. Dung dịch Dettol không pha loãng có thể được sử dụng trong trường hợp khẩn cấp nhưng không dùng cho da nhạy cảm và các tình trạng chàm (eczema). Không dùng cho vết thương, niêm mạc, vùng da trước, sau khi tiêm, vùng da phẫu thuật. <br>• Vệ sinh cá nhân:<br>- Tắm diệt khuẩn cho bệnh nhân, nhân viên trong y tế: pha 21ml* dung dịch Dettol với 840ml nước tắm.<br>• Gia đình:<br>- Giặt: pha 21ml* dung dịch Dettol với 840ml nước.<br>- Sàn nhà và các bề mặt cứng khác: pha 6x21ml* dung dịch Dettol với 5l nước.<br>- Bồn cầu, chậu rửa (không acrylic), cống, …: Sử dụng dung dịch Dettol không pha loãng.<br>Lưu ý: không dùng cho bề mặt tiếp xúc trực tiếp với thực phẩm.</p>
+            <p><strong>HƯỚNG DẪN BẢO QUẢN:</strong> <br>• Bảo quản nơi khô mát, tránh ánh sáng mặt trời trực tiếp.<br>• Bảo quản dưới 30 độ C.<br>• Hạn sử dụng: 36 tháng kể từ ngày sản xuất.</p>
+            <p><strong>KHUYẾN CÁO AN TOÀN</strong><br>• Sản phẩm không pha loãng sẽ gây kích ứng mắt.<br>• Sương mù/ hơi có thể gây kích ứng đường hô hấp trên. <br>• Sản phẩm có thể gây kích ứng đường tiêu hóa trên. <br>• Độc tính về sinh thái của sản phẩm này chưa được xác định.<br>• Không được đổ sản phẩm này vào kênh rạch.<br>• Chỉ dùng ngoài<br>• Để xa tầm tay trẻ em</p>
+            <p><strong>SƠ CỨU</strong><br>• Tiếp xúc với mắt: Rửa mắt ngay lập tức với nhiều nước. Nếu kích ứng kéo dài, liên hệ với bác sĩ<br>• Tiếp xúc với da: Rửa sạch da bằng nước. Nếu kích thích xảy ra và kéo dài, liên hệ với bác sĩ. <br>• Hít phải: Di chuyển đến nơi có không khí sạch. Nếu có khó thở, tìm kiếm sự chăm sóc y tế. <br>• Nuốt phải: Uống 2 ly nước. Liên hệ với bác sĩ hoặc trung tâm ‘Thông tin Độc chất’</p>
+            <p><strong>*QUY ĐỔI:</strong> <br>• 21 ml=1 nắp đầy chai 500ml</p>
+            <p><strong>THÔNG SỐ KĨ THUẬT</strong> <br>• Thông tin thương hiệu: Sản xuất bởi P.T Reckitt Benckiser Indonesia, JL. Raya Narogong Km.15, Pangkalan VIII, Desa Limus Nunggal, Pangkalan VII, Kec. Cileungsi, Bogor, Indonesia. Theo giấy phép của Reckitt &amp; Colman (Overseas) Limited<br>• Nhà nhập khẩu: VIMEDIMEX Bình Dương – Số 18 L1-2 VSIP II, Đường số 3, KCN Việt Nam – Singapore 2, Thủ Dầu Một, tỉnh Bình Dương<br>• Công ty chịu trách nhiệm về chế phẩm tại Việt Nam: Công ty TNHH DKSH Việt Nam, số 23 Đại lộ Độc Lập, khu công nghiệp Việt Nam – Singapore, phường Bình Hòa, thành phố Thuận An, tỉnh Bình Dương.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1777313541',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 4,
+            'category_id' => 1,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/7d072208d9b4c1d8bb64f31c478309d8.jpg.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Gấu Bông Gối Ôm Thú Bông, Nhồi Bông Hình Ly Trà Sữa Xinh Xắn Ngộ Nghĩnh Siêu Hot',
             'regular_price' => 99000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/e58f54da1efc0cd7019274ec966c35d8.jpg.webp',
-            'description'   => '<p>Với Sự gia tăng vủa các thiết bị điện tử , thiết bị di động và các phụ kiện như cáp sạc đi kèm. Tất cả cáp dử liệu, ổ cứng và chuột đều cần phải "di chuyển", nếu thiếu cái nào thì rắc rối sẽ xảy ra. Bạn có thể tiếp tục chịu trạng thái lộn xộn và hoảng sợ hay bình tĩnh và tận hưởng cuộc sống một cách vui vẻ và đơn giản nhất.</p>
-            <p><strong>Túi Đựng Bảo Vệ Phụ Kiện Công Nhệ Cao Cấp Chống Nước Túi Du Lịch Túi Công Sở Văn Phòng&nbsp;</strong></p>
-            <p>Kích thước chuẩn (DxRxC) 24,5 x10 x 18 cm<br>Ngăn phân chia tùy biến được theo kích thước mọi loại phụ kiện<br>Vừa cả máy đọc sách<br>Đệm dày bảo vệ phụ kiện nhưng vẫn đảm bảo tính gọn nhẹ<br>Chống va đập hay ma sát cho các phụ kiện &amp; vật dụng an toàn chống trầy<br>Vải loại cao cấp 300D chống nước cấp độ 4 đồng thời giúp dáng túi chắc và thẩm mỹ cao<br>Thích hợp cho mọi nhu cầu di chuyển công việc, du lịch<br>Tính thẩm mỹ và bảo vệ được tính toán trong từng chi tiết</p>
-            <p><img src="https://salt.tikicdn.com/ts/tmp/e4/ee/44/aff03076622eaf49cbfda68d0816507f.jpg" alt="" width="750" height="8316"></p>
-            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690013',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/e58f54da1efc0cd7019274ec966c35d8.jpg.webp',
-                'images/products/2023/11/365e9981b6cfb95cb9990597708d5847.jpg.webp'
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/c41cd11d1f85fc1cf9fe0b8b58de1199.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><em><strong>Gấu Bông Gối Ôm Thú Bông, Nhồi Bông Hình Ly Trà Sữa Xinh Xắn Ngộ Nghĩnh Siêu Hot<br><br></strong></em></p>
+            <ul>
+            <li>Gấu bông hình ly trà sữa&nbsp; được thiết kế kiểu dáng tròn tròn đủ vòng tay ôm, lại dài dài đủ để vừa ôm vừa gác chân khi ngủ, hoặc để gối đầu hoặc tựa lưng mỗi khi bạn thấy mệt mỏi.&nbsp;</li>
+            <li>Lớp lông bên ngoài được sử dụng nhung cao cấp, lớp nhung mềm mại và êm ái. Đặc biệt,được xử lý qua công nghệ kháng khuẩn nên rất thân thiện với môi trường.</li>
+            <li>Với chất liệu vải cao cấp mềm mịn, 100% gòn trắng đàn hồi, tuyệt đối an toàn, có thiết kế hình bé heo nằm ngủ đáng yêu ngộ nghĩnh.</li>
+            <li>Sản phẩm có đường may chắc chắn, độ bền cao, an toàn cho người sử dụng, rất hữu ích đối với các bé dùng trong lớp ngủ trưa hay đi du lịch bằng xe hơi, máy bay bởi ngoài cách thiết kế nhỏ gọn cùng chức năng dùng làm gối tựa lưng độc.</li>
+            <li>Đường may tinh xảo, không bị xù hay tưa lông khi chơi lâu và dễ dàng giặt sấy.</li>
+            <li>Món quà ý nghĩa dành tặng cho người thân, bạn bè, người yêu.</li>
+            <li>Kích thước phù hợp có thể làm làm gối ôm hay vật trang trí trên giường các bé.<br><br></li>
+            </ul>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/60/7a/99/d54c4bed482558104431c61a511de66b.jpg" alt="" width="480" height="640" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p><p>Sản phẩm này là tài sản cá nhân được bán bởi Nhà Bán Hàng Cá Nhân và không thuộc đối tượng phải chịu thuế GTGT. Do đó hoá đơn VAT không được cung cấp trong trường hợp này.</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1214313541',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 4,
+            'category_id' => 1,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/c41cd11d1f85fc1cf9fe0b8b58de1199.jpg.webp',
+                'images/products/2023/11/c0f4a5105c3b5ebba999571f2f4a6ecf.jpg.webp',
             ]),
-            'variants'      => json_encode([]),
+            'variants' => json_encode([
+                'Màu' => [
+                    'variant_name' => 'Màu',
+                    'variant_values' => [
+                        'Nâu' => [
+                            'quantity' => 50,
+                            'selling_price' => 90000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM379'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
-            'name'          => 'Túi du lịch đa năng, có gài vali, ngăn đựng giày và ngăn chống nước riêng biệt, túi xách du lịch MO hi - Hàng chính hãng',
-            'regular_price' => 155750,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/30259463d00a2a458e1753310729fc81.jpg.webp',
-            'description'   => '<p><strong>Chi tiết sản phẩm.</strong></p>
-            <p><iframe src="//www.youtube.com/embed/Ub-udNmFGsI" width="892" height="500" allowfullscreen=""></iframe></p>
-            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/32/c8/2b/b42660ea50828f3cc1a166e89367351a.jpg" alt="" width="750" height="750"></strong></p>
-            <p><strong>Thiết kế với nhiều tiện ích.</strong></p>
-            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/87/ae/70/9da22172673a98eacfdec2512140dd21.jpg" alt="" width="750" height="750"></strong></p>
-            <p><strong>Khả năng gài vali tiện lợi</strong></p>
-            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/40/6d/05/e7afad241daefda230baa2553d037424.jpg" alt="" width="750" height="750"></strong></p>
-            <p><strong>Đeo chéo năng động</strong></p>
-            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/a6/64/03/65b2f619aa0778f539d761fbc53b62eb.jpg" alt="" width="750" height="760"></strong></p>
-            <p><strong>Thiết kế cá tính, phù hợp cho cả nam và nữ.</strong></p>
-            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/dc/6b/95/41cb0feb301ec970436deeb92fccc17a.jpg" alt="" width="750" height="750"></strong></p>
-            <p><strong>Chân thành cảm ơn quý khách!</strong></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>',
-            'sku'           => '11448690014',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 12,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/30259463d00a2a458e1753310729fc81.jpg.webp',
-                'images/products/2023/11/7f0c2ad350f304537fe52ad9f5a1a8bc.jpg.webp'
+            'name' => 'Đồ chơi mô hình xe cứu hỏa KAVY xe tải bơm chữa cháy, xe nâng chở người trên cao chi tiết sắc sảo các khớp chuyển động, bền bỉ vô cùng',
+            'regular_price' => 73000,
+            'sale_price' => 0,
+            'stock_qty' => 150,
+            'thumbnail_url' => 'images/products/2023/11/5d8ced4c87195fd7b8b64711a3a67eb7.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p>---ĐỒ CHƠI CHO BÉ MÔ HÌNH XE CỨU HỎA BƠM CHỮA CHÁY---<br>+ Chất liệu hợp kim và nhựa ABS - loại nhựa nguyên sinh, ko chứa các chất phụ gia công nghiệp và hóa chất độc hại (có chứng chỉ hợp quy an toàn của Bộ khoa học Công nghệ)<br>+ Sản phẩm chống chịu va đập tốt, cứng và rắn nhưng ko giòn<br>+ Thiết kế tinh xảo, chắc chắn, với các khớp chuyển động làm tăng trí tưởng tượng của bé<br>+ Đầu bơm có thể trượt được, với chiều dài lên tới 35 cm, và bàn xoay được 360 độ<br>+ Sản phẩm thích hợp dùng làm quà tặng đồ chơi cho trẻ em hoặc để trưng bày<br>+ Kích thước : 20 x 6 x 7.5 cm<br>+ Trọng lượng : 220 gam</p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/bb/d6/47/28546a7e8b2e466c1737a06b5b274c82.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/bb/d6/47/28546a7e8b2e466c1737a06b5b274c82.jpg" alt="" width="750" height="750"></p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/0b/73/bc/0ecd8479b2e2f7206cafecb4cf7a941d.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/0b/73/bc/0ecd8479b2e2f7206cafecb4cf7a941d.jpg" alt="" width="750" height="750"></p>
+            <p><img id="https://salt.tikicdn.com/ts/tmp/00/b2/25/35daa9d101dfc3cc8d4adb20a26fa32b.jpg" title="" src="https://salt.tikicdn.com/ts/tmp/00/b2/25/35daa9d101dfc3cc8d4adb20a26fa32b.jpg" alt="" width="750" height="750"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1214313541',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 5,
+            'category_id' => 1,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/5d8ced4c87195fd7b8b64711a3a67eb7.jpg.webp',
+                'images/products/2023/11/9475cdd90a861a26fb22a8bd83eeef1f.jpg.webp',
             ]),
-            'variants'      => json_encode([]),
+            'variants' => json_encode([]),
         ],
         [
-            'name'          => 'Dép đúc nguyên khối mang trong nhà chống trơn trượt cao cấp mới nhất',
-            'regular_price' => 48000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/b4e3e6e34812e09bdbe14df3def16ea3.jpg.webp',
-            'description'   => 'Tư vấn chọn size dép: khách nên đặt LỚN HƠN 1 SIZE so với size dép thông thường
-                Ví dụ:
-
-                + Khách đang mang size 40, đặt size dép 40-41
-
-                + Khách đang mang size 41, đặt size dép 42-43
-
-                VỀ SẢN PHẨM
-
-                • Chất liệu: Cao su dẻo siêu nhẹ đúc nguyên khối, có rãnh bám
-
-                • Chiều cao: 2cm
-
-                • Màu sắc: đỏ, đen, xanh lá, vàng, tím, cam
-
-                • Đế chống trơn trượt
-
-                • Có thể dùng cho mọi dịp: trong nhà, đi học, shopping, đi dạ
-
-                • Kiểu dáng phù hợp mọi lứa tuổi
-
-                Kiểm tra hàng thoải mái trước khi thanh toán
-
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333337',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/b4e3e6e34812e09bdbe14df3def16ea3.jpg.webp',
-                'images/products/2023/11/0324af5514faff17149d815ea3132445.jpg.webp',
-                'images/products/2023/11/0ada8efd85145e7416f25efd6b2c56f5.jpg.webp'
+            'name' => 'BALO HỌC SINH MR VUI 883 CHO BÉ GÁI VÀ BÉ TRAI LỚP 1-3',
+            'regular_price' => 364000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/c2a87c15664ddefc07787009a39794f1.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><div class="title">Chi tiết sản phẩm Balo học sinh 883</div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="evo-product-review-content expanded">
+            <div class="ba-text-fpt has-height">
+            <h3><strong>Mẫu mã hiện đại</strong></h3>
+            <p>Balo cho bé 883 được thiết kế với các tông màu được phối hợp hài hòa với nhau. Kiểu dáng mang phong cách hiện đại, đơn giản nhưng không kém phần thời trang.</p>
+            <p>&nbsp;</p>
+            <p><img src="https://bizweb.dktcdn.net/100/343/358/products/balo-hoc-sinh-cap-1-883-xanh-den-hong-happy-day-1.jpg?v=1660896913853" alt="ba lo hoc sinh cap 1; ba lô cho học sinh cấp 1; ba lô học sinh; ba lô học sinh cấp 1; ba lô học sinh tiểu học; ba lô học sinh đẹp; balo cho học sinh cấp 1; balo hoc sinh cap 1; balo học sinh; balo học sinh cấp 1; balo học sinh giá rẻ; balo học sinh tiểu học; balo học sinh đẹp; cặp balo học sinh;"></p>
+            <p>&nbsp;</p>
+            <h3><strong>Chất liệu vải siêu nhẹ, hạn chế thấm nước</strong></h3>
+            <p>Vải xốp 877&nbsp;với ưu điểm trượt nước tốt, chống bám bụi bẩn được chọn để may lớp bên ngoài của sản phẩm này. Bên trong balo có thêm lớp lót bằng vải Poly-Oxford chống nước được may kĩ càng. Với những chất liệu vải được Mr Vui lựa chọn kĩ càng, balo 883 bảo vệ tốt cho các đồ dùng học tập của bé, và đặc biệt chất liệu thân thiện với môi trường, không độc hại đối với bé giúp phụ huynh có thể yên tâm hơn.</p>
+            <p>&nbsp;</p>
+            <p><img src="https://bizweb.dktcdn.net/100/343/358/products/balo-hoc-sinh-cap-1-883-xanh-den-hong-happy-day-4.jpg?v=1660896913853" alt="ba lo hoc sinh cap 1; ba lô cho học sinh cấp 1; ba lô học sinh; ba lô học sinh cấp 1; ba lô học sinh tiểu học; ba lô học sinh đẹp; balo cho học sinh cấp 1; balo hoc sinh cap 1; balo học sinh; balo học sinh cấp 1; balo học sinh giá rẻ; balo học sinh tiểu học; balo học sinh đẹp; cặp balo học sinh;"></p>
+            <p>&nbsp;</p>
+            <h3><strong>Ngăn chứa&nbsp;bên trong balo học sinh 883</strong></h3>
+            <p>Được thiết kế 1 ngăn chính và 2 ngăn nhỏ bên ngoài. Các ngăn được thiết kế khoa học giúp bé có thể sắp xếp đồ dùng học tập một cách hợp lý mà không mất thời gian tìm kiếm.</p>
+            <h3><strong>Quai đeo chắc chắn</strong></h3>
+            <p>Quai đeo có đệm mút mỏng được may tỉ mỉ, chắc chắn, ôm sát cơ thể của bé khi sử dụng. Ngoài ra, bé có thể điều chỉnh quai đeo phía sau linh hoạt theo từng kích cỡ cơ thể của bé.</p>
+            <p>&nbsp;</p>
+            <p><img src="https://bizweb.dktcdn.net/100/343/358/products/balo-hoc-sinh-cap-1-883-xanh-den-hong-happy-day-6.jpg?v=1660896913853" alt="ba lo hoc sinh cap 1; ba lô cho học sinh cấp 1; ba lô học sinh; ba lô học sinh cấp 1; ba lô học sinh tiểu học; ba lô học sinh đẹp; balo cho học sinh cấp 1; balo hoc sinh cap 1; balo học sinh; balo học sinh cấp 1; balo học sinh giá rẻ; balo học sinh tiểu học; balo học sinh đẹp; cặp balo học sinh;"></p>
+            <p>&nbsp;</p>
+            <h3><strong>Đệm lưng phân tản khí</strong></h3>
+            <p>Phía sau balo được may cùng một lớp đệm khí giúp phân tản khí, tạo cảm giác thoải mái cho bé khi sử dụng.</p>
+            <p>&nbsp;</p>
+            <p><img src="https://bizweb.dktcdn.net/100/343/358/products/balo-hoc-sinh-cap-1-883-xanh-den-hong-happy-day-5-1.jpg?v=1660896913853" alt="ba lo hoc sinh cap 1; ba lô cho học sinh cấp 1; ba lô học sinh; ba lô học sinh cấp 1; ba lô học sinh tiểu học; ba lô học sinh đẹp; balo cho học sinh cấp 1; balo hoc sinh cap 1; balo học sinh; balo học sinh cấp 1; balo học sinh giá rẻ; balo học sinh tiểu học; balo học sinh đẹp; cặp balo học sinh;"></p>
+            </div>
+            </div><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1274319741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 1,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/c2a87c15664ddefc07787009a39794f1.jpg.webp',
+                'images/products/2023/11/636088ef4a39cdae8db740eb5e541d07.jpg.webp',
+                'images/products/2023/11/597e49e10f37ce6c43c2575dea4362f7.jpg.webp',
             ]),
-            'variants'      => json_encode([
+            'variants' => json_encode([
+                'Hình in' => [
+                    'variant_name' => 'Hình in',
+                    'variant_values' => [
+                        'Basketball' => [
+                            'quantity' => 150,
+                            'selling_price' => 364000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM380'
+                        ],
+                        'Happy Day' => [
+                            'quantity' => 150,
+                            'selling_price' => 368000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM381'
+                        ],
+                        'Super Power' => [
+                            'quantity' => 150,
+                            'selling_price' => 364000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM382'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Đồ chơi xếp hình, lắp ráp Qman 1411 - Tàu tuần dương biển (700 mảnh ghép)',
+            'regular_price' => 359000,
+            'sale_price' => 0,
+            'stock_qty' => 150,
+            'thumbnail_url' => 'images/products/2023/11/4f61634ebfc62ddd6e1a503420561e5f.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><strong>Đồ chơi xếp hình, lắp ráp Qman 1411 - Tàu tuần dương biển (</strong><strong>700</strong><strong> mảnh ghép)</strong></p>
+            <p>Bộ xếp hình Qman 1411 - Tàu tuần dương biển là sản phẩm thuộc series # COMBAT ZONES FIRE bộ sưu tập bán chạy của QMAN.</p>
+            <p>Bộ sản phẩm gồm có tổng cộng 700 chi tiết được chia thành 8 hộp nhỏ với tương ứng mỗi hộp nhỏ là một chiến đấu cơ dạng nhỏ. Lắp ráp 8 hộp nhỏ lại với nhau để thành một tàu tuần dương biển kích thước 36 x 13.5 x 6 cm.</p>
+            <p>Sự đa dạng của các loại máy bay chiến đấu, xe quân sự, xe tăng chắc chắn sẽ làm cho các bé vô cùng thích thú và say mê sáng tạo.</p>
+            <p>Bộ mô hình với màu sắc tươi sáng, sinh động càng tạo nên cảm hứng cho trẻ nhỏ khi chơi. Sau khi chơi xong, mô hình có thể bỏ lại trong hộp và cất giữ gọn gàng.</p>
+            <p>Phát triển kỹ năng: Đồ Chơi Lắp Ráp QMAN giúp cho trẻ học tập cách nhận diện đồ vật, học tập lắp ghép và kết hợp các đồ vật với nhau.</p>
+            <p>Bé sẽ thỏa sức tưởng tượng và nhập vai vào trò chơi, qua đó tăng khả năng tư duy và óc sáng tạo.</p>
+            <p>Sản phẩm phù hợp với các bé từ 6 tuổi trở lên.</p>
+            <ul><li>Chất liệu nhựa ABS đạt đầy đủ các chứng nhận EN71,CCC,ASTM,ISO9001,BSCI</li>
+            <li>Số mảnh ghép: 700 chi tiết</li>
+            <li>Khối lượng: 1049 gram</li>
+            <li>Kích thước: 43.1 x 19.2 x 9.4 cm</li>
+            <li>Thương hiệu: QMAN</li>
+            </ul><p><img title="" src="https://salt.tikicdn.com/ts/tmp/74/e4/96/1c5cae490385727370d0c09770887db5.jpg" alt="" width="750" height="750"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/fc/08/89/1dee0871be18523b5143675c52dd02d3.jpg" alt="" width="750" height="750"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/05/9f/ae/6397a9c7105bfd9b1821642da31bc541.jpg" alt="" width="750" height="750"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/9c/cf/ec/a56d65770aad343f365afd58e6d3740c.jpg" alt="" width="750" height="750"></p>
+            <p><img title="" src="https://salt.tikicdn.com/ts/tmp/6e/e6/e4/b4bcbac788ce86a05cba18a648f08466.jpg" alt="" width="750" height="750"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/78/9d/ed/8101d84d8c987d9393aa1b13dbaec62d.jpg" alt="" width="750" height="750"></p>
+            <p>Giới thiệu về thương hiệu đồ chơi xếp hình Qman</p>
+            <p>Qman là tên nhận diện thương hiệu mới của hãng sản xuất đồ chơi nội địa nổi tiếng của Trung Quốc – ENLIGHTEN. Qman là nhà sản xuất đồ chơi xếp hình lớn trên thế giới, bắt đầu từ những năm 1963. Các mẫu xếp hình của Qman do Qman tự phát triển, thiết kế. Đồ chơi xếp hình Qman được bán khắp thế giới và được cộng đồng chơi xếp hình đánh giá cao. Các khối xếp hình Qman làm bằng nhựa nguyên sinh an toàn với trẻ nhỏ, không có chất độc hại, bền dưới tác dụng vật lý, bền màu theo thời gian. Đặc điểm nhận dạng là dòng chữ ENLI in dập nổi trên các nốt tròn của từng mảnh ghép.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1123319741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 6,
+            'category_id' => 1,
+            'supplier_id' => 3,
+            'gallery' => json_encode([
+                'images/products/2023/11/4f61634ebfc62ddd6e1a503420561e5f.jpg.webp',
+                'images/products/2023/11/3f26f298a33d9ba6085e1193e9af69af.jpg.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Điện Thoại Oppo A57 4GB/128GB - Hàng Chính Hãng',
+            'regular_price' => 3540000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/483aa5193a635132be0ba7c205e35719.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p>Điện Thoại Oppo A57 4GB/128GB - Hàng Chính Hãng</p>
+            <p>Bộ sản phẩm bao gồm: Thân máy, bộ sạc, cáp USB, dụng cụ lấy sim, sách hướng dẫn, ốp lưng điện thoại.</p>
+            <p>&nbsp;</p>
+            <p>Màn hình tràn viền, sắc nét</p>
+            <p>- OPPO trang bị cho máy màn hình IPS LCD kích thước 6.56 inch, hỗ trợ độ phân giải HD+ (720 x 1612 pixels), mật độ điểm ảnh khoảng 269 PPI.</p>
+            <p>- &nbsp;Khung viền còn được vát phẳng tạo cảm giác sang trọng khi cầm trên tay.</p>
+            <p>&nbsp;</p>
+            <p>Bộ 3 camera sau AI lưu lại khoảnh khắc đáng nhớ</p>
+            <p>- Camera chính cảm biến đến 13 MP, cảm biến độ sâu 2 MP chuyên chụp ảnh chân dung và đèn flash LED để hỗ trợ chụp trong những tình huống thiếu sáng.</p>
+            <p>- Giúp người dùng có thể chụp gần hơn mọi vật thể, mọi chi tiết nhỏ sẽ được nhìn rõ mà mắt thường khó nhìn thấy, để bạn thỏa sức chụp và lưu lại những điều thú vị xung quanh.</p>
+            <p>- Camera trước 8 MP với tính năng để chụp ảnh selfie.</p>
+            <p>&nbsp;</p>
+            <p>Hiệu năng mạnh mẽ</p>
+            <p>- Oppo A57 mang cho mình sức mạnh MediaTek Helio G35 8 nhân, với con chip này đem đến cho người dùng trải nghiệm lướt web, đọc báo, xem youtube ổn định.</p>
+            <p>&nbsp;</p>
+            <p>Thời lượng pin ấn tượng</p>
+            <p>- Oppo A57 trang bị dung lượng pin khủng 5000mAh đáp ứng được những nhu cầu sử dụng hằng ngày như học tập, giải trí, chơi </p>
+            <p>Điện Thoại Oppo A57 4GB/128GB - Hàng Chính Hãng</p>
+            <p>&nbsp;</p>
+            <p>Cảm ơn quý khách đã quan tâm đến sản phẩm bên shop, quý khách vui lòng dành ít thời gian đọc kĩ chính sách bảo hành đổi trả:</p>
+            <p>- Sản phẩm được bao test 7 ngày kể từ ngày nhận được sản phẩm và sẽ được đổi máy mới cùng model hoặc giá trị tương đương sau khi được thẩm định lỗi kĩ thuật.</p>
+            <p>- Sản phẩm lỗi kĩ thuật được xác nhận bởi trung tâm bảo hành ủy quyền chính hãng (bằng văn bản); khách hàng có thể gửi lại shop để xác nhận lỗi hoặc tới trạm bảo hành gần nhất để thẩm định lỗi.</p>
+            <p>- Sản phẩm đổi trả phải còn nguyên hiện trạng máy không trầy xước, không bể vỡ, vô nước, gãy chân sim, khung thẻ nhớ… (tất cả các tác động ngoại lực từ phía khách hàng đều TỪ CHỐI BẢO HÀNH)</p>
+            <p>- Sản phẩm đổi trả phải còn nguyên hộp trùng imei, phụ kiện kèm theo máy không trầy xước, cháy nổ, đứt dây (nếu trầy xước shop không đổi phụ kiện mới)</p>
+            <p>- Sau 7 ngày bao test, sản phẩm vẫn nhận chính sách bảo hành 12 tháng kể từ ngày kích hoạt bảo hành (khách chịu phí vận chuyển tới shop bảo hành hộ hoặc tự đến trung tâm bảo hành gần nhất để được hỗ trợ)</p>
+            <p>- Trong một số trường hợp sản phẩm đã được kích hoạt bảo hành điện tử để tham gia chương trình khuyến mãi có giá tốt cho khách hàng. Vui lòng chat với nhân viên tư vấn để được hỗ trợ thêm thông tin.</p>
+            <p>- Sản phẩm bị TỪ CHỐI BẢO HÀNH khi cháy nổ, bể vỡ, tác động ngoại lực vào thân và bên trong máy, có thay đổi sửa chữa bên ngoài.</p>
+            <p>- Các sản phẩm bị khóa tài khoản như Gmail, Samsung account… Khách tự chịu phí mở khóa nếu không nhớ mật khẩu.</p>
+            <p>Điện Thoại Oppo A57 4GB/128GB - Hàng Chính Hãng</p>
+            <p>#điện_thoại #dienthoai #di_động #didong #điện_thoại_di_động #dien_thoai_di_dong #điện_thoại_chính_hãng #hàng_chính_hãng #điện_thoại_giá_rẻ #dien_thoai_gia_re #giá_rẻ #khuyen_mai #freeship #mobile #smartphone #điện_thoại_oppo #oppo #oppo_a57</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1188819741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/483aa5193a635132be0ba7c205e35719.jpg.webp',
+                'images/products/2023/11/a00e836b2d4131f18c546166f7f05cb0.jpeg.webp',
+            ]),
+            'variants' => json_encode([
                 'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
+                    'variant_name' => 'Màu sắc',
                     'variant_values' => [
                         'Xanh' => [
-                            'quantity'      => 100,
-                            'selling_price' => 48000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM404'
+                            'quantity' => 30,
+                            'selling_price' => 3540000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM385'
                         ],
-                        'Cam'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 48000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM405'
-                        ]
-                    ]
-                ]
-            ])
+                        'Đen' => [
+                            'quantity' => 20,
+                            'selling_price' => 3290000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM386'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
-            'name'          => 'Dép Đi Trong Nhà, Dép Bông Nam Nữ Đế Chống Trơn, Dép Đi Trong Văn Phòng Êm Chân D37',
-            'regular_price' => 79000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/2b4addf75ae43abf8e38635c02f327bb.PNG.webp',
-            'description'   => 'Dép size kép Form Nhỏ, Các Bạn Đặt tăng 1 size nhé.
-                Thường bạn đi 34-35 thì đặt 36/37
-                Thường Đi 36-37 thì đặt 38/39
-                Thường Đi 38-39 thì đặt 40/41
-                Thường Đi 40-41 thì đặt 42/43
-                Thường Đi 42-43 thì đặt 44/45
-                Với phương châm phát triển bền vững, shop sẽ đem đến những sản phẩm chất lượng nhất đến với khách hàng. những sản phẩm chất lượng kém sẽ đc loại bỏ khỏi danh mục bán hàng của shop. Sản Phẩm ảnh chụp thực tế và video shop tự quay nên các bạn yên tâm về chất lượng.
-
-                Dép Bông Dẻo ." lưu ý ko phải loại đế xốp rẻ tiền Không phải loại đế xốp rẻ tiền như 1 số shop bán hàng kém chất lượng.
-
-                -- Là mẫu dép Hot nhất hiện nay với hoạ tiết dễ thương
-
-                -- Đế cao su mềm, dẻo, đi êm chân, tạo cảm giác thoải mái
-
-                -- Chất liệu lông bằng sợi bông tự nhiên siêu mịn, sợi bông siêu mỏng.
-
-                -- Sản Phẩm được khâu rất chắc chắn
-
-                -- Sợi bông tự nhiên cách nhiệt tốt, giúp bàn chân của bạn ấm áp trong thời tiết lạnh giá hay trong phòng máy lạnh
-
-                -- Dép cao cấp, độ bền cao, lâu hỏng
-
-                -- Giữ ấm tuyệt đối cho đôi chân của bạn trong mùa đông lạnh giá
-
-                -- Có thể dùng làm dép đi trong nhà, trong văn phòng làm việc, đi dạo phố .
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng)...',
-            'sku'           => '33333333338',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/2b4addf75ae43abf8e38635c02f327bb.PNG.webp',
-                'images/products/2023/11/02e997235e92124af8a9f5599f7e3c54.PNG.webp',
-                'images/products/2023/11/a06589d2f69dedd6a5e8d2a29fa8041b.PNG.webp'
+            'name' => 'Máy tính bảng Masstel tab 10.1 pro - Hàng chính hãng',
+            'regular_price' => 3473000,
+            'sale_price' => 0,
+            'stock_qty' => 20,
+            'thumbnail_url' => 'images/products/2023/11/a654fd975a244bbdd4f6fe4623477b95.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><strong>MÀN HÌNH</strong></p>
+            <p>Kích thước 10.1″ IPS – Công nghệ IPS cho góc nhìn rộng hơn, người sử dụng có trải nghiệm tốt hơn khi sử dụng. Độ phân giải 1280*800 điểm ảnh (Chuẩn HD với 16.7 triệu màu) cho hiển thị sắc nét.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5e/83/b4/46e0017e7848890589e9887f638b8688.jpg" alt="" width="750" height="445"></p>
+            <p><strong>TÍNH NĂNG</strong></p>
+            <p>Hệ điều hành Android 11 mới nhất với tính năng cập nhật ưu việt</p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/79/93/63/3669f9c2b490593d6c5ab13c4138008f.jpg" alt="" width="750" height="445"></strong></p>
+            <p>Được trang bị camera trước 5.0MP và camera sau 8.0MP AF, máy tính bảng Tab10.1 PRO hỗ trợ tốt cho nhu cầu học Online video call của các con, sử dụng các ứng dụng hoạt động ổn định, mượt mà.</p>
+            <p><strong>CẤU HÌNH</strong></p>
+            <p>Cấu hình vượt trội trong tầm giá đáp ứng đầy đủ nhu cầu học tập – giải trí.</p>
+            <p><strong><img src="https://salt.tikicdn.com/ts/tmp/22/c0/78/0862a4735b6084ff9fc1c29562a72389.jpg" alt="" width="750" height="444"></strong></p>
+            <h3 class="c1"><span class="c13">Bảo hành</span></h3>
+            <h4 class="c1"><span class="c9">Bảo hành 12 tháng – Đổi trả 1 đổi 1 trong 100 ngày</span></h4>
+            <p class="c1"><span class="c9">Áp dụng với sản phẩm mua mới từ các nhà phân phối chính thức của Masscom theo thời gian được tính từ thời điểm xuất hóa đơn. Sau 100 ngày các điều khoản bảo hành và sửa chữa thông thường sẽ được áp dụng.</span></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1199919741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/a654fd975a244bbdd4f6fe4623477b95.jpg.webp',
+                'images/products/2023/11/0a67a712e1c83c858457617a616ad29f.jpg.webp',
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Máy tính bảng quản lý thời gian sử dụng dành cho trẻ em Masstel Kidzone-1 đổi 1 trong vòng 100 ngày',
+            'regular_price' => 1950000,
+            'sale_price' => 0,
+            'stock_qty' => 100,
+            'thumbnail_url' => 'images/products/2023/11/7103aa787ae502fc03b82a2a170ee020.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p style="text-align: center;"><strong>Tablet Giáo dục Masstel Kidzone - Hàng chính hãng - Tặng gói học NEXTA TIỂU HỌC + ICANKID + KHAN KIDS</strong></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/d8/cb/78/b961631e4d7ba27adb14f7be1eca9c82.jpg" alt="" width="750" height="750"></p>
+            <h2><img src="https://salt.tikicdn.com/ts/tmp/41/85/04/178c9ef263091df256b11942a59e80fc.jpg" alt="" width="750" height="750"></h2>
+            <p>Giới hạn thời gian sử dụng, đảm bảo trẻ không bị nghiện máy tính bảng</p>
+            <p>KidZone được tích hợp ứng dụng kiểm soát thời gian sử dụng, giúp phụ huynh có thể thiết lập khung giờ trẻ dành cho học tập và giải trí. Cùng với đó, phụ huynh có thể đặt quyền mở/ khóa các ứng dụng và trang website trẻ được phép truy cập trên thiết bị. Điều này giúp đảm bảo rằng trẻ sử dụng máy tính bảng một cách có chọn lọc và cân đối.</p>
+            <p>Bảo mật và an toàn</p>
+            <p>KidZone được tích hợp các tính năng bảo mật để đảm bảo tài khoản và dữ liệu cá nhân của trẻ em luôn an toàn. Các ứng dụng và nội dung cũng được kiểm duyệt kỹ càng để đảm bảo tính phù hợp với độ tuổi của trẻ.</p>
+            <p>&nbsp;</p>
+            <h3><img src="https://salt.tikicdn.com/ts/tmp/f8/a0/00/eeac6f55e637d6ebba0b77a1cad81c8d.jpg" alt="" width="750" height="750"></h3>
+            <p>MASSTEL KIDZONE - MÁY TÍNH BẢNG GIÚP TRẺ TỰ TIN NÓI TIẾNG ANH</p>
+            <p>Học tiếng anh thú vị và hiệu quả</p>
+            <p>Không cần phải đến các trung tâm, không cần tốn nhiều chi phí cho các khóa học, giờ đây trẻ có thể học tiếng anh hoàn toàn miễn phí trên Masstel KidZone thông qua ứng dụng ICANKid và Khan Academy Kids.</p>
+            <p>ICANKid là hệ thống ứng dụng thông minh tối ưu lộ trình học chơi, giúp trẻ phát triển toàn diện: ngôn ngữ, kỹ năng, tư duy, cảm xúc. Trẻ sẽ được thỏa sức học chơi song ngữ Anh-Việt với nhiều trải nghiệm thú vị. Tại Masstel KidZone, ICANKid đã được cài đặt sẵn và trẻ có thể học miễn phí trong 1 năm, trị giá 499.000.</p>
+            <p>Khan Academy Kids là ứng dụng học tập và giải trí miễn phí 100% bằng tiếng Anh. Thông qua ứng dụng trẻ có thể luyện tập phát âm tiếng Anh chuẩn, tiếp cận nguồn tài liệu tiếng Anh có chất lượng quốc tế, học tập và tư duy sáng tạo.</p>
+            <h3><img src="https://salt.tikicdn.com/ts/tmp/37/bc/4d/2cf61c09775e1f6f61e2099d4f786a3d.jpg" alt="" width="750" height="750"></h3>
+            <p>Kho trò chơi phát triển tư duy</p>
+            <p>Không chỉ có các ứng dụng học tập chuyên sâu, KidZone còn khó trò chơi tư duy hấp dẫn: ABC Kids, Multiplication Kids, Number Kids, 123 Numbers, ABC Spelling… mang đến môi trường học tập và giải trí vui vẻ cho trẻ.</p>
+            <h3><img src="https://salt.tikicdn.com/ts/tmp/12/99/6d/bb828edc3dc298a58dd18ab8b66841c2.jpg" alt="" width="750" height="750"></h3>
+            <p>Gia sư tại nhà miễn phí</p>
+            <p>KidZone tích hợp ứng dụng Nexta Edu tiểu học trị giá 800.000 đồng/năm bao gồm chương trình học chuẩn với 3 môn: Toán, Tiếng Việt và Tiếng Anh từ tiền tiểu học đến lớp 5. Cùng với đó là thư viện với hơn 500 đầu sách và hệ sinh thái ứng dụng liên tục mở rộng, bao gồm hơn 12 trò chơi giáo dục từ Nexta và các đối tác hàng đầu thế giới. Ứng dụng này sẽ phát triển cho trẻ năng lực tự học tập, tự nghiên cứu kiến thức từ đó xây dựng nền tảng kiến thức chắc chắn toàn diện.</p>
+            <h3><img src="https://salt.tikicdn.com/ts/tmp/62/0c/d4/c1ecdd9b1ba0beb771b9e31d4032282a.jpg" alt="" width="750" height="750"></h3>
+            <h3><img src="https://salt.tikicdn.com/ts/tmp/03/2d/0d/98af941ea3c0895fd314565435ac7d42.jpg" alt="" width="750" height="750"></h3>
+            <h3>Bảo hành</h3>
+            <h4>Bảo hành 12 tháng – Đổi trả 1 đổi 1 trong 100 ngày</h4>
+            <p>Áp dụng với sản phẩm mua mới từ các nhà phân phối chính thức của Masscom theo thời gian được tính từ thời điểm xuất hóa đơn. Sau 100 ngày các điều khoản bảo hành và sửa chữa thông thường sẽ được áp dụng.</p>
+            <p>&nbsp;</p>
+            <p>#masstel #masstelofficial #masstelkidzone</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1125819741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 7,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/7103aa787ae502fc03b82a2a170ee020.jpg.webp',
+                'images/products/2023/11/3b47aa589eace6b1cf74f4aeaf63486c.jpg.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Máy đọc sách All New Kindle Paperwhite 5 (11th Gen) - Hàng nhập khẩu',
+            'regular_price' => 3850000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/d0c0867b3048836b567c7152bbf2207f.jpg.webp',
+            'description' => '<div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><div class="intro-text">
+            <p><em><strong>Amazon vừa chính thức ra mắt thế hệ tiếp theo của dòng máy đọc sách Kindle Paperwhite.</strong></em></p>
+            </div>
+            <p><strong>Kindle Paperwhite 5</strong>&nbsp;(hay&nbsp;<em><strong>Kindle Paperwhite 11th Gen</strong></em>) là phiên bản thay thế cho chiếc Kindle Paperwhite 4 đã ra mắt từ năm 2018. Thường thì sau mỗi 2-3 năm thì Amazon mới nâng cấp sản phẩm Kindle một lần và đợt nâng cấp này có thể nói là sự nâng cấp lớn nhất từ trước đến nay với dòng máy Kindle Paperwhite.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/13/53/56/da85b12e437ce2856543541172fe16c0.jpeg" alt="" width="750" height="763"></p>
+            <p><strong>Kindle Paperwhite 5</strong>&nbsp;có tất cả 3 phiên bản: bản&nbsp;<strong>Chuẩn (Paperwhite)</strong>, bản&nbsp;<strong>Đặc Biệt (Paperwhite Signature Edition)</strong>&nbsp;và phiên bản&nbsp;<strong>Trẻ em (Papewhite Kids)</strong>. Hiện tại máy chỉ có màu đen.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/86/8f/ce/d304c6ef4044ab9d913158cf823996d0.jpg" alt="" width="750" height="412"></p>
+            <p>Cụ thể thì&nbsp;<strong>Kindle Paperwhite bản chuẩn</strong>&nbsp;sẽ có giá là 140 USD, sở hữu màn hình 6.8 inch, lớn hơn so với màn 6 inch của thế hệ trước và viền màn hình cũng được làm mỏng hơn. Máy có bộ nhớ 8GB và được giới thiệu là có tốc độ chuyển trang nhanh hơn 20% so với trước. Amazon nói rằng máy có thời lượng pin lên tới 10 tuần cho một lần sạc. Kindle Paperwhite 5 sẽ là chiếc Kindle đầu tiên được trang bị kết nối USB Type-C, một điểm mà rất nhiều người mong đợi. Cũng giống như phiên bản trước, Kindle Paperwhite 5 chống nước theo chuẩn IPX8.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/42/e6/71/79c80f959a31431398ea56305822a400.jpg" alt="" width="750" height="279"></p>
+            <p>Cuối cùng, tính năng nổi bật nhất, Paperwhite 5 đã được trang bị hệ thống đèn nền kép với 2 tông màu Ấm/Lạnh, tương tự như trên mẫu máy cao cấp Kindle Oasis 3. Tính năng này giúp bạn có thể chỉnh đèn từ màu trắng sang vàng để dịu mắt hơn khi đọc vào ban đêm.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/78/74/ce/fce9bca4a88d9a4d310182de639aeab3.png" alt="" width="750" height="409"></p>
+            <p><strong>Kindle Paperwhite Signature Edition</strong> là phiên bản Đặc biệt, được bán với giá 189.99 USD. Máy có các tính năng và ngoại hình giống như bản chuẩn nhưng bộ nhớ được nâng lên 32GB thay vì 8GB. Ngoài ra phiên bản Signature là thiết bị đầu tiên hỗ trợ sạc không dây (chuẩn Qi) giúp bạn sạc máy dễ dàng hơn nếu đã sở hữu một cục sạc không dây trong nhà. Phiên bản Đặc biệt này cũng có cảm biến ánh sáng để có thể điều chỉnh độ sáng đèn nền một cách tự động.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/f2/e4/c0/737e999bb02090678db6b97fcab29de1.jpeg" alt="" width="750" height="421"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1188819741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 7,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/d0c0867b3048836b567c7152bbf2207f.jpg.webp',
+                'images/products/2023/11/75d04cd242f6d891fd867fa7a599c70d.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Dung lượng' => [
+                    'variant_name' => 'Dung lượng',
                     'variant_values' => [
+                        '8GB' => [
+                            'quantity' => 30,
+                            'selling_price' => 3380000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM3813'
+                        ],
+                        '16GB' => [
+                            'quantity' => 20,
+                            'selling_price' => 3850000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM386'
+                        ],
+                        '32GB' => [
+                            'quantity' => 20,
+                            'selling_price' => 4690000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM311'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Dây Sạc nhanh cho Iphone PD 20W Type C to IP Hoco X14 dây dù chống đứt chống rối siêu bền, truyền dữ liệu dài 1M/2M/3M - Hàng Chính Hãng',
+            'regular_price' => 97000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/18cdf2c14d584e5ceb1e9a8d95f87620.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p>&nbsp;</p>
+            <p>✪ Model:&nbsp; X14 PD 20W</p>
+            <p>✪ Chiều dài : 1m/2m/3m</p>
+            <p>✪ Màu sắc: đen</p>
+            <p>✪ Cổng sạc: Type C sang iphone</p>
+            <p>✪ Chất liệu: dây bọc dù chống đứt</p>
+            <p>✪ Sạc nhanh: PD 20W, Quick Charger 3.0</p>
+            <p>✪ Thiết kế đầu sạc chống gãy gập trong quá trình sử dụng, cầm chắc tay</p>
+            <p>✪ Hỗ trợ truyền dữ liệu data</p>
+            <p>&nbsp;</p>
+            <div class="syl-image-wrapper"><img src="https://salt.tikicdn.com/cache/w750/ts/product/0d/b3/68/480ace8bf131fe312430c0cf4d5c5ea1.jpeg" width="1024" height="1024" alt="4d28848ac98341d9b24bb899b8899bfe~tplv-o3syd03w52-origin-jpeg.jpeg"></div>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/fd/4b/3d/b689c48b4e7c74945ab3a1bfd858dca4.jpg" alt="" width="750" height="750"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '1182559741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 12,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/18cdf2c14d584e5ceb1e9a8d95f87620.jpg.webp',
+                'images/products/2023/11/409eb7d5ee677910cd0960256de9e83a.jpg.webp',
+                'images/products/2023/11/676f4882bfa726e28cec0e6cced0f83f.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Chiều dài' => [
+                    'variant_name' => 'Chiều dài',
+                    'variant_values' => [
+                        '1m' => [
+                            'quantity' => 50,
+                            'selling_price' => 97000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM3814'
+                        ],
+                        '2m' => [
+                            'quantity' => 50,
+                            'selling_price' => 99000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM384'
+                        ],
+                        '3m' => [
+                            'quantity' => 50,
+                            'selling_price' => 117000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM312'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Điện Thoại Nokia 215 4G - Hàng Chính Hãng',
+            'regular_price' => 889000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/7e5c8a16fe860e319c42b408030d03c7.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Thiết kế đơn giản, gọn nhẹ</h3>
+            <p><strong>Điện Thoại Nokia 215 4G</strong> sử dụng chất liệu nhựa cho kiểu dáng bền bỉ, các nút cảm ứng mềm lớn, cạnh dễ cầm và mặt lưng cong được thiết kế để vừa vặn hoàn toàn trong tay bạn, cho bạn có được sự thoải mái, tiện lợi nhất.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/6a/eb/ee/72add503152477157704ef7bdada9d0e.jpg" alt="" width="750" height="497"></p>
+            <p>Màn hình 2.4 inch và độ phân giải 240 x 320 pixels cho người dùng những trải nghiệm và tiện ích khá thông dụng trên một chiếc&nbsp;Nokia&nbsp;thông thường.</p>
+            <h3>Nhiều tính năng đa phương tiện, giải trí</h3>
+            <p>Nokia 215 4G cũng được tích hợp các trò chơi có sẵn trên máy như rắn săn mồi, Crossy Road giúp bạn có những phút giây thư giản đầu óc sau những giờ làm việc, học tập mệt mỏi.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/22/1f/6d/6cb3ed215d485187001f9edcc00ce622.jpg" alt="" width="750" height="497"></p>
+            <p>Nhu cầu âm nhạc của bạn cũng được hỗ trợ, chế độ FM không dây cho bạn sự tiện hơn mỗi khi không có tai nghe. Máy cũng hỗ trợ thẻ nhớ ngoài tối đa 32 GB cho bạn lưu lại những bản nhạc yêu thích.</p>
+            <h3>Khả năng kết nối mạng&nbsp;4G&nbsp;</h3>
+            <p>Tận hưởng cuộc gọi VoLTE cho chất lượng rõ nét, giảm tiếng ồn giúp cuộc gọi đàm thoại của bạn luôn được tốt nhất.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/0d/e7/2e/e037fa4a58340f3a2b5ff6bc84d580b3.jpg" alt="" width="750" height="497"></p>
+            <p>Điểm nổi bật của chiếc điện thoại này là được hỗ trợ 4G giúp máy có thể làm thêm được nhiều việc như lướt web đọc tin tức, kết nối mạng xã hội với 4G mọi nơi mọi lúc.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/ac/2f/66/7e13fe3fbcbf2a26132178a5aae7a767.jpg" alt="" width="750" height="497"></p>
+            <h3>Dung lượng pin lâu dài</h3>
+            <p>Với pin 1150 mAh, việc sử dụng được 2 - 3 ngày là điều mà Nokia 215 4G có thể làm được. Và máy có thể tháo lắp lên việc thay sim hay thay pin đều trở nên dễ dàng cho bạn.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5e/c9/48/193d68dddacd051ff1ba02d79670f03f.jpg" alt="" width="750" height="496"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '1187259741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 13,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/7e5c8a16fe860e319c42b408030d03c7.jpg.webp',
+                'images/products/2023/11/a7e91d9bb409df84370e01baf6b11084.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Màu' => [
+                    'variant_name' => 'Màu',
+                    'variant_values' => [
+                        'Cyan' => [
+                            'quantity' => 50,
+                            'selling_price' => 890000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM3814'
+                        ],
+                        'Đen' => [
+                            'quantity' => 50,
+                            'selling_price' => 890000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM384'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Apple iPhone 15 Pro Max',
+            'regular_price' => 33990000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/2c43f07b8fadacf77c41af02799f546e.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Nội dung quảng cáo</h3>
+            <p>Giờ đây với thiết kế titan nhẹ và bền chắc, cùng chip A17 Pro cho khả năng đa nhiệm khủng. Bắt trọn những khoảnh khắc đặc biệt khi đang di chuyển với hệ thống camera chuyên nghiệp linh hoạt hơn. Và một bước nhảy vọt về tốc độ truyền dữ liệu với USB-C cùng chuẩn USB 3.</p>
+            <p>&nbsp;</p>
+            <h3>Tính năng nổi bật</h3>
+            <ul>
+            <li>ĐƯỢC ĐÚC TỪ TITAN&nbsp;— iPhone 15 Pro Max sở hữu thiết kế titan chuẩn hàng không vũ trụ, nhẹ và bền chắc với mặt sau bằng kính nhám. Mặt trước Ceramic Shield bền chắc hơn mọi mặt kính điện thoại thông minh. Và có khả năng chống tia nước, chống nước và chống bụi.<sup>1</sup></li>
+            <li>MÀN HÌNH TIÊN TIẾN — Màn hình Super Retina XDR 6,7"<sup>2</sup> với ProMotion tăng tốc độ làm mới lên đến 120Hz khi bạn cần đến hiệu năng đồ họa vượt trội. Dynamic Island hiển thị linh động các cảnh báo và Hoạt Động Trực Tiếp. Đồng thời, với màn hình Luôn Bật, Màn Hình Khóa của bạn luôn hiển thị, nên bạn thậm chí không cần chạm vào màn hình để cập nhật thông tin.</li>
+            <li>CHIP A17 PRO THAY ĐỔI CUỘC CHƠI — GPU đẳng cấp Pro đem tới đồ họa mượt mà hơn cùng ánh sáng chân thực dành cho môi trường có độ chi tiết cao. CPU nhanh hơn xử lý những khối lượng công việc phức tạp và các ứng dụng kinh doanh một cách dễ dàng. A17 Pro có khả năng tiết kiệm năng lượng ấn tượng, mang đến thời lượng pin cả ngày tuyệt vời, giúp bạn thoải mái dùng cho công việc khi đang di chuyển.<sup>3</sup></li>
+            <li>HỆ THỐNG CAMERA PRO MẠNH MẼ — Sở hữu khung hình linh hoạt đáng kinh ngạc với 7 ống kính chuyên nghiệp. Chụp ảnh có độ phân giải siêu cao với nhiều màu sắc và chi tiết hơn bằng camera Chính 48MP. Và chụp ảnh cận cảnh sắc nét hơn từ khoảng cách xa hơn với camera Telephoto 5x trên iPhone 15 Pro Max.</li>
+            <li>NÚT TÁC VỤ CÓ THỂ TÙY CHỈNH — Nút Tác Vụ là cách nhanh chóng đến tính năng yêu thích của bạn. Chỉ cần đặt thành một tác vụ bạn muốn, chẳng hạn chế độ Im Lặng, Camera, Ghi Âm hoặc Phím Tắt và nhiều tác vụ khác. Sau đó nhấn và giữ để khởi chạy tác vụ đó.</li>
+            <li>KẾT NỐI PRO — Cổng kết nối USB-C mới cho phép bạn sạc máy Mac hoặc iPad bằng cùng cáp sạc với iPhone 15 Pro Max. Với USB 3, bạn sẽ thấy bước nhảy vọt về tốc độ truyền dữ liệu.<sup>4</sup> Và bạn có thể tải xuống tập tin nhanh hơn đến 2x bằng Wi-Fi 6E.<sup>5</sup></li>
+            <li>CÁC TÍNH NĂNG AN TOÀN QUAN TRỌNG — Với tính năng Phát Hiện Va Chạm, iPhone có thể phát hiện va chạm ô tô nghiêm trọng và gọi trợ giúp khi cần kíp.<sup>6</sup></li>
+            <li>ĐƯỢC THIẾT KẾ ĐỂ TẠO NÊN KHÁC BIỆT — iPhone trang bị các biện pháp bảo vệ quyền riêng tư, cho bạn quyền kiểm soát dữ liệu của mình. iPhone được làm từ nhiều vật liệu tái chế hơn để giảm thiểu tác động tới môi trường. Và được tích hợp những tính năng giúp iPhone dễ sử dụng hơn cho tất cả mọi người.</li>
+            <li>ĐI KÈM VỚI BẢO HÀNH APPLECARE — Mỗi iPhone đều được bảo hành giới hạn trong một năm và hỗ trợ kỹ thuật miễn phí trong tối đa 90 ngày. Mua AppleCare+ để kéo dài thời hạn bảo hành.
+            <ul>
+            <li>&nbsp;</li>
+            </ul>
+            </li>
+            </ul>
+            <h3>Pháp lý</h3>
+            <p><sup>1</sup>iPhone 15, iPhone 15 Plus, iPhone 15 Pro và iPhone 15 Pro Max có khả năng chống tia nước, chống nước và chống bụi. Sản phẩm đã qua kiểm nghiệm trong điều kiện phòng thí nghiệm có kiểm soát đạt mức IP68 theo tiêu chuẩn IEC 60529 (chống nước ở độ sâu tối đa 6 mét trong vòng tối đa 30 phút). Khả năng chống tia nước, chống nước và chống bụi không phải là các điều kiện vĩnh viễn. Khả năng này có thể giảm do hao mòn thông thường. Không sạc pin khi iPhone đang bị ướt. Vui lòng tham khảo hướng dẫn sử dụng để biết cách lau sạch và làm khô máy. Không bảo hành sản phẩm bị hỏng do thấm chất lỏng.&nbsp;</p>
+            <p><sup>2</sup>Màn hình có các góc bo tròn. Khi tính theo hình chữ nhật chuẩn, kích thước màn hình theo đường chéo là 6,12 inch (iPhone&nbsp;15&nbsp;Pro, iPhone&nbsp;15) hoặc 6,69 inch (iPhone&nbsp;15&nbsp;Pro&nbsp;Max, iPhone&nbsp;15&nbsp;Plus). Diện tích hiển thị thực tế nhỏ hơn.</p>
+            <p><sup>3</sup>Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình; truy cập  để biết thêm thông tin.</p>
+            <p><sup>4</sup>Yêu cầu cáp USB 3 với tốc độ 10Gb/s để đạt tốc độ truyền nhanh hơn đến 20x trên các phiên bản iPhone 15 Pro.</p>
+            <p><sup>5</sup>Wi-Fi 6E khả dụng tại các quốc gia và khu vực có hỗ trợ.</p>
+            <p><sup>6</sup>iPhone 15 và iPhone 15 Pro có thể phát hiện va chạm ô tô nghiêm trọng và gọi trợ giúp. Yêu cầu kết nối mạng di động hoặc Cuộc Gọi Wi-Fi.</p>
+            <p>&nbsp;</p>
+            <h3>Thông số kỹ thuật</h3>
+            <p>Truy cập  để xem cấu hình đầy đủ.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '1187339741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/2c43f07b8fadacf77c41af02799f546e.jpg.webp',
+                'images/products/2023/11/a028ac965e9ab94cec5f1e855d7a7da6.jpg.webp',
+                'images/products/2023/11/cd0594d7530cefb5066ee280bf258fcf.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Màu sắc' => [
+                    'variant_name' => 'Màu sắc',
+                    'variant_values' => [
+                        'Titan trắng' => [
+                            'quantity' => 50,
+                            'selling_price' => 33790000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM38134'
+                        ],
+                        'Titan tự nhiên' => [
+                            'quantity' => 50,
+                            'selling_price' => 33900000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM388'
+                        ],
+                        'Titan xanh' => [
+                            'quantity' => 50,
+                            'selling_price' => 33490000,
+                            'sale_price' => 33000000,
+                            'product_code' => 'OM383'
+                        ],
+                    ],
+                ],
+                'Dung lượng' => [
+                    'variant_name' => 'Dung lượng',
+                    'variant_values' => [
+                        '256GB' => [
+                            'quantity' => 150,
+                            'selling_price' => 33490000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM3854'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Máy tính bảng Masstel Tab 10.4 - Hàng chính hãng',
+            'regular_price' => 3990000,
+            'sale_price' => 0,
+            'stock_qty' => 200,
+            'thumbnail_url' => 'images/products/2023/11/2b89b14a506205c4fb0e2129536ced99.png.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Thiết kế hiện đại với kiểu dáng sang trọng</h3>
+            <p>Masstel Tab 10.4 sở hữu thiết kế phẳng, tối giản dù có mức giá rẻ nhưng được chế tác từ kim loại một cách cứng cáp, sang trọng và tinh tế với độ bền cao.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/f0/60/38/ffbd51232790222d027c3d246b33d1a6.jpg" alt="" width="750" height="419"></p>
+            <p>Mặt lưng với 2 tone màu đậm nhạt khác nhau, tạo điểm nhấn cũng như sự ấn tượng cho thiết bị đến với người dùng.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/0d/73/13/48611e88861a7e760aed8137578aaf62.jpg" alt="" width="750" height="477"></p>
+            <p>Dù là một chiếc máy tính bảng lớn nhưng tổng thể Masstel Tab 10.4 vẫn gọn nhẹ với trọng lượng chỉ 440 gram, thuận tiện cho việc cầm nắm, cho vào balo và mang đi sử dụng ở bất cứ đâu.</p>
+            <h3>Màn hình sắc nét, hiển thị ấn tượng</h3>
+            <p>Chiếc máy tính bảng này của Masstel được trang bị màn hình với kích thước lớn 10.4 inch độ phân giải 1200 x 2000 Pixels và sử dụng tấm nền IPS LCD có chất lượng hiển thị tuyệt đẹp, góc nhìn rộng và độ sáng cao mang tới trải nghiệm học tập, đọc sách, lướt web, xem phim hay chơi game đều rất ấn tượng.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/eb/20/fb/fc141637589234ef2cffd4db34539e58.jpg" alt="" width="750" height="419"></p>
+            <p>Phần viền màn hình với 4 cạnh được làm đều nhau giúp máy có cái nhìn cân đối hơn, dễ dàng thao tác, có điểm tựa và đồng thời mang tới trải nghiệm mãn nhãn hơn khi sử dụng.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/27/3d/9c/399b21c3d86c38150080184c414a8c6b.jpg" alt="" width="750" height="477"></p>
+            <p>Không chỉ sắc nét, màn hình còn hỗ trợ khả năng cảm ứng tới 10 điểm, giúp bạn vuốt chạm được phản hồi một cách nhanh chóng và chính xác, trải nghiệm mượt mà hơn bao giờ hết.</p>
+            <p>Để giải trí thêm hấp dẫn, Masstel còn trang bị cho thiết bị của mình hệ thống âm thanh sống động và tuyệt vời, đặc biệt là khi xem bộ phim yêu thích hay chơi những tựa game thú vị trên chiếc máy tính bảng đa năng này.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/e6/4a/b0/e84535bda4a2ee6424ed97c896e2cc39.jpg" alt="" width="750" height="419"></p>
+            <p>Trong khi đó camera trước độ phân giải 5 MP sẽ là một phương tiện để bạn chụp ảnh selfie, gọi video với chất lượng ổn, đặc biệt là hỗ trợ tốt trong học tập, làm việc online một cách hiệu quả.</p>
+            <h3>Thời lượng pin ấn tượng</h3>
+            <p>Pin trên Masstel Tab 10.4″ có dung lượng lên tới 6000 mAh, giúp người dùng có thể sử dụng máy liên tục nhiều giờ mà không phải sạc lại pin giữa chừng. Công nghệ pin Li-Po giúp diện tích pin nhỏ gọn hơn, trọng lượng nhẹ hơn, chịu được nhiệt độ cao, an toàn khi sử dụng và có thể sạc dễ dàng qua cổng kết nối Type-C.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/f5/ec/2a/a90200239f2bce0d712bb738c64a1f7d.jpg" alt="" width="750" height="419"></p>
+            <p>Máy được hỗ trợ và đi kèm với công suất sạc 10 W, mức sạc không quá cao nên bạn có thể sạc qua đêm. Tuy nhiên, với mức dung lượng 6000 mAh, bạn hoàn toàn yên tâm máy có thể đáp ứng tốt cả một ngày dài.</p>
+            <p><strong>BẢO HÀNH</strong></p>
+            <h4 class="c1"><span class="c9">Bảo hành 12 tháng – Đổi trả 1 đổi 1 trong 100 ngày</span></h4><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '111339741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 7,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/2b89b14a506205c4fb0e2129536ced99.png.webp',
+                'images/products/2023/11/0a67a712e1c83c858457617a616ad29f.jpg.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Apple iPad Air (5th Gen) Wi-Fi, 2022 ',
+            'regular_price' => 13650000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/ipad-hong_3.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Nội dung về tính năng</h3>
+            <p>iPad Air 5 M1 hoàn toàn mới. Linh hoạt hơn bao giờ hết. Màn hình Liquid Retina 10.9 inch tuyệt đẹp với dải màu rộng cho bạn trải nghiệm thị giác vô cùng sống động và chi tiết khi xem ảnh hay video cũng như khi chơi game trên thiết bị (1). Chip Apple M1 nổi bật với hiệu năng vận hành mạnh mẽ và các tính năng máy học cao cấp, hỗ trợ tối đa tác vụ biên tập video 4K, soạn bài thuyết trình đẹp mắt hay thiết kế mô hình 3D - mọi tác vụ đều thật dễ dàng. Thiết bị giờ đã hỗ trợ Magic Keyboard và Apple Pencil (thế hệ thứ 2) (2), Touch ID nhanh nhạy, dễ sử dụng, bảo mật cao, camera sau 12MP góc siêu rộng hỗ trợ Center Stage và camera FaceTime HD 12MP góc rộng, cổng kết nối USB-C hỗ trợ sạc và phụ kiện, thời lượng pin bền bỉ cả ngày (3), công nghệ Wi-Fi 6. Với iPad Air 5 trong tay, bạn đã có đủ sức mạnh để hiện thực hóa mọi ý tưởng của bản thân.</p>
+            <h3>Tính năng nổi bật</h3>
+            <ul>
+            <li>Màn hình Liquid Retina 10.9 inch tuyệt đẹp với True Tone và dải màu rộng P3 (1)</li>
+            <li>Chip Apple M1</li>
+            <li>Xác thực bảo mật với Touch ID</li>
+            <li>Camera trước: 12MP góc rộng, Camera sau: 12MP góc siêu rộng hỗ trợ Center Stage</li>
+            <li>Hiện có các màu xám, trắng, hồng, tím, xanh</li>
+            <li>Âm thanh stereo rộng</li>
+            <li>Thời lượng pin lên đến 10 giờ (3)</li>
+            <li>Wi-Fi 6 (802.11ax)</li>
+            <li>Cổng kết nối USB-C để sạc và kết nối phụ kiện</li>
+            <li>Hỗ trợ Magic Keyboard, Smart Keyboard Folio và Apple Pencil (thế hệ thứ 2) (2)</li>
+            <li>iPadOS 15 mang đến cho bạn các chức năng mới được thiết kế dành riêng cho iPad</li>
+            </ul>
+            <h3>Pháp lý</h3>
+            <p>Ứng dụng có sẵn trên App Store. Nội dung được cung cấp có thể thay đổi.</p>
+            <p>(1) Màn hình có các góc bo tròn. Khi tính theo hình chữ nhật, kích thước màn hình iPad Air (thế hệ thứ 4) là 10.86 inch theo đường chéo. Diện tích hiển thị thực tế nhỏ hơn.</p>
+            <p>(2) Phụ kiện được bán riêng. Khả năng tương thích tùy thuộc thế hệ sản phẩm.</p>
+            <p>(3) Thời lượng pin khác nhau tùy theo cách sử dụng và cấu hình. Truy cập để biết thêm thông tin.</p>
+            <p>(4) Cần có gói cước dữ liệu. Liên hệ với nhà mạng tại thị trường của bạn để biết thêm chi tiết. Tốc độ có thể thay đổi tùy địa điểm.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '1185639741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/ipad-hong_3.webp',
+                'images/products/2023/11/f785e585dc087015a8dcb4517c3ece3a.jpg.webp',
+                'images/products/2023/11/2e6caea6c2e30cfb65abb1b2cdc03480.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Màu sắc' => [
+                    'variant_name' => 'Màu sắc',
+                    'variant_values' => [
+                        'Hồng ' => [
+                            'quantity' => 50,
+                            'selling_price' => 13650000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM324'
+                        ],
+                        'Trắng' => [
+                            'quantity' => 50,
+                            'selling_price' => 13650000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM328'
+                        ],
+                    ],
+                ],
+                'Dung lượng' => [
+                    'variant_name' => 'Dung lượng',
+                    'variant_values' => [
+                        '64GB' => [
+                            'quantity' => 150,
+                            'selling_price' => 13650000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM3354'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Điện thoại Xiaomi Redmi Note 12 (8GB/128GB) - Hàng chính hãng',
+            'regular_price' => 4590000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/f3e8fa4ad4db9dc297d9b7c8664335f8.png.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3><strong>Vẻ ngoài thời trang cùng màu sắc mới mẻ</strong></h3>
+            <p>Redmi Note 12 được tạo hình bằng một vẻ ngoài quen thuộc với các cạnh cùng hai mặt vát phẳng tinh tế, những vị trí giao nhau giữa mặt lưng và bộ khung cũng sẽ được bo cong nhẹ để mang lại cảm giác cầm nắm thoải mái.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/6b/6a/41/23d167b9697526c597b6c239a236b958.jpg" alt="" width="750" height="419"></p>
+            <p>Ở lần ra mắt này, nhà Xiaomi mang đến cho người dùng bộ phiên bản gồm 3 màu sắc đó chính là: Xám, Xanh Lá và Xanh Dương, cả ba mẫu smartphone này đều được làm với tone màu dịu nhẹ và không bị quá rực, điều này giúp cho máy có được một cái nhìn tối giản và sang trọng hơn.</p>
+            <h3><strong>Hiệu năng đáp ứng tốt nhiều tác vụ</strong></h3>
+            <p>Redmi Note 12 sở hữu cho mình một con chip khá tốt trong tầm giá đến từ nhà Qualcomm, Snapdragon 685 sẽ là một trợ thủ đắc lực trong việc tối ưu hóa độ mượt mà trên các trò chơi hay đảm bảo mọi tác vụ cơ bản của bạn đều được vận hành một cách ổn định.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/23/a7/e1/c3e30748adc6746b45003c755cb14b76.jpg" alt="" width="750" height="419"></p>
+            <p>Về việc đảm bảo hiệu quả cho các tác vụ đa nhiệm thì phiên bản này vẫn mang lại một sự ổn định khá tốt trong tầm giá, bởi đây là mẫu điện thoại RAM 4 GB và còn được bổ sung thêm tính năng mở rộng thêm, nhờ vậy mà bạn có thể an tâm đa nhiệm cùng lúc nhiều ứng dụng như vừa xem phim, vừa trả lời tin nhắn hay video call với bạn bè.</p>
+            <h3><strong>Camera 50 MP nổi bật trong phân khúc</strong></h3>
+            <p>Có thể nói camera là một thế mạnh của chiếc điện thoại Xiaomi Redmi này khi máy được trang bị đầy đủ 3 camera, hỗ trợ chụp ảnh độ phân giải cao thông qua camera chính 50 MP, mở rộng góc chụp với camera góc siêu rộng 8 MP và cuối cùng là khả năng chụp ảnh cận nhờ cảm biến macro 2 MP.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/1c/7e/29/4f3918ed38a3d742b64220c38b4c4f77.jpg" alt="" width="750" height="419"></p>
+            <h3><strong>Màn hình AMOLED kích thước lớn</strong></h3>
+            <p>Redmi Note 12 sẽ được trang bị trên phần màn hình một tấm nền AMOLED với kích thước rất lớn là 6.72 inch, điều này đem tới một không gian rộng rãi để bạn xem được đầy đủ mọi nội dung và màu sắc rực rỡ trên mọi khung hình.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/bf/0d/16/e09975d694dcb5d3ec11365e2e115170.jpg" alt="" width="750" height="419"></p>
+            <p>Tuy máy chỉ là chiếc điện thoại nằm ở mức giá tầm trung nhưng lại được trang bị màn hình 120 Hz và độ sáng tối đa 1200 nits rất ấn tượng, nhờ đó máy mang đến khả năng phản hồi giữa màn hình và thao tác vuốt chạm của người dùng trở nên tốt hơn, tăng cường độ sáng cũng sẽ đem đến tiện ích cho những trường hợp sử dụng máy ở ngoài trời.</p>
+            <h3><strong>Tích hợp pin lớn cùng công nghệ sạc nhanh 33 W</strong></h3>
+            <p>Bên trong máy sẽ là viên pin có dung lượng 5000 mAh với khả năng duy trì việc sử dụng trong nhiều giờ liền mà không cần bận tâm đến vấn đề sạc, theo như hãng đề cập thì máy có thể đảm bảo cho bạn sử dụng với các tác vụ cơ bản trong 1.35 ngày.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5b/c6/8c/43def9b9c6ddd5d4c07346d8e81bd4ff.jpg" alt="" width="750" height="419"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>',
+            'sku' => '22239741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/f3e8fa4ad4db9dc297d9b7c8664335f8.png.webp',
+                'images/products/2023/11/cb7defa29b848116d60917e6ce789047.jpg.webp',
+                'images/products/2023/11/1e9b3a6d4f1283afa952870ad4a2291c.jpg.webp',
+                'images/products/2023/11/1b471df8ace0367799e31e2982e4776b.jpg.webp'
+            ]),
+            'variants' => json_encode([
+                'Màu sắc' => [
+                    'variant_name' => 'Màu sắc',
+                    'variant_values' => [
+                        'Vàng' => [
+                            'quantity' => 20,
+                            'selling_price' => 4590000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM214'
+                        ],
+                        'Xanh dương' => [
+                            'quantity' => 10,
+                            'selling_price' => 4490000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM215'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Điện thoại Samsung Galaxy Z Flip 4 (8GB/128GB) - Hàng chính hãng',
+            'regular_price' => 21430000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/eed46980c01c6332b513831e13dd14cf.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><h3>Nhỏ gọn trong lòng bàn tay của bạn</h3>
+            <p><strong>Samsung Galaxy Z Flip4</strong>&nbsp;sở hữu ngoại hình bắt trend với các cạnh được gia công phẳng một cách tinh tế. Ra mắt với 4 phiên bản màu sắc giúp người dùng có thêm nhiều sự lựa chọn dành cho bản thân, cùng với tone màu trẻ trung thời thượng giúp người dùng toát lên được vẻ ngoài sang trọng và đầy tính hiện đại.</p>
+            <p>Lần ra mắt này Samsung cho biết hãng đã nâng cấp phần bản lề để tăng tổng số lần gập trên Flip4, giúp thiết bị có thể đồng hành với người dùng trong khoảng thời gian lâu dài hơn mà ít khi khi gặp phải các tình trạng hỏng hóc.</p>
+            <p>Tổng thể chiếc Galaxy Z Flip4 được bao bọc bởi bộ khung làm từ vật liệu nhôm Armor Aluminum cao cấp, không chỉ gia tăng độ bền cho máy mà nó còn giúp cho điện thoại toát lên được vẻ ngoài sang trọng và đẳng cấp nhờ khả năng phản quang óng ánh.</p>
+            <p>Galaxy Z Flip4 sẽ có một thân hình thon gọn nhờ ứng dụng tỉ lệ màn hình 22:9, điều này giúp cho quá trình cầm nắm của bạn trở nên dễ chịu hơn bởi bề rộng của máy được tối ưu đi. Với kích thước chiều dài sau khi gập là 84.9 mm, vì thế thiết bị có thể dễ dàng nằm gọn trong lòng bàn tay để bạn có thể cầm nắm một cách chắc chắn.</p>
+            <p>Samsung cho biết đây là điện thoại gập có hỗ trợ chuẩn kháng nước IPX8, giờ đây mọi người có thể an tâm hơn trong những tình huống khi vô tình tiếp xúc với nước.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/d4/db/fc/2c9590285c2d1817ca2b5d00062cd952.png"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/36/cc/f4/4fd8f9978e32c73634c770dd53d9f4d9.png"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/cd/c4/61/42758d548bae231ddacd18eebb407347.png"></p>
+            <h3>Hiển thị hình ảnh sinh động</h3>
+            <p>Trang bị trên máy là tấm nền Dynamic AMOLED 2X cao cấp đến từ nhà Samsung với khả năng tái hiện hình ảnh có màu sắc sống động và rực rỡ. Màu đen trên màn hình cũng được hiển thị sâu giúp cho người dùng có thể trải nghiệm nội dung trên các tựa game hay bộ phim hành động trở nên chân thực hơn.</p>
+            <p>Mật độ điểm ảnh được gia tăng lên 425 PPI vì máy được trang bị màn hình kích thước 6.7 inch cùng độ phân giải Full HD+ (1080 x 2640 Pixels). Các tác vụ chỉnh sửa ảnh sẽ được xử lý dễ dàng hơn trên chiếc Galaxy Z Flip4 bởi độ sắc nét mà nó mang lại là rất cao.</p>
+            <p>Phần mặt lưng của máy sẽ được trang bị một màn hình phụ có kích thước 1.9 inch giúp người dùng có thể đọc nhanh những thông báo, thậm chí ở phiên bản này máy còn hỗ trợ nhận cuộc gọi trực tiếp từ màn hình phụ mà không không cần phải mở điện thoại.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/82/85/5d/c5c777e1b4b7ccb53a89e6cba6e6469d.png"></p>
+            <p>Với tần số quét lên đến 120 Hz ở màn hình chính giúp cho mọi thao tác hàng ngày của bạn được diễn ra mượt hơn hẳn, ngoài ra máy còn có khả năng tự động điều chỉnh xuống còn 1 Hz cho những tác vụ không cần cuộn lướt quá nhiều để tiết kiệm điện năng tiêu thụ.</p>
+            <p>Độ sáng của Galaxy Z Flip4 đạt mức tối đa là 1200 nits, giúp thiết bị có khả năng hiển thị hình ảnh được rõ ràng hơn mỗi khi người dùng sử dụng điện thoại ở ngoài trời có độ sáng cao. Điều này thực sự hữu ích trong những tình huống như chụp ảnh ngoài trời hay xem bản đồ trong lúc di chuyển ngoài đường.</p>
+            <h3>Chụp ảnh quay phim sắc nét</h3>
+            <p>Galaxy Z Flip4 sở hữu ở phần mặt lưng là bộ đôi camera có cùng độ phân giải 12 MP với khả năng thu lại hình ảnh sắc nét, cũng như giúp bạn có thể quay được những thước phim đạt chuẩn 4K.</p>
+            <p>Đi kèm với đó sẽ là tính năng chụp ảnh góc siêu rộng lên đến 123 độ, giờ đây người dùng có thể ghi lại những tấm ảnh có độ bao quát tốt hơn để mang trọn khung cảnh hùng vĩ vào trong bức hình. Chống rung quang học OIS cũng sẽ được bổ sung trên máy, đây chắc hẳn là tính năng rất hữu ích dành cho các bạn vlogger bởi sự giảm thiểu độ rung lắc trên khung hình mà bạn quay được.</p>
+            <p>Phía mặt trước của máy sẽ là camera 10 MP được thiết kế theo dạng nốt ruồi quen thuộc. Cùng với đó sẽ là nhiều tính năng hữu ích giúp xử lý da của bạn trở nên mịn màng hơn, người dùng có thể tự tin chia sẻ những bức ảnh tự chụp lên các trang mạng xã hội để khoe với bạn bè.</p>
+            <p>Ngoài ra bạn cũng có thể selfie bằng cụm camera sau một cách dễ dàng nhờ sự hỗ trợ đến từ màn hình phụ, bởi màn hình này sẽ cho bạn biết chất lượng ảnh mà máy sẽ thu lại ra sao để từ đó tìm cách điều chỉnh khung hình hay gương mặt sao cho bức ảnh trở nên ưng ý nhất.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/e4/d6/91/acef6e7b083aa96b5da0ef2a422d6e6e.png" width="750" height="358"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/e9/8d/e4/1e1449c35f5f13738c09a4fb21c6c896.png"></p>
+            <h3>Cân mọi tác vụ với chipset hàng đầu đến từ Qualcomm</h3>
+            <p>Bộ vi xử lý Snapdragon 8+ Gen 1 là cái tên được Samsung chọn để trang bị trên chiếc điện thoại flagship này, với hiệu năng mạnh mẽ nên mọi tác vụ cơ bản hàng ngày khó mà làm chiếc Galaxy Z Flip4 xảy ra tình trạng giật lag. Hơn thế nữa, ở mức cấu hình khủng như vậy thì máy hoàn toàn đáp ứng cho bạn khả năng chơi mượt nhiều tựa game đồ họa cao đang hiện hành.</p>
+            <p>Điện thoại RAM 8 GB nên người dùng có thể an tâm hơn trong việc mở đồng thời nhiều ứng dụng mà không cần tắt đa nhiệm, bởi đây được xem là mức dung lượng khá cao cho việc lưu trữ các thông tin tạm thời mà không cần quá lo lắng đến việc máy sẽ giật lag hay tải lại ứng dụng.</p>
+            <h3>Lấp đầy viên pin chỉ trong tích tắc</h3>
+            <p>Bên trong một thiết bị có thân hình thanh mảnh sẽ là viên pin có dung lượng 3700 mAh, mặc dù con số này được xem là không quá lớn nhưng đây vẫn đủ để bạn có thể sử dụng cho việc liên lạc hay nghe nhạc cả ngày.</p>
+            <p>Với công nghệ sạc nhanh 25 W nên việc lấp đầy viên pin trên Galaxy Z Flip4 sẽ chỉ còn trong tích tắc, ngoài ra người dùng còn thể sử dụng tính năng sạc không dây hết sức thuận tiện khi không phải loay hoay trong việc tìm jack cắm.</p>
+            <p><img alt="" src="https://salt.tikicdn.com/ts/tmp/ba/37/c0/312b946758fe2ab07db32a02d2f107df.png" width="750" height="556"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/25/e0/3c/962d1aab922a77469acbb045aa0cffd6.png"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/d0/32/66/a1e9a0563995fdbb293b45e523e66c12.png"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/70/d5/1c/36df23cf753edfacbb0e1742d63ba1e1.png" alt="" width="750" height="850"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/c2/9a/a4/4cb268b06971674035b5040c357791cc.png"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/de/7d/73/fce304b661395d88e8e441c5d995c9b4.png"></p>
+            <p>&nbsp;</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '14239741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/eed46980c01c6332b513831e13dd14cf.jpg.webp',
+                'images/products/2023/11/4ebf2c21a9dfd9f60b62d5fab018e806.jpg.webp',
+                'images/products/2023/11/c6a3f0ef50016d0553e2e5c07d2ebec8.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Màu sắc' => [
+                    'variant_name' => 'Màu sắc',
+                    'variant_values' => [
+                        'Xanh dương' => [
+                            'quantity' => 10,
+                            'selling_price' => 21430000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM115'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Máy đọc sách Kindle Scribe - Hàng nhập khẩu',
+            'regular_price' => 12590000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/7b51868c1d7a251b6e66cde178f04d85.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><strong>Đọc và viết tự nhiên như khi làm trên giấy</strong></p>
+            <p>Với màn hình E-ink 10,2 inch, độ phân giải 300 ppi chống lóa. Kindle Scribe hoàn hảo để đọc và viết, ngay cả dưới ánh sáng mặt trời. Màn hình lớn cung cấp cho bạn đủ không gian để ghi chú và viết nhật ký. Đồng thời giúp bạn dễ dàng điều chỉnh kích thước phông chữ và độ rộng lề nâng cao sự thoải mái khi đọc. Khả năng hiện thị cao khiến việc viết trên Kindle Scribe giống như viết trên giấy. Từ việc cầm bút dễ dàng, đến âm thanh bạn nghe thấy khi viết, bề mặt của Kindle Scribe được chế tạo để mang lại trải nghiệm.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/23/23/18/241ed095978c1bb2b3654bb6d276a3ee.jpg" alt="" width="750" height="416"></p>
+            <p><strong>Sức mạnh của cây bút</strong></p>
+            <p>Kindle Scribe bao gồm Bút cơ bản hoặc Bút cao cấp.&nbsp;Cả hai đều cung cấp cho bạn nhiều cách để sử dụng Kindle của mình hơn bao giờ hết.&nbsp;Đối với bút cơ bản, bạn có thể sử dụng mà không cần phải sạc. Ngoài ra, bút cao cấp có một công cụ tẩy chuyên dụng và một nút phím tắt giúp chuyển đổi giữa các loại bút như bút viết, bút đánh dấu và hơn thế nữa.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/b0/3b/3f/75221d7198176d9bafcb1bd50e2edd4a.jpg" alt="" width="750" height="304"></p>
+            <p><strong>Thêm ghi chú viết tay vào sách của bạn</strong></p>
+            <p>Bạn có thể tạo ghi chú viết tay trong hàng triệu quyển sách điện tử từ Kindle Store.&nbsp;Chỉ cần chạm vào nơi bạn muốn chèn ghi chú trên trang và đặt bút viết.&nbsp;Các ghi chú được tự động sắp xếp theo từng cuốn sách, vì vậy bạn có thể dễ dàng tìm kiếm, xem lại và xuất tất cả các ghi chú và nội dung đánh dấu trong sách của mình.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/a1/6e/4d/ed15989c2354a9fc228a50e0c7531477.png" alt="" width="750" height="632"></p>
+            <p><strong>Đơn hóa mọi ghi chú của bạn</strong></p>
+            <p>Kindle Scribe được thiết kế giống như một sổ ghi chép và nhật ký với các mẫu giấy đi kèm như giấy lót, giấy trắng, danh sách việc cần làm, &nbsp;Các file ghi chú được sắp xếp và dễ dàng tìm kiếm theo tên.&nbsp;Bạn có thể đồng bộ hóa những ghi chú đó sang ứng dụng Kindle trên điện thoại (sắp ra mắt vào đầu năm 2023).</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/51/d1/fc/44c0cb597577980a540014596862164d.jpg" alt="" width="750" height="750"></p>
+            <p><strong>Ghi chú trong tài liệu của bạn</strong></p>
+            <p>Dễ dàng nhập và kiểm soát các ghi chú trong tệp PDF hoặc trong Microsoft Word và các định dạng tương thích khác.&nbsp;Chia sẻ chúng tới Kindle Scribe của bạn thông qua trình duyệt web trên máy tính để bàn hoặc qua ứng dụng Kindle bằng nút “Chia sẻ” trên thiết bị iOS hoặc Android của bạn.&nbsp;Đến đầu năm 2023, bạn cũng sẽ có thể gửi tài liệu tới Kindle Scribe trực tiếp thông qua Microsoft Word.</p>
+            <p><strong>Đọc và viết dưới mọi ánh sáng</strong></p>
+            <p>Ánh sáng ấm có thể điều chỉnh và ánh sáng phía trước tự động điều chỉnh mang lại trải nghiệm đọc và viết thoải mái, được cá nhân hóa, dù ngày hay đêm.&nbsp;Và với tính năng sạc USB-C và thời lượng pin kéo dài hàng tháng để đọc và hàng tuần để viết, bạn có thể đắm mình trong nội dung của mình mà không phải lo lắng về việc tìm ổ cắm điện.</p>
+            <p><strong>Thư viện sách đẳng cấp thế giới</strong></p>
+            <p>Kindle Scribe là chiếc máy đọc sách hoàn hảo danh cho những ấn phẩm chứa nhiều hình ảnh, hình minh họa và đồ thị. Cửa hàng sách Kindle cung cấp hơn 13 triệu đầu sách, đa dạng như truyện tranh, sách nói, tạp chí, tiểu thuyết và sách phi hư cấu….được bổ sung và cập nhật liên tục.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/e3/33/a1/3651c3cf1e51cee0a2a240ce7f6d5330.jpg" alt="" width="750" height="228"></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '128839741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/7b51868c1d7a251b6e66cde178f04d85.jpg.webp',
+                'images/products/2023/11/1c74d941c7531df95029fb2f4893aaf2.jpg.webp',
+                'images/products/2023/11/f8914ee43aa0a0538ce11051eb14f46b.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Dung lượng' => [
+                    'variant_name' => 'Dung lượng',
+                    'variant_values' => [
+                        '32GB - Premium Pen' => [
+                            'quantity' => 10,
+                            'selling_price' => 12590000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM129'
+                        ],
+                    ],
+                ],
+            ]),
+        ],
+        [
+            'name' => 'Máy tính bảng Nexta Smart Study 1 - Hàng Chính Hãng',
+            'regular_price' => 5490000,
+            'sale_price' => 0,
+            'stock_qty' => 250,
+            'thumbnail_url' => 'images/products/2023/11/2630898943974373c3a7f2b18ce55533.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><p><span style="font-weight: 400;">Sản phẩm </span><strong><em>Smart Study 1</em></strong><span style="font-weight: 400;"> hướng tới sự toàn diện – “All in one”, với sự tích hợp toàn vẹn giữa 4 cấu phần chính:&nbsp; thiết bị phần cứng, chương trình học, hệ thống quản lý giáo dục và dịch vụ hỗ trợ học tập tận tâm.</span></p>
+            <p><strong>Cấu phần thứ nhất: Thiết bị phần cứng là một máy tính bảng hiện đại với đầy đủ tính năng:</strong><span style="font-weight: 400;"> Màn hình lớn 10.4 inch full HD, độ phân giải 1200 x 2000 pixcel đem lại chất lượng hiển thị đẹp, góc nhìn rộng và độ sáng cao. ram 4Gb, bộ nhớ trong 64 Gb giúp trẻ học tập dễ dàng. Pin 6000mah cho phép trẻ học tập trong nhiều giờ không phải sạc pin và dừng lại giữa chừng. Đặc biệt thiết bị Smart Study 1.0 được trang bị đi kèm vỏ bọc bảo vệ với thiết kế độc đáo, thời trang, chân đỡ xoay 360 độ, 4 lớp bảo vệ cấu thành từ bọt biển và silicon cách điện giúp học sinh thuận tiện và an toàn khi sử dụng.&nbsp;&nbsp;</span></p>
+            <p><strong>Cấu phần thứ 2 là nội dung học tập</strong><span style="font-weight: 400;"> với 3 môn toán tiếng việt và tiếng anh từ lớp 1 đến lớp 5 được tích hợp mặc định trên máy. Chương trình học được xây dựng theo khung chương trình tiểu học của Bộ giáo dục với hơn 1000 video giảng dạy và hơn 20.000 bài tập tương tác từ cấp độ cơ bản đến nâng cao phù hợp với năng lực học sinh tiểu học. Chương trình được xây dựng bởi hội đồng cố vấn của Nexta là các chuyên gia giáo dục, những thầy giáo cô giáo có kinh nghiệm, trình độ cũng như tâm huyết với sự nghiệp giáo dục. Tài nguyên học tập sẽ được tự động cập nhật theo sự thay đổi của chương trình giáo dục, sách giáo khoa đổi mới theo từng năm học và không ngừng được bổ sung.</span></p>
+            <p><strong>Cấu phần thứ 3 là Hệ thống quản lý giáo dục</strong><span style="font-weight: 400;">. Đi kèm với thiết bị học tập Smart Study 1 là ứng dụng quản lý dành cho phụ huynh. Sau khi cài đặt ứng dụng quản lý Nexta Parent trên điện thoại, phụ huynh có thể</span><span style="font-weight: 400;"> kết nối, tương tác và hỗ trợ con từ xa</span><span style="font-weight: 400;">. Từ đó, phụ huynh có thể </span><span style="font-weight: 400;">lập thời gian biểu học tập cho con, theo dõi tình hình học tập của con hàng ngày, quản lý các ứng dụng</span><span style="font-weight: 400;"> con sử dụng trên máy. Hệ thống này đảm bảo phụ huynh </span><span style="font-weight: 400;">hoàn toàn yên tâm và tin tưởng</span><span style="font-weight: 400;"> con sẽ không bị ảnh hưởng bởi những ứng dụng và trang web không phù hợp. Ngoài ra, phụ huynh&nbsp; có thể giới hạn được thời gian sử dụng phù hợp một ngày để an toàn cho mắt và sức khỏe của con.&nbsp;</span></p>
+            <p><strong>Cấu phần thứ tư là Dịch vụ giáo dục từ tâm</strong><span style="font-weight: 400;">: Trong 7 ngày đầu tiên sử dụng sản phẩm, chuyên gia Nexta sẽ h</span><strong>ướng dẫn quý phụ huynh hiểu và sử dụng hiệu quả tối đa các tính năng của sản phẩm</strong><span style="font-weight: 400;">. Hơn nữa, đội ngũ thầy cô giáo và chuyên gia giáo dục của Nexta sẽ hỗ trợ giải đáp các vướng mắc của phụ huynh và các con trong quá trình học tập trên thiết bị.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">&nbsp;- Với phương châm </span><strong>Giáo dục từ tâm</strong><span style="font-weight: 400;">, Nexta kỳ vọng mang đến giải pháp học tập THÔNG MINH - AN TOÀN VÀ HIỆU QUẢ cho các con khi ứng dụng công nghệ vào học tập.&nbsp;</span></p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '128839741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/2630898943974373c3a7f2b18ce55533.jpg.webp',
+                'images/products/2023/11/b4765041416922386b213483f5b6a1d1.jpg.webp',
+                'images/products/2023/11/204e65c3598a4be36e0b6f797fd9ebfc.png.webp',
+            ]),
+            'variants' => json_encode([]),
+        ],
+        [
+            'name' => 'Điện thoại bàn Panasonic  KX-TS500MX-hàng chính hãng',
+            'regular_price' => 300000,
+            'sale_price' => 0,
+            'thumbnail_url' => 'images/products/2023/11/b709b99a31a6355f82549c5320caa3c1.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb"><ul>
+            <li>Treo tường hoặc để bàn</li>
+            <li>Điều chỉnh âm lượng, chuông</li>
+            <li>Quay số nhanh</li>
+            <li>Đèn tín hiệu</li>
+            <li>Sản xuất tại Malaysia</li>
+            <li>Bảo hành 1 năm chính hãng Panasonic&nbsp;</li>
+            <li>Giá bán đã thuế 10% VAT</li>
+            </ul><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div></div></div>
+            ',
+            'sku' => '129939741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 8,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/b709b99a31a6355f82549c5320caa3c1.jpg.webp',
+                'images/products/2023/11/a954e56e090581f692244109845b93ad.jpg.webp',
+                'images/products/2023/11/a27e99afa7d4bb5a1df206f6523fe4c8.jpg.webp',
+            ]),
+            'variants' => json_encode([
+                'Màu sắc' => [
+                    'variant_name' => 'Màu sắc',
+                    'variant_values' => [
+                        'Trắng' => [
+                            'quantity' => 20,
+                            'selling_price' => 299000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM219'
+                        ],
                         'Xanh đen' => [
-                            'quantity'      => 100,
-                            'selling_price' => 79000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM406'
+                            'quantity' => 20,
+                            'selling_price' => 300000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM2192'
                         ],
-                        'Xanh lá'  => [
-                            'quantity'      => 100,
-                            'selling_price' => 79000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM407'
-                        ]
-                    ]
-                ]
-            ])
+                        'Xám' => [
+                            'quantity' => 20,
+                            'selling_price' => 300000,
+                            'sale_price' => 0,
+                            'product_code' => 'OM2191'
+                        ],
+                    ],
+                ],
+            ]),
         ],
         [
-            'name'          => 'Dép đi trong nhà - Dép bông hình lợn',
-            'regular_price' => 47000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/072bdb544f30eda438134c167e553e7c.jpg.webp',
-            'description'   => 'DÉP ĐI TRONG NHÀ
-                ( 1 ĐÔI )
-
-                Dép đi trong nhà là đồ không thế thiếu trong mỗi gia đinh nhất là vào mùa đông
-
-                Bạn là người làm văn phòng muốn có 1 đôi dép siêu cute và ấm áp đôi chân
-
-                Dép bông hình lợn: dùng đi trong nhà hoặc đi nơi văn phòng làm việc\
-
-                Với chất liệu vải nỉ bông ấm áp, đế cao su chống trượt tuyệt đối
-
-                Với hai màu sắc Nâu và Hồng các cặp đôi cũng có thể sắm cho mình những bộ đôi riêng
-
-                Siêu bền và đẹp
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333339',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/072bdb544f30eda438134c167e553e7c.jpg.webp',
-                'images/products/2023/11/99ffd4fa0cf6684a856ccae89ee1cde0.jpg.webp',
-                'images/products/2023/11/c41d79bab613d6862df793e33d637e75.jpg.webp'
+            'name' => 'Điện thoại oukitel WP22 (Loa to,Chống nước ,chống sốc IP68/IP69K,Ram 13Gb(8GB+5Gb mở rộng),Rom 256Gb,Màn hình 6.58 FHD,tầm nhìn ban đêm,Pin 10.000mAh)- Hàng chính hãng',
+            'regular_price' => 5990000,
+            'sale_price' => 0,
+            'stock_qty' => 250,
+            'thumbnail_url' => 'images/products/2023/11/fb0fd9999e91bab2a00c53f0ac4c9049.jpg.webp',
+            'description' => '
+            <div class="style__Wrapper-sc-13sel60-0 dGqjau content"><div class="ToggleContent__Wrapper-sc-fbuwol-1 xbBes"><div class="ToggleContent__View-sc-fbuwol-0 imwRtb" style=""><ul><li>Dài 174mm Rộng 83.5mm Dày 19mm,Nặng 398g</li>
+            <li>CPU: MTK Helio P90</li>
+            <li>Hệ điều hành: Android 13</li>
+            <li>RAM: 13Gb(8GB+5Gb mở rộng),Rom: 256GB</li>
+            <li>SIM: Thẻ nano kép hoặc thẻ nano + thẻ T</li>
+            <li>Màn hình FHD+ 6.58“</li>
+            <li>Độ phân giải màn hình: 2408*1080</li>
+            <li>Tỷ lệ khung hình: 20,5:9</li>
+            <li>Tốc độ làm mới: 90Hz</li>
+            <li>Camera trước: 16MP</li>
+            <li>Camera sau: Camera chính 48MP + Camera nhìn đêm 20MP + Camera macro 2MP</li>
+            <li>Pin: 10000mAh , Sạc ngược</li>
+            <li>Mở khóa bằng vân tay</li>
+            <li>Hỗ trợ Mở khóa bằng khuôn mặt</li>
+            <li>Bluetooth: BT5.0</li>
+            <li>Các tính năng khác: NFC, google play, Face ID, SOS cũng như OTG</li>
+            <li>Điều hướng: GPS, Glonass, Beidou cũng như Galileo</li>
+            <li>Dải tần mạng của Điện thoại Tough WP22 (Phiên bản toàn cầu)</li>
+            <li>2G GSM: B2/B3/B5/B8</li>
+            <li>WCDMA 3G: B1/B2/B4/B5/B8</li>
+            <li>4G TDD: B38/B40/B41</li>
+            <li>4G FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B17/B18/B19/B20/B25/B26/B28(A+B)/B66</li>
+            <li>Đa ngôn ngữ : có tiếng Việt</li>
+            </ul><p>&nbsp;OUKITEL&nbsp;WP22</p>
+            <ol style="list-style-type: lower-alpha;"><li>Điện&nbsp;thoại&nbsp;thông&nbsp;minh&nbsp;chắc&nbsp;chắn&nbsp;với&nbsp;âm&nbsp;thanh&nbsp;đột&nbsp;phá</li>
+            </ol><p><img src="https://salt.tikicdn.com/ts/tmp/1f/d5/d4/dd8361e42edf59d25e9af8f0d9d674ec.jpg" alt="" width="750" height="547"></p>
+            <p>&nbsp;</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/8c/b5/23/0e6595d8899f9f91564f36cacc9d6d1c.png" alt="" width="750" height="422"></p>
+            <ol><li>Điện&nbsp;thoại&nbsp;thông&nbsp;minh&nbsp;chắc&nbsp;chắn&nbsp;WP22&nbsp;có&nbsp;loa&nbsp;điện&nbsp;thoại&nbsp;thông&nbsp;minh&nbsp;lớn&nbsp;nhất&nbsp;và&nbsp;to&nbsp;nhất&nbsp;</li>
+            </ol><p><img src="https://salt.tikicdn.com/ts/tmp/5d/71/c5/500a83426de262a9cd11f6c0491ba6f3.png" alt="" width="750" height="507"></p>
+            <p>Âm&nbsp;thanh&nbsp;vô&nbsp;song</p>
+            <p>Hiệu&nbsp;suất&nbsp;Nổi&nbsp;bật&nbsp;với&nbsp;loa&nbsp;toàn&nbsp;dải&nbsp;36mm&nbsp;và&</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/5f/be/fb/df225858cf5fa13f3da5158056d31aaa.png" alt="" width="750" height="397"></p>
+            <ol style="list-style-type: lower-roman;"><li>Âm&nbsp;thanh&nbsp;lớn&nbsp;và&nbsp;hiệu&nbsp;suất&nbsp;âm&nbsp;thanh&nbsp;đáng&nbsp;kinh&nbsp;ngạc&nbsp;dễ&nbsp;dàng&nbsp;tạo&nbsp;ra&nbsp;bầu&nbsp;không&nbsp;khí&nbsp;sôi&nbsp;động&nbsp;cho&nbsp;bất&nbsp;kỳ&nbsp;dịp&nbsp;tụ&nbsp;tập&</li>
+            </ol><p><img src="https://salt.tikicdn.com/ts/tmp/29/1a/77/c23ec916283dffdea3da92fb4cfbb473.png" alt="" width="750" height="580"></p>
+            <p>Không&nbsp;bao&nbsp;giờ&nbsp;bỏ&nbsp;lỡ&nbsp;bất&nbsp;kỳ&nbsp;,&nbsp;Cuộc&nbsp;gọi&nbsp;hoặc&nbsp;Thông&nbsp;báo</p>
+            <p>WP22&nbsp;không&nbsp;chỉ&nbsp;có&nbsp;chất&nbsp;lượng&nbsp;loa&nbsp;tuyệt&nbsp;vời&nbsp;để&nbsp;giọng&nbsp;nói&nbsp;rõ&nbsp;hơn&nbsp;trong&nbsp;các&nbsp;cuộc&nbsp;gọi.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/12/d2/45/87001a99147825ec17467d1b1990e8cc.png" alt="" width="750" height="557"></p>
+            <p>Dành&nbsp;nhiều&nbsp;thời&nbsp;gian&nbsp;hơn&nbsp;để&nbsp;tận&nbsp;hưởng&nbsp;và&nbsp;ít&nbsp;thời&nbsp;gian&nbsp;sạc&nbsp;hơn.&nbsp;Sao&nbsp;lưu&nbsp;trải&nbsp;nghiệm&nbsp;ngoài&nbsp;trời&nbsp;của&nbsp;bạn&nbsp;với&nbsp;pin&nbsp;lớn&nbsp;10000mAh.&nbsp;Niềm&nbsp;vui&nbsp;không&nbsp;bao&nbsp;giờ&nbsp;kết&nbsp;thúc!</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/b7/63/45/d3978db3b421224b1f3d9c088a83f85a.png" alt="" width="750" height="607"></p>
+            <p>Được&nbsp;thiết&nbsp;kế&nbsp;đặc&nbsp;biệt&nbsp;để&nbsp;chịu&nbsp;đựng&nbsp;môi&nbsp;trường&lỏng&nbsp;đồng&nbsp;thời&nbsp;cho&nbsp;phép&nbsp;âm&nbsp;thanh&nbsp;đi&nbsp;qua.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/59/c1/99/015d38a98593330a324872356b5f5f4b.png" alt="" width="750" height="815"></p>
+            <p>Oukitel&nbsp;WP22&nbsp;có&nbsp;màn&nbsp;hình&nbsp;cảm&nbsp;ứng&nbsp;IPS&nbsp;6,58"&nbsp;FHDnbsp;thoải&nbsp;mái.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/01/a0/20/49d9fb3001e53e594f6809b47fbeeb70.png" alt="" width="750" height="526"></p>
+            <p>Điện&nbsp;thoại&nbsp;thông&nbsp;minh&nbsp;đi&nbsp;kèm&nbsp;với&nbsp;Android&nbsp;13,&nbsp;bộ&nbsp;xử&nbsp;lý&nbsp;MediaTek&nbsp;Helio&nbsp;P90,&nbsp;lõi&nbsp;tám,&nbsp;RAM&nbsp;8GB&dụng,&nbsp;tệp&nbsp;lớn,&nbsp;ảnh&nbsp;và&nbsp;video&nbsp;có&nbsp;độ&nbsp;phân&nbsp;giải&nbsp;cao.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/f5/b7/05/0e3131cfc6013060527f0ce8d409c4c6.png" alt="" width="750" height="543"></p>
+            <p>Điện&nbsp;thoại&nbsp;thông&nbsp;minh&nbsp;OUKITEL&nbsp;WP22&nbsp;sử&nbsp;dụng&nbsp;bố&nbsp;Camera&nbsp;chính&nbsp;48MP&nbsp;có&nbsp;khả&nbsp;năng&nbsp;quay&nbsp;video&nbsp;4K&nbsp;(3840x2160).</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/7e/55/1b/d47d36afbd0b299d372d443a8d635d92.png" alt="" width="750" height="544"></p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/6a/d8/78/260b1a3cb18417d38b98f0cb34abab05.png" alt="" width="750" height="826"></p>
+            <p>MÁY&nbsp;ẢNH&nbsp;AI&nbsp;48MP</p>
+            <p>Dễ&nbsp;dàng&nbsp;chụp&nbsp;những&nbsp;bức&nbsp;ảnh&nbsp;phong&nbsp;cảnh&nbsp;ngoạn&nbsp;nbsp;nội&nbsp;dung&nbsp;video&nbsp;thú&nbsp;vị.</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/b2/4b/d1/0d8e3db0e62c0974423ac133ec4b018a.png" alt="" width="750" height="778"></p>
+            <p>sản phẩm full box,nguyên seal</p>
+            <p><img src="https://salt.tikicdn.com/ts/tmp/75/30/77/56442b104dc5d4d0112af316f8a30bce.png" alt="" width="750" height="555"></p>
+            <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p></div><a class="btn-more" data-view-id="pdp_view_description_button">Thu gọn </a></div></div>
+            ',
+            'sku' => '1266839741',
+            'status' => 'selling',
+            'origin' => 'VN',
+            'rating' => rand(30, 50) / 10,
+            'sold_count' => rand(0, 100),
+            'view_count' => rand(100, 1000),
+            'shop_id' => 10,
+            'category_id' => 2,
+            'supplier_id' => 5,
+            'gallery' => json_encode([
+                'images/products/2023/11/fb0fd9999e91bab2a00c53f0ac4c9049.jpg.webp',
+                'images/products/2023/11/d00fa21e83ede7fa55c189453d41c4dd.png.webp',
             ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Nâu'   => [
-                            'quantity'      => 100,
-                            'selling_price' => 59000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM408'
-                        ],
-                        'Hồng' => [
-                            'quantity'      => 100,
-                            'selling_price' => 47000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM409'
-                        ]
-                    ]
-                ]
-            ])
+            'variants' => json_encode([]),
         ],
-        [
-            'name'          => 'Dép nhựa cao su nam nữ đi trong nhà / Nhà về sinh dẻo chống trơn trượt gấu BearBrick - D28',
-            'regular_price' => 49000,
-            'sale_price'    => 0,
-            'thumbnail_url' => 'images/products/2023/11/b59880291b77947ba9343758c7dfb5b8.jpg.webp',
-            'description'   => 'MÔ TẢ SẢN PHẨM :
-
-                - Dép được đúc nguyên khối đảm bảo bền đẹp.
-
-                - Chất liệu cao su non và nhựa tổng hợp cao cấp đã tạo nên đôi dép siêu êm, siêu nhẹ, mang lại cảm giác thoải mái, thoáng mát cho người sử dụng.
-
-                - Đế dép đúc với bề mặt có những đường gân chống trơn trượt cho độ bền cao, chống trơn trượt an toàn cho người sử dụng, chống thấm nước khi đi vào nhà vệ sinh hoặc những nơi ẩm ướt
-
-                - Dép đi trong nhà được làm bằng chất liệu mềm dẻo nên theo thời gian dép vẫn giữ nguyên độ mềm dẻo thư giãn và ko bị chai cứng như các mẫu dép nhựa thông thường.
-
-                - Chất liệu tuyệt đối an toàn da nên các anh chị em hoàn toàn yên tâm.
-
-                - Màu sắc trang nhã, đa dạng nhiều sự lựa chọn :
-
-                BẢNG SIZE Dép Đi Trong Nhà, Văn Phòng, Nhà Tắm hàng xuất Nhật chống trơn trượt:
-
-                + Chân dài 23cm - 23,5cm đi size 36-37 hoặc size 35,36
-
-                + Chân dài 24cm - 24,5cm đi size 38-39 hoặc size 37,38
-
-                + Chân dài 25cm - 25,5cm đi size 40-41 hoặc size 39,40
-
-                + Chân dài 26cm - 26,5cm đi size 42 -43 hoặc size 41,42
-
-                + Chân dài 27cm - 27,5cm đi size 44-45 hoặc size 43-44
-
-                Dép đi trong nhà này đang Hot nhất hiện nay, được chị em và các bạn nữ ưa chuộng bởi tính thời trang, siêu nhẹ, siêu êm, bền đẹp và thoáng khí.
-
-                - Đế được đúc nguyên khối bằng cao su non và nhựa tổng hợp nên rất nhẹ, êm chân, đặc biệt phần đế chống trơn trượt tuyệt đối.
-
-                - Form gọn, chất mềm, kiểu dáng năng động, trẻ trung, thích hợp mọi lứa tuổi.
-
-                - Dép siêu nhẹ, siêu êm này có thể sử dụng làm:
-
-                + Dép đi trong nhà.
-
-                + Dép đi trong nhà tắm.
-
-                + Dép đi trong văn phòng.
-
-                + Dép đi biển.
-
-                + Dép đi du lịch.
-
-                + Dép đi dạo phố.
-
-                + Dép đi chơi cùng bạn bè với một bộ dạng bánh bèo cũng rất đẹp.
-
-                Hoặc làm :
-
-                + Dép đi trong Khách Sạn
-
-                + Dép đi trong Nhà Hàng.
-
-                + Dép đi trong Homestay.
-
-                + Dép đi trong Nhà Nghỉ.
-
-                THÔNG TIN SẢN PHẨM:
-
-                Chất liệu: Cao su non và nhựa tổng hợp đúc nguyên khối.
-
-                CAM KẾT CỦA SHOP :
-
-                - Sản phẩm 100% giống như mô tả.
-
-                - Giao hàng tận nhà – nhận hàng tận nơi trong thời gian ngắn nhất.
-
-                - Khách hàng được đổi trả hàng hoàn toàn miễn phí nếu sản phẩm khi nhận hàng bị lỗi - vỡ – hỏng – không giống hình ảnh và mô tả.
-
-                - Hỗ trợ giải quyết đơn hàng trong thời gian sớm nhất với phương án tốt nhất để Quý Khách hàng luôn cảm thấy hài lòng và yên tâm khi mua sắm tại Shop.
-                - Chân thành cảm ơn Quý khách hàng đã quan tâm và ủng hộ Shop ... !!!
-
-                Giá sản phẩm trên OM đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....',
-            'sku'           => '33333333340',
-            'status'        => 'selling',
-            'origin'        => 'VN',
-            'rating'        => rand(30, 50) / 10,
-            'sold_count'    => rand(0, 100),
-            'view_count'    => rand(100, 1000),
-            'shop_id'       => 1,
-            'category_id'   => 8,
-            'supplier_id'   => 3,
-            'gallery'       => json_encode([
-                'images/products/2023/11/b59880291b77947ba9343758c7dfb5b8.jpg.webp',
-                'images/products/2023/11/92837ae0ec60d900da849f9ba98cc512.jpg.webp',
-                'images/products/2023/11/76b88d16a9b7ce8dffc2fb5d680505fd.jpg.webp'
-            ]),
-            'variants'      => json_encode([
-                'Màu sắc' => [
-                    'variant_name'   => 'Màu sắc',
-                    'variant_values' => [
-                        'Xanh lá đậm' => [
-                            'quantity'      => 100,
-                            'selling_price' => 49000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM410'
-                        ],
-                        'Hồng'          => [
-                            'quantity'      => 100,
-                            'selling_price' => 52000,
-                            'sale_price'    => 0,
-                            'product_code'  => 'OM411'
-                        ]
-                    ]
-                ]
-            ])
-        ]
     ]
 ];
