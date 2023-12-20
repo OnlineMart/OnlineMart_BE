@@ -29,8 +29,12 @@ class DatabaseSeeder extends Seeder
             ShippingAddressSeeder::class,
             OrderStatusesSeeder::class,
             PaymentMethodSeeder::class,
+            OrdersSeeder::class,
+            OrderDetailSeeder::class,
+            ReviewSeeder::class,
             ViewCountSeeder::class,
-            ReasonCancelSeeder::class
+            ReasonCancelSeeder::class,
+            userShopFollowersSeeder::class
         ]);
     }
 }
