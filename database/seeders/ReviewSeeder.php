@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\Review;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Facades\DB;
 
 class ReviewSeeder extends Seeder
 {
@@ -17,8 +18,9 @@ class ReviewSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
         $content = [
             "Áo đẹp đóng gói kỹ sẽ ủng hộ shop 5 sao",
@@ -147,5 +149,8 @@ class ReviewSeeder extends Seeder
                 Review::create($reviewData);
             }
         }
+
+        // Re-enable foreign key checks
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
     }
 }
