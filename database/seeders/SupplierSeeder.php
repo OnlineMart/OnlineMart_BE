@@ -12,7 +12,7 @@ class SupplierSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         $data = [
             [
@@ -24,11 +24,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'VNM',
                 'address'    => 'Số 10, Đường Tân Trào, phường Tân Phú, quận 7, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'id '        => 2,
+                'id'         => 2,
                 'name'       => "Biti's",
                 'email'      => 'bitis@bitis.com.vn',
                 'phone'      => '02838228888',
@@ -36,10 +36,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'BTS',
                 'address'    => '180-182 Lý Chính Thắng, Phường 9, Quận 3, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 3,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 3,
                 'name'       => 'Canifa',
                 'email'      => 'canifa@canifa.com',
                 'phone'      => '02473008888',
@@ -47,10 +48,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'CFA',
                 'address'    => 'Tầng 5, Tòa nhà VTC Online, số 18 Tam Trinh, Hai Bà Trưng, Hà Nội',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 4,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 4,
                 'name'       => 'KFC',
                 'email'      => 'kfc@kfc.com.vn',
                 'phone'      => '19006886',
@@ -58,10 +60,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'KFC',
                 'address'    => '292 Bà Triệu, Phường Lê Đại Hành, Quận Hai Bà Trưng, Hà Nội',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 5,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 5,
                 'name'       => 'Owen',
                 'email'      => 'owen@owen.com.vn',
                 'phone'      => '02873008888',
@@ -69,10 +72,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'OWN',
                 'address'    => '35 Nguyễn Huệ, Phường Bến Nghé, Quận 1, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 6,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 6,
                 'name'       => 'Adidas',
                 'email'      => 'adidas@adidas.com.vn',
                 'phone'      => '02838228888',
@@ -80,10 +84,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'ADS',
                 'address'    => '26 Lê Lợi, Phường Bến Thành, Quận 1, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 7,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 7,
                 'name'       => 'Pizza Hut',
                 'email'      => 'pizzahut@pizzahut.com.vn',
                 'phone'      => '19006066',
@@ -91,10 +96,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'PH',
                 'address'    => '30-32 Đinh Tiên Hoàng, Phường Đa Kao, Quận 1, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 8,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 8,
                 'name'       => 'Nem',
                 'email'      => 'nem@nem.com.vn',
                 'phone'      => '02473008888',
@@ -102,10 +108,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'NEM',
                 'address'    => '72 Trần Hưng Đạo, Phường Cửa Nam, Quận Hoàn Kiếm, Hà Nội',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 9,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 9,
                 'name'       => 'Nike',
                 'email'      => 'nike@nike.com.vn',
                 'phone'      => '02838228888',
@@ -113,10 +120,11 @@ class SupplierSeeder extends Seeder
                 'code'       => 'NKE',
                 'address'    => '63 Nguyễn Trãi, Phường Bến Thành, Quận 1, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
-            ], [
-                'id '        => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id'         => 10,
                 'name'       => 'Lotteria',
                 'email'      => 'lotteria@lotteria.com.vn',
                 'phone'      => '19006066',
@@ -124,41 +132,44 @@ class SupplierSeeder extends Seeder
                 'code'       => 'LTA',
                 'address'    => '19-25 Nguyễn Huệ, Phường Bến Nghé, Quận 1, Tp. HCM',
                 'shop_id'    => 1,
-                'created_at' => now()->toDateTimeString(),
-                'updated_at' => now()->toDateTimeString(),
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'id'      => 11,
-                'name'    => 'Nike OM',
-                'email'   => 'nike.contact.@gmail.com',
-                'avatar'  => 'images/shops/default_avatar.png',
-                'phone'   => '0836775904',
-                'website' => 'https://www.nike.com',
-                'code'    => 'NIKE',
-                'address' => 'HỒ CHÍ MINH',
-                'shop_id' => 1
+                'id'         => 11,
+                'name'       => 'Nike OM',
+                'email'      => 'nike.contact.@gmail.com',
+                'phone'      => '0836775904',
+                'website'    => 'https://www.nike.com',
+                'code'       => 'NIKE',
+                'address'    => 'HỒ CHÍ MINH',
+                'shop_id'    => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'id'      => 12,
-                'name'    => 'Puma OM',
-                'email'   => 'puma.contact.@gmail.com',
-                'avatar'  => 'images/shops/default_avatar.png',
-                'phone'   => '0837129785',
-                'website' => 'https://us.puma.com',
-                'code'    => 'PUMA',
-                'address' => 'CẦN THƠ',
-                'shop_id' => 1
+                'id'         => 12,
+                'name'       => 'Puma OM',
+                'email'      => 'puma.contact.@gmail.com',
+                'phone'      => '0837129785',
+                'website'    => 'https://us.puma.com',
+                'code'       => 'PUMA',
+                'address'    => 'CẦN THƠ',
+                'shop_id'    => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'id'      => 13,
-                'name'    => 'Gucci',
-                'email'   => 'gucci.contact.@gmail.com',
-                'avatar'  => 'images/shops/default_avatar.png',
-                'phone'   => '0376606032',
-                'website' => 'https://www.gucci.com',
-                'code'    => 'GUCCI',
-                'address' => 'HÀ NỘI',
-                'shop_id' => 1
+                'id'         => 13,
+                'name'       => 'Gucci',
+                'email'      => 'gucci.contact.@gmail.com',
+                'phone'      => '0376606032',
+                'website'    => 'https://www.gucci.com',
+                'code'       => 'GUCCI',
+                'address'    => 'HÀ NỘI',
+                'shop_id'    => 1,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
         ];
         Supplier::insert($data);
