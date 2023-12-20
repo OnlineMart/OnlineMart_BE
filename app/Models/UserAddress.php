@@ -9,7 +9,7 @@ class UserAddress extends Model
 {
     use HasFactory;
 
-    const IS_DEFAULT = "1";
+    const IS_DEFAULT     = "1";
     const IS_NOT_DEFAULT = "0";
 
     protected $table = "user_addresses";
@@ -17,10 +17,12 @@ class UserAddress extends Model
     protected $fillable = [
         "name",
         "phone",
+        'address_home',
         "city",
         "district",
         "ward",
         "is_default",
+        "is_select",
         "user_id"
     ];
 }

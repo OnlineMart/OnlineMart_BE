@@ -11,7 +11,7 @@ class AddressRequestUpdate extends BaseRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -21,15 +21,16 @@ class AddressRequestUpdate extends BaseRequest
      *
      * @return array<string, mixed>
      */
-    public function rules()
+    public function rules(): array
     {
         $addressId = $this->route('address')->id;
         return [
-            'name'      => 'required|string|min:6|unique:user_addresses,name,' . $addressId,
-            'phone'     => 'required|string|unique:user_addresses,phone,' . $addressId,
-            'city'      => 'required|string',
-            'district'  => 'required|string',
-            'ward'      => 'required|string',
+            'name'         => 'required|string|min:6|unique:user_addresses,name,' . $addressId,
+            'phone'        => 'required|string|unique:user_addresses,phone,' . $addressId,
+            'address_home' => 'required|string',
+            'city'         => 'required|string',
+            'district'     => 'required|string',
+            'ward'         => 'required|string',
         ];
     }
 
@@ -41,10 +42,10 @@ class AddressRequestUpdate extends BaseRequest
     public function messages(): array
     {
         return [
-            'required'  => ':attribute không được để trống.',
-            'string'    => ':attribute phải là chuỗi.',
-            'min'       => ':attribute có độ dài tối thiểu 6 ký tự.',
-            'unique'    => ':attribute đã tồn tại.',
+            'required' => ':attribute không được để trống.',
+            'string'   => ':attribute phải là chuỗi.',
+            'min'      => ':attribute có độ dài tối thiểu 6 ký tự.',
+            'unique'   => ':attribute đã tồn tại.',
         ];
     }
 
@@ -56,8 +57,9 @@ class AddressRequestUpdate extends BaseRequest
     public function attributes(): array
     {
         return [
-            'name'     => 'Họ và tên',
-            'phone'    => 'Số điện thoại',
+            'name'         => 'Họ và tên',
+            'phone'        => 'Số điện thoại',
+            'address_home' => 'Địa chỉ',
         ];
     }
 }
