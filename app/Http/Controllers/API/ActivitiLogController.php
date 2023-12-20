@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Shop;
+use App\Models\User;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
@@ -45,6 +47,32 @@ class ActivitiLogController extends Controller
             })->toArray();
 
             return jsonResponse($data, 200, 'Get all activities successfully');
+        } catch (Exception $e) {
+            return jsonResponse($e->getMessage(), 500, 'Something went wrong.');
+        }
+    }
+
+    /**
+     * Get all members shop
+     *
+     * @return JsonResponse
+     */
+    public function getMembersShop(): JsonResponse
+    {
+        try {
+            $user    = Auth::user();
+            $shop    = Shop::findOrFail($user->shop_id);
+            $members = User::select('id', 'user_name', 'full_name')->where('shop_id', $shop->id)->get();
+
+            $data = $members->map(function ($member) {
+                return [
+                    'id'    => $member->id,
+                    'label' => $member->full_name,
+                    'value' => $member->full_name,
+                ];
+            })->toArray();
+
+            return jsonResponse($data, 200, 'Get members successfully');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong.');
         }

@@ -70,6 +70,7 @@ class CheckOutController extends Controller
 
                         $deliveryDate = Carbon::parse($data['delivery_date'])->format('Y-m-d H:i:s');
 
+                        $status = $data['payment_method'] === 1 ? 1 : 3;
                         $orderData = [
                             'delivery_date'       => $deliveryDate,
                             'code'                => $data['code'],
@@ -79,7 +80,7 @@ class CheckOutController extends Controller
                             'shipping_address_id' => $shippingAddress->id,
                             'user_id'             => $data['user_id'],
                             'voucher_id'          => null,
-                            'order_status_id'     => OrderStatus::STATUS_SHIPPING,
+                            'order_status_id'     => $status,
                             'shop_id'             => $shop_id,
                             'payment_method_id'   => $data['payment_method'],
                         ];
@@ -142,7 +143,6 @@ class CheckOutController extends Controller
                 DB::rollBack();
                 return jsonResponse($e->getMessage(), 400, 'Error');
             }
-
         } catch (Exception $e) {
             return jsonResponse(null, 500, 'Something went wrong');
         }
@@ -151,12 +151,14 @@ class CheckOutController extends Controller
     public function updateStatusTransaction(string $order_code, string $status_code): JsonResponse
     {
         try {
-            $order       = Order::where('code', $order_code)->firstOrFail();
-            $transaction = Transaction::where('order_id', $order->id)->firstOrFail();
+            $orders = Order::where('code', $order_code)->get();
 
-            $transaction->update([
-                'status' => $status_code,
-            ]);
+            foreach ($orders as $order) {
+                $transaction = Transaction::where('order_id', $order->id)->firstOrFail();
+                $transaction->update([
+                    'status' => $status_code,
+                ]);
+            }
 
             return jsonResponse($order, 200, 'Update status payment successfully');
         } catch (Exception $e) {
