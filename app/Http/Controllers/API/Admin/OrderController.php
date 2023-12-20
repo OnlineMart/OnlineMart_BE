@@ -36,7 +36,6 @@ class OrderController extends Controller
                 'order_detail.shop',
                 'order_detail.product',
                 'user:id,full_name,phone',
-                'voucher:id,discount,max_discount_amount',
                 'order_status:id,status_name',
                 'payment_method:id,method_name',
                 'shipping_address:id,street,district,city',
@@ -50,7 +49,9 @@ class OrderController extends Controller
                     'id' => $order->id,
                     'status' => $order->order_status->status_name,
                     'full_name' => $order->user->full_name,
+                    'code' => $order->code,
                     'shipping_unit' => $order->shipping_unit,
+                    'shipping_fee' =>$order->shipping_fee,
                     'street' => $order->shipping_address->street,
                     'district' => $order->shipping_address->district,
                     'city' => $order->shipping_address->city,
@@ -95,7 +96,6 @@ class OrderController extends Controller
                 'order_detail.shop',
                 'order_detail.product',
                 'user:id,full_name,phone',
-                'voucher:id,discount,max_discount_amount',
                 'order_status:id,status_name',
                 'payment_method:id,method_name',
                 'shipping_address:id,street,district,city',
@@ -107,9 +107,11 @@ class OrderController extends Controller
             $response = $orders->map(function ($order) {
                 return [
                     'id' => $order->id,
+                    'code' => $order->code,
                     'status' => $order->order_status->status_name,
                     'full_name' => $order->user->full_name,
                     'shipping_unit' => $order->shipping_unit,
+                    'shipping_fee'  => $order->shipping_fee,
                     'street' => $order->shipping_address->street,
                     'district' => $order->shipping_address->district,
                     'city' => $order->shipping_address->city,
@@ -154,7 +156,6 @@ class OrderController extends Controller
                 'order_detail.shop',
                 'order_detail.product',
                 'user:id,full_name,phone',
-                'voucher:id,discount,unit',
                 'order_status:id,status_name',
                 'payment_method:id,method_name',
                 'shipping_address:id,street,district,city',
@@ -162,9 +163,11 @@ class OrderController extends Controller
 
             $response = [
                 'id' => $orders->id,
+                'code' =>$orders->code,
                 'status' => $orders->order_status->status_name,
                 'full_name' => $orders->user->full_name,
                 'shipping_unit' => $orders->shipping_unit,
+                'shipping_fee' => $orders->shipping_fee,
                 'street' => $orders->shipping_address->street,
                 'district' => $orders->shipping_address->district,
                 'city' => $orders->shipping_address->city,
@@ -172,7 +175,6 @@ class OrderController extends Controller
                 'created_at' => $orders->created_at,
                 'grand_total' => $orders->total_price,
                 'user' => $orders->user,
-                'voucher' => $orders->voucher,
                 'order_item' => $orders->order_detail->map(function ($order_detail) {
                     $totalMoney = $order_detail->product_quantity * $order_detail->product_price - $order_detail->sale_price;
                     return [

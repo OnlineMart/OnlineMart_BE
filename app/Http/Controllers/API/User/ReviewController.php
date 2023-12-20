@@ -32,11 +32,10 @@ class ReviewController extends Controller
     public function store(ReviewProductRequest $request): JsonResponse
     {
         try {
-            $userId = auth()->user()->id;
+          
             $data = $request->validated();
-
             $reviewProduct = Review::create([
-                'user_id' => $userId,
+                'user_id' => $data['user_id'],
                 'product_id' => $data['product_id'],
                 'order_id' => $data['order_id'],
                 'content' => $data['content'] ?? "",
@@ -44,8 +43,8 @@ class ReviewController extends Controller
                 'agree' => $data['agree'],
                 'disagree' => $data['disagree']
             ]);
-
-            if (isset($data['images'])) {
+                    
+            if(isset($data['images'])) {
                 foreach ($data['images'] as $image) {
                     $reviewProduct->review_media()->create([
                         'review_id' => $reviewProduct->id,
@@ -67,43 +66,43 @@ class ReviewController extends Controller
      * @param $productId
      * @return JsonResponse
      */
-    public function getReviewProduct($userId, $productId): JsonResponse
-    {
-        try {
-            $reviewProduct = Review::where('user_id', $userId)
-                ->where('product_id', $productId)
-                ->select('id', 'content', 'rating', 'agree', 'disagree')
-                ->first();
+        public function getReviewProduct($userId, $productId): JsonResponse
+        {
+            try {
+                $reviewProduct = Review::where('user_id', $userId)
+                    ->where('product_id', $productId)
+                    ->select('id', 'content', 'rating', 'agree', 'disagree')
+                    ->first();
 
 
-            if (!$reviewProduct) {
-                return jsonResponse([], 204, "Not found");
+                if (!$reviewProduct) {
+                    return jsonResponse([], 204, "Not found");
+                }
+
+                $reviewId = $reviewProduct->id;
+
+                $reviewMedia = ReviewMedia::where('review_id', $reviewId)
+                    ->select('media')
+                    ->get();
+
+                $response = [
+                    'id' => $reviewId,
+                    'content' => $reviewProduct->content,
+                    'rating' => $reviewProduct->rating,
+                    'agree' => $reviewProduct->agree,
+                    'disagree' => $reviewProduct->disagree,
+                    'media'    => $reviewMedia->map(function ($media) {
+                        return [
+                        'review_media' =>  $media
+                        ];
+                    })->values(),
+                ];
+
+                return jsonResponse($response, 200, 'Review product successfully');
+            } catch (Exception $e) {
+                return jsonResponse($e->getMessage(), 500, 'Something went wrong');
             }
-
-            $reviewId = $reviewProduct->id;
-
-            $reviewMedia = ReviewMedia::where('review_id', $reviewId)
-                ->select('media')
-                ->get();
-
-            $response = [
-                'id' => $reviewId,
-                'content' => $reviewProduct->content,
-                'rating' => $reviewProduct->rating,
-                'agree' => $reviewProduct->agree,
-                'disagree' => $reviewProduct->disagree,
-                'media' => $reviewMedia->map(function ($media) {
-                    return [
-                        $media
-                    ];
-                })->values(),
-            ];
-
-            return jsonResponse($response, 200, 'Review product successfully');
-        } catch (Exception $e) {
-            return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
-    }
 
     /**
      * Lấy ra tất cả các review theo product_id

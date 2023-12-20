@@ -19,7 +19,10 @@ if (!function_exists('roundToTwoSignificantDigits')) {
 
         return round($number / $powerOfTen) * $powerOfTen;
     }
+
 }
+
+
 
 
 if (!function_exists('logActivity')) {
@@ -52,4 +55,23 @@ if (!function_exists('logActivity')) {
                 ->log($action);
         }
     }
+
+}
+
+if (!function_exists('formatPrice')) {
+    /**
+     * Định dạng giá thành
+     *
+     * @param float|int $price
+     * @param string $currency
+     * @param string $locale
+     * @return string
+     */
+    function formatPrice($price, $currency = 'VND', $locale = 'vi_VN')
+    {
+        $formatter = new NumberFormatter($locale, NumberFormatter::CURRENCY);
+        $formatter->setSymbol(NumberFormatter::CURRENCY_SYMBOL, $currency);
+        return $formatter->formatCurrency($price, $currency);
+    }
+
 }

@@ -26,7 +26,6 @@ class OrderController extends Controller
                 'order_detail.shop',
                 'order_detail.product',
                 'user:id,full_name,phone',
-                'voucher:id,discount,max_discount_amount',
                 'order_status:id,status_name',
                 'payment_method:id,method_name',
                 'shipping_address:id,street,district,city',
@@ -35,9 +34,11 @@ class OrderController extends Controller
             $response = $orders->map(function ($order) {
                 return [
                     'id' => $order->id,
+                    'code' =>$order->code,
                     'status' => $order->order_status->status_name,
                     'full_name' => $order->user->full_name,
                     'shipping_unit' => $order->shipping_unit,
+                    'shipping_fee' => $order->shipping_fee,
                     'street' => $order->shipping_address->street,
                     'district' => $order->shipping_address->district,
                     'city' => $order->shipping_address->city,
@@ -82,7 +83,6 @@ class OrderController extends Controller
                 'order_detail.shop',
                 'order_detail.product',
                 'user:id,full_name,phone',
-                'voucher:id,discount,unit',
                 'order_status:id,status_name',
                 'payment_method:id,method_name',
                 'shipping_address:id,street,district,city',
@@ -94,6 +94,7 @@ class OrderController extends Controller
 
             $response = [
                 'id' => $order->id,
+                'code' =>$order->code,
                 'status' => $order->order_status->status_name,
                 'full_name' => $order->user->full_name,
                 'shipping_unit' => $order->shipping_unit,
@@ -101,6 +102,7 @@ class OrderController extends Controller
                 'district' => $order->shipping_address->district,
                 'city' => $order->shipping_address->city,
                 'delivery_date' => $order->delivery_date,
+                'shipping_fee' => $order->shipping_fee,
                 'created_at' => $order->created_at,
                 'grand_total' => $order->total_price,
                 'user' => $order->user,
@@ -121,11 +123,7 @@ class OrderController extends Controller
                     ];
                 })->values(),
                 'payment_method' => $order->payment_method,
-                'voucher' => [
-                    'id' => $order->voucher->id,
-                    'discount' => $order->voucher->discount,
-                    'unit' => $order->voucher->unit
-                ],
+             
             ];
 
             return jsonResponse($response, 200, "Successfully retrieved the order");

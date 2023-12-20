@@ -14,6 +14,7 @@ use App\Http\Controllers\API\User\AddressController;
 use App\Http\Controllers\API\User\CheckOutController;
 use App\Http\Controllers\API\User\NotificationController;
 use App\Http\Controllers\API\User\ProductController;
+use App\Http\Controllers\API\User\UserFollowerController;
 use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\ReviewController;
@@ -160,4 +161,18 @@ Route::prefix('customer_reviews')->group(function() {
 
     Route::get('/{productId}/likes', [LikeController::class, 'getAllLike']);
     Route::patch('/{userId}/{productId}/{reviewId}/like', [LikeController::class, 'updateLikeStatus']);
+});
+// Api folow
+Route::prefix('users')->group(function () {
+    Route::get('folow/{userId}/{shopId}', [UserFollowerController::class, 'getFolowShop']);
+    Route::post('folow', [UserFollowerController::class, 'addFolow']);
+    Route::delete('folow', [UserFollowerController::class, 'deleteFolow']);
+});
+
+
+// Api folow
+Route::prefix('users')->group(function () {
+    Route::get('folow/{userId}/{shopId}', [UserFollowerController::class, 'getFolowShop']);
+    Route::post('folow', [UserFollowerController::class, 'addFolow']);
+    Route::delete('folow', [UserFollowerController::class, 'deleteFolow']);
 });

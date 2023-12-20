@@ -124,4 +124,13 @@ class Shop extends Model
     {
         return $this->hasMany(ReasonCancel::class);
     }
+
+    /**
+     * @return HasMany
+     */
+
+    public function user_shop_followers()
+    {
+        return $this->hasMany(User::class);
+    }
 }
