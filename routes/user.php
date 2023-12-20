@@ -1,26 +1,29 @@
 <?php
 
+use App\Http\Controllers\API\ActivitiLogController;
+use App\Http\Controllers\API\Admin\DashboardController;
 use App\Http\Controllers\API\Admin\PermissionController;
 use App\Http\Controllers\API\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\API\Admin\RoleController;
 use App\Http\Controllers\API\Auth\AuthController;
+use App\Http\Controllers\API\CartController;
 use App\Http\Controllers\API\CategoryController;
-use App\Http\Controllers\API\User\ProductController;
-use App\Http\Controllers\API\User\ShopController;
+use App\Http\Controllers\API\Admin\ShopController;
+use App\Http\Controllers\API\Admin\SupplierController;
 use App\Http\Controllers\API\User\AddressController;
+use App\Http\Controllers\API\User\CheckOutController;
 use App\Http\Controllers\API\User\NotificationController;
+use App\Http\Controllers\API\User\ProductController;
 use App\Http\Controllers\API\User\VoucherController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\User\ReviewController;
 use App\Http\Controllers\API\User\WishlistController;
-use App\Http\Controllers\API\User\OrderController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\ActivitiLogController;
+use App\Http\Controllers\API\User\OrderController;
 use App\Http\Controllers\API\User\ProductFlashSaleController;
 use App\Http\Controllers\API\Auth\ForgotPasswordController;
 use App\Http\Controllers\API\User\LikeController;
 
-//use App\Http\Controllers\API\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,6 +81,7 @@ Route::apiResource('/categories', CategoryController::class);
 // Api address
 Route::apiResource('/address', AddressController::class)->except(['index']);
 Route::get('address/user/{userId}', [AddressController::class, 'getAddressByUser']);
+Route::patch('select-address/{addressId}', [AddressController::class, 'SelectShippingAddress']);
 
 // Api voucher
 Route::post('user/get-voucher/{voucherId}', [VoucherController::class, 'store']);
@@ -102,13 +106,20 @@ Route::prefix('product')->group(function () {
 
 // Api voucher
 
-//Route::apiResource('/cart', CartController::class);
-//Route::delete('/cart/remove/{item}', [CartController::class, 'singleDelete']);
-
-//Route::apiResource('/categories', CategoryController::class);
+Route::apiResource('/cart', CartController::class);
+Route::delete('/cart/remove/{item}', [CartController::class, 'singleDelete']);
+Route::get('/recently-cart/{userId}', [CartController::class, 'getRecentlyItem']);
+Route::get('/checkout-item/{userId}', [CartController::class, 'getCheckOutItem']);
+Route::patch('/update-item/{item}', [CartController::class, 'updateCheckedItem']);
+Route::patch('/update-shop/{shopId}/{state}', [CartController::class, 'updateCheckedItemShop']);
+Route::patch('/update-all/{userId}/{state}', [CartController::class, 'updateCheckedAll']);
+Route::post('/checkout', [CheckOutController::class, 'checkout']);
+Route::post('/pre-order', [CheckOutController::class, 'createOrder']);
+Route::patch('/status-payment/{order_code}/{status_code}', [CheckOutController::class, 'updateStatusTransaction']);
 
 // Activities
 Route::get('/activities-log', [ActivitiLogController::class, 'getActivities']);
+Route::get('/members-shop', [ActivitiLogController::class, 'getMembersShop']);
 
 // Api roles and permissions
 Route::apiResource('/roles', RoleController::class)->except(['show']);
@@ -120,6 +131,16 @@ Route::patch("/notifications/{id}", [NotificationController::class, 'changeStatu
 Route::put("/notifications/{type}/mass-status", [NotificationController::class, 'massChangeStatusNotifications']);
 Route::delete('/notifications/{type}/mass-delete', [NotificationController::class, 'massDeleteNotifications']);
 Route::apiResource('/notifications', NotificationController::class)->except(["index"]);
+
+
+// Dashboard admin shop
+Route::get('top-product/{time}', [DashboardController::class, 'getTopProducts']);
+Route::get('get-order-status/{time}', [DashboardController::class, 'getOrderStatus']);
+Route::get('get-revenue/{time}', [DashboardController::class, 'getRevenue']);
+Route::get('get-order-shipping/{time}', [DashboardController::class, 'getOrderShipping']);
+Route::get('get-orders-pending/{time}', [DashboardController::class, 'getOrdersPending']);
+Route::get('get-business-result/{time}', [DashboardController::class, 'getBusinessResult']);
+
 
 // Order
 Route::apiResource('user/order', OrderController::class)->except(['store']);
