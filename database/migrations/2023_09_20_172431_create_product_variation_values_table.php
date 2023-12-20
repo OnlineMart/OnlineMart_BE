@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\ProductSku;
 use App\Models\ProductVariation;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
