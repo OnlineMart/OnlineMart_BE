@@ -155,7 +155,7 @@ Route::get('/get/review/{productId}/{userId}',[ReviewController::class, 'getRevi
 // Api reviews
 Route::prefix('customer_reviews')->group(function() {
     Route::get('/', [ReviewController::class, 'getCustomerReviews']);
-    Route::post('/{reviewId}/{productId}/comment', [ReviewController::class, 'commentReview']);
+    Route::post('/{reviewId}/{productId}/{orderId}/comment', [ReviewController::class, 'commentReview']);
     Route::get('{productId}/all-images', [ReviewController::class, 'getAllImages']);
     Route::get('{productId}/ratings', [ReviewController::class, 'getRating']);
 

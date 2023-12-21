@@ -30,7 +30,6 @@ class Order extends Model
         'shipping_fee',
         'delivery_date',
         'total_price',
-        'code',
         'shipping_unit',
     ];
 
@@ -49,8 +48,8 @@ class Order extends Model
     {
         return $this->belongsTo(User::class);
     }
+
     /**
-     *
      * @return BelongsTo
      */
     public function shop(): BelongsTo

@@ -8,6 +8,7 @@ use App\Models\ReviewMedia;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Helpers\S3Helper;
+use App\Models\OrderDetail;
 use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Review\ReplyRequestStore;
@@ -32,7 +33,7 @@ class ReviewController extends Controller
     public function store(ReviewProductRequest $request): JsonResponse
     {
         try {
-          
+
             $data = $request->validated();
             $reviewProduct = Review::create([
                 'user_id' => $data['user_id'],
@@ -44,7 +45,7 @@ class ReviewController extends Controller
                 'shop_id' => $data['shop_id'],
                 'disagree' => $data['disagree']
             ]);
-                    
+
             if(isset($data['images'])) {
                 foreach ($data['images'] as $image) {
                     $reviewProduct->review_media()->create([
@@ -114,7 +115,6 @@ class ReviewController extends Controller
      */
     public function getCustomerReviews(Request $request): JsonResponse
     {
-
         try {
             $productId = $request->product_id;
 
@@ -126,15 +126,34 @@ class ReviewController extends Controller
                     $query->orderBy('id', 'DESC');
                 },
                 'replies.user',
+            ])
+            ->where('product_id', $productId)
+            ->whereNull("parent_id")
+            ->orderBy('id', 'DESC')
+            ->get();
 
-                // TODO: Cần lấy thêm thông tin của sản phẩm (biến thể,...) để hiển thị
-                // TODO: Cần "Ngày đã dùng" = Ngày nhận hàng - Ngày review
-            ])->where('product_id', $productId)
-                ->whereNull("parent_id")
-                ->orderBy('id', 'DESC')
-                ->get();
 
-            return jsonResponse($reviews, 200, 'Reviews render successfull!');
+
+            // $response = $reviews->map(function ($review) {
+            //     $reivewOrderDetails = OrderDetail::where('order_id', $review->order_id)
+            //     ->where('product_id', $review->product_id)
+            //     ->get();
+
+            //     return [
+            //         'id' => $review->id,
+            //         'content' => $review->content,
+            //         'rating' => $review->rating,
+            //         'like_count' => $review->like_count,
+            //         'parent_id' => $review->parent_id,
+            //         'agree' => $review->agree,
+            //         'disagree' => $review->disagree,
+            //         'user_id' => $review->user_id,
+            //         'order_details' => $reivewOrderDetails,
+            //     ];
+            // })->values();
+
+            // return jsonResponse($response, 200, 'Reviews render successfully!');
+            return jsonResponse($reviews, 200, 'Reviews render successfully!');
         } catch (Exception $e) {
             return jsonResponse($e->getMessage(), 500, 'Something went wrong');
         }
@@ -210,7 +229,7 @@ class ReviewController extends Controller
      *
      * @return JsonResponse
      */
-    public function commentReview(ReplyRequestStore $request, int $reviewId, int $productId): JsonResponse
+    public function commentReview(ReplyRequestStore $request, int $reviewId, int $productId, int $orderId): JsonResponse
     {
         try {
             $data = $request->validated();
@@ -219,6 +238,7 @@ class ReviewController extends Controller
                 'user_id'    => auth()->user()->id,
                 'product_id' => $productId,
                 'shop_id'    => null,
+                'order_id'   => $orderId,
                 'content'    => $data['content'],
                 'rating'     => null,
                 'like_count' => 0,

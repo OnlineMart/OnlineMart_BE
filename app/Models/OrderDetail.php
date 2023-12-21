@@ -38,4 +38,9 @@ class OrderDetail extends Model
     {
         return $this->belongsTo(Shop::class);
     }
+
+    public function review(): BelongsTo
+    {
+        return $this->belongsTo(Review::class);
+    }
 }

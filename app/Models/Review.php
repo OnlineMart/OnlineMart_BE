@@ -80,4 +80,13 @@ class Review extends Model
         return $this->hasMany(Order::class);
     }
 
+    /**
+     *
+     * @return HasMany
+     */
+    public function order_detail():HasMany
+    {
+        return $this->hasMany(OrderDetail::class);
+    }
+
 }
