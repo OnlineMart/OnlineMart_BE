@@ -32,7 +32,7 @@ class ReasonCancelSeeder extends Seeder
             "Sản phẩm bị hỏng",
             "Sản phẩm không đúng mô tả"
         ];
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 100; $i++) {
             $reasonCancel = [
                 'reason_name' => $reasons[array_rand($reasons)],
                 'shop_id' => $shops->random(),

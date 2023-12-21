@@ -21,28 +21,28 @@ class ShopSeeder extends Seeder
         $data = [
             [
                 'name'           => 'Online Mart',
-                'type'           => Shop::NOT_YET_APPROVED,
+                'type'           => Shop::ENABLED,
                 'profile_number' => Shop::ACCOUNT_INFORMATION,
                 'description'    => 'Online Mart Trading',
                 'status'         => Shop::ENABLED,
             ],
             [
                 'name'           => 'Shop Chính Hãng',
-                'type'           => Shop::NOT_YET_APPROVED,
+                'type'           => Shop::ENABLED,
                 'profile_number' => Shop::ACCOUNT_INFORMATION,
                 'description'    => 'Shop trading',
                 'status'         => Shop::ENABLED,
             ],
             [
                 'name'           => 'Techmorevn',
-                'type'           => Shop::NOT_YET_APPROVED,
+                'type'           => Shop::ENABLED,
                 'profile_number' => Shop::ACCOUNT_INFORMATION,
                 'description'    => 'Techmorevn',
                 'status'         => Shop::ENABLED,
             ],
             [
                 'name'           => 'Viễn thông Hà Nhung',
-                'type'           => Shop::NOT_YET_APPROVED,
+                'type'           => Shop::ENABLED,
                 'profile_number' => Shop::ACCOUNT_INFORMATION,
                 'description'    => 'Viễn thông Hà Nhung',
                 'status'         => Shop::ENABLED,
