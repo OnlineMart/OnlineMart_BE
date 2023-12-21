@@ -2,6 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\Product;
+use \Probots\Pinecone\Client as Pinecone;
+use App\Models\Shop;
+use App\Observers\ProductObserver;
+use App\Observers\ShopStatusObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,9 +18,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if($this->app->getLocale()){
+        if($this->app->environment() === 'local'){
             $this->app->register(TelescopeServiceProvider::class);
         }
+
+        $this->app->bind(Pinecone::class, fn () => new Pinecone(
+            config('services.pinecone.api_key'),
+            config('services.pinecone.environment')
+        ));
     }
 
     /**
@@ -25,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Shop::observe(ShopStatusObserver::class);
     }
 }

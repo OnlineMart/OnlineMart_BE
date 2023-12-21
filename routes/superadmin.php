@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\SuperAdmin\ManagerShopController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,3 +14,7 @@
 |
  */
 
+/* ======== API ManagerShop ======== */
+Route::get('list-shop', [ManagerShopController::class, 'index']);
+Route::put('/change-accpect/{shopId}', [ManagerShopController::class, 'changeAccpectShop']);
+Route::put('/reason-accpect/{shopId}', [ManagerShopController::class, 'reasonAccpectShop']);
