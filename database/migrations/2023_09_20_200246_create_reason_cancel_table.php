@@ -18,7 +18,6 @@ return new class extends Migration
         Schema::create('reason_cancel', function (Blueprint $table) {
             $table->id();
             $table->string('reason_name');
-
             $table->foreignIdFor(Shop::class);
             $table->timestamps();
         });

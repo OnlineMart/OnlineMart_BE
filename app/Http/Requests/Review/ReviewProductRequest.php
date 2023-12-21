@@ -30,6 +30,7 @@ class ReviewProductRequest extends BaseRequest
             'order_id'  => 'required',
             'content' => 'string',
             'user_id'   => 'required',
+            'shop_id'   =>'required',
             'rating' => 'min:0',
             'agree' =>'nullable|string',
             'disagree' => 'nullable',

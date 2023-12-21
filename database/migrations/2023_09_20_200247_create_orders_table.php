@@ -31,6 +31,7 @@ return new class extends Migration
             $table->foreignId('user_id')->references('id')->on('users');
             $table->foreignId('shop_id')->nullable()->references('id')->on('shops');
             $table->foreignId('voucher_id')->nullable()->references('id')->on('vouchers');
+            $table->foreignId('reason_cancel_id')->nullable()->references('id')->on('reason_cancel');
             $table->string('cf_token')->nullable();
 
             $table->foreignId('order_status_id')->references('id')->on('order_statuses');

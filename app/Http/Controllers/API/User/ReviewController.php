@@ -41,6 +41,7 @@ class ReviewController extends Controller
                 'content' => $data['content'] ?? "",
                 'rating' => $data['rating'],
                 'agree' => $data['agree'],
+                'shop_id' => $data['shop_id'],
                 'disagree' => $data['disagree']
             ]);
                     
