@@ -7,12 +7,10 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Helpers\S3Helper;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\User\UserRequestStore;
-use App\Http\Requests\User\UserRequestUpdate;
 use Tymon\JWTAuth\Exceptions\JWTException;
+use App\Http\Requests\User\UserRequestUpdate;
 
 class UserController extends Controller
 {
@@ -20,7 +18,7 @@ class UserController extends Controller
 
     public function __construct()
     {
-//        $this->middleware('auth:api');
+        $this->middleware('auth:api');
         $this->middleware('jwt.verify', ['only' => ['me']]);
         $this->upload = new S3Helper();
     }
@@ -120,7 +118,6 @@ class UserController extends Controller
             return jsonResponse(null, 403, $e->getMessage());
         }
     }
-
 
     /**
      * Xóa user

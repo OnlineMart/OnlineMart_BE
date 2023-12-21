@@ -19,7 +19,7 @@ class VoucherController extends Controller
     {
         $this->middleware('auth:api');
         $this->middleware('permission:View vouchers', ['only' => ['show', 'getVoucherShop']]);
-        // $this->middleware('permission:Create voucher', ['only' => ['store']]);
+        $this->middleware('permission:Create voucher', ['only' => ['store']]);
         $this->middleware('permission:Update voucher', ['only' => ['update']]);
         $this->middleware('permission:Delete voucher', ['only' => ['destroy', 'deleteVoucher']]);
     }
