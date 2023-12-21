@@ -47,8 +47,6 @@ class ProductController extends Controller
                 'supplier:id,name',
                 'variants',
                 'variants.values',
-                'variants.values.stock'
-
             ])
                 ->where('shop_id', auth()->user()->shop_id)
                 ->orderBy('id', 'DESC')->get();
@@ -249,7 +247,6 @@ class ProductController extends Controller
                 'supplier:id,name',
                 'variants',
                 'variants.values',
-                'variants.values.stock'
             ])->findOrFail($id);
 
             $variants  = $product->variants;

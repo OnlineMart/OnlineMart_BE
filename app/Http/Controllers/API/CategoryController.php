@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
+use Exception;
+use App\Models\Category;
+use Illuminate\Support\Str;
+use Illuminate\Http\Response;
 use App\Http\Helpers\S3Helper;
+use Illuminate\Http\JsonResponse;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\Category\CategoryRequestStore;
 use App\Http\Requests\Category\CategoryRequestUpdate;
-use App\Models\Category;
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Response;
-use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -87,8 +87,7 @@ class CategoryController extends Controller
     public function getShopCategories(int $shopId): JsonResponse
     {
         try {
-            $categories             = Category::where('shop_id', $shopId)
-                ->orWhereNull('shop_id')
+            $categories = Category::where('shop_id', $shopId)
                 ->orderBy('id', 'desc')
                 ->get();
             $categoriesWithChildren = $categories->map(function ($category) {
@@ -134,7 +133,6 @@ class CategoryController extends Controller
                 ->orderBy('id', 'desc')
                 ->select("id", "name as label", "name as value")
                 ->get();
-
 
             return jsonResponse($suppliers, 200, 'Suppliers retrieved successfully');
         } catch (Exception $e) {
@@ -190,10 +188,8 @@ class CategoryController extends Controller
         try {
             $category = Category::findOrFail($category->id);
 
-            // Retrieve all parent IDs of the current category and its ancestors
             $parentIds = $this->getAllParentIds($category);
 
-            // Add a new column 'parent_id_all' to the category object
             $category->parent_id_all = $parentIds;
 
             return jsonResponse($category, 200, 'Category retrieved successfully');
@@ -218,6 +214,8 @@ class CategoryController extends Controller
             $category    = Category::find($category->parent_id);
         }
 
+        sort($parentIds);
+
         return $parentIds;
     }
 
@@ -235,10 +233,14 @@ class CategoryController extends Controller
             $data = $request->validated();
 
             $slug = $data['slug'] ?? Str::slug($data['name'] ?? '');
-            if ($data['thumbnail_url'] && $category->thumbnail_url) {
-                $categoryImage = $this->upload->uploadSingleFileToS3($data['thumbnail_url'], 'categories');
+
+            if (isset($data['thumbnail_url'])) {
+                if(!is_string($data['thumbnail_url'])) {
+                    $categoryImage = $this->upload->uploadSingleFileToS3($data['thumbnail_url'], 'categories');
+                } else {
+                    $categoryImage = $data['thumbnail_url'];
+                }
             }
-            $categoryImage = "";
 
             $category->update([
                 'name'             => $data['name'],
