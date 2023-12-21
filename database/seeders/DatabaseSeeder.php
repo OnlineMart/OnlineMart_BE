@@ -29,7 +29,6 @@ class DatabaseSeeder extends Seeder
             ShippingAddressSeeder::class,
             OrderStatusesSeeder::class,
             PaymentMethodSeeder::class,
-            ReviewSeeder::class,
             ViewCountSeeder::class,
             ReasonCancelSeeder::class,
             CheckoutSeeder::class,
